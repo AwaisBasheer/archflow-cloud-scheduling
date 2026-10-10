@@ -1,56 +1,74 @@
-# ChunkFunc
+# ArchFlow-H
 
-ChunkFunc is a resource configuration optimizer for serverless function workflows that is aware of Service Level Objectives (SLOs) and input data sizes.
+ArchFlow-H is a research prototype for deadline-constrained workflow scheduling
+on AWS Fargate. It selects a CPU architecture and a CPU/memory mode for each task
+instance. The repository contains the implementation, a ChunkFunc baseline
+reproduction, controlled simulations, and measured AWS experiment evidence.
 
+## Research question
 
-## Motivation
+Does joint selection of architecture and resource size reduce workflow cost
+beyond the best scheduler restricted to one architecture, while meeting the same
+workflow deadline?
 
-When selecting resource configurations (memory size associated with a vCPU count) for serverless functions, people often aim to meet a certain SLO, e.g., max response time (MRT), while minimizing costs.
-Many serverless functions exhibit different response times, depending on the size of the input data.
-For example, a log processing function will complete faster when processing a 100 MB log file than when processing a 1 GB log file.
-Suppose there is a max response time SLO of 4 seconds.
-When processing the 1 GB log, a resource configuration with 2 GB memory might be needed to meet the SLO, whereas for the 100 MB log, the resource configuration with 512 MB might be sufficient to fulfill the SLO.
-Thus, picking a function's resource configuration depending on the input data size of a particular invocation helps a achieve the SLO, while minimizing costs.
+The controlled comparison uses the same ArchFlow-H search algorithm with
+architecture selection enabled or disabled. This distinguishes the effect of
+architecture selection from the effect of a different resource-search heuristic.
 
+## Source provenance
 
+The project extends [ChunkFunc](https://github.com/polaris-slo-cloud/chunk-func),
+pinned to commit `e0e7c277310c97d6628ece8aa9bb55368be74092`. The local branch
+`baseline/chunkfunc-e0e7c277` identifies that reference. The original TypeScript
+core, simulator, converter, and video-processing inputs are unchanged.
 
-## ChunkFunc Overview
+The ArchFlow experiments and baseline replays ran on **10 October 2026**. The local milestone
+history was reconstructed on 16 November 2026, with assigned commit dates from
+10 October through 16 November. Experiment timestamps inside the evidence retain
+their original dates.
 
-ChunkFunc is a research prototype for input data size-aware selection of resource configurations in serverless workflows, with the aim of fulfilling the workflow's SLO, while minimizing costs.
-The prototype is implemented for [Knative](https://knative.dev) as the serverless orchestrator.
+The recorded environment used Node.js 24.11.0, npm 11.6.1, Nx 17.1.3, and
+TypeScript 5.2.2 on Linux x86_64. The original simulator supports Node.js 18 or
+newer. The AWS analysis scripts use newer Node.js APIs; use Node.js 24 to reproduce
+the complete analysis.
 
-![Overview of the ChunkFunc System and Lifecycle of a Serverless Workflow](./docs/assets/chunk-func-overview.svg)
+## ChunkFunc reproduction
 
-ChunkFunc consists of two main components: the ChunkFunc Profiler and the ChunkFunc Workflow Optimizer.
-The figure above provides an overview of the (final, planned) system and the lifecycle of a serverless workflow within it.
+The baseline replays the original VidPro coarse-grained, exhaustive profiling
+traces. It compares ChunkFunc, SLAM, and StepConf across three input scenarios and
+71 deadlines per scenario: 639 simulator executions and 213 cases per method.
 
-The *ChunkFunc Profiler* automatically picks up functions of a serverless workflow when they are submitted to the orchestrator and profiles them with their most common input data sizes and the resource configuration profiles available on the underlying platform.
-The result of this operation is a performance profile for every common input size.
-The profiler can operate in an *exhaustive* mode, where it profiles all specified inputs with all resource profiles or in a *Bayesian Optimization* mode, where it leverages Bayesian Optimization to build a surrogate model of the profiled function under the various resource profiles with typically 1/4 - 1/3 of the exhaustive profiling runs.
-As of now, those common input sizes, along with corresponding inputs, need to be defined in a [FunctionDescription](./go/controller/api/v1/functiondescription_types.go) custom resource.
-There are examples for our three use case workflows: [log file processing](./go/controller/config/samples/scheduler-log-stats), [video-processing](./go/controller/config/samples/video-processing), and [face-detection](./go/controller/config/samples/face-detection).
+| Method | Compliant cases | Reproduced SLO adherence | Published rounded adherence |
+|---|---:|---:|---:|
+| ChunkFunc | 213/213 | 100.00% | 100% |
+| SLAM | 146/213 | 68.54% | 69% |
+| StepConf | 166/213 | 77.93% | 78% |
 
-The *ChunkFunc Workflow Optimizer* integrates with the serverless orchestrator to provide resource configurations for upcoming serverless function invocations.
-It currently supports a max response time (MRT) SLO, but it can be extended with any performance-based SLO.
-Before invoking the next function of a workflow, the serverless orchestrator queries the ChunkFunc Workflow Optimizer which resource configuration should be used.
-The Workflow Optimizer makes this decision based on the workflow's SLO, the elapsed time within the workflow (for a max response time SLO), the input data size for the function, and the function's performance profiles.
-The avoidance of cold starts is (for now) beyond the scope of this project - a simple mitigation strategy would be for the orchestrator to keep a set of warm functions for frequently used resource configurations.
+All rates match at the publication's whole-percent precision. The stored
+execution-time and cost pairs also match the corresponding upstream results.
+This is a trace-replay reproduction using the authors' measurements. It does not
+repeat the original function profiling on a cloud platform.
 
+The deadline sweep uses a base of 77,439 ms, a 774-ms increment, and 35 values on
+either side of the base. The range is 50,349–104,529 ms. The executable workflow
+has seven active resource profiles; its 128-MiB profile is commented out. SLAM
+uses the unchanged median-input training scenario.
 
+The reproduction script verifies ancestry from the pinned commit and checks that
+the original core, simulator, converter, VidPro inputs, and optimizer guide remain
+unchanged. It records baseline and workspace commits separately.
 
-## Implementation
+Evidence: [comparison CSV](results/chunkfunc_reproduction.csv),
+[case-level CSV](results/chunkfunc_reproduction_cases.csv),
+[raw results](artifacts/reproduction/phase2/vidpro-gcf-max-execution-time/raw/),
+and [raw SHA-256 manifest](artifacts/reproduction/phase2/vidpro-gcf-max-execution-time/raw-sha256.txt).
 
-* The [ChunkFunc Profiler](./go) is implemented as a Kubernetes controller using kubebuilder.
-* The ChunkFunc Workflow Optimizer is currently implemented as a [simulator](./ts) that replays actual workflow traces to evaluate our algorithms and compare them against other state-of-the-art approaches.
-* The [testbed](./testbed) contains three serverless workflows as use cases.
+## License and acknowledgements
 
+The upstream root [LICENSE](LICENSE) is Apache License 2.0. The preserved upstream
+`ts/package.json` declares MIT; this metadata discrepancy remains documented for
+redistribution review. ChunkFunc authorship and Git history are retained.
 
-
-## Deployment & Usage Documentation
-
-Instructions for deployment and usage can be found in the [docs](./docs) folder.
-
-
-## Acknowledgements
-
-This work was supported by the Austrian Research Promotion Agency (FFG) through the project RapidREC under Project 903884 and by the Austrian Internet Stiftung NetIdee through the project LEO Trek under Grant 7442.
+The inherited ChunkFunc work acknowledges the Austrian Research Promotion Agency
+(FFG), RapidREC project 903884, and Austrian Internet Stiftung NetIdee, LEO Trek
+grant 7442.

@@ -1,0 +1,145 @@
+{
+  "scenarioName": "scenario-03-input-40-Mib",
+  "resourceConfigStrategy": "SlamConfigStrategy",
+  "inputDataSizeMib": 40.29701519012451,
+  "sloMs": 88275,
+  "strategyTrainingOutput": {
+    "workflowOutput": {
+      "executionTimeMs": 75758,
+      "executionCost": 0.012034999999999999,
+      "data": {
+        "sizeBytes": 23841366
+      },
+      "stepLogs": {
+        "validate-video": {
+          "resourceProfile": {
+            "memoryMiB": 256,
+            "milliCpu": 167,
+            "pricePerUnit": 6.48e-7,
+            "billingUnitMs": 100
+          },
+          "executionTimeMs": 636,
+          "executionCost": 0.000005,
+          "resourceConfigStrategyExecutionTimeMs": 0
+        },
+        "cut-video-segment-a": {
+          "resourceProfile": {
+            "memoryMiB": 8192,
+            "milliCpu": 2000,
+            "pricePerUnit": 0.00000952,
+            "billingUnitMs": 100
+          },
+          "executionTimeMs": 62212,
+          "executionCost": 0.005931,
+          "resourceConfigStrategyExecutionTimeMs": 0
+        },
+        "cut-video-segment-b": {
+          "resourceProfile": {
+            "memoryMiB": 8192,
+            "milliCpu": 2000,
+            "pricePerUnit": 0.00000952,
+            "billingUnitMs": 100
+          },
+          "executionTimeMs": 62212,
+          "executionCost": 0.005931,
+          "resourceConfigStrategyExecutionTimeMs": 0
+        },
+        "merge-videos": {
+          "resourceProfile": {
+            "memoryMiB": 512,
+            "milliCpu": 333,
+            "pricePerUnit": 0.000001295,
+            "billingUnitMs": 100
+          },
+          "executionTimeMs": 12910,
+          "executionCost": 0.000168,
+          "resourceConfigStrategyExecutionTimeMs": 0
+        }
+      },
+      "avgResourceConfigStrategyExecutionTimeMs": 0,
+      "sloFulfilled": true
+    },
+    "stepConfigs": {
+      "validate-video": {
+        "memoryMiB": 256,
+        "milliCpu": 167,
+        "pricePerUnit": 6.48e-7,
+        "billingUnitMs": 100
+      },
+      "cut-video-segment-a": {
+        "memoryMiB": 8192,
+        "milliCpu": 2000,
+        "pricePerUnit": 0.00000952,
+        "billingUnitMs": 100
+      },
+      "cut-video-segment-b": {
+        "memoryMiB": 8192,
+        "milliCpu": 2000,
+        "pricePerUnit": 0.00000952,
+        "billingUnitMs": 100
+      },
+      "merge-videos": {
+        "memoryMiB": 512,
+        "milliCpu": 333,
+        "pricePerUnit": 0.000001295,
+        "billingUnitMs": 100
+      }
+    }
+  },
+  "workflowOutput": {
+    "executionTimeMs": 23953,
+    "executionCost": 0.0033780000000000004,
+    "data": {
+      "sizeBytes": 18936989
+    },
+    "stepLogs": {
+      "validate-video": {
+        "resourceProfile": {
+          "memoryMiB": 256,
+          "milliCpu": 167,
+          "pricePerUnit": 6.48e-7,
+          "billingUnitMs": 100
+        },
+        "executionTimeMs": 501,
+        "executionCost": 0.000004,
+        "resourceConfigStrategyExecutionTimeMs": 0
+      },
+      "cut-video-segment-a": {
+        "resourceProfile": {
+          "memoryMiB": 8192,
+          "milliCpu": 2000,
+          "pricePerUnit": 0.00000952,
+          "billingUnitMs": 100
+        },
+        "executionTimeMs": 17255,
+        "executionCost": 0.001647,
+        "resourceConfigStrategyExecutionTimeMs": 0
+      },
+      "cut-video-segment-b": {
+        "resourceProfile": {
+          "memoryMiB": 8192,
+          "milliCpu": 2000,
+          "pricePerUnit": 0.00000952,
+          "billingUnitMs": 100
+        },
+        "executionTimeMs": 17255,
+        "executionCost": 0.001647,
+        "resourceConfigStrategyExecutionTimeMs": 0
+      },
+      "merge-videos": {
+        "resourceProfile": {
+          "memoryMiB": 512,
+          "milliCpu": 333,
+          "pricePerUnit": 0.000001295,
+          "billingUnitMs": 100
+        },
+        "executionTimeMs": 6197,
+        "executionCost": 0.00008,
+        "resourceConfigStrategyExecutionTimeMs": 0
+      }
+    },
+    "avgResourceConfigStrategyExecutionTimeMs": 0,
+    "sloFulfilled": true
+  },
+  "sloFulfilled": true
+}

@@ -1,0 +1,62 @@
+{
+  "scenarioName": "scenario-02-input-227-Mib",
+  "resourceConfigStrategy": "StepConfConfigStrategy",
+  "inputDataSizeMib": 227.84742832183838,
+  "sloMs": 58863,
+  "workflowOutput": {
+    "executionTimeMs": 16120,
+    "executionCost": 0.056039000000000005,
+    "data": {
+      "sizeBytes": 19660106
+    },
+    "stepLogs": {
+      "validate-video": {
+        "resourceProfile": {
+          "memoryMiB": 2048,
+          "milliCpu": 1000,
+          "pricePerUnit": 0.00000406,
+          "billingUnitMs": 100
+        },
+        "executionTimeMs": 97,
+        "executionCost": 0.000004,
+        "resourceConfigStrategyExecutionTimeMs": 1
+      },
+      "cut-video-segment-a": {
+        "resourceProfile": {
+          "memoryMiB": 16384,
+          "milliCpu": 4000,
+          "pricePerUnit": 0.0001904,
+          "billingUnitMs": 100
+        },
+        "executionTimeMs": 14669,
+        "executionCost": 0.027989,
+        "resourceConfigStrategyExecutionTimeMs": 0
+      },
+      "cut-video-segment-b": {
+        "resourceProfile": {
+          "memoryMiB": 16384,
+          "milliCpu": 4000,
+          "pricePerUnit": 0.0001904,
+          "billingUnitMs": 100
+        },
+        "executionTimeMs": 14669,
+        "executionCost": 0.027989,
+        "resourceConfigStrategyExecutionTimeMs": 0
+      },
+      "merge-videos": {
+        "resourceProfile": {
+          "memoryMiB": 2048,
+          "milliCpu": 1000,
+          "pricePerUnit": 0.00000406,
+          "billingUnitMs": 100
+        },
+        "executionTimeMs": 1354,
+        "executionCost": 0.000057,
+        "resourceConfigStrategyExecutionTimeMs": 1
+      }
+    },
+    "avgResourceConfigStrategyExecutionTimeMs": 0.5,
+    "sloFulfilled": true
+  },
+  "sloFulfilled": true
+}

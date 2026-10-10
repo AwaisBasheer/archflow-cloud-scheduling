@@ -1,0 +1,4 @@
+strategy,scenario,sloMs,executionTimeMs,cost,avgResConfigStratExecTimeMs
+Fastest,40.3MB,11500,9014,0.030949,0.25
+Cheapest,40.3MB,11500,20090,0.0030970000000000004,0
+ProportionalCriticalPathSlo,40.3MB,11500,9460,0.030911,0.5
