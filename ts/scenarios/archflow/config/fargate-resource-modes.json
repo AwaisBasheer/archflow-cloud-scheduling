@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "source": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task-cpu-memory-error.html",
+  "retrievedAt": "2026-10-10",
+  "modes": [
+    { "id": "x86-0.25vcpu-0.5gb", "architecture": "x86_64", "vCpu": 0.25, "memoryGb": 0.5 },
+    { "id": "x86-0.5vcpu-1gb", "architecture": "x86_64", "vCpu": 0.5, "memoryGb": 1 },
+    { "id": "x86-1vcpu-2gb", "architecture": "x86_64", "vCpu": 1, "memoryGb": 2 },
+    { "id": "x86-2vcpu-4gb", "architecture": "x86_64", "vCpu": 2, "memoryGb": 4 },
+    { "id": "x86-4vcpu-8gb", "architecture": "x86_64", "vCpu": 4, "memoryGb": 8 },
+    { "id": "arm64-0.25vcpu-0.5gb", "architecture": "arm64", "vCpu": 0.25, "memoryGb": 0.5 },
+    { "id": "arm64-0.5vcpu-1gb", "architecture": "arm64", "vCpu": 0.5, "memoryGb": 1 },
+    { "id": "arm64-1vcpu-2gb", "architecture": "arm64", "vCpu": 1, "memoryGb": 2 },
+    { "id": "arm64-2vcpu-4gb", "architecture": "arm64", "vCpu": 2, "memoryGb": 4 },
+    { "id": "arm64-4vcpu-8gb", "architecture": "arm64", "vCpu": 4, "memoryGb": 8 }
+  ]
+}

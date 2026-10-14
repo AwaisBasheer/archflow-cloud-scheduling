@@ -17,7 +17,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@chunk-func/core": ["packages/core/src/index.ts"]
+      "@chunk-func/core": ["packages/core/src/index.ts"],
+      "@archflow/core": ["packages/archflow-core/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

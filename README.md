@@ -63,6 +63,36 @@ Evidence: [comparison CSV](results/chunkfunc_reproduction.csv),
 [raw results](artifacts/reproduction/phase2/vidpro-gcf-max-execution-time/raw/),
 and [raw SHA-256 manifest](artifacts/reproduction/phase2/vidpro-gcf-max-execution-time/raw-sha256.txt).
 
+## Workflow and cost model
+
+A directed acyclic graph (DAG) represents a workflow. Each task has a unique ID,
+task class, predecessor/successor IDs, input or workload size, and performance
+profiles. A profile records execution time, startup overhead, resource mode, and
+data provenance. A resource mode records architecture, vCPU, and memory.
+
+The event simulator releases a task after all its predecessors finish. Ready
+tasks run concurrently, subject to an optional concurrency limit. Workflow
+makespan is the maximum task finish time. Workflow cost includes every task,
+including both sides of a parallel branch. Deterministic ordering resolves ties.
+
+The simulated catalog has five sizes per architecture: 0.25/0.5, 0.5/1, 1/2, 2/4,
+and 4/8, expressed as vCPU/memory. Both x86_64 and ARM64 are explicit mode
+properties. The validator rejects invalid Fargate CPU/memory combinations.
+
+For execution time `E`, startup overhead `H`, vCPU `V`, memory `M`, and the
+architecture-specific rates `Rcpu` and `Rmem`:
+
+```text
+durationSeconds = E + H
+billableSeconds = ceil(max(60, durationSeconds))
+taskCostUsd = billableSeconds × (V × Rcpu + M × Rmem)
+```
+
+The simulation uses the captured `us-east-1` pricing configuration dated
+10 October 2026. Simulation cost excludes public IPv4, transfer, storage, logs,
+taxes, and discounts. The real AWS analysis adds measured public-IPv4 lifecycle
+cost. Neither cost measure is invoice-confirmed.
+
 ## License and acknowledgements
 
 The upstream root [LICENSE](LICENSE) is Apache License 2.0. The preserved upstream

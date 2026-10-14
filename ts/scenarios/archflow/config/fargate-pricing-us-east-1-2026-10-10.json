@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "provider": "aws-fargate",
+  "region": "us-east-1",
+  "regionName": "US East (N. Virginia)",
+  "retrievedAt": "2026-10-10",
+  "currency": "USD",
+  "operatingSystem": "linux",
+  "minimumBillableSeconds": 60,
+  "roundUpToSecond": true,
+  "billingStartsAtImageDownload": true,
+  "rates": {
+    "x86_64": {
+      "vCpuPerSecondUsd": 0.000011244,
+      "memoryGbPerSecondUsd": 0.000001235
+    },
+    "arm64": {
+      "vCpuPerSecondUsd": 0.0000089944,
+      "memoryGbPerSecondUsd": 0.0000009889
+    }
+  },
+  "source": "https://aws.amazon.com/fargate/pricing/",
+  "notes": "On-demand ECS Fargate Linux rates shown in the official US East (N. Virginia) pricing examples. Architecture rates are separate: Phase 3 restricts scheduling to x86_64 and Phase 4 restricts each baseline run to one declared architecture. Ephemeral storage above the included 20 GB, public IPv4, data transfer, logging, and taxes are excluded."
+}
