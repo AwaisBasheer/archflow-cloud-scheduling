@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "id": "synthetic-fork-join",
+  "deadlineSeconds": 80,
+  "provenance": "Deterministic synthetic workflow for scheduler mechanics. Durations are synthetic assumptions, not cloud measurements.",
+  "tasks": [
+    {
+      "id": "ingest",
+      "taskClass": "ingest",
+      "predecessorIds": [],
+      "successorIds": ["transform-a", "transform-b"],
+      "workloadSize": 100,
+      "profiles": [
+        { "resourceModeId": "x86-0.25vcpu-0.5gb", "executionSeconds": 8, "startupOverheadSeconds": 2, "provenance": { "kind": "synthetic", "source": "phase3-synthetic-v1", "notes": "Deterministic synthetic duration." } },
+        { "resourceModeId": "x86-0.5vcpu-1gb", "executionSeconds": 6, "startupOverheadSeconds": 2, "provenance": { "kind": "synthetic", "source": "phase3-synthetic-v1", "notes": "Deterministic synthetic duration." } },
+        { "resourceModeId": "x86-1vcpu-2gb", "executionSeconds": 5, "startupOverheadSeconds": 2, "provenance": { "kind": "synthetic", "source": "phase3-synthetic-v1", "notes": "Deterministic synthetic duration." } },
+        { "resourceModeId": "x86-2vcpu-4gb", "executionSeconds": 4, "startupOverheadSeconds": 2, "provenance": { "kind": "synthetic", "source": "phase3-synthetic-v1", "notes": "Deterministic synthetic duration." } },
+        { "resourceModeId": "x86-4vcpu-8gb", "executionSeconds": 3, "startupOverheadSeconds": 2, "provenance": { "kind": "synthetic", "source": "phase3-synthetic-v1", "notes": "Deterministic synthetic duration." } }
+      ]
+    },
+    {
+      "id": "transform-a",
+      "taskClass": "transform",
+      "predecessorIds": ["ingest"],
+      "successorIds": ["aggregate"],
+      "workloadSize": 500,
+      "profiles": [
+        { "resourceModeId": "x86-0.25vcpu-0.5gb", "executionSeconds": 120, "startupOverheadSeconds": 2, "provenance": { "kind": "synthetic", "source": "phase3-synthetic-v1", "notes": "Deterministic synthetic duration." } },
+        { "resourceModeId": "x86-0.5vcpu-1gb", "executionSeconds": 70, "startupOverheadSeconds": 2, "provenance": { "kind": "synthetic", "source": "phase3-synthetic-v1", "notes": "Deterministic synthetic duration." } },
+        { "resourceModeId": "x86-1vcpu-2gb", "executionSeconds": 42, "startupOverheadSeconds": 2, "provenance": { "kind": "synthetic", "source": "phase3-synthetic-v1", "notes": "Deterministic synthetic duration." } },
+        { "resourceModeId": "x86-2vcpu-4gb", "executionSeconds": 28, "startupOverheadSeconds": 2, "provenance": { "kind": "synthetic", "source": "phase3-synthetic-v1", "notes": "Deterministic synthetic duration." } },
+        { "resourceModeId": "x86-4vcpu-8gb", "executionSeconds": 20, "startupOverheadSeconds": 2, "provenance": { "kind": "synthetic", "source": "phase3-synthetic-v1", "notes": "Deterministic synthetic duration." } }
+      ]
+    },
+    {
+      "id": "transform-b",
+      "taskClass": "transform",
+      "predecessorIds": ["ingest"],
+      "successorIds": ["aggregate"],
+      "workloadSize": 300,
+      "profiles": [
+        { "resourceModeId": "x86-0.25vcpu-0.5gb", "executionSeconds": 75, "startupOverheadSeconds": 2, "provenance": { "kind": "synthetic", "source": "phase3-synthetic-v1", "notes": "Deterministic synthetic duration." } },
+        { "resourceModeId": "x86-0.5vcpu-1gb", "executionSeconds": 48, "startupOverheadSeconds": 2, "provenance": { "kind": "synthetic", "source": "phase3-synthetic-v1", "notes": "Deterministic synthetic duration." } },
+        { "resourceModeId": "x86-1vcpu-2gb", "executionSeconds": 32, "startupOverheadSeconds": 2, "provenance": { "kind": "synthetic", "source": "phase3-synthetic-v1", "notes": "Deterministic synthetic duration." } },
+        { "resourceModeId": "x86-2vcpu-4gb", "executionSeconds": 22, "startupOverheadSeconds": 2, "provenance": { "kind": "synthetic", "source": "phase3-synthetic-v1", "notes": "Deterministic synthetic duration." } },
+        { "resourceModeId": "x86-4vcpu-8gb", "executionSeconds": 16, "startupOverheadSeconds": 2, "provenance": { "kind": "synthetic", "source": "phase3-synthetic-v1", "notes": "Deterministic synthetic duration." } }
+      ]
+    },
+    {
+      "id": "aggregate",
+      "taskClass": "aggregate",
+      "predecessorIds": ["transform-a", "transform-b"],
+      "successorIds": ["publish"],
+      "workloadSize": 800,
+      "profiles": [
+        { "resourceModeId": "x86-0.25vcpu-0.5gb", "executionSeconds": 30, "startupOverheadSeconds": 2, "provenance": { "kind": "synthetic", "source": "phase3-synthetic-v1", "notes": "Deterministic synthetic duration." } },
+        { "resourceModeId": "x86-0.5vcpu-1gb", "executionSeconds": 20, "startupOverheadSeconds": 2, "provenance": { "kind": "synthetic", "source": "phase3-synthetic-v1", "notes": "Deterministic synthetic duration." } },
+        { "resourceModeId": "x86-1vcpu-2gb", "executionSeconds": 14, "startupOverheadSeconds": 2, "provenance": { "kind": "synthetic", "source": "phase3-synthetic-v1", "notes": "Deterministic synthetic duration." } },
+        { "resourceModeId": "x86-2vcpu-4gb", "executionSeconds": 10, "startupOverheadSeconds": 2, "provenance": { "kind": "synthetic", "source": "phase3-synthetic-v1", "notes": "Deterministic synthetic duration." } },
+        { "resourceModeId": "x86-4vcpu-8gb", "executionSeconds": 8, "startupOverheadSeconds": 2, "provenance": { "kind": "synthetic", "source": "phase3-synthetic-v1", "notes": "Deterministic synthetic duration." } }
+      ]
+    },
+    {
+      "id": "publish",
+      "taskClass": "publish",
+      "predecessorIds": ["aggregate"],
+      "successorIds": [],
+      "workloadSize": 800,
+      "profiles": [
+        { "resourceModeId": "x86-0.25vcpu-0.5gb", "executionSeconds": 12, "startupOverheadSeconds": 2, "provenance": { "kind": "synthetic", "source": "phase3-synthetic-v1", "notes": "Deterministic synthetic duration." } },
+        { "resourceModeId": "x86-0.5vcpu-1gb", "executionSeconds": 9, "startupOverheadSeconds": 2, "provenance": { "kind": "synthetic", "source": "phase3-synthetic-v1", "notes": "Deterministic synthetic duration." } },
+        { "resourceModeId": "x86-1vcpu-2gb", "executionSeconds": 7, "startupOverheadSeconds": 2, "provenance": { "kind": "synthetic", "source": "phase3-synthetic-v1", "notes": "Deterministic synthetic duration." } },
+        { "resourceModeId": "x86-2vcpu-4gb", "executionSeconds": 5, "startupOverheadSeconds": 2, "provenance": { "kind": "synthetic", "source": "phase3-synthetic-v1", "notes": "Deterministic synthetic duration." } },
+        { "resourceModeId": "x86-4vcpu-8gb", "executionSeconds": 4, "startupOverheadSeconds": 2, "provenance": { "kind": "synthetic", "source": "phase3-synthetic-v1", "notes": "Deterministic synthetic duration." } }
+      ]
+    }
+  ]
+}

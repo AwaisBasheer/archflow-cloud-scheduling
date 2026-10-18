@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "startupOverheadSeconds": 2,
+  "modeToChunkFuncProfile": {
+    "x86-0.25vcpu-0.5gb": "512mib-333m",
+    "x86-0.5vcpu-1gb": "1024mib-583m",
+    "x86-1vcpu-2gb": "2048mib-1000m",
+    "x86-2vcpu-4gb": "4096mib-2000m",
+    "x86-4vcpu-8gb": "16384mib-4000m"
+  },
+  "taskClassAliases": {
+    "cut-video-segment-a": "cut-video-segment",
+    "cut-video-segment-b": "cut-video-segment"
+  },
+  "provenance": "Deterministic proxy mapping from original ChunkFunc GCF-like profiles to representative Fargate tiers by nearest/identical CPU capacity, with memory differences explicitly retained in sourceProfileId. These are not Fargate measurements."
+}

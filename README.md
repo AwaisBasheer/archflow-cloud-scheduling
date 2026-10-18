@@ -93,6 +93,20 @@ The simulation uses the captured `us-east-1` pricing configuration dated
 taxes, and discounts. The real AWS analysis adds measured public-IPv4 lifecycle
 cost. Neither cost measure is invoice-confirmed.
 
+## Fixed-architecture scheduler
+
+`FixedArchitectureProportionalDeadlineScheduler` implements the ChunkFunc-style
+Fargate baseline. It restricts candidates to x86_64 or ARM64, estimates downstream
+critical-path durations, and allocates a proportional share of the remaining
+deadline to each task. It selects the cheapest profile within that local budget,
+or the fastest profile when no candidate fits.
+
+The scheduler then simulates the complete workflow. If needed, it upgrades a
+critical-path task using the lowest incremental cost per second of makespan
+reduction. A remaining deadline violation is reported explicitly. This adapts
+ChunkFunc's proportional-budget idea to offline Fargate tasks, explicit startup
+time, and per-task billing.
+
 ## License and acknowledgements
 
 The upstream root [LICENSE](LICENSE) is Apache License 2.0. The preserved upstream
