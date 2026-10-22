@@ -1,0 +1,144 @@
+{
+  "experimentId": "vidpro-large-arm64-baseline",
+  "performanceDataKind": "chunkfunc-proxy",
+  "architectureRestriction": "ARM64",
+  "architecturePerformanceProfileSet": "vidpro-task-class-mixed-v1",
+  "architecturePerformanceRandomSeed": 20261010,
+  "comparisonGroup": "vidpro-large",
+  "pricingRegion": "us-east-1",
+  "pricingRetrievedAt": "2026-10-10",
+  "pricingSource": "https://aws.amazon.com/fargate/pricing/",
+  "schemaVersion": 1,
+  "schedulerId": "fixed-arm64-proportional-critical-path-v1",
+  "workflowId": "vidpro-scenario-01-input-500-Mib-fargate-proxy",
+  "deadlineSeconds": 56,
+  "simulatedMakespanSeconds": 55.258479759,
+  "estimatedExecutionCostUsd": 0.008558315999999998,
+  "deadlineMet": true,
+  "taskAssignments": [
+    {
+      "taskId": "validate-video",
+      "taskClass": "validate-video",
+      "resourceMode": {
+        "id": "arm64-4vcpu-8gb",
+        "architecture": "arm64",
+        "vCpu": 4,
+        "memoryGb": 8
+      },
+      "executionSeconds": 0.094106913,
+      "startupOverheadSeconds": 2,
+      "simulatedDurationSeconds": 2.094106913,
+      "startSeconds": 0,
+      "finishSeconds": 2.094106913,
+      "billableSeconds": 60,
+      "estimatedCostUsd": 0.002633328,
+      "profileProvenance": {
+        "kind": "synthetic-arm64-derived",
+        "source": "vidpro-task-class-mixed-v1",
+        "sourceProfileId": "x86-4vcpu-8gb",
+        "sourceInputSizeBytes": 525049424,
+        "baselineArchitecture": "x86_64",
+        "basePerformanceFactor": 0.95,
+        "deterministicJitterFactor": 0.98079117,
+        "effectivePerformanceFactor": 0.931751611,
+        "randomSeed": 20261010,
+        "notes": "Synthetic mixed architecture sensitivity: validation and merge favor ARM64, while video segment cutting favors x86_64. A two-percent deterministic per-task/per-mode jitter prevents an unsupported constant architecture ratio. Factor multiplies x86 execution time; startup overhead is unchanged."
+      }
+    },
+    {
+      "taskId": "cut-video-segment-a",
+      "taskClass": "cut-video-segment",
+      "resourceMode": {
+        "id": "arm64-4vcpu-8gb",
+        "architecture": "arm64",
+        "vCpu": 4,
+        "memoryGb": 8
+      },
+      "executionSeconds": 46.432448878,
+      "startupOverheadSeconds": 2,
+      "simulatedDurationSeconds": 48.432448878,
+      "startSeconds": 2.094106913,
+      "finishSeconds": 50.526555791,
+      "billableSeconds": 60,
+      "estimatedCostUsd": 0.002633328,
+      "profileProvenance": {
+        "kind": "synthetic-arm64-derived",
+        "source": "vidpro-task-class-mixed-v1",
+        "sourceProfileId": "x86-4vcpu-8gb",
+        "sourceInputSizeBytes": 210019770,
+        "baselineArchitecture": "x86_64",
+        "basePerformanceFactor": 1.08,
+        "deterministicJitterFactor": 0.997633327,
+        "effectivePerformanceFactor": 1.077443993,
+        "randomSeed": 20261010,
+        "notes": "Synthetic mixed architecture sensitivity: validation and merge favor ARM64, while video segment cutting favors x86_64. A two-percent deterministic per-task/per-mode jitter prevents an unsupported constant architecture ratio. Factor multiplies x86 execution time; startup overhead is unchanged."
+      }
+    },
+    {
+      "taskId": "cut-video-segment-b",
+      "taskClass": "cut-video-segment",
+      "resourceMode": {
+        "id": "arm64-4vcpu-8gb",
+        "architecture": "arm64",
+        "vCpu": 4,
+        "memoryGb": 8
+      },
+      "executionSeconds": 46.997850495,
+      "startupOverheadSeconds": 2,
+      "simulatedDurationSeconds": 48.997850495,
+      "startSeconds": 2.094106913,
+      "finishSeconds": 51.091957408,
+      "billableSeconds": 60,
+      "estimatedCostUsd": 0.002633328,
+      "profileProvenance": {
+        "kind": "synthetic-arm64-derived",
+        "source": "vidpro-task-class-mixed-v1",
+        "sourceProfileId": "x86-4vcpu-8gb",
+        "sourceInputSizeBytes": 210019770,
+        "baselineArchitecture": "x86_64",
+        "basePerformanceFactor": 1.08,
+        "deterministicJitterFactor": 1.009781372,
+        "effectivePerformanceFactor": 1.090563882,
+        "randomSeed": 20261010,
+        "notes": "Synthetic mixed architecture sensitivity: validation and merge favor ARM64, while video segment cutting favors x86_64. A two-percent deterministic per-task/per-mode jitter prevents an unsupported constant architecture ratio. Factor multiplies x86 execution time; startup overhead is unchanged."
+      }
+    },
+    {
+      "taskId": "merge-videos",
+      "taskClass": "merge-videos",
+      "resourceMode": {
+        "id": "arm64-1vcpu-2gb",
+        "architecture": "arm64",
+        "vCpu": 1,
+        "memoryGb": 2
+      },
+      "executionSeconds": 2.166522351,
+      "startupOverheadSeconds": 2,
+      "simulatedDurationSeconds": 4.166522350999999,
+      "startSeconds": 51.091957408,
+      "finishSeconds": 55.258479759,
+      "billableSeconds": 60,
+      "estimatedCostUsd": 0.000658332,
+      "profileProvenance": {
+        "kind": "synthetic-arm64-derived",
+        "source": "vidpro-task-class-mixed-v1",
+        "sourceProfileId": "x86-1vcpu-2gb",
+        "sourceInputSizeBytes": 37873978,
+        "baselineArchitecture": "x86_64",
+        "basePerformanceFactor": 0.9,
+        "deterministicJitterFactor": 0.984156606,
+        "effectivePerformanceFactor": 0.885740945,
+        "randomSeed": 20261010,
+        "notes": "Synthetic mixed architecture sensitivity: validation and merge favor ARM64, while video segment cutting favors x86_64. A two-percent deterministic per-task/per-mode jitter prevents an unsupported constant architecture ratio. Factor multiplies x86 execution time; startup overhead is unchanged."
+      }
+    }
+  ],
+  "dependencyCriticalPathTaskIds": [
+    "validate-video",
+    "cut-video-segment-b",
+    "merge-videos"
+  ],
+  "feasible": true,
+  "schedulingDecisionOverheadMs": 0.8071899999999985,
+  "selectionIterations": 1
+}

@@ -1,0 +1,5 @@
+experimentId,workflowId,architectureRestriction,schedulerId,deadlineSeconds,simulatedMakespanSeconds,estimatedExecutionCostUsd,deadlineMet,feasible,schedulingDecisionOverheadMs,selectionIterations
+vidpro-large-x86-control,vidpro-scenario-01-input-500-Mib-fargate-proxy,X86_64,fixed-x86-proportional-critical-path-v1,56,54.141,0.0102855,true,true,8.686329,1
+vidpro-large-arm64-baseline,vidpro-scenario-01-input-500-Mib-fargate-proxy,ARM64,fixed-arm64-proportional-critical-path-v1,56,55.258479759,0.008558315999999998,true,true,0.8071899999999985,1
+synthetic-fork-join-x86-control,synthetic-fork-join,X86_64,fixed-x86-proportional-critical-path-v1,80,77,0.00452562,true,true,0.359811999999998,1
+synthetic-fork-join-arm64-neutral-control,synthetic-fork-join,ARM64,fixed-arm64-proportional-critical-path-v1,80,77,0.003620826,true,true,0.25755800000000306,1

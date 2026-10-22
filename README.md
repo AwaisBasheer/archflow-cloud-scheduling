@@ -107,6 +107,22 @@ reduction. A remaining deadline violation is reported explicitly. This adapts
 ChunkFunc's proportional-budget idea to offline Fargate tasks, explicit startup
 time, and per-task billing.
 
+## ARM profile assumptions
+
+The earlier VidPro experiments map original GCF-like profiles onto representative
+Fargate modes. They are labeled `chunkfunc-proxy` and include an assumed
+two-second startup overhead. These values are not Fargate measurements.
+
+ARM durations in the simulation phases are deterministic synthetic derivatives.
+Seed `20261010` fixes per-task/per-mode jitter. The VidPro factors multiply x86
+execution time by 0.95 for validation, 1.08 for cuts, and 0.90 for merge, with
+±2% jitter. Startup time is unchanged. The neutral control uses factor 1.0 without
+jitter. The ARM-dominant control uses factor 0.85 without jitter.
+
+Every derived profile records its source, seed, base factor, jitter, and effective
+factor. Real AWS profiles are labeled `measured-aws-fargate` and do not use these
+synthetic factors.
+
 ## License and acknowledgements
 
 The upstream root [LICENSE](LICENSE) is Apache License 2.0. The preserved upstream
