@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "pricing": "scenarios/archflow/config/fargate-pricing-us-east-1-2026-10-10.json",
+  "resourceModes": "scenarios/archflow/config/fargate-resource-modes.json",
+  "architecturePerformanceProfiles": "scenarios/archflow/config/arm64-performance-factors-2026-10-10.json",
+  "experiments": [
+    {
+      "id": "vidpro-large-x86-control",
+      "comparisonGroup": "vidpro-large",
+      "architecture": "X86_64",
+      "kind": "chunkfunc-proxy",
+      "workflow": "scenarios/video-processing/workflow-gcf.yaml",
+      "scenario": "scenarios/video-processing/scenario-01.yaml",
+      "proxyMapping": "scenarios/archflow/config/chunkfunc-vidpro-proxy-map.json"
+    },
+    {
+      "id": "vidpro-large-arm64-control",
+      "comparisonGroup": "vidpro-large",
+      "architecture": "ARM64",
+      "architecturePerformanceProfileSet": "vidpro-task-class-mixed-v1",
+      "kind": "chunkfunc-proxy",
+      "workflow": "scenarios/video-processing/workflow-gcf.yaml",
+      "scenario": "scenarios/video-processing/scenario-01.yaml",
+      "proxyMapping": "scenarios/archflow/config/chunkfunc-vidpro-proxy-map.json"
+    },
+    {
+      "id": "vidpro-large-archflow-h",
+      "comparisonGroup": "vidpro-large",
+      "architecture": "JOINT",
+      "architecturePerformanceProfileSet": "vidpro-task-class-mixed-v1",
+      "kind": "chunkfunc-proxy",
+      "workflow": "scenarios/video-processing/workflow-gcf.yaml",
+      "scenario": "scenarios/video-processing/scenario-01.yaml",
+      "proxyMapping": "scenarios/archflow/config/chunkfunc-vidpro-proxy-map.json"
+    },
+    {
+      "id": "synthetic-fork-join-x86-control",
+      "comparisonGroup": "synthetic-fork-join",
+      "architecture": "X86_64",
+      "kind": "shared-workflow",
+      "workflow": "scenarios/archflow/synthetic-fork-join.workflow.json"
+    },
+    {
+      "id": "synthetic-fork-join-arm64-neutral-control",
+      "comparisonGroup": "synthetic-fork-join",
+      "architecture": "ARM64",
+      "architecturePerformanceProfileSet": "neutral-equal-performance-v1",
+      "kind": "shared-workflow",
+      "workflow": "scenarios/archflow/synthetic-fork-join.workflow.json"
+    },
+    {
+      "id": "synthetic-fork-join-archflow-h",
+      "comparisonGroup": "synthetic-fork-join",
+      "architecture": "JOINT",
+      "architecturePerformanceProfileSet": "neutral-equal-performance-v1",
+      "kind": "shared-workflow",
+      "workflow": "scenarios/archflow/synthetic-fork-join.workflow.json"
+    }
+  ]
+}

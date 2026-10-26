@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "randomSeed": 20261010,
+  "factorMeaning": "ARM64 execution seconds divided by the corresponding x86_64 execution seconds. Values below 1 make ARM64 faster; values above 1 make ARM64 slower. Startup overhead is never scaled.",
+  "derivation": "Methodology-only synthetic assumptions frozen before the Phase 4 experiment. Each base task-class factor is multiplied by a deterministic FNV-1a-derived jitter in [1-jitterFraction, 1+jitterFraction]. These values are not measurements and must not be interpreted as AWS Graviton benchmarks.",
+  "profileSets": {
+    "vidpro-task-class-mixed-v1": {
+      "description": "Synthetic mixed architecture sensitivity: validation and merge favor ARM64, while video segment cutting favors x86_64. A two-percent deterministic per-task/per-mode jitter prevents an unsupported constant architecture ratio.",
+      "baselineArchitecture": "X86_64",
+      "targetArchitecture": "ARM64",
+      "defaultExecutionTimeFactor": 1,
+      "taskClassExecutionTimeFactors": {
+        "validate-video": 0.95,
+        "cut-video-segment": 1.08,
+        "merge-videos": 0.9
+      },
+      "deterministicJitterFraction": 0.02
+    },
+    "neutral-equal-performance-v1": {
+      "description": "Neutral control in which corresponding ARM64 and x86_64 modes have exactly equal execution and startup times.",
+      "baselineArchitecture": "X86_64",
+      "targetArchitecture": "ARM64",
+      "defaultExecutionTimeFactor": 1,
+      "taskClassExecutionTimeFactors": {},
+      "deterministicJitterFraction": 0
+    }
+  }
+}

@@ -123,6 +123,31 @@ Every derived profile records its source, seed, base factor, jitter, and effecti
 factor. Real AWS profiles are labeled `measured-aws-fargate` and do not use these
 synthetic factors.
 
+## ArchFlow-H scheduling
+
+ArchFlow-H minimizes the sum of task costs subject to the workflow deadline,
+dependency constraints, available profiles, valid Fargate modes, and the optional
+concurrency limit. Architecture and resource size are selected per task instance.
+
+The heuristic:
+
+1. Validates candidates and calculates their billed costs.
+2. Selects the cheapest candidate independently for each task.
+3. Simulates the complete DAG.
+4. If the deadline is missed, evaluates faster one-task changes by full simulation.
+5. Prefers actual makespan reduction, then non-increasing cost, then time saved
+   per added dollar. It also permits progress across tied critical branches.
+6. Once feasible, accepts cheaper one-task changes only if the deadline remains met.
+7. Returns the final assignment, costs, critical path, slack, and accepted decisions.
+
+If no feasible result is found, the scheduler returns its best encountered
+schedule and the exact violation. This does not prove global infeasibility or
+global cost optimality. The greedy refinement can stop at a one-task local minimum.
+
+Full and architecture-restricted ArchFlow use the same implementation. Candidate
+filtering is their only search-path difference. Scheduler process time is
+measured separately and is excluded from simulated makespan.
+
 ## License and acknowledgements
 
 The upstream root [LICENSE](LICENSE) is Apache License 2.0. The preserved upstream
