@@ -1,0 +1,175 @@
+{
+  "experimentId": "forkjoin-arm-dominant-tight-chunkfunc-style-arm64",
+  "performanceDataKind": "shared-workflow",
+  "architectureRestriction": "ARM64",
+  "architecturePerformanceProfileSet": "arm64-consistent-dominance-v1",
+  "architecturePerformanceRandomSeed": 20261010,
+  "methodId": "chunkfunc-style-arm64",
+  "workloadId": "forkjoin-arm-dominant",
+  "deadlineCondition": "tight",
+  "pricingRegion": "us-east-1",
+  "pricingRetrievedAt": "2026-10-10",
+  "pricingSource": "https://aws.amazon.com/fargate/pricing/",
+  "schemaVersion": 1,
+  "schedulerId": "fixed-arm64-proportional-critical-path-v1",
+  "workflowId": "synthetic-fork-join",
+  "deadlineSeconds": 45,
+  "simulatedMakespanSeconds": 44.550000000000004,
+  "estimatedExecutionCostUsd": 0.010533312,
+  "deadlineMet": true,
+  "taskAssignments": [
+    {
+      "taskId": "ingest",
+      "taskClass": "ingest",
+      "resourceMode": {
+        "id": "arm64-4vcpu-8gb",
+        "architecture": "arm64",
+        "vCpu": 4,
+        "memoryGb": 8
+      },
+      "executionSeconds": 2.55,
+      "startupOverheadSeconds": 2,
+      "simulatedDurationSeconds": 4.55,
+      "startSeconds": 0,
+      "finishSeconds": 4.55,
+      "billableSeconds": 60,
+      "estimatedCostUsd": 0.002633328,
+      "profileProvenance": {
+        "kind": "synthetic-arm64-derived",
+        "source": "arm64-consistent-dominance-v1",
+        "sourceProfileId": "x86-4vcpu-8gb",
+        "baselineArchitecture": "x86_64",
+        "basePerformanceFactor": 0.85,
+        "deterministicJitterFactor": 1,
+        "effectivePerformanceFactor": 0.85,
+        "randomSeed": 20261010,
+        "notes": "Declared synthetic dominance control in which ARM64 execution time is 85% of corresponding x86_64 execution time for every task class and resource tier; ARM64 also retains its architecture-specific price rates. Factor multiplies x86 execution time; startup overhead is unchanged."
+      }
+    },
+    {
+      "taskId": "transform-a",
+      "taskClass": "transform",
+      "resourceMode": {
+        "id": "arm64-2vcpu-4gb",
+        "architecture": "arm64",
+        "vCpu": 2,
+        "memoryGb": 4
+      },
+      "executionSeconds": 23.8,
+      "startupOverheadSeconds": 2,
+      "simulatedDurationSeconds": 25.8,
+      "startSeconds": 4.55,
+      "finishSeconds": 30.35,
+      "billableSeconds": 60,
+      "estimatedCostUsd": 0.001316664,
+      "profileProvenance": {
+        "kind": "synthetic-arm64-derived",
+        "source": "arm64-consistent-dominance-v1",
+        "sourceProfileId": "x86-2vcpu-4gb",
+        "baselineArchitecture": "x86_64",
+        "basePerformanceFactor": 0.85,
+        "deterministicJitterFactor": 1,
+        "effectivePerformanceFactor": 0.85,
+        "randomSeed": 20261010,
+        "notes": "Declared synthetic dominance control in which ARM64 execution time is 85% of corresponding x86_64 execution time for every task class and resource tier; ARM64 also retains its architecture-specific price rates. Factor multiplies x86 execution time; startup overhead is unchanged."
+      }
+    },
+    {
+      "taskId": "transform-b",
+      "taskClass": "transform",
+      "resourceMode": {
+        "id": "arm64-2vcpu-4gb",
+        "architecture": "arm64",
+        "vCpu": 2,
+        "memoryGb": 4
+      },
+      "executionSeconds": 18.7,
+      "startupOverheadSeconds": 2,
+      "simulatedDurationSeconds": 20.7,
+      "startSeconds": 4.55,
+      "finishSeconds": 25.25,
+      "billableSeconds": 60,
+      "estimatedCostUsd": 0.001316664,
+      "profileProvenance": {
+        "kind": "synthetic-arm64-derived",
+        "source": "arm64-consistent-dominance-v1",
+        "sourceProfileId": "x86-2vcpu-4gb",
+        "baselineArchitecture": "x86_64",
+        "basePerformanceFactor": 0.85,
+        "deterministicJitterFactor": 1,
+        "effectivePerformanceFactor": 0.85,
+        "randomSeed": 20261010,
+        "notes": "Declared synthetic dominance control in which ARM64 execution time is 85% of corresponding x86_64 execution time for every task class and resource tier; ARM64 also retains its architecture-specific price rates. Factor multiplies x86 execution time; startup overhead is unchanged."
+      }
+    },
+    {
+      "taskId": "aggregate",
+      "taskClass": "aggregate",
+      "resourceMode": {
+        "id": "arm64-4vcpu-8gb",
+        "architecture": "arm64",
+        "vCpu": 4,
+        "memoryGb": 8
+      },
+      "executionSeconds": 6.8,
+      "startupOverheadSeconds": 2,
+      "simulatedDurationSeconds": 8.8,
+      "startSeconds": 30.35,
+      "finishSeconds": 39.150000000000006,
+      "billableSeconds": 60,
+      "estimatedCostUsd": 0.002633328,
+      "profileProvenance": {
+        "kind": "synthetic-arm64-derived",
+        "source": "arm64-consistent-dominance-v1",
+        "sourceProfileId": "x86-4vcpu-8gb",
+        "baselineArchitecture": "x86_64",
+        "basePerformanceFactor": 0.85,
+        "deterministicJitterFactor": 1,
+        "effectivePerformanceFactor": 0.85,
+        "randomSeed": 20261010,
+        "notes": "Declared synthetic dominance control in which ARM64 execution time is 85% of corresponding x86_64 execution time for every task class and resource tier; ARM64 also retains its architecture-specific price rates. Factor multiplies x86 execution time; startup overhead is unchanged."
+      }
+    },
+    {
+      "taskId": "publish",
+      "taskClass": "publish",
+      "resourceMode": {
+        "id": "arm64-4vcpu-8gb",
+        "architecture": "arm64",
+        "vCpu": 4,
+        "memoryGb": 8
+      },
+      "executionSeconds": 3.4,
+      "startupOverheadSeconds": 2,
+      "simulatedDurationSeconds": 5.4,
+      "startSeconds": 39.150000000000006,
+      "finishSeconds": 44.550000000000004,
+      "billableSeconds": 60,
+      "estimatedCostUsd": 0.002633328,
+      "profileProvenance": {
+        "kind": "synthetic-arm64-derived",
+        "source": "arm64-consistent-dominance-v1",
+        "sourceProfileId": "x86-4vcpu-8gb",
+        "baselineArchitecture": "x86_64",
+        "basePerformanceFactor": 0.85,
+        "deterministicJitterFactor": 1,
+        "effectivePerformanceFactor": 0.85,
+        "randomSeed": 20261010,
+        "notes": "Declared synthetic dominance control in which ARM64 execution time is 85% of corresponding x86_64 execution time for every task class and resource tier; ARM64 also retains its architecture-specific price rates. Factor multiplies x86 execution time; startup overhead is unchanged."
+      }
+    }
+  ],
+  "dependencyCriticalPathTaskIds": [
+    "ingest",
+    "transform-a",
+    "aggregate",
+    "publish"
+  ],
+  "feasible": true,
+  "schedulingDecisionOverheadMs": 0.05130699999998001,
+  "selectionIterations": 1,
+  "architectureDistribution": {
+    "x86_64": 0,
+    "arm64": 5
+  }
+}

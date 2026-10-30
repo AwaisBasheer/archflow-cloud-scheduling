@@ -1,0 +1,195 @@
+{
+  "experimentId": "forkjoin-neutral-relaxed-archflow-no-architecture-x86",
+  "performanceDataKind": "shared-workflow",
+  "architectureRestriction": "JOINT",
+  "architecturePerformanceProfileSet": "neutral-equal-performance-v1",
+  "architecturePerformanceRandomSeed": 20261010,
+  "methodId": "archflow-no-architecture-x86",
+  "workloadId": "forkjoin-neutral",
+  "deadlineCondition": "relaxed",
+  "pricingRegion": "us-east-1",
+  "pricingRetrievedAt": "2026-10-10",
+  "pricingSource": "https://aws.amazon.com/fargate/pricing/",
+  "schemaVersion": 1,
+  "schedulerId": "archflow-h-joint-deadline-cost-v1",
+  "workflowId": "synthetic-fork-join",
+  "deadlineSeconds": 180,
+  "simulatedMakespanSeconds": 178,
+  "estimatedExecutionCostUsd": 0.0012994015000000001,
+  "deadlineMet": true,
+  "taskAssignments": [
+    {
+      "taskId": "ingest",
+      "taskClass": "ingest",
+      "resourceMode": {
+        "id": "x86-0.25vcpu-0.5gb",
+        "architecture": "x86_64",
+        "vCpu": 0.25,
+        "memoryGb": 0.5
+      },
+      "executionSeconds": 8,
+      "startupOverheadSeconds": 2,
+      "simulatedDurationSeconds": 10,
+      "startSeconds": 0,
+      "finishSeconds": 10,
+      "billableSeconds": 60,
+      "estimatedCostUsd": 0.00020571,
+      "profileProvenance": {
+        "kind": "synthetic",
+        "source": "phase3-synthetic-v1",
+        "notes": "Deterministic synthetic duration."
+      }
+    },
+    {
+      "taskId": "transform-a",
+      "taskClass": "transform",
+      "resourceMode": {
+        "id": "x86-0.25vcpu-0.5gb",
+        "architecture": "x86_64",
+        "vCpu": 0.25,
+        "memoryGb": 0.5
+      },
+      "executionSeconds": 120,
+      "startupOverheadSeconds": 2,
+      "simulatedDurationSeconds": 122,
+      "startSeconds": 10,
+      "finishSeconds": 132,
+      "billableSeconds": 122,
+      "estimatedCostUsd": 0.000418277,
+      "profileProvenance": {
+        "kind": "synthetic",
+        "source": "phase3-synthetic-v1",
+        "notes": "Deterministic synthetic duration."
+      }
+    },
+    {
+      "taskId": "transform-b",
+      "taskClass": "transform",
+      "resourceMode": {
+        "id": "x86-0.25vcpu-0.5gb",
+        "architecture": "x86_64",
+        "vCpu": 0.25,
+        "memoryGb": 0.5
+      },
+      "executionSeconds": 75,
+      "startupOverheadSeconds": 2,
+      "simulatedDurationSeconds": 77,
+      "startSeconds": 10,
+      "finishSeconds": 87,
+      "billableSeconds": 77,
+      "estimatedCostUsd": 0.0002639945,
+      "profileProvenance": {
+        "kind": "synthetic",
+        "source": "phase3-synthetic-v1",
+        "notes": "Deterministic synthetic duration."
+      }
+    },
+    {
+      "taskId": "aggregate",
+      "taskClass": "aggregate",
+      "resourceMode": {
+        "id": "x86-0.25vcpu-0.5gb",
+        "architecture": "x86_64",
+        "vCpu": 0.25,
+        "memoryGb": 0.5
+      },
+      "executionSeconds": 30,
+      "startupOverheadSeconds": 2,
+      "simulatedDurationSeconds": 32,
+      "startSeconds": 132,
+      "finishSeconds": 164,
+      "billableSeconds": 60,
+      "estimatedCostUsd": 0.00020571,
+      "profileProvenance": {
+        "kind": "synthetic",
+        "source": "phase3-synthetic-v1",
+        "notes": "Deterministic synthetic duration."
+      }
+    },
+    {
+      "taskId": "publish",
+      "taskClass": "publish",
+      "resourceMode": {
+        "id": "x86-0.25vcpu-0.5gb",
+        "architecture": "x86_64",
+        "vCpu": 0.25,
+        "memoryGb": 0.5
+      },
+      "executionSeconds": 12,
+      "startupOverheadSeconds": 2,
+      "simulatedDurationSeconds": 14,
+      "startSeconds": 164,
+      "finishSeconds": 178,
+      "billableSeconds": 60,
+      "estimatedCostUsd": 0.00020571,
+      "profileProvenance": {
+        "kind": "synthetic",
+        "source": "phase3-synthetic-v1",
+        "notes": "Deterministic synthetic duration."
+      }
+    }
+  ],
+  "dependencyCriticalPathTaskIds": [
+    "ingest",
+    "transform-a",
+    "aggregate",
+    "publish"
+  ],
+  "feasible": true,
+  "schedulingDecisionOverheadMs": 0.3539609999999982,
+  "selectionIterations": 1,
+  "allowArchitectureSelection": false,
+  "fixedArchitecture": "X86_64",
+  "architectureDistribution": {
+    "x86_64": 5,
+    "arm64": 0
+  },
+  "taskSchedulingAnalysis": [
+    {
+      "taskId": "ingest",
+      "earliestPossibleStartSeconds": 0,
+      "earliestPossibleFinishSeconds": 5,
+      "fastestDownstreamPathSeconds": 43,
+      "staticSlackSeconds": 137,
+      "selectedSlackSeconds": 2,
+      "finalCriticalPath": true
+    },
+    {
+      "taskId": "transform-a",
+      "earliestPossibleStartSeconds": 5,
+      "earliestPossibleFinishSeconds": 27,
+      "fastestDownstreamPathSeconds": 38,
+      "staticSlackSeconds": 137,
+      "selectedSlackSeconds": 2,
+      "finalCriticalPath": true
+    },
+    {
+      "taskId": "transform-b",
+      "earliestPossibleStartSeconds": 5,
+      "earliestPossibleFinishSeconds": 23,
+      "fastestDownstreamPathSeconds": 34,
+      "staticSlackSeconds": 141,
+      "selectedSlackSeconds": 47,
+      "finalCriticalPath": false
+    },
+    {
+      "taskId": "aggregate",
+      "earliestPossibleStartSeconds": 27,
+      "earliestPossibleFinishSeconds": 37,
+      "fastestDownstreamPathSeconds": 16,
+      "staticSlackSeconds": 137,
+      "selectedSlackSeconds": 2,
+      "finalCriticalPath": true
+    },
+    {
+      "taskId": "publish",
+      "earliestPossibleStartSeconds": 37,
+      "earliestPossibleFinishSeconds": 43,
+      "fastestDownstreamPathSeconds": 6,
+      "staticSlackSeconds": 137,
+      "selectedSlackSeconds": 2,
+      "finalCriticalPath": true
+    }
+  ],
+  "decisionTrace": []
+}

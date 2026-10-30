@@ -1,0 +1,225 @@
+{
+  "experimentId": "forkjoin-arm-dominant-relaxed-archflow-full",
+  "performanceDataKind": "shared-workflow",
+  "architectureRestriction": "JOINT",
+  "architecturePerformanceProfileSet": "arm64-consistent-dominance-v1",
+  "architecturePerformanceRandomSeed": 20261010,
+  "methodId": "archflow-full",
+  "workloadId": "forkjoin-arm-dominant",
+  "deadlineCondition": "relaxed",
+  "pricingRegion": "us-east-1",
+  "pricingRetrievedAt": "2026-10-10",
+  "pricingSource": "https://aws.amazon.com/fargate/pricing/",
+  "schemaVersion": 1,
+  "schedulerId": "archflow-h-joint-deadline-cost-v1",
+  "workflowId": "synthetic-fork-join",
+  "deadlineSeconds": 160,
+  "simulatedMakespanSeconds": 152.5,
+  "estimatedExecutionCostUsd": 0.0009600675,
+  "deadlineMet": true,
+  "taskAssignments": [
+    {
+      "taskId": "ingest",
+      "taskClass": "ingest",
+      "resourceMode": {
+        "id": "arm64-0.25vcpu-0.5gb",
+        "architecture": "arm64",
+        "vCpu": 0.25,
+        "memoryGb": 0.5
+      },
+      "executionSeconds": 6.8,
+      "startupOverheadSeconds": 2,
+      "simulatedDurationSeconds": 8.8,
+      "startSeconds": 0,
+      "finishSeconds": 8.8,
+      "billableSeconds": 60,
+      "estimatedCostUsd": 0.000164583,
+      "profileProvenance": {
+        "kind": "synthetic-arm64-derived",
+        "source": "arm64-consistent-dominance-v1",
+        "sourceProfileId": "x86-0.25vcpu-0.5gb",
+        "baselineArchitecture": "x86_64",
+        "basePerformanceFactor": 0.85,
+        "deterministicJitterFactor": 1,
+        "effectivePerformanceFactor": 0.85,
+        "randomSeed": 20261010,
+        "notes": "Declared synthetic dominance control in which ARM64 execution time is 85% of corresponding x86_64 execution time for every task class and resource tier; ARM64 also retains its architecture-specific price rates. Factor multiplies x86 execution time; startup overhead is unchanged."
+      }
+    },
+    {
+      "taskId": "transform-a",
+      "taskClass": "transform",
+      "resourceMode": {
+        "id": "arm64-0.25vcpu-0.5gb",
+        "architecture": "arm64",
+        "vCpu": 0.25,
+        "memoryGb": 0.5
+      },
+      "executionSeconds": 102,
+      "startupOverheadSeconds": 2,
+      "simulatedDurationSeconds": 104,
+      "startSeconds": 8.8,
+      "finishSeconds": 112.8,
+      "billableSeconds": 104,
+      "estimatedCostUsd": 0.0002852772,
+      "profileProvenance": {
+        "kind": "synthetic-arm64-derived",
+        "source": "arm64-consistent-dominance-v1",
+        "sourceProfileId": "x86-0.25vcpu-0.5gb",
+        "baselineArchitecture": "x86_64",
+        "basePerformanceFactor": 0.85,
+        "deterministicJitterFactor": 1,
+        "effectivePerformanceFactor": 0.85,
+        "randomSeed": 20261010,
+        "notes": "Declared synthetic dominance control in which ARM64 execution time is 85% of corresponding x86_64 execution time for every task class and resource tier; ARM64 also retains its architecture-specific price rates. Factor multiplies x86 execution time; startup overhead is unchanged."
+      }
+    },
+    {
+      "taskId": "transform-b",
+      "taskClass": "transform",
+      "resourceMode": {
+        "id": "arm64-0.25vcpu-0.5gb",
+        "architecture": "arm64",
+        "vCpu": 0.25,
+        "memoryGb": 0.5
+      },
+      "executionSeconds": 63.75,
+      "startupOverheadSeconds": 2,
+      "simulatedDurationSeconds": 65.75,
+      "startSeconds": 8.8,
+      "finishSeconds": 74.55,
+      "billableSeconds": 66,
+      "estimatedCostUsd": 0.0001810413,
+      "profileProvenance": {
+        "kind": "synthetic-arm64-derived",
+        "source": "arm64-consistent-dominance-v1",
+        "sourceProfileId": "x86-0.25vcpu-0.5gb",
+        "baselineArchitecture": "x86_64",
+        "basePerformanceFactor": 0.85,
+        "deterministicJitterFactor": 1,
+        "effectivePerformanceFactor": 0.85,
+        "randomSeed": 20261010,
+        "notes": "Declared synthetic dominance control in which ARM64 execution time is 85% of corresponding x86_64 execution time for every task class and resource tier; ARM64 also retains its architecture-specific price rates. Factor multiplies x86 execution time; startup overhead is unchanged."
+      }
+    },
+    {
+      "taskId": "aggregate",
+      "taskClass": "aggregate",
+      "resourceMode": {
+        "id": "arm64-0.25vcpu-0.5gb",
+        "architecture": "arm64",
+        "vCpu": 0.25,
+        "memoryGb": 0.5
+      },
+      "executionSeconds": 25.5,
+      "startupOverheadSeconds": 2,
+      "simulatedDurationSeconds": 27.5,
+      "startSeconds": 112.8,
+      "finishSeconds": 140.3,
+      "billableSeconds": 60,
+      "estimatedCostUsd": 0.000164583,
+      "profileProvenance": {
+        "kind": "synthetic-arm64-derived",
+        "source": "arm64-consistent-dominance-v1",
+        "sourceProfileId": "x86-0.25vcpu-0.5gb",
+        "baselineArchitecture": "x86_64",
+        "basePerformanceFactor": 0.85,
+        "deterministicJitterFactor": 1,
+        "effectivePerformanceFactor": 0.85,
+        "randomSeed": 20261010,
+        "notes": "Declared synthetic dominance control in which ARM64 execution time is 85% of corresponding x86_64 execution time for every task class and resource tier; ARM64 also retains its architecture-specific price rates. Factor multiplies x86 execution time; startup overhead is unchanged."
+      }
+    },
+    {
+      "taskId": "publish",
+      "taskClass": "publish",
+      "resourceMode": {
+        "id": "arm64-0.25vcpu-0.5gb",
+        "architecture": "arm64",
+        "vCpu": 0.25,
+        "memoryGb": 0.5
+      },
+      "executionSeconds": 10.2,
+      "startupOverheadSeconds": 2,
+      "simulatedDurationSeconds": 12.2,
+      "startSeconds": 140.3,
+      "finishSeconds": 152.5,
+      "billableSeconds": 60,
+      "estimatedCostUsd": 0.000164583,
+      "profileProvenance": {
+        "kind": "synthetic-arm64-derived",
+        "source": "arm64-consistent-dominance-v1",
+        "sourceProfileId": "x86-0.25vcpu-0.5gb",
+        "baselineArchitecture": "x86_64",
+        "basePerformanceFactor": 0.85,
+        "deterministicJitterFactor": 1,
+        "effectivePerformanceFactor": 0.85,
+        "randomSeed": 20261010,
+        "notes": "Declared synthetic dominance control in which ARM64 execution time is 85% of corresponding x86_64 execution time for every task class and resource tier; ARM64 also retains its architecture-specific price rates. Factor multiplies x86 execution time; startup overhead is unchanged."
+      }
+    }
+  ],
+  "dependencyCriticalPathTaskIds": [
+    "ingest",
+    "transform-a",
+    "aggregate",
+    "publish"
+  ],
+  "feasible": true,
+  "schedulingDecisionOverheadMs": 0.7000270000000057,
+  "selectionIterations": 1,
+  "allowArchitectureSelection": true,
+  "fixedArchitecture": null,
+  "architectureDistribution": {
+    "x86_64": 0,
+    "arm64": 5
+  },
+  "taskSchedulingAnalysis": [
+    {
+      "taskId": "ingest",
+      "earliestPossibleStartSeconds": 0,
+      "earliestPossibleFinishSeconds": 4.55,
+      "fastestDownstreamPathSeconds": 37.75,
+      "staticSlackSeconds": 122.25,
+      "selectedSlackSeconds": 7.5,
+      "finalCriticalPath": true
+    },
+    {
+      "taskId": "transform-a",
+      "earliestPossibleStartSeconds": 4.55,
+      "earliestPossibleFinishSeconds": 23.55,
+      "fastestDownstreamPathSeconds": 33.2,
+      "staticSlackSeconds": 122.24999999999999,
+      "selectedSlackSeconds": 7.5,
+      "finalCriticalPath": true
+    },
+    {
+      "taskId": "transform-b",
+      "earliestPossibleStartSeconds": 4.55,
+      "earliestPossibleFinishSeconds": 20.15,
+      "fastestDownstreamPathSeconds": 29.8,
+      "staticSlackSeconds": 125.64999999999999,
+      "selectedSlackSeconds": 45.749999999999986,
+      "finalCriticalPath": false
+    },
+    {
+      "taskId": "aggregate",
+      "earliestPossibleStartSeconds": 23.55,
+      "earliestPossibleFinishSeconds": 32.35,
+      "fastestDownstreamPathSeconds": 14.200000000000001,
+      "staticSlackSeconds": 122.24999999999999,
+      "selectedSlackSeconds": 7.5,
+      "finalCriticalPath": true
+    },
+    {
+      "taskId": "publish",
+      "earliestPossibleStartSeconds": 32.35,
+      "earliestPossibleFinishSeconds": 37.75,
+      "fastestDownstreamPathSeconds": 5.4,
+      "staticSlackSeconds": 122.25,
+      "selectedSlackSeconds": 7.499999999999989,
+      "finalCriticalPath": true
+    }
+  ],
+  "decisionTrace": []
+}

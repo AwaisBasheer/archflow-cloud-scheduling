@@ -1,0 +1,307 @@
+{
+  "experimentId": "vidpro-mixed-tight-archflow-no-architecture-x86",
+  "performanceDataKind": "chunkfunc-proxy",
+  "architectureRestriction": "JOINT",
+  "architecturePerformanceProfileSet": "vidpro-task-class-mixed-v1",
+  "architecturePerformanceRandomSeed": 20261010,
+  "methodId": "archflow-no-architecture-x86",
+  "workloadId": "vidpro-mixed",
+  "deadlineCondition": "tight",
+  "pricingRegion": "us-east-1",
+  "pricingRetrievedAt": "2026-10-10",
+  "pricingSource": "https://aws.amazon.com/fargate/pricing/",
+  "schemaVersion": 1,
+  "schedulerId": "archflow-h-joint-deadline-cost-v1",
+  "workflowId": "vidpro-scenario-01-input-500-Mib-fargate-proxy",
+  "deadlineSeconds": 52,
+  "simulatedMakespanSeconds": 51.794999999999995,
+  "estimatedExecutionCostUsd": 0.00761127,
+  "deadlineMet": true,
+  "taskAssignments": [
+    {
+      "taskId": "validate-video",
+      "taskClass": "validate-video",
+      "resourceMode": {
+        "id": "x86-0.25vcpu-0.5gb",
+        "architecture": "x86_64",
+        "vCpu": 0.25,
+        "memoryGb": 0.5
+      },
+      "executionSeconds": 0.254,
+      "startupOverheadSeconds": 2,
+      "simulatedDurationSeconds": 2.254,
+      "startSeconds": 0,
+      "finishSeconds": 2.254,
+      "billableSeconds": 60,
+      "estimatedCostUsd": 0.00020571,
+      "profileProvenance": {
+        "kind": "chunkfunc-proxy",
+        "source": "video-processing/scenario-01-input-500-Mib/validate-video",
+        "sourceProfileId": "512mib-333m",
+        "sourceInputSizeBytes": 525049424,
+        "notes": "Deterministic proxy mapping from original ChunkFunc GCF-like profiles to representative Fargate tiers by nearest/identical CPU capacity, with memory differences explicitly retained in sourceProfileId. These are not Fargate measurements."
+      }
+    },
+    {
+      "taskId": "cut-video-segment-a",
+      "taskClass": "cut-video-segment",
+      "resourceMode": {
+        "id": "x86-4vcpu-8gb",
+        "architecture": "x86_64",
+        "vCpu": 4,
+        "memoryGb": 8
+      },
+      "executionSeconds": 43.095,
+      "startupOverheadSeconds": 2,
+      "simulatedDurationSeconds": 45.095,
+      "startSeconds": 2.254,
+      "finishSeconds": 47.349,
+      "billableSeconds": 60,
+      "estimatedCostUsd": 0.00329136,
+      "profileProvenance": {
+        "kind": "chunkfunc-proxy",
+        "source": "video-processing/scenario-01-input-500-Mib/cut-video-segment-a",
+        "sourceProfileId": "16384mib-4000m",
+        "sourceInputSizeBytes": 210019770,
+        "notes": "Deterministic proxy mapping from original ChunkFunc GCF-like profiles to representative Fargate tiers by nearest/identical CPU capacity, with memory differences explicitly retained in sourceProfileId. These are not Fargate measurements."
+      }
+    },
+    {
+      "taskId": "cut-video-segment-b",
+      "taskClass": "cut-video-segment",
+      "resourceMode": {
+        "id": "x86-4vcpu-8gb",
+        "architecture": "x86_64",
+        "vCpu": 4,
+        "memoryGb": 8
+      },
+      "executionSeconds": 43.095,
+      "startupOverheadSeconds": 2,
+      "simulatedDurationSeconds": 45.095,
+      "startSeconds": 2.254,
+      "finishSeconds": 47.349,
+      "billableSeconds": 60,
+      "estimatedCostUsd": 0.00329136,
+      "profileProvenance": {
+        "kind": "chunkfunc-proxy",
+        "source": "video-processing/scenario-01-input-500-Mib/cut-video-segment-b",
+        "sourceProfileId": "16384mib-4000m",
+        "sourceInputSizeBytes": 210019770,
+        "notes": "Deterministic proxy mapping from original ChunkFunc GCF-like profiles to representative Fargate tiers by nearest/identical CPU capacity, with memory differences explicitly retained in sourceProfileId. These are not Fargate measurements."
+      }
+    },
+    {
+      "taskId": "merge-videos",
+      "taskClass": "merge-videos",
+      "resourceMode": {
+        "id": "x86-1vcpu-2gb",
+        "architecture": "x86_64",
+        "vCpu": 1,
+        "memoryGb": 2
+      },
+      "executionSeconds": 2.446,
+      "startupOverheadSeconds": 2,
+      "simulatedDurationSeconds": 4.446,
+      "startSeconds": 47.349,
+      "finishSeconds": 51.794999999999995,
+      "billableSeconds": 60,
+      "estimatedCostUsd": 0.00082284,
+      "profileProvenance": {
+        "kind": "chunkfunc-proxy",
+        "source": "video-processing/scenario-01-input-500-Mib/merge-videos",
+        "sourceProfileId": "2048mib-1000m",
+        "sourceInputSizeBytes": 37873978,
+        "notes": "Deterministic proxy mapping from original ChunkFunc GCF-like profiles to representative Fargate tiers by nearest/identical CPU capacity, with memory differences explicitly retained in sourceProfileId. These are not Fargate measurements."
+      }
+    }
+  ],
+  "dependencyCriticalPathTaskIds": [
+    "validate-video",
+    "cut-video-segment-a",
+    "merge-videos"
+  ],
+  "feasible": true,
+  "schedulingDecisionOverheadMs": 6.147530000000003,
+  "selectionIterations": 10,
+  "allowArchitectureSelection": false,
+  "fixedArchitecture": "X86_64",
+  "architectureDistribution": {
+    "x86_64": 4,
+    "arm64": 0
+  },
+  "taskSchedulingAnalysis": [
+    {
+      "taskId": "validate-video",
+      "earliestPossibleStartSeconds": 0,
+      "earliestPossibleFinishSeconds": 2.101,
+      "fastestDownstreamPathSeconds": 50.788,
+      "staticSlackSeconds": 1.2120000000000033,
+      "selectedSlackSeconds": 0.2050000000000054,
+      "finalCriticalPath": true
+    },
+    {
+      "taskId": "cut-video-segment-a",
+      "earliestPossibleStartSeconds": 2.101,
+      "earliestPossibleFinishSeconds": 47.196,
+      "fastestDownstreamPathSeconds": 48.687,
+      "staticSlackSeconds": 1.2120000000000033,
+      "selectedSlackSeconds": 0.2050000000000054,
+      "finalCriticalPath": true
+    },
+    {
+      "taskId": "cut-video-segment-b",
+      "earliestPossibleStartSeconds": 2.101,
+      "earliestPossibleFinishSeconds": 47.196,
+      "fastestDownstreamPathSeconds": 48.687,
+      "staticSlackSeconds": 1.2120000000000033,
+      "selectedSlackSeconds": 0.2050000000000054,
+      "finalCriticalPath": false
+    },
+    {
+      "taskId": "merge-videos",
+      "earliestPossibleStartSeconds": 47.196,
+      "earliestPossibleFinishSeconds": 50.788,
+      "fastestDownstreamPathSeconds": 3.592,
+      "staticSlackSeconds": 1.212000000000002,
+      "selectedSlackSeconds": 0.20500000000000362,
+      "finalCriticalPath": true
+    }
+  ],
+  "decisionTrace": [
+    {
+      "phase": "deadline-improvement",
+      "taskId": "merge-videos",
+      "fromResourceModeId": "x86-0.25vcpu-0.5gb",
+      "toResourceModeId": "x86-0.5vcpu-1gb",
+      "criticalPathBefore": [
+        "validate-video",
+        "cut-video-segment-a",
+        "merge-videos"
+      ],
+      "makespanBeforeSeconds": 200.768,
+      "makespanAfterSeconds": 193.939,
+      "costBeforeUsd": 0.0016799649999999998,
+      "costAfterUsd": 0.0018856749999999999
+    },
+    {
+      "phase": "deadline-improvement",
+      "taskId": "merge-videos",
+      "fromResourceModeId": "x86-0.5vcpu-1gb",
+      "toResourceModeId": "x86-1vcpu-2gb",
+      "criticalPathBefore": [
+        "validate-video",
+        "cut-video-segment-a",
+        "merge-videos"
+      ],
+      "makespanBeforeSeconds": 193.939,
+      "makespanAfterSeconds": 191.44,
+      "costBeforeUsd": 0.0018856749999999999,
+      "costAfterUsd": 0.002297095
+    },
+    {
+      "phase": "deadline-improvement",
+      "taskId": "merge-videos",
+      "fromResourceModeId": "x86-1vcpu-2gb",
+      "toResourceModeId": "x86-2vcpu-4gb",
+      "criticalPathBefore": [
+        "validate-video",
+        "cut-video-segment-a",
+        "merge-videos"
+      ],
+      "makespanBeforeSeconds": 191.44,
+      "makespanAfterSeconds": 190.586,
+      "costBeforeUsd": 0.002297095,
+      "costAfterUsd": 0.003119935
+    },
+    {
+      "phase": "deadline-improvement",
+      "taskId": "validate-video",
+      "fromResourceModeId": "x86-0.25vcpu-0.5gb",
+      "toResourceModeId": "x86-0.5vcpu-1gb",
+      "criticalPathBefore": [
+        "validate-video",
+        "cut-video-segment-a",
+        "merge-videos"
+      ],
+      "makespanBeforeSeconds": 190.586,
+      "makespanAfterSeconds": 190.449,
+      "costBeforeUsd": 0.003119935,
+      "costAfterUsd": 0.003325645
+    },
+    {
+      "phase": "deadline-improvement",
+      "taskId": "validate-video",
+      "fromResourceModeId": "x86-0.5vcpu-1gb",
+      "toResourceModeId": "x86-4vcpu-8gb",
+      "criticalPathBefore": [
+        "validate-video",
+        "cut-video-segment-a",
+        "merge-videos"
+      ],
+      "makespanBeforeSeconds": 190.449,
+      "makespanAfterSeconds": 190.43300000000002,
+      "costBeforeUsd": 0.003325645,
+      "costAfterUsd": 0.006205585
+    },
+    {
+      "phase": "deadline-improvement",
+      "taskId": "cut-video-segment-a",
+      "fromResourceModeId": "x86-0.25vcpu-0.5gb",
+      "toResourceModeId": "x86-4vcpu-8gb",
+      "criticalPathBefore": [
+        "validate-video",
+        "cut-video-segment-a",
+        "merge-videos"
+      ],
+      "makespanBeforeSeconds": 190.43300000000002,
+      "makespanAfterSeconds": 190.43300000000002,
+      "costBeforeUsd": 0.006205585,
+      "costAfterUsd": 0.0088626725
+    },
+    {
+      "phase": "deadline-improvement",
+      "taskId": "cut-video-segment-b",
+      "fromResourceModeId": "x86-0.25vcpu-0.5gb",
+      "toResourceModeId": "x86-4vcpu-8gb",
+      "criticalPathBefore": [
+        "validate-video",
+        "cut-video-segment-b",
+        "merge-videos"
+      ],
+      "makespanBeforeSeconds": 190.43300000000002,
+      "makespanAfterSeconds": 50.788,
+      "costBeforeUsd": 0.0088626725,
+      "costAfterUsd": 0.01151976
+    },
+    {
+      "phase": "cost-refinement",
+      "taskId": "validate-video",
+      "fromResourceModeId": "x86-4vcpu-8gb",
+      "toResourceModeId": "x86-0.25vcpu-0.5gb",
+      "criticalPathBefore": [
+        "validate-video",
+        "cut-video-segment-a",
+        "merge-videos"
+      ],
+      "makespanBeforeSeconds": 50.788,
+      "makespanAfterSeconds": 50.940999999999995,
+      "costBeforeUsd": 0.01151976,
+      "costAfterUsd": 0.00843411
+    },
+    {
+      "phase": "cost-refinement",
+      "taskId": "merge-videos",
+      "fromResourceModeId": "x86-2vcpu-4gb",
+      "toResourceModeId": "x86-1vcpu-2gb",
+      "criticalPathBefore": [
+        "validate-video",
+        "cut-video-segment-a",
+        "merge-videos"
+      ],
+      "makespanBeforeSeconds": 50.940999999999995,
+      "makespanAfterSeconds": 51.794999999999995,
+      "costBeforeUsd": 0.00843411,
+      "costAfterUsd": 0.00761127
+    }
+  ]
+}

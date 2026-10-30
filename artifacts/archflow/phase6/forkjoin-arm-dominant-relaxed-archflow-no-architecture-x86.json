@@ -1,0 +1,212 @@
+{
+  "experimentId": "forkjoin-arm-dominant-relaxed-archflow-no-architecture-x86",
+  "performanceDataKind": "shared-workflow",
+  "architectureRestriction": "JOINT",
+  "architecturePerformanceProfileSet": "arm64-consistent-dominance-v1",
+  "architecturePerformanceRandomSeed": 20261010,
+  "methodId": "archflow-no-architecture-x86",
+  "workloadId": "forkjoin-arm-dominant",
+  "deadlineCondition": "relaxed",
+  "pricingRegion": "us-east-1",
+  "pricingRetrievedAt": "2026-10-10",
+  "pricingSource": "https://aws.amazon.com/fargate/pricing/",
+  "schemaVersion": 1,
+  "schedulerId": "archflow-h-joint-deadline-cost-v1",
+  "workflowId": "synthetic-fork-join",
+  "deadlineSeconds": 160,
+  "simulatedMakespanSeconds": 133,
+  "estimatedExecutionCostUsd": 0.0013748285,
+  "deadlineMet": true,
+  "taskAssignments": [
+    {
+      "taskId": "ingest",
+      "taskClass": "ingest",
+      "resourceMode": {
+        "id": "x86-0.25vcpu-0.5gb",
+        "architecture": "x86_64",
+        "vCpu": 0.25,
+        "memoryGb": 0.5
+      },
+      "executionSeconds": 8,
+      "startupOverheadSeconds": 2,
+      "simulatedDurationSeconds": 10,
+      "startSeconds": 0,
+      "finishSeconds": 10,
+      "billableSeconds": 60,
+      "estimatedCostUsd": 0.00020571,
+      "profileProvenance": {
+        "kind": "synthetic",
+        "source": "phase3-synthetic-v1",
+        "notes": "Deterministic synthetic duration."
+      }
+    },
+    {
+      "taskId": "transform-a",
+      "taskClass": "transform",
+      "resourceMode": {
+        "id": "x86-0.5vcpu-1gb",
+        "architecture": "x86_64",
+        "vCpu": 0.5,
+        "memoryGb": 1
+      },
+      "executionSeconds": 70,
+      "startupOverheadSeconds": 2,
+      "simulatedDurationSeconds": 72,
+      "startSeconds": 10,
+      "finishSeconds": 82,
+      "billableSeconds": 72,
+      "estimatedCostUsd": 0.000493704,
+      "profileProvenance": {
+        "kind": "synthetic",
+        "source": "phase3-synthetic-v1",
+        "notes": "Deterministic synthetic duration."
+      }
+    },
+    {
+      "taskId": "transform-b",
+      "taskClass": "transform",
+      "resourceMode": {
+        "id": "x86-0.25vcpu-0.5gb",
+        "architecture": "x86_64",
+        "vCpu": 0.25,
+        "memoryGb": 0.5
+      },
+      "executionSeconds": 75,
+      "startupOverheadSeconds": 2,
+      "simulatedDurationSeconds": 77,
+      "startSeconds": 10,
+      "finishSeconds": 87,
+      "billableSeconds": 77,
+      "estimatedCostUsd": 0.0002639945,
+      "profileProvenance": {
+        "kind": "synthetic",
+        "source": "phase3-synthetic-v1",
+        "notes": "Deterministic synthetic duration."
+      }
+    },
+    {
+      "taskId": "aggregate",
+      "taskClass": "aggregate",
+      "resourceMode": {
+        "id": "x86-0.25vcpu-0.5gb",
+        "architecture": "x86_64",
+        "vCpu": 0.25,
+        "memoryGb": 0.5
+      },
+      "executionSeconds": 30,
+      "startupOverheadSeconds": 2,
+      "simulatedDurationSeconds": 32,
+      "startSeconds": 87,
+      "finishSeconds": 119,
+      "billableSeconds": 60,
+      "estimatedCostUsd": 0.00020571,
+      "profileProvenance": {
+        "kind": "synthetic",
+        "source": "phase3-synthetic-v1",
+        "notes": "Deterministic synthetic duration."
+      }
+    },
+    {
+      "taskId": "publish",
+      "taskClass": "publish",
+      "resourceMode": {
+        "id": "x86-0.25vcpu-0.5gb",
+        "architecture": "x86_64",
+        "vCpu": 0.25,
+        "memoryGb": 0.5
+      },
+      "executionSeconds": 12,
+      "startupOverheadSeconds": 2,
+      "simulatedDurationSeconds": 14,
+      "startSeconds": 119,
+      "finishSeconds": 133,
+      "billableSeconds": 60,
+      "estimatedCostUsd": 0.00020571,
+      "profileProvenance": {
+        "kind": "synthetic",
+        "source": "phase3-synthetic-v1",
+        "notes": "Deterministic synthetic duration."
+      }
+    }
+  ],
+  "dependencyCriticalPathTaskIds": [
+    "ingest",
+    "transform-b",
+    "aggregate",
+    "publish"
+  ],
+  "feasible": true,
+  "schedulingDecisionOverheadMs": 0.7023609999999962,
+  "selectionIterations": 2,
+  "allowArchitectureSelection": false,
+  "fixedArchitecture": "X86_64",
+  "architectureDistribution": {
+    "x86_64": 5,
+    "arm64": 0
+  },
+  "taskSchedulingAnalysis": [
+    {
+      "taskId": "ingest",
+      "earliestPossibleStartSeconds": 0,
+      "earliestPossibleFinishSeconds": 5,
+      "fastestDownstreamPathSeconds": 43,
+      "staticSlackSeconds": 117,
+      "selectedSlackSeconds": 27,
+      "finalCriticalPath": true
+    },
+    {
+      "taskId": "transform-a",
+      "earliestPossibleStartSeconds": 5,
+      "earliestPossibleFinishSeconds": 27,
+      "fastestDownstreamPathSeconds": 38,
+      "staticSlackSeconds": 117,
+      "selectedSlackSeconds": 32,
+      "finalCriticalPath": false
+    },
+    {
+      "taskId": "transform-b",
+      "earliestPossibleStartSeconds": 5,
+      "earliestPossibleFinishSeconds": 23,
+      "fastestDownstreamPathSeconds": 34,
+      "staticSlackSeconds": 121,
+      "selectedSlackSeconds": 27,
+      "finalCriticalPath": true
+    },
+    {
+      "taskId": "aggregate",
+      "earliestPossibleStartSeconds": 27,
+      "earliestPossibleFinishSeconds": 37,
+      "fastestDownstreamPathSeconds": 16,
+      "staticSlackSeconds": 117,
+      "selectedSlackSeconds": 27,
+      "finalCriticalPath": true
+    },
+    {
+      "taskId": "publish",
+      "earliestPossibleStartSeconds": 37,
+      "earliestPossibleFinishSeconds": 43,
+      "fastestDownstreamPathSeconds": 6,
+      "staticSlackSeconds": 117,
+      "selectedSlackSeconds": 27,
+      "finalCriticalPath": true
+    }
+  ],
+  "decisionTrace": [
+    {
+      "phase": "deadline-improvement",
+      "taskId": "transform-a",
+      "fromResourceModeId": "x86-0.25vcpu-0.5gb",
+      "toResourceModeId": "x86-0.5vcpu-1gb",
+      "criticalPathBefore": [
+        "ingest",
+        "transform-a",
+        "aggregate",
+        "publish"
+      ],
+      "makespanBeforeSeconds": 178,
+      "makespanAfterSeconds": 133,
+      "costBeforeUsd": 0.0012994015000000001,
+      "costAfterUsd": 0.0013748285
+    }
+  ]
+}

@@ -1,0 +1,377 @@
+{
+  "experimentId": "vidpro-mixed-tight-archflow-full",
+  "performanceDataKind": "chunkfunc-proxy",
+  "architectureRestriction": "JOINT",
+  "architecturePerformanceProfileSet": "vidpro-task-class-mixed-v1",
+  "architecturePerformanceRandomSeed": 20261010,
+  "methodId": "archflow-full",
+  "workloadId": "vidpro-mixed",
+  "deadlineCondition": "tight",
+  "pricingRegion": "us-east-1",
+  "pricingRetrievedAt": "2026-10-10",
+  "pricingSource": "https://aws.amazon.com/fargate/pricing/",
+  "schemaVersion": 1,
+  "schedulerId": "archflow-h-joint-deadline-cost-v1",
+  "workflowId": "vidpro-scenario-01-input-500-Mib-fargate-proxy",
+  "deadlineSeconds": 52,
+  "simulatedMakespanSeconds": 51.501560796999996,
+  "estimatedExecutionCostUsd": 0.007405635,
+  "deadlineMet": true,
+  "taskAssignments": [
+    {
+      "taskId": "validate-video",
+      "taskClass": "validate-video",
+      "resourceMode": {
+        "id": "arm64-0.25vcpu-0.5gb",
+        "architecture": "arm64",
+        "vCpu": 0.25,
+        "memoryGb": 0.5
+      },
+      "executionSeconds": 0.240038446,
+      "startupOverheadSeconds": 2,
+      "simulatedDurationSeconds": 2.240038446,
+      "startSeconds": 0,
+      "finishSeconds": 2.240038446,
+      "billableSeconds": 60,
+      "estimatedCostUsd": 0.000164583,
+      "profileProvenance": {
+        "kind": "synthetic-arm64-derived",
+        "source": "vidpro-task-class-mixed-v1",
+        "sourceProfileId": "x86-0.25vcpu-0.5gb",
+        "sourceInputSizeBytes": 525049424,
+        "baselineArchitecture": "x86_64",
+        "basePerformanceFactor": 0.95,
+        "deterministicJitterFactor": 0.994771842,
+        "effectivePerformanceFactor": 0.94503325,
+        "randomSeed": 20261010,
+        "notes": "Synthetic mixed architecture sensitivity: validation and merge favor ARM64, while video segment cutting favors x86_64. A two-percent deterministic per-task/per-mode jitter prevents an unsupported constant architecture ratio. Factor multiplies x86 execution time; startup overhead is unchanged."
+      }
+    },
+    {
+      "taskId": "cut-video-segment-a",
+      "taskClass": "cut-video-segment",
+      "resourceMode": {
+        "id": "x86-4vcpu-8gb",
+        "architecture": "x86_64",
+        "vCpu": 4,
+        "memoryGb": 8
+      },
+      "executionSeconds": 43.095,
+      "startupOverheadSeconds": 2,
+      "simulatedDurationSeconds": 45.095,
+      "startSeconds": 2.240038446,
+      "finishSeconds": 47.335038446,
+      "billableSeconds": 60,
+      "estimatedCostUsd": 0.00329136,
+      "profileProvenance": {
+        "kind": "chunkfunc-proxy",
+        "source": "video-processing/scenario-01-input-500-Mib/cut-video-segment-a",
+        "sourceProfileId": "16384mib-4000m",
+        "sourceInputSizeBytes": 210019770,
+        "notes": "Deterministic proxy mapping from original ChunkFunc GCF-like profiles to representative Fargate tiers by nearest/identical CPU capacity, with memory differences explicitly retained in sourceProfileId. These are not Fargate measurements."
+      }
+    },
+    {
+      "taskId": "cut-video-segment-b",
+      "taskClass": "cut-video-segment",
+      "resourceMode": {
+        "id": "x86-4vcpu-8gb",
+        "architecture": "x86_64",
+        "vCpu": 4,
+        "memoryGb": 8
+      },
+      "executionSeconds": 43.095,
+      "startupOverheadSeconds": 2,
+      "simulatedDurationSeconds": 45.095,
+      "startSeconds": 2.240038446,
+      "finishSeconds": 47.335038446,
+      "billableSeconds": 60,
+      "estimatedCostUsd": 0.00329136,
+      "profileProvenance": {
+        "kind": "chunkfunc-proxy",
+        "source": "video-processing/scenario-01-input-500-Mib/cut-video-segment-b",
+        "sourceProfileId": "16384mib-4000m",
+        "sourceInputSizeBytes": 210019770,
+        "notes": "Deterministic proxy mapping from original ChunkFunc GCF-like profiles to representative Fargate tiers by nearest/identical CPU capacity, with memory differences explicitly retained in sourceProfileId. These are not Fargate measurements."
+      }
+    },
+    {
+      "taskId": "merge-videos",
+      "taskClass": "merge-videos",
+      "resourceMode": {
+        "id": "arm64-1vcpu-2gb",
+        "architecture": "arm64",
+        "vCpu": 1,
+        "memoryGb": 2
+      },
+      "executionSeconds": 2.166522351,
+      "startupOverheadSeconds": 2,
+      "simulatedDurationSeconds": 4.166522350999999,
+      "startSeconds": 47.335038446,
+      "finishSeconds": 51.501560796999996,
+      "billableSeconds": 60,
+      "estimatedCostUsd": 0.000658332,
+      "profileProvenance": {
+        "kind": "synthetic-arm64-derived",
+        "source": "vidpro-task-class-mixed-v1",
+        "sourceProfileId": "x86-1vcpu-2gb",
+        "sourceInputSizeBytes": 37873978,
+        "baselineArchitecture": "x86_64",
+        "basePerformanceFactor": 0.9,
+        "deterministicJitterFactor": 0.984156606,
+        "effectivePerformanceFactor": 0.885740945,
+        "randomSeed": 20261010,
+        "notes": "Synthetic mixed architecture sensitivity: validation and merge favor ARM64, while video segment cutting favors x86_64. A two-percent deterministic per-task/per-mode jitter prevents an unsupported constant architecture ratio. Factor multiplies x86 execution time; startup overhead is unchanged."
+      }
+    }
+  ],
+  "dependencyCriticalPathTaskIds": [
+    "validate-video",
+    "cut-video-segment-a",
+    "merge-videos"
+  ],
+  "feasible": true,
+  "schedulingDecisionOverheadMs": 5.295113999999998,
+  "selectionIterations": 14,
+  "allowArchitectureSelection": true,
+  "fixedArchitecture": null,
+  "architectureDistribution": {
+    "x86_64": 2,
+    "arm64": 2
+  },
+  "taskSchedulingAnalysis": [
+    {
+      "taskId": "validate-video",
+      "earliestPossibleStartSeconds": 0,
+      "earliestPossibleFinishSeconds": 2.094106913,
+      "fastestDownstreamPathSeconds": 50.61941028,
+      "staticSlackSeconds": 1.3805897200000032,
+      "selectedSlackSeconds": 0.49843920300000377,
+      "finalCriticalPath": true
+    },
+    {
+      "taskId": "cut-video-segment-a",
+      "earliestPossibleStartSeconds": 2.094106913,
+      "earliestPossibleFinishSeconds": 47.189106912999996,
+      "fastestDownstreamPathSeconds": 48.525303367,
+      "staticSlackSeconds": 1.3805897200000032,
+      "selectedSlackSeconds": 0.49843920300000377,
+      "finalCriticalPath": true
+    },
+    {
+      "taskId": "cut-video-segment-b",
+      "earliestPossibleStartSeconds": 2.094106913,
+      "earliestPossibleFinishSeconds": 47.189106912999996,
+      "fastestDownstreamPathSeconds": 48.525303367,
+      "staticSlackSeconds": 1.3805897200000032,
+      "selectedSlackSeconds": 0.49843920300000377,
+      "finalCriticalPath": false
+    },
+    {
+      "taskId": "merge-videos",
+      "earliestPossibleStartSeconds": 47.189106912999996,
+      "earliestPossibleFinishSeconds": 50.61941028,
+      "fastestDownstreamPathSeconds": 3.430303367,
+      "staticSlackSeconds": 1.3805897200000037,
+      "selectedSlackSeconds": 0.498439203000002,
+      "finalCriticalPath": true
+    }
+  ],
+  "decisionTrace": [
+    {
+      "phase": "deadline-improvement",
+      "taskId": "cut-video-segment-b",
+      "fromResourceModeId": "arm64-0.25vcpu-0.5gb",
+      "toResourceModeId": "x86-0.25vcpu-0.5gb",
+      "criticalPathBefore": [
+        "validate-video",
+        "cut-video-segment-b",
+        "merge-videos"
+      ],
+      "makespanBeforeSeconds": 216.021309527,
+      "makespanAfterSeconds": 212.859852339,
+      "costBeforeUsd": 0.0014263860000000002,
+      "costAfterUsd": 0.0015065624
+    },
+    {
+      "phase": "deadline-improvement",
+      "taskId": "cut-video-segment-a",
+      "fromResourceModeId": "arm64-0.25vcpu-0.5gb",
+      "toResourceModeId": "x86-0.25vcpu-0.5gb",
+      "criticalPathBefore": [
+        "validate-video",
+        "cut-video-segment-a",
+        "merge-videos"
+      ],
+      "makespanBeforeSeconds": 212.859852339,
+      "makespanAfterSeconds": 199.69869770300002,
+      "costBeforeUsd": 0.0015065624,
+      "costAfterUsd": 0.001597711
+    },
+    {
+      "phase": "deadline-improvement",
+      "taskId": "merge-videos",
+      "fromResourceModeId": "arm64-0.25vcpu-0.5gb",
+      "toResourceModeId": "arm64-0.5vcpu-1gb",
+      "criticalPathBefore": [
+        "validate-video",
+        "cut-video-segment-a",
+        "merge-videos"
+      ],
+      "makespanBeforeSeconds": 199.69869770300002,
+      "makespanAfterSeconds": 193.34258960300002,
+      "costBeforeUsd": 0.001597711,
+      "costAfterUsd": 0.0017622939999999998
+    },
+    {
+      "phase": "deadline-improvement",
+      "taskId": "merge-videos",
+      "fromResourceModeId": "arm64-0.5vcpu-1gb",
+      "toResourceModeId": "arm64-1vcpu-2gb",
+      "criticalPathBefore": [
+        "validate-video",
+        "cut-video-segment-a",
+        "merge-videos"
+      ],
+      "makespanBeforeSeconds": 193.34258960300002,
+      "makespanAfterSeconds": 191.146560797,
+      "costBeforeUsd": 0.0017622939999999998,
+      "costAfterUsd": 0.00209146
+    },
+    {
+      "phase": "deadline-improvement",
+      "taskId": "merge-videos",
+      "fromResourceModeId": "arm64-1vcpu-2gb",
+      "toResourceModeId": "arm64-2vcpu-4gb",
+      "criticalPathBefore": [
+        "validate-video",
+        "cut-video-segment-a",
+        "merge-videos"
+      ],
+      "makespanBeforeSeconds": 191.146560797,
+      "makespanAfterSeconds": 190.410341813,
+      "costBeforeUsd": 0.00209146,
+      "costAfterUsd": 0.002749792
+    },
+    {
+      "phase": "deadline-improvement",
+      "taskId": "validate-video",
+      "fromResourceModeId": "arm64-0.25vcpu-0.5gb",
+      "toResourceModeId": "arm64-0.5vcpu-1gb",
+      "criticalPathBefore": [
+        "validate-video",
+        "cut-video-segment-a",
+        "merge-videos"
+      ],
+      "makespanBeforeSeconds": 190.410341813,
+      "makespanAfterSeconds": 190.280262707,
+      "costBeforeUsd": 0.002749792,
+      "costAfterUsd": 0.002914375
+    },
+    {
+      "phase": "deadline-improvement",
+      "taskId": "validate-video",
+      "fromResourceModeId": "arm64-0.5vcpu-1gb",
+      "toResourceModeId": "arm64-4vcpu-8gb",
+      "criticalPathBefore": [
+        "validate-video",
+        "cut-video-segment-a",
+        "merge-videos"
+      ],
+      "makespanBeforeSeconds": 190.280262707,
+      "makespanAfterSeconds": 190.26441028,
+      "costBeforeUsd": 0.002914375,
+      "costAfterUsd": 0.005218536999999999
+    },
+    {
+      "phase": "deadline-improvement",
+      "taskId": "cut-video-segment-a",
+      "fromResourceModeId": "x86-0.25vcpu-0.5gb",
+      "toResourceModeId": "arm64-4vcpu-8gb",
+      "criticalPathBefore": [
+        "validate-video",
+        "cut-video-segment-a",
+        "merge-videos"
+      ],
+      "makespanBeforeSeconds": 190.26441028,
+      "makespanAfterSeconds": 190.26441028,
+      "costBeforeUsd": 0.005218536999999999,
+      "costAfterUsd": 0.0072175925
+    },
+    {
+      "phase": "deadline-improvement",
+      "taskId": "cut-video-segment-b",
+      "fromResourceModeId": "x86-0.25vcpu-0.5gb",
+      "toResourceModeId": "arm64-4vcpu-8gb",
+      "criticalPathBefore": [
+        "validate-video",
+        "cut-video-segment-b",
+        "merge-videos"
+      ],
+      "makespanBeforeSeconds": 190.26441028,
+      "makespanAfterSeconds": 54.522260775,
+      "costBeforeUsd": 0.0072175925,
+      "costAfterUsd": 0.009216648
+    },
+    {
+      "phase": "deadline-improvement",
+      "taskId": "cut-video-segment-b",
+      "fromResourceModeId": "arm64-4vcpu-8gb",
+      "toResourceModeId": "x86-4vcpu-8gb",
+      "criticalPathBefore": [
+        "validate-video",
+        "cut-video-segment-b",
+        "merge-videos"
+      ],
+      "makespanBeforeSeconds": 54.522260775,
+      "makespanAfterSeconds": 53.956859158,
+      "costBeforeUsd": 0.009216648,
+      "costAfterUsd": 0.00987468
+    },
+    {
+      "phase": "deadline-improvement",
+      "taskId": "cut-video-segment-a",
+      "fromResourceModeId": "arm64-4vcpu-8gb",
+      "toResourceModeId": "x86-4vcpu-8gb",
+      "criticalPathBefore": [
+        "validate-video",
+        "cut-video-segment-a",
+        "merge-videos"
+      ],
+      "makespanBeforeSeconds": 53.956859158,
+      "makespanAfterSeconds": 50.61941028,
+      "costBeforeUsd": 0.00987468,
+      "costAfterUsd": 0.010532712000000001
+    },
+    {
+      "phase": "cost-refinement",
+      "taskId": "validate-video",
+      "fromResourceModeId": "arm64-4vcpu-8gb",
+      "toResourceModeId": "arm64-0.25vcpu-0.5gb",
+      "criticalPathBefore": [
+        "validate-video",
+        "cut-video-segment-a",
+        "merge-videos"
+      ],
+      "makespanBeforeSeconds": 50.61941028,
+      "makespanAfterSeconds": 50.765341813,
+      "costBeforeUsd": 0.010532712000000001,
+      "costAfterUsd": 0.008063967
+    },
+    {
+      "phase": "cost-refinement",
+      "taskId": "merge-videos",
+      "fromResourceModeId": "arm64-2vcpu-4gb",
+      "toResourceModeId": "arm64-1vcpu-2gb",
+      "criticalPathBefore": [
+        "validate-video",
+        "cut-video-segment-a",
+        "merge-videos"
+      ],
+      "makespanBeforeSeconds": 50.765341813,
+      "makespanAfterSeconds": 51.501560796999996,
+      "costBeforeUsd": 0.008063967,
+      "costAfterUsd": 0.007405635
+    }
+  ]
+}

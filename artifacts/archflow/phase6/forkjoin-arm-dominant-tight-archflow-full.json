@@ -1,0 +1,450 @@
+{
+  "experimentId": "forkjoin-arm-dominant-tight-archflow-full",
+  "performanceDataKind": "shared-workflow",
+  "architectureRestriction": "JOINT",
+  "architecturePerformanceProfileSet": "arm64-consistent-dominance-v1",
+  "architecturePerformanceRandomSeed": 20261010,
+  "methodId": "archflow-full",
+  "workloadId": "forkjoin-arm-dominant",
+  "deadlineCondition": "tight",
+  "pricingRegion": "us-east-1",
+  "pricingRetrievedAt": "2026-10-10",
+  "pricingSource": "https://aws.amazon.com/fargate/pricing/",
+  "schemaVersion": 1,
+  "schedulerId": "archflow-h-joint-deadline-cost-v1",
+  "workflowId": "synthetic-fork-join",
+  "deadlineSeconds": 45,
+  "simulatedMakespanSeconds": 44.55,
+  "estimatedExecutionCostUsd": 0.006912486000000001,
+  "deadlineMet": true,
+  "taskAssignments": [
+    {
+      "taskId": "ingest",
+      "taskClass": "ingest",
+      "resourceMode": {
+        "id": "arm64-0.5vcpu-1gb",
+        "architecture": "arm64",
+        "vCpu": 0.5,
+        "memoryGb": 1
+      },
+      "executionSeconds": 5.1,
+      "startupOverheadSeconds": 2,
+      "simulatedDurationSeconds": 7.1,
+      "startSeconds": 0,
+      "finishSeconds": 7.1,
+      "billableSeconds": 60,
+      "estimatedCostUsd": 0.000329166,
+      "profileProvenance": {
+        "kind": "synthetic-arm64-derived",
+        "source": "arm64-consistent-dominance-v1",
+        "sourceProfileId": "x86-0.5vcpu-1gb",
+        "baselineArchitecture": "x86_64",
+        "basePerformanceFactor": 0.85,
+        "deterministicJitterFactor": 1,
+        "effectivePerformanceFactor": 0.85,
+        "randomSeed": 20261010,
+        "notes": "Declared synthetic dominance control in which ARM64 execution time is 85% of corresponding x86_64 execution time for every task class and resource tier; ARM64 also retains its architecture-specific price rates. Factor multiplies x86 execution time; startup overhead is unchanged."
+      }
+    },
+    {
+      "taskId": "transform-a",
+      "taskClass": "transform",
+      "resourceMode": {
+        "id": "arm64-4vcpu-8gb",
+        "architecture": "arm64",
+        "vCpu": 4,
+        "memoryGb": 8
+      },
+      "executionSeconds": 17,
+      "startupOverheadSeconds": 2,
+      "simulatedDurationSeconds": 19,
+      "startSeconds": 7.1,
+      "finishSeconds": 26.1,
+      "billableSeconds": 60,
+      "estimatedCostUsd": 0.002633328,
+      "profileProvenance": {
+        "kind": "synthetic-arm64-derived",
+        "source": "arm64-consistent-dominance-v1",
+        "sourceProfileId": "x86-4vcpu-8gb",
+        "baselineArchitecture": "x86_64",
+        "basePerformanceFactor": 0.85,
+        "deterministicJitterFactor": 1,
+        "effectivePerformanceFactor": 0.85,
+        "randomSeed": 20261010,
+        "notes": "Declared synthetic dominance control in which ARM64 execution time is 85% of corresponding x86_64 execution time for every task class and resource tier; ARM64 also retains its architecture-specific price rates. Factor multiplies x86 execution time; startup overhead is unchanged."
+      }
+    },
+    {
+      "taskId": "transform-b",
+      "taskClass": "transform",
+      "resourceMode": {
+        "id": "arm64-2vcpu-4gb",
+        "architecture": "arm64",
+        "vCpu": 2,
+        "memoryGb": 4
+      },
+      "executionSeconds": 18.7,
+      "startupOverheadSeconds": 2,
+      "simulatedDurationSeconds": 20.7,
+      "startSeconds": 7.1,
+      "finishSeconds": 27.799999999999997,
+      "billableSeconds": 60,
+      "estimatedCostUsd": 0.001316664,
+      "profileProvenance": {
+        "kind": "synthetic-arm64-derived",
+        "source": "arm64-consistent-dominance-v1",
+        "sourceProfileId": "x86-2vcpu-4gb",
+        "baselineArchitecture": "x86_64",
+        "basePerformanceFactor": 0.85,
+        "deterministicJitterFactor": 1,
+        "effectivePerformanceFactor": 0.85,
+        "randomSeed": 20261010,
+        "notes": "Declared synthetic dominance control in which ARM64 execution time is 85% of corresponding x86_64 execution time for every task class and resource tier; ARM64 also retains its architecture-specific price rates. Factor multiplies x86 execution time; startup overhead is unchanged."
+      }
+    },
+    {
+      "taskId": "aggregate",
+      "taskClass": "aggregate",
+      "resourceMode": {
+        "id": "arm64-2vcpu-4gb",
+        "architecture": "arm64",
+        "vCpu": 2,
+        "memoryGb": 4
+      },
+      "executionSeconds": 8.5,
+      "startupOverheadSeconds": 2,
+      "simulatedDurationSeconds": 10.5,
+      "startSeconds": 27.799999999999997,
+      "finishSeconds": 38.3,
+      "billableSeconds": 60,
+      "estimatedCostUsd": 0.001316664,
+      "profileProvenance": {
+        "kind": "synthetic-arm64-derived",
+        "source": "arm64-consistent-dominance-v1",
+        "sourceProfileId": "x86-2vcpu-4gb",
+        "baselineArchitecture": "x86_64",
+        "basePerformanceFactor": 0.85,
+        "deterministicJitterFactor": 1,
+        "effectivePerformanceFactor": 0.85,
+        "randomSeed": 20261010,
+        "notes": "Declared synthetic dominance control in which ARM64 execution time is 85% of corresponding x86_64 execution time for every task class and resource tier; ARM64 also retains its architecture-specific price rates. Factor multiplies x86 execution time; startup overhead is unchanged."
+      }
+    },
+    {
+      "taskId": "publish",
+      "taskClass": "publish",
+      "resourceMode": {
+        "id": "arm64-2vcpu-4gb",
+        "architecture": "arm64",
+        "vCpu": 2,
+        "memoryGb": 4
+      },
+      "executionSeconds": 4.25,
+      "startupOverheadSeconds": 2,
+      "simulatedDurationSeconds": 6.25,
+      "startSeconds": 38.3,
+      "finishSeconds": 44.55,
+      "billableSeconds": 60,
+      "estimatedCostUsd": 0.001316664,
+      "profileProvenance": {
+        "kind": "synthetic-arm64-derived",
+        "source": "arm64-consistent-dominance-v1",
+        "sourceProfileId": "x86-2vcpu-4gb",
+        "baselineArchitecture": "x86_64",
+        "basePerformanceFactor": 0.85,
+        "deterministicJitterFactor": 1,
+        "effectivePerformanceFactor": 0.85,
+        "randomSeed": 20261010,
+        "notes": "Declared synthetic dominance control in which ARM64 execution time is 85% of corresponding x86_64 execution time for every task class and resource tier; ARM64 also retains its architecture-specific price rates. Factor multiplies x86 execution time; startup overhead is unchanged."
+      }
+    }
+  ],
+  "dependencyCriticalPathTaskIds": [
+    "ingest",
+    "transform-b",
+    "aggregate",
+    "publish"
+  ],
+  "feasible": true,
+  "schedulingDecisionOverheadMs": 6.207031999999998,
+  "selectionIterations": 15,
+  "allowArchitectureSelection": true,
+  "fixedArchitecture": null,
+  "architectureDistribution": {
+    "x86_64": 0,
+    "arm64": 5
+  },
+  "taskSchedulingAnalysis": [
+    {
+      "taskId": "ingest",
+      "earliestPossibleStartSeconds": 0,
+      "earliestPossibleFinishSeconds": 4.55,
+      "fastestDownstreamPathSeconds": 37.75,
+      "staticSlackSeconds": 7.25,
+      "selectedSlackSeconds": 0.44999999999999574,
+      "finalCriticalPath": true
+    },
+    {
+      "taskId": "transform-a",
+      "earliestPossibleStartSeconds": 4.55,
+      "earliestPossibleFinishSeconds": 23.55,
+      "fastestDownstreamPathSeconds": 33.2,
+      "staticSlackSeconds": 7.25,
+      "selectedSlackSeconds": 2.1499999999999986,
+      "finalCriticalPath": false
+    },
+    {
+      "taskId": "transform-b",
+      "earliestPossibleStartSeconds": 4.55,
+      "earliestPossibleFinishSeconds": 20.15,
+      "fastestDownstreamPathSeconds": 29.8,
+      "staticSlackSeconds": 10.650000000000002,
+      "selectedSlackSeconds": 0.44999999999999574,
+      "finalCriticalPath": true
+    },
+    {
+      "taskId": "aggregate",
+      "earliestPossibleStartSeconds": 23.55,
+      "earliestPossibleFinishSeconds": 32.35,
+      "fastestDownstreamPathSeconds": 14.200000000000001,
+      "staticSlackSeconds": 7.249999999999998,
+      "selectedSlackSeconds": 0.45000000000000284,
+      "finalCriticalPath": true
+    },
+    {
+      "taskId": "publish",
+      "earliestPossibleStartSeconds": 32.35,
+      "earliestPossibleFinishSeconds": 37.75,
+      "fastestDownstreamPathSeconds": 5.4,
+      "staticSlackSeconds": 7.249999999999998,
+      "selectedSlackSeconds": 0.45000000000000284,
+      "finalCriticalPath": true
+    }
+  ],
+  "decisionTrace": [
+    {
+      "phase": "deadline-improvement",
+      "taskId": "transform-a",
+      "fromResourceModeId": "arm64-0.25vcpu-0.5gb",
+      "toResourceModeId": "arm64-0.5vcpu-1gb",
+      "criticalPathBefore": [
+        "ingest",
+        "transform-a",
+        "aggregate",
+        "publish"
+      ],
+      "makespanBeforeSeconds": 152.5,
+      "makespanAfterSeconds": 114.25,
+      "costBeforeUsd": 0.0009600675,
+      "costAfterUsd": 0.0010149285
+    },
+    {
+      "phase": "deadline-improvement",
+      "taskId": "aggregate",
+      "fromResourceModeId": "arm64-0.25vcpu-0.5gb",
+      "toResourceModeId": "arm64-0.5vcpu-1gb",
+      "criticalPathBefore": [
+        "ingest",
+        "transform-b",
+        "aggregate",
+        "publish"
+      ],
+      "makespanBeforeSeconds": 114.25,
+      "makespanAfterSeconds": 105.75,
+      "costBeforeUsd": 0.0010149285,
+      "costAfterUsd": 0.0011795114999999998
+    },
+    {
+      "phase": "deadline-improvement",
+      "taskId": "transform-b",
+      "fromResourceModeId": "arm64-0.25vcpu-0.5gb",
+      "toResourceModeId": "arm64-0.5vcpu-1gb",
+      "criticalPathBefore": [
+        "ingest",
+        "transform-b",
+        "aggregate",
+        "publish"
+      ],
+      "makespanBeforeSeconds": 105.75,
+      "makespanAfterSeconds": 101.5,
+      "costBeforeUsd": 0.0011795114999999998,
+      "costAfterUsd": 0.0013276362
+    },
+    {
+      "phase": "deadline-improvement",
+      "taskId": "transform-a",
+      "fromResourceModeId": "arm64-0.5vcpu-1gb",
+      "toResourceModeId": "arm64-1vcpu-2gb",
+      "criticalPathBefore": [
+        "ingest",
+        "transform-a",
+        "aggregate",
+        "publish"
+      ],
+      "makespanBeforeSeconds": 101.5,
+      "makespanAfterSeconds": 82.8,
+      "costBeforeUsd": 0.0013276362,
+      "costAfterUsd": 0.0016458300000000003
+    },
+    {
+      "phase": "deadline-improvement",
+      "taskId": "transform-b",
+      "fromResourceModeId": "arm64-0.5vcpu-1gb",
+      "toResourceModeId": "arm64-1vcpu-2gb",
+      "criticalPathBefore": [
+        "ingest",
+        "transform-b",
+        "aggregate",
+        "publish"
+      ],
+      "makespanBeforeSeconds": 82.8,
+      "makespanAfterSeconds": 77.7,
+      "costBeforeUsd": 0.0016458300000000003,
+      "costAfterUsd": 0.0019749959999999997
+    },
+    {
+      "phase": "deadline-improvement",
+      "taskId": "aggregate",
+      "fromResourceModeId": "arm64-0.5vcpu-1gb",
+      "toResourceModeId": "arm64-1vcpu-2gb",
+      "criticalPathBefore": [
+        "ingest",
+        "transform-a",
+        "aggregate",
+        "publish"
+      ],
+      "makespanBeforeSeconds": 77.7,
+      "makespanAfterSeconds": 72.6,
+      "costBeforeUsd": 0.0019749959999999997,
+      "costAfterUsd": 0.002304162
+    },
+    {
+      "phase": "deadline-improvement",
+      "taskId": "publish",
+      "fromResourceModeId": "arm64-0.25vcpu-0.5gb",
+      "toResourceModeId": "arm64-0.5vcpu-1gb",
+      "criticalPathBefore": [
+        "ingest",
+        "transform-a",
+        "aggregate",
+        "publish"
+      ],
+      "makespanBeforeSeconds": 72.6,
+      "makespanAfterSeconds": 70.05,
+      "costBeforeUsd": 0.002304162,
+      "costAfterUsd": 0.002468745
+    },
+    {
+      "phase": "deadline-improvement",
+      "taskId": "transform-a",
+      "fromResourceModeId": "arm64-1vcpu-2gb",
+      "toResourceModeId": "arm64-2vcpu-4gb",
+      "criticalPathBefore": [
+        "ingest",
+        "transform-a",
+        "aggregate",
+        "publish"
+      ],
+      "makespanBeforeSeconds": 70.05,
+      "makespanAfterSeconds": 61.55,
+      "costBeforeUsd": 0.002468745,
+      "costAfterUsd": 0.0031270770000000002
+    },
+    {
+      "phase": "deadline-improvement",
+      "taskId": "ingest",
+      "fromResourceModeId": "arm64-0.25vcpu-0.5gb",
+      "toResourceModeId": "arm64-0.5vcpu-1gb",
+      "criticalPathBefore": [
+        "ingest",
+        "transform-b",
+        "aggregate",
+        "publish"
+      ],
+      "makespanBeforeSeconds": 61.55,
+      "makespanAfterSeconds": 59.849999999999994,
+      "costBeforeUsd": 0.0031270770000000002,
+      "costAfterUsd": 0.0032916600000000005
+    },
+    {
+      "phase": "deadline-improvement",
+      "taskId": "transform-b",
+      "fromResourceModeId": "arm64-1vcpu-2gb",
+      "toResourceModeId": "arm64-2vcpu-4gb",
+      "criticalPathBefore": [
+        "ingest",
+        "transform-b",
+        "aggregate",
+        "publish"
+      ],
+      "makespanBeforeSeconds": 59.849999999999994,
+      "makespanAfterSeconds": 56.449999999999996,
+      "costBeforeUsd": 0.0032916600000000005,
+      "costAfterUsd": 0.003949991999999999
+    },
+    {
+      "phase": "deadline-improvement",
+      "taskId": "aggregate",
+      "fromResourceModeId": "arm64-1vcpu-2gb",
+      "toResourceModeId": "arm64-2vcpu-4gb",
+      "criticalPathBefore": [
+        "ingest",
+        "transform-a",
+        "aggregate",
+        "publish"
+      ],
+      "makespanBeforeSeconds": 56.449999999999996,
+      "makespanAfterSeconds": 53.05,
+      "costBeforeUsd": 0.003949991999999999,
+      "costAfterUsd": 0.004608324
+    },
+    {
+      "phase": "deadline-improvement",
+      "taskId": "publish",
+      "fromResourceModeId": "arm64-0.5vcpu-1gb",
+      "toResourceModeId": "arm64-1vcpu-2gb",
+      "criticalPathBefore": [
+        "ingest",
+        "transform-a",
+        "aggregate",
+        "publish"
+      ],
+      "makespanBeforeSeconds": 53.05,
+      "makespanAfterSeconds": 51.35,
+      "costBeforeUsd": 0.004608324,
+      "costAfterUsd": 0.00493749
+    },
+    {
+      "phase": "deadline-improvement",
+      "taskId": "transform-a",
+      "fromResourceModeId": "arm64-2vcpu-4gb",
+      "toResourceModeId": "arm64-4vcpu-8gb",
+      "criticalPathBefore": [
+        "ingest",
+        "transform-a",
+        "aggregate",
+        "publish"
+      ],
+      "makespanBeforeSeconds": 51.35,
+      "makespanAfterSeconds": 46.25,
+      "costBeforeUsd": 0.00493749,
+      "costAfterUsd": 0.0062541540000000005
+    },
+    {
+      "phase": "deadline-improvement",
+      "taskId": "publish",
+      "fromResourceModeId": "arm64-1vcpu-2gb",
+      "toResourceModeId": "arm64-2vcpu-4gb",
+      "criticalPathBefore": [
+        "ingest",
+        "transform-b",
+        "aggregate",
+        "publish"
+      ],
+      "makespanBeforeSeconds": 46.25,
+      "makespanAfterSeconds": 44.55,
+      "costBeforeUsd": 0.0062541540000000005,
+      "costAfterUsd": 0.006912486000000001
+    }
+  ]
+}

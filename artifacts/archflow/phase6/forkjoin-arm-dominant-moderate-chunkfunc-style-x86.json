@@ -1,0 +1,144 @@
+{
+  "experimentId": "forkjoin-arm-dominant-moderate-chunkfunc-style-x86",
+  "performanceDataKind": "shared-workflow",
+  "architectureRestriction": "X86_64",
+  "architecturePerformanceProfileSet": "arm64-consistent-dominance-v1",
+  "methodId": "chunkfunc-style-x86",
+  "workloadId": "forkjoin-arm-dominant",
+  "deadlineCondition": "moderate",
+  "pricingRegion": "us-east-1",
+  "pricingRetrievedAt": "2026-10-10",
+  "pricingSource": "https://aws.amazon.com/fargate/pricing/",
+  "schemaVersion": 1,
+  "schedulerId": "fixed-x86-proportional-critical-path-v1",
+  "workflowId": "synthetic-fork-join",
+  "deadlineSeconds": 75,
+  "simulatedMakespanSeconds": 74,
+  "estimatedExecutionCostUsd": 0.00658272,
+  "deadlineMet": true,
+  "taskAssignments": [
+    {
+      "taskId": "ingest",
+      "taskClass": "ingest",
+      "resourceMode": {
+        "id": "x86-4vcpu-8gb",
+        "architecture": "x86_64",
+        "vCpu": 4,
+        "memoryGb": 8
+      },
+      "executionSeconds": 3,
+      "startupOverheadSeconds": 2,
+      "simulatedDurationSeconds": 5,
+      "startSeconds": 0,
+      "finishSeconds": 5,
+      "billableSeconds": 60,
+      "estimatedCostUsd": 0.00329136,
+      "profileProvenance": {
+        "kind": "synthetic",
+        "source": "phase3-synthetic-v1",
+        "notes": "Deterministic synthetic duration."
+      }
+    },
+    {
+      "taskId": "transform-a",
+      "taskClass": "transform",
+      "resourceMode": {
+        "id": "x86-1vcpu-2gb",
+        "architecture": "x86_64",
+        "vCpu": 1,
+        "memoryGb": 2
+      },
+      "executionSeconds": 42,
+      "startupOverheadSeconds": 2,
+      "simulatedDurationSeconds": 44,
+      "startSeconds": 5,
+      "finishSeconds": 49,
+      "billableSeconds": 60,
+      "estimatedCostUsd": 0.00082284,
+      "profileProvenance": {
+        "kind": "synthetic",
+        "source": "phase3-synthetic-v1",
+        "notes": "Deterministic synthetic duration."
+      }
+    },
+    {
+      "taskId": "transform-b",
+      "taskClass": "transform",
+      "resourceMode": {
+        "id": "x86-1vcpu-2gb",
+        "architecture": "x86_64",
+        "vCpu": 1,
+        "memoryGb": 2
+      },
+      "executionSeconds": 32,
+      "startupOverheadSeconds": 2,
+      "simulatedDurationSeconds": 34,
+      "startSeconds": 5,
+      "finishSeconds": 39,
+      "billableSeconds": 60,
+      "estimatedCostUsd": 0.00082284,
+      "profileProvenance": {
+        "kind": "synthetic",
+        "source": "phase3-synthetic-v1",
+        "notes": "Deterministic synthetic duration."
+      }
+    },
+    {
+      "taskId": "aggregate",
+      "taskClass": "aggregate",
+      "resourceMode": {
+        "id": "x86-1vcpu-2gb",
+        "architecture": "x86_64",
+        "vCpu": 1,
+        "memoryGb": 2
+      },
+      "executionSeconds": 14,
+      "startupOverheadSeconds": 2,
+      "simulatedDurationSeconds": 16,
+      "startSeconds": 49,
+      "finishSeconds": 65,
+      "billableSeconds": 60,
+      "estimatedCostUsd": 0.00082284,
+      "profileProvenance": {
+        "kind": "synthetic",
+        "source": "phase3-synthetic-v1",
+        "notes": "Deterministic synthetic duration."
+      }
+    },
+    {
+      "taskId": "publish",
+      "taskClass": "publish",
+      "resourceMode": {
+        "id": "x86-1vcpu-2gb",
+        "architecture": "x86_64",
+        "vCpu": 1,
+        "memoryGb": 2
+      },
+      "executionSeconds": 7,
+      "startupOverheadSeconds": 2,
+      "simulatedDurationSeconds": 9,
+      "startSeconds": 65,
+      "finishSeconds": 74,
+      "billableSeconds": 60,
+      "estimatedCostUsd": 0.00082284,
+      "profileProvenance": {
+        "kind": "synthetic",
+        "source": "phase3-synthetic-v1",
+        "notes": "Deterministic synthetic duration."
+      }
+    }
+  ],
+  "dependencyCriticalPathTaskIds": [
+    "ingest",
+    "transform-a",
+    "aggregate",
+    "publish"
+  ],
+  "feasible": true,
+  "schedulingDecisionOverheadMs": 0.07155599999998685,
+  "selectionIterations": 1,
+  "architectureDistribution": {
+    "x86_64": 5,
+    "arm64": 0
+  }
+}

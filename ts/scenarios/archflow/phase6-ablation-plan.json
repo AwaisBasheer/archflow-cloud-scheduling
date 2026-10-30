@@ -1,0 +1,85 @@
+{
+  "schemaVersion": 1,
+  "pricing": "scenarios/archflow/config/fargate-pricing-us-east-1-2026-10-10.json",
+  "resourceModes": "scenarios/archflow/config/fargate-resource-modes.json",
+  "architecturePerformanceProfiles": "scenarios/archflow/config/arm64-performance-factors-2026-10-10.json",
+  "concurrencyLimit": null,
+  "workloads": [
+    {
+      "id": "vidpro-mixed",
+      "characteristic": "Different task classes favor different architectures; fixed seed 20261010 and declared class factors with deterministic jitter.",
+      "kind": "chunkfunc-proxy",
+      "workflow": "scenarios/video-processing/workflow-gcf.yaml",
+      "scenario": "scenarios/video-processing/scenario-01.yaml",
+      "proxyMapping": "scenarios/archflow/config/chunkfunc-vidpro-proxy-map.json",
+      "architecturePerformanceProfileSet": "vidpro-task-class-mixed-v1",
+      "deadlines": [
+        { "id": "tight", "seconds": 52 },
+        { "id": "moderate", "seconds": 56 },
+        { "id": "relaxed", "seconds": 220 }
+      ]
+    },
+    {
+      "id": "forkjoin-neutral",
+      "characteristic": "ARM64 and x86_64 have equal execution performance; architecture prices remain distinct.",
+      "kind": "shared-workflow",
+      "workflow": "scenarios/archflow/synthetic-fork-join.workflow.json",
+      "architecturePerformanceProfileSet": "neutral-equal-performance-v1",
+      "deadlines": [
+        { "id": "tight", "seconds": 50 },
+        { "id": "moderate", "seconds": 80 },
+        { "id": "relaxed", "seconds": 180 }
+      ]
+    },
+    {
+      "id": "forkjoin-arm-dominant",
+      "characteristic": "ARM64 consistently dominates: execution time factor 0.85 for every class/tier plus the declared ARM64 rates.",
+      "kind": "shared-workflow",
+      "workflow": "scenarios/archflow/synthetic-fork-join.workflow.json",
+      "architecturePerformanceProfileSet": "arm64-consistent-dominance-v1",
+      "deadlines": [
+        { "id": "tight", "seconds": 45 },
+        { "id": "moderate", "seconds": 75 },
+        { "id": "relaxed", "seconds": 160 }
+      ]
+    }
+  ],
+  "methods": [
+    {
+      "id": "chunkfunc-style-x86",
+      "label": "ChunkFunc-style x86",
+      "scheduler": "fixed-architecture",
+      "architecture": "X86_64"
+    },
+    {
+      "id": "chunkfunc-style-arm64",
+      "label": "ChunkFunc-style ARM64",
+      "scheduler": "fixed-architecture",
+      "architecture": "ARM64"
+    },
+    {
+      "id": "archflow-no-architecture-x86",
+      "label": "ArchFlow no-architecture x86",
+      "scheduler": "archflow-h",
+      "architecture": "JOINT",
+      "allowArchitectureSelection": false,
+      "fixedArchitecture": "X86_64"
+    },
+    {
+      "id": "archflow-no-architecture-arm64",
+      "label": "ArchFlow no-architecture ARM64",
+      "scheduler": "archflow-h",
+      "architecture": "JOINT",
+      "allowArchitectureSelection": false,
+      "fixedArchitecture": "ARM64"
+    },
+    {
+      "id": "archflow-full",
+      "label": "Full ArchFlow-H",
+      "scheduler": "archflow-h",
+      "architecture": "JOINT",
+      "allowArchitectureSelection": true,
+      "fixedArchitecture": null
+    }
+  ]
+}

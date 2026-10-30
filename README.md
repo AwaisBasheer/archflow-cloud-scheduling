@@ -148,6 +148,35 @@ Full and architecture-restricted ArchFlow use the same implementation. Candidate
 filtering is their only search-path difference. Scheduler process time is
 measured separately and is excluded from simulated makespan.
 
+## Controlled simulation results
+
+The architecture-selection ablation runs three workloads, three deadline
+conditions, and five methods: 45 simulations. It retains 43 feasible and two
+infeasible outcomes. Full ArchFlow is compared with the cheaper deadline-feasible
+restricted ArchFlow result for the same case.
+
+| Workload | Tight deadline | Moderate deadline | Relaxed deadline |
+|---|---:|---:|---:|
+| Mixed VidPro proxy | 52 s | 56 s | 220 s |
+| Equal-performance fork/join | 50 s | 80 s | 180 s |
+| ARM-dominant fork/join | 45 s | 75 s | 160 s |
+
+Full architecture selection reduces cost in one of nine cases and ties in eight.
+In tight VidPro, it selects two ARM and two x86 tasks, costs `$0.007405635`, and
+finishes in `51.501561` seconds. The best feasible restricted result is x86-only
+at `$0.007611270` and `51.795` seconds: a **2.701717%** modeled saving. ARM-only
+ArchFlow misses that deadline by `2.522261` seconds.
+
+In the other eight cases, full ArchFlow matches ARM-restricted ArchFlow. Earlier
+resource-search comparisons reported 28.85% and 27.27% modeled savings, but those
+comparisons do not isolate architecture choice. All these simulation results
+depend on proxy or synthetic performance data.
+
+Evidence: [ablation CSV](results/ablation_results.csv),
+[cost figure](results/ablation_cost_comparison.svg),
+[deadline figure](results/ablation_makespan_deadline.svg), and
+[frozen experiment inputs and outputs](artifacts/archflow/phase6/).
+
 ## License and acknowledgements
 
 The upstream root [LICENSE](LICENSE) is Apache License 2.0. The preserved upstream

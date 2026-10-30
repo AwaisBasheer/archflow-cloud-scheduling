@@ -1,0 +1,471 @@
+{
+  "schemaVersion": 1,
+  "id": "synthetic-fork-join",
+  "deadlineSeconds": 180,
+  "provenance": "Deterministic synthetic workflow for scheduler mechanics. Durations are synthetic assumptions, not cloud measurements. ARM64 timings are synthetic derivatives from profile set neutral-equal-performance-v1.",
+  "tasks": [
+    {
+      "id": "ingest",
+      "taskClass": "ingest",
+      "predecessorIds": [],
+      "successorIds": [
+        "transform-a",
+        "transform-b"
+      ],
+      "workloadSize": 100,
+      "profiles": [
+        {
+          "resourceModeId": "arm64-0.25vcpu-0.5gb",
+          "executionSeconds": 8,
+          "startupOverheadSeconds": 2,
+          "provenance": {
+            "kind": "synthetic-arm64-derived",
+            "source": "neutral-equal-performance-v1",
+            "sourceProfileId": "x86-0.25vcpu-0.5gb",
+            "baselineArchitecture": "x86_64",
+            "basePerformanceFactor": 1,
+            "deterministicJitterFactor": 1,
+            "effectivePerformanceFactor": 1,
+            "randomSeed": 20261010,
+            "notes": "Neutral control in which corresponding ARM64 and x86_64 modes have exactly equal execution and startup times. Factor multiplies x86 execution time; startup overhead is unchanged."
+          }
+        },
+        {
+          "resourceModeId": "arm64-0.5vcpu-1gb",
+          "executionSeconds": 6,
+          "startupOverheadSeconds": 2,
+          "provenance": {
+            "kind": "synthetic-arm64-derived",
+            "source": "neutral-equal-performance-v1",
+            "sourceProfileId": "x86-0.5vcpu-1gb",
+            "baselineArchitecture": "x86_64",
+            "basePerformanceFactor": 1,
+            "deterministicJitterFactor": 1,
+            "effectivePerformanceFactor": 1,
+            "randomSeed": 20261010,
+            "notes": "Neutral control in which corresponding ARM64 and x86_64 modes have exactly equal execution and startup times. Factor multiplies x86 execution time; startup overhead is unchanged."
+          }
+        },
+        {
+          "resourceModeId": "arm64-1vcpu-2gb",
+          "executionSeconds": 5,
+          "startupOverheadSeconds": 2,
+          "provenance": {
+            "kind": "synthetic-arm64-derived",
+            "source": "neutral-equal-performance-v1",
+            "sourceProfileId": "x86-1vcpu-2gb",
+            "baselineArchitecture": "x86_64",
+            "basePerformanceFactor": 1,
+            "deterministicJitterFactor": 1,
+            "effectivePerformanceFactor": 1,
+            "randomSeed": 20261010,
+            "notes": "Neutral control in which corresponding ARM64 and x86_64 modes have exactly equal execution and startup times. Factor multiplies x86 execution time; startup overhead is unchanged."
+          }
+        },
+        {
+          "resourceModeId": "arm64-2vcpu-4gb",
+          "executionSeconds": 4,
+          "startupOverheadSeconds": 2,
+          "provenance": {
+            "kind": "synthetic-arm64-derived",
+            "source": "neutral-equal-performance-v1",
+            "sourceProfileId": "x86-2vcpu-4gb",
+            "baselineArchitecture": "x86_64",
+            "basePerformanceFactor": 1,
+            "deterministicJitterFactor": 1,
+            "effectivePerformanceFactor": 1,
+            "randomSeed": 20261010,
+            "notes": "Neutral control in which corresponding ARM64 and x86_64 modes have exactly equal execution and startup times. Factor multiplies x86 execution time; startup overhead is unchanged."
+          }
+        },
+        {
+          "resourceModeId": "arm64-4vcpu-8gb",
+          "executionSeconds": 3,
+          "startupOverheadSeconds": 2,
+          "provenance": {
+            "kind": "synthetic-arm64-derived",
+            "source": "neutral-equal-performance-v1",
+            "sourceProfileId": "x86-4vcpu-8gb",
+            "baselineArchitecture": "x86_64",
+            "basePerformanceFactor": 1,
+            "deterministicJitterFactor": 1,
+            "effectivePerformanceFactor": 1,
+            "randomSeed": 20261010,
+            "notes": "Neutral control in which corresponding ARM64 and x86_64 modes have exactly equal execution and startup times. Factor multiplies x86 execution time; startup overhead is unchanged."
+          }
+        }
+      ]
+    },
+    {
+      "id": "transform-a",
+      "taskClass": "transform",
+      "predecessorIds": [
+        "ingest"
+      ],
+      "successorIds": [
+        "aggregate"
+      ],
+      "workloadSize": 500,
+      "profiles": [
+        {
+          "resourceModeId": "arm64-0.25vcpu-0.5gb",
+          "executionSeconds": 120,
+          "startupOverheadSeconds": 2,
+          "provenance": {
+            "kind": "synthetic-arm64-derived",
+            "source": "neutral-equal-performance-v1",
+            "sourceProfileId": "x86-0.25vcpu-0.5gb",
+            "baselineArchitecture": "x86_64",
+            "basePerformanceFactor": 1,
+            "deterministicJitterFactor": 1,
+            "effectivePerformanceFactor": 1,
+            "randomSeed": 20261010,
+            "notes": "Neutral control in which corresponding ARM64 and x86_64 modes have exactly equal execution and startup times. Factor multiplies x86 execution time; startup overhead is unchanged."
+          }
+        },
+        {
+          "resourceModeId": "arm64-0.5vcpu-1gb",
+          "executionSeconds": 70,
+          "startupOverheadSeconds": 2,
+          "provenance": {
+            "kind": "synthetic-arm64-derived",
+            "source": "neutral-equal-performance-v1",
+            "sourceProfileId": "x86-0.5vcpu-1gb",
+            "baselineArchitecture": "x86_64",
+            "basePerformanceFactor": 1,
+            "deterministicJitterFactor": 1,
+            "effectivePerformanceFactor": 1,
+            "randomSeed": 20261010,
+            "notes": "Neutral control in which corresponding ARM64 and x86_64 modes have exactly equal execution and startup times. Factor multiplies x86 execution time; startup overhead is unchanged."
+          }
+        },
+        {
+          "resourceModeId": "arm64-1vcpu-2gb",
+          "executionSeconds": 42,
+          "startupOverheadSeconds": 2,
+          "provenance": {
+            "kind": "synthetic-arm64-derived",
+            "source": "neutral-equal-performance-v1",
+            "sourceProfileId": "x86-1vcpu-2gb",
+            "baselineArchitecture": "x86_64",
+            "basePerformanceFactor": 1,
+            "deterministicJitterFactor": 1,
+            "effectivePerformanceFactor": 1,
+            "randomSeed": 20261010,
+            "notes": "Neutral control in which corresponding ARM64 and x86_64 modes have exactly equal execution and startup times. Factor multiplies x86 execution time; startup overhead is unchanged."
+          }
+        },
+        {
+          "resourceModeId": "arm64-2vcpu-4gb",
+          "executionSeconds": 28,
+          "startupOverheadSeconds": 2,
+          "provenance": {
+            "kind": "synthetic-arm64-derived",
+            "source": "neutral-equal-performance-v1",
+            "sourceProfileId": "x86-2vcpu-4gb",
+            "baselineArchitecture": "x86_64",
+            "basePerformanceFactor": 1,
+            "deterministicJitterFactor": 1,
+            "effectivePerformanceFactor": 1,
+            "randomSeed": 20261010,
+            "notes": "Neutral control in which corresponding ARM64 and x86_64 modes have exactly equal execution and startup times. Factor multiplies x86 execution time; startup overhead is unchanged."
+          }
+        },
+        {
+          "resourceModeId": "arm64-4vcpu-8gb",
+          "executionSeconds": 20,
+          "startupOverheadSeconds": 2,
+          "provenance": {
+            "kind": "synthetic-arm64-derived",
+            "source": "neutral-equal-performance-v1",
+            "sourceProfileId": "x86-4vcpu-8gb",
+            "baselineArchitecture": "x86_64",
+            "basePerformanceFactor": 1,
+            "deterministicJitterFactor": 1,
+            "effectivePerformanceFactor": 1,
+            "randomSeed": 20261010,
+            "notes": "Neutral control in which corresponding ARM64 and x86_64 modes have exactly equal execution and startup times. Factor multiplies x86 execution time; startup overhead is unchanged."
+          }
+        }
+      ]
+    },
+    {
+      "id": "transform-b",
+      "taskClass": "transform",
+      "predecessorIds": [
+        "ingest"
+      ],
+      "successorIds": [
+        "aggregate"
+      ],
+      "workloadSize": 300,
+      "profiles": [
+        {
+          "resourceModeId": "arm64-0.25vcpu-0.5gb",
+          "executionSeconds": 75,
+          "startupOverheadSeconds": 2,
+          "provenance": {
+            "kind": "synthetic-arm64-derived",
+            "source": "neutral-equal-performance-v1",
+            "sourceProfileId": "x86-0.25vcpu-0.5gb",
+            "baselineArchitecture": "x86_64",
+            "basePerformanceFactor": 1,
+            "deterministicJitterFactor": 1,
+            "effectivePerformanceFactor": 1,
+            "randomSeed": 20261010,
+            "notes": "Neutral control in which corresponding ARM64 and x86_64 modes have exactly equal execution and startup times. Factor multiplies x86 execution time; startup overhead is unchanged."
+          }
+        },
+        {
+          "resourceModeId": "arm64-0.5vcpu-1gb",
+          "executionSeconds": 48,
+          "startupOverheadSeconds": 2,
+          "provenance": {
+            "kind": "synthetic-arm64-derived",
+            "source": "neutral-equal-performance-v1",
+            "sourceProfileId": "x86-0.5vcpu-1gb",
+            "baselineArchitecture": "x86_64",
+            "basePerformanceFactor": 1,
+            "deterministicJitterFactor": 1,
+            "effectivePerformanceFactor": 1,
+            "randomSeed": 20261010,
+            "notes": "Neutral control in which corresponding ARM64 and x86_64 modes have exactly equal execution and startup times. Factor multiplies x86 execution time; startup overhead is unchanged."
+          }
+        },
+        {
+          "resourceModeId": "arm64-1vcpu-2gb",
+          "executionSeconds": 32,
+          "startupOverheadSeconds": 2,
+          "provenance": {
+            "kind": "synthetic-arm64-derived",
+            "source": "neutral-equal-performance-v1",
+            "sourceProfileId": "x86-1vcpu-2gb",
+            "baselineArchitecture": "x86_64",
+            "basePerformanceFactor": 1,
+            "deterministicJitterFactor": 1,
+            "effectivePerformanceFactor": 1,
+            "randomSeed": 20261010,
+            "notes": "Neutral control in which corresponding ARM64 and x86_64 modes have exactly equal execution and startup times. Factor multiplies x86 execution time; startup overhead is unchanged."
+          }
+        },
+        {
+          "resourceModeId": "arm64-2vcpu-4gb",
+          "executionSeconds": 22,
+          "startupOverheadSeconds": 2,
+          "provenance": {
+            "kind": "synthetic-arm64-derived",
+            "source": "neutral-equal-performance-v1",
+            "sourceProfileId": "x86-2vcpu-4gb",
+            "baselineArchitecture": "x86_64",
+            "basePerformanceFactor": 1,
+            "deterministicJitterFactor": 1,
+            "effectivePerformanceFactor": 1,
+            "randomSeed": 20261010,
+            "notes": "Neutral control in which corresponding ARM64 and x86_64 modes have exactly equal execution and startup times. Factor multiplies x86 execution time; startup overhead is unchanged."
+          }
+        },
+        {
+          "resourceModeId": "arm64-4vcpu-8gb",
+          "executionSeconds": 16,
+          "startupOverheadSeconds": 2,
+          "provenance": {
+            "kind": "synthetic-arm64-derived",
+            "source": "neutral-equal-performance-v1",
+            "sourceProfileId": "x86-4vcpu-8gb",
+            "baselineArchitecture": "x86_64",
+            "basePerformanceFactor": 1,
+            "deterministicJitterFactor": 1,
+            "effectivePerformanceFactor": 1,
+            "randomSeed": 20261010,
+            "notes": "Neutral control in which corresponding ARM64 and x86_64 modes have exactly equal execution and startup times. Factor multiplies x86 execution time; startup overhead is unchanged."
+          }
+        }
+      ]
+    },
+    {
+      "id": "aggregate",
+      "taskClass": "aggregate",
+      "predecessorIds": [
+        "transform-a",
+        "transform-b"
+      ],
+      "successorIds": [
+        "publish"
+      ],
+      "workloadSize": 800,
+      "profiles": [
+        {
+          "resourceModeId": "arm64-0.25vcpu-0.5gb",
+          "executionSeconds": 30,
+          "startupOverheadSeconds": 2,
+          "provenance": {
+            "kind": "synthetic-arm64-derived",
+            "source": "neutral-equal-performance-v1",
+            "sourceProfileId": "x86-0.25vcpu-0.5gb",
+            "baselineArchitecture": "x86_64",
+            "basePerformanceFactor": 1,
+            "deterministicJitterFactor": 1,
+            "effectivePerformanceFactor": 1,
+            "randomSeed": 20261010,
+            "notes": "Neutral control in which corresponding ARM64 and x86_64 modes have exactly equal execution and startup times. Factor multiplies x86 execution time; startup overhead is unchanged."
+          }
+        },
+        {
+          "resourceModeId": "arm64-0.5vcpu-1gb",
+          "executionSeconds": 20,
+          "startupOverheadSeconds": 2,
+          "provenance": {
+            "kind": "synthetic-arm64-derived",
+            "source": "neutral-equal-performance-v1",
+            "sourceProfileId": "x86-0.5vcpu-1gb",
+            "baselineArchitecture": "x86_64",
+            "basePerformanceFactor": 1,
+            "deterministicJitterFactor": 1,
+            "effectivePerformanceFactor": 1,
+            "randomSeed": 20261010,
+            "notes": "Neutral control in which corresponding ARM64 and x86_64 modes have exactly equal execution and startup times. Factor multiplies x86 execution time; startup overhead is unchanged."
+          }
+        },
+        {
+          "resourceModeId": "arm64-1vcpu-2gb",
+          "executionSeconds": 14,
+          "startupOverheadSeconds": 2,
+          "provenance": {
+            "kind": "synthetic-arm64-derived",
+            "source": "neutral-equal-performance-v1",
+            "sourceProfileId": "x86-1vcpu-2gb",
+            "baselineArchitecture": "x86_64",
+            "basePerformanceFactor": 1,
+            "deterministicJitterFactor": 1,
+            "effectivePerformanceFactor": 1,
+            "randomSeed": 20261010,
+            "notes": "Neutral control in which corresponding ARM64 and x86_64 modes have exactly equal execution and startup times. Factor multiplies x86 execution time; startup overhead is unchanged."
+          }
+        },
+        {
+          "resourceModeId": "arm64-2vcpu-4gb",
+          "executionSeconds": 10,
+          "startupOverheadSeconds": 2,
+          "provenance": {
+            "kind": "synthetic-arm64-derived",
+            "source": "neutral-equal-performance-v1",
+            "sourceProfileId": "x86-2vcpu-4gb",
+            "baselineArchitecture": "x86_64",
+            "basePerformanceFactor": 1,
+            "deterministicJitterFactor": 1,
+            "effectivePerformanceFactor": 1,
+            "randomSeed": 20261010,
+            "notes": "Neutral control in which corresponding ARM64 and x86_64 modes have exactly equal execution and startup times. Factor multiplies x86 execution time; startup overhead is unchanged."
+          }
+        },
+        {
+          "resourceModeId": "arm64-4vcpu-8gb",
+          "executionSeconds": 8,
+          "startupOverheadSeconds": 2,
+          "provenance": {
+            "kind": "synthetic-arm64-derived",
+            "source": "neutral-equal-performance-v1",
+            "sourceProfileId": "x86-4vcpu-8gb",
+            "baselineArchitecture": "x86_64",
+            "basePerformanceFactor": 1,
+            "deterministicJitterFactor": 1,
+            "effectivePerformanceFactor": 1,
+            "randomSeed": 20261010,
+            "notes": "Neutral control in which corresponding ARM64 and x86_64 modes have exactly equal execution and startup times. Factor multiplies x86 execution time; startup overhead is unchanged."
+          }
+        }
+      ]
+    },
+    {
+      "id": "publish",
+      "taskClass": "publish",
+      "predecessorIds": [
+        "aggregate"
+      ],
+      "successorIds": [],
+      "workloadSize": 800,
+      "profiles": [
+        {
+          "resourceModeId": "arm64-0.25vcpu-0.5gb",
+          "executionSeconds": 12,
+          "startupOverheadSeconds": 2,
+          "provenance": {
+            "kind": "synthetic-arm64-derived",
+            "source": "neutral-equal-performance-v1",
+            "sourceProfileId": "x86-0.25vcpu-0.5gb",
+            "baselineArchitecture": "x86_64",
+            "basePerformanceFactor": 1,
+            "deterministicJitterFactor": 1,
+            "effectivePerformanceFactor": 1,
+            "randomSeed": 20261010,
+            "notes": "Neutral control in which corresponding ARM64 and x86_64 modes have exactly equal execution and startup times. Factor multiplies x86 execution time; startup overhead is unchanged."
+          }
+        },
+        {
+          "resourceModeId": "arm64-0.5vcpu-1gb",
+          "executionSeconds": 9,
+          "startupOverheadSeconds": 2,
+          "provenance": {
+            "kind": "synthetic-arm64-derived",
+            "source": "neutral-equal-performance-v1",
+            "sourceProfileId": "x86-0.5vcpu-1gb",
+            "baselineArchitecture": "x86_64",
+            "basePerformanceFactor": 1,
+            "deterministicJitterFactor": 1,
+            "effectivePerformanceFactor": 1,
+            "randomSeed": 20261010,
+            "notes": "Neutral control in which corresponding ARM64 and x86_64 modes have exactly equal execution and startup times. Factor multiplies x86 execution time; startup overhead is unchanged."
+          }
+        },
+        {
+          "resourceModeId": "arm64-1vcpu-2gb",
+          "executionSeconds": 7,
+          "startupOverheadSeconds": 2,
+          "provenance": {
+            "kind": "synthetic-arm64-derived",
+            "source": "neutral-equal-performance-v1",
+            "sourceProfileId": "x86-1vcpu-2gb",
+            "baselineArchitecture": "x86_64",
+            "basePerformanceFactor": 1,
+            "deterministicJitterFactor": 1,
+            "effectivePerformanceFactor": 1,
+            "randomSeed": 20261010,
+            "notes": "Neutral control in which corresponding ARM64 and x86_64 modes have exactly equal execution and startup times. Factor multiplies x86 execution time; startup overhead is unchanged."
+          }
+        },
+        {
+          "resourceModeId": "arm64-2vcpu-4gb",
+          "executionSeconds": 5,
+          "startupOverheadSeconds": 2,
+          "provenance": {
+            "kind": "synthetic-arm64-derived",
+            "source": "neutral-equal-performance-v1",
+            "sourceProfileId": "x86-2vcpu-4gb",
+            "baselineArchitecture": "x86_64",
+            "basePerformanceFactor": 1,
+            "deterministicJitterFactor": 1,
+            "effectivePerformanceFactor": 1,
+            "randomSeed": 20261010,
+            "notes": "Neutral control in which corresponding ARM64 and x86_64 modes have exactly equal execution and startup times. Factor multiplies x86 execution time; startup overhead is unchanged."
+          }
+        },
+        {
+          "resourceModeId": "arm64-4vcpu-8gb",
+          "executionSeconds": 4,
+          "startupOverheadSeconds": 2,
+          "provenance": {
+            "kind": "synthetic-arm64-derived",
+            "source": "neutral-equal-performance-v1",
+            "sourceProfileId": "x86-4vcpu-8gb",
+            "baselineArchitecture": "x86_64",
+            "basePerformanceFactor": 1,
+            "deterministicJitterFactor": 1,
+            "effectivePerformanceFactor": 1,
+            "randomSeed": 20261010,
+            "notes": "Neutral control in which corresponding ARM64 and x86_64 modes have exactly equal execution and startup times. Factor multiplies x86 execution time; startup overhead is unchanged."
+          }
+        }
+      ]
+    }
+  ]
+}

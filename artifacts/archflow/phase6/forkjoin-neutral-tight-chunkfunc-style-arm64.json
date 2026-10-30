@@ -1,0 +1,175 @@
+{
+  "experimentId": "forkjoin-neutral-tight-chunkfunc-style-arm64",
+  "performanceDataKind": "shared-workflow",
+  "architectureRestriction": "ARM64",
+  "architecturePerformanceProfileSet": "neutral-equal-performance-v1",
+  "architecturePerformanceRandomSeed": 20261010,
+  "methodId": "chunkfunc-style-arm64",
+  "workloadId": "forkjoin-neutral",
+  "deadlineCondition": "tight",
+  "pricingRegion": "us-east-1",
+  "pricingRetrievedAt": "2026-10-10",
+  "pricingSource": "https://aws.amazon.com/fargate/pricing/",
+  "schemaVersion": 1,
+  "schedulerId": "fixed-arm64-proportional-critical-path-v1",
+  "workflowId": "synthetic-fork-join",
+  "deadlineSeconds": 50,
+  "simulatedMakespanSeconds": 45,
+  "estimatedExecutionCostUsd": 0.011849976000000002,
+  "deadlineMet": true,
+  "taskAssignments": [
+    {
+      "taskId": "ingest",
+      "taskClass": "ingest",
+      "resourceMode": {
+        "id": "arm64-4vcpu-8gb",
+        "architecture": "arm64",
+        "vCpu": 4,
+        "memoryGb": 8
+      },
+      "executionSeconds": 3,
+      "startupOverheadSeconds": 2,
+      "simulatedDurationSeconds": 5,
+      "startSeconds": 0,
+      "finishSeconds": 5,
+      "billableSeconds": 60,
+      "estimatedCostUsd": 0.002633328,
+      "profileProvenance": {
+        "kind": "synthetic-arm64-derived",
+        "source": "neutral-equal-performance-v1",
+        "sourceProfileId": "x86-4vcpu-8gb",
+        "baselineArchitecture": "x86_64",
+        "basePerformanceFactor": 1,
+        "deterministicJitterFactor": 1,
+        "effectivePerformanceFactor": 1,
+        "randomSeed": 20261010,
+        "notes": "Neutral control in which corresponding ARM64 and x86_64 modes have exactly equal execution and startup times. Factor multiplies x86 execution time; startup overhead is unchanged."
+      }
+    },
+    {
+      "taskId": "transform-a",
+      "taskClass": "transform",
+      "resourceMode": {
+        "id": "arm64-4vcpu-8gb",
+        "architecture": "arm64",
+        "vCpu": 4,
+        "memoryGb": 8
+      },
+      "executionSeconds": 20,
+      "startupOverheadSeconds": 2,
+      "simulatedDurationSeconds": 22,
+      "startSeconds": 5,
+      "finishSeconds": 27,
+      "billableSeconds": 60,
+      "estimatedCostUsd": 0.002633328,
+      "profileProvenance": {
+        "kind": "synthetic-arm64-derived",
+        "source": "neutral-equal-performance-v1",
+        "sourceProfileId": "x86-4vcpu-8gb",
+        "baselineArchitecture": "x86_64",
+        "basePerformanceFactor": 1,
+        "deterministicJitterFactor": 1,
+        "effectivePerformanceFactor": 1,
+        "randomSeed": 20261010,
+        "notes": "Neutral control in which corresponding ARM64 and x86_64 modes have exactly equal execution and startup times. Factor multiplies x86 execution time; startup overhead is unchanged."
+      }
+    },
+    {
+      "taskId": "transform-b",
+      "taskClass": "transform",
+      "resourceMode": {
+        "id": "arm64-2vcpu-4gb",
+        "architecture": "arm64",
+        "vCpu": 2,
+        "memoryGb": 4
+      },
+      "executionSeconds": 22,
+      "startupOverheadSeconds": 2,
+      "simulatedDurationSeconds": 24,
+      "startSeconds": 5,
+      "finishSeconds": 29,
+      "billableSeconds": 60,
+      "estimatedCostUsd": 0.001316664,
+      "profileProvenance": {
+        "kind": "synthetic-arm64-derived",
+        "source": "neutral-equal-performance-v1",
+        "sourceProfileId": "x86-2vcpu-4gb",
+        "baselineArchitecture": "x86_64",
+        "basePerformanceFactor": 1,
+        "deterministicJitterFactor": 1,
+        "effectivePerformanceFactor": 1,
+        "randomSeed": 20261010,
+        "notes": "Neutral control in which corresponding ARM64 and x86_64 modes have exactly equal execution and startup times. Factor multiplies x86 execution time; startup overhead is unchanged."
+      }
+    },
+    {
+      "taskId": "aggregate",
+      "taskClass": "aggregate",
+      "resourceMode": {
+        "id": "arm64-4vcpu-8gb",
+        "architecture": "arm64",
+        "vCpu": 4,
+        "memoryGb": 8
+      },
+      "executionSeconds": 8,
+      "startupOverheadSeconds": 2,
+      "simulatedDurationSeconds": 10,
+      "startSeconds": 29,
+      "finishSeconds": 39,
+      "billableSeconds": 60,
+      "estimatedCostUsd": 0.002633328,
+      "profileProvenance": {
+        "kind": "synthetic-arm64-derived",
+        "source": "neutral-equal-performance-v1",
+        "sourceProfileId": "x86-4vcpu-8gb",
+        "baselineArchitecture": "x86_64",
+        "basePerformanceFactor": 1,
+        "deterministicJitterFactor": 1,
+        "effectivePerformanceFactor": 1,
+        "randomSeed": 20261010,
+        "notes": "Neutral control in which corresponding ARM64 and x86_64 modes have exactly equal execution and startup times. Factor multiplies x86 execution time; startup overhead is unchanged."
+      }
+    },
+    {
+      "taskId": "publish",
+      "taskClass": "publish",
+      "resourceMode": {
+        "id": "arm64-4vcpu-8gb",
+        "architecture": "arm64",
+        "vCpu": 4,
+        "memoryGb": 8
+      },
+      "executionSeconds": 4,
+      "startupOverheadSeconds": 2,
+      "simulatedDurationSeconds": 6,
+      "startSeconds": 39,
+      "finishSeconds": 45,
+      "billableSeconds": 60,
+      "estimatedCostUsd": 0.002633328,
+      "profileProvenance": {
+        "kind": "synthetic-arm64-derived",
+        "source": "neutral-equal-performance-v1",
+        "sourceProfileId": "x86-4vcpu-8gb",
+        "baselineArchitecture": "x86_64",
+        "basePerformanceFactor": 1,
+        "deterministicJitterFactor": 1,
+        "effectivePerformanceFactor": 1,
+        "randomSeed": 20261010,
+        "notes": "Neutral control in which corresponding ARM64 and x86_64 modes have exactly equal execution and startup times. Factor multiplies x86 execution time; startup overhead is unchanged."
+      }
+    }
+  ],
+  "dependencyCriticalPathTaskIds": [
+    "ingest",
+    "transform-b",
+    "aggregate",
+    "publish"
+  ],
+  "feasible": true,
+  "schedulingDecisionOverheadMs": 0.15850000000000364,
+  "selectionIterations": 2,
+  "architectureDistribution": {
+    "x86_64": 0,
+    "arm64": 5
+  }
+}

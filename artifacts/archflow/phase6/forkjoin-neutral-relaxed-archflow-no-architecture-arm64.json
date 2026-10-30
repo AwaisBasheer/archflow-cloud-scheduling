@@ -1,0 +1,225 @@
+{
+  "experimentId": "forkjoin-neutral-relaxed-archflow-no-architecture-arm64",
+  "performanceDataKind": "shared-workflow",
+  "architectureRestriction": "JOINT",
+  "architecturePerformanceProfileSet": "neutral-equal-performance-v1",
+  "architecturePerformanceRandomSeed": 20261010,
+  "methodId": "archflow-no-architecture-arm64",
+  "workloadId": "forkjoin-neutral",
+  "deadlineCondition": "relaxed",
+  "pricingRegion": "us-east-1",
+  "pricingRetrievedAt": "2026-10-10",
+  "pricingSource": "https://aws.amazon.com/fargate/pricing/",
+  "schemaVersion": 1,
+  "schedulerId": "archflow-h-joint-deadline-cost-v1",
+  "workflowId": "synthetic-fork-join",
+  "deadlineSeconds": 180,
+  "simulatedMakespanSeconds": 178,
+  "estimatedExecutionCostUsd": 0.0010396159500000001,
+  "deadlineMet": true,
+  "taskAssignments": [
+    {
+      "taskId": "ingest",
+      "taskClass": "ingest",
+      "resourceMode": {
+        "id": "arm64-0.25vcpu-0.5gb",
+        "architecture": "arm64",
+        "vCpu": 0.25,
+        "memoryGb": 0.5
+      },
+      "executionSeconds": 8,
+      "startupOverheadSeconds": 2,
+      "simulatedDurationSeconds": 10,
+      "startSeconds": 0,
+      "finishSeconds": 10,
+      "billableSeconds": 60,
+      "estimatedCostUsd": 0.000164583,
+      "profileProvenance": {
+        "kind": "synthetic-arm64-derived",
+        "source": "neutral-equal-performance-v1",
+        "sourceProfileId": "x86-0.25vcpu-0.5gb",
+        "baselineArchitecture": "x86_64",
+        "basePerformanceFactor": 1,
+        "deterministicJitterFactor": 1,
+        "effectivePerformanceFactor": 1,
+        "randomSeed": 20261010,
+        "notes": "Neutral control in which corresponding ARM64 and x86_64 modes have exactly equal execution and startup times. Factor multiplies x86 execution time; startup overhead is unchanged."
+      }
+    },
+    {
+      "taskId": "transform-a",
+      "taskClass": "transform",
+      "resourceMode": {
+        "id": "arm64-0.25vcpu-0.5gb",
+        "architecture": "arm64",
+        "vCpu": 0.25,
+        "memoryGb": 0.5
+      },
+      "executionSeconds": 120,
+      "startupOverheadSeconds": 2,
+      "simulatedDurationSeconds": 122,
+      "startSeconds": 10,
+      "finishSeconds": 132,
+      "billableSeconds": 122,
+      "estimatedCostUsd": 0.0003346521,
+      "profileProvenance": {
+        "kind": "synthetic-arm64-derived",
+        "source": "neutral-equal-performance-v1",
+        "sourceProfileId": "x86-0.25vcpu-0.5gb",
+        "baselineArchitecture": "x86_64",
+        "basePerformanceFactor": 1,
+        "deterministicJitterFactor": 1,
+        "effectivePerformanceFactor": 1,
+        "randomSeed": 20261010,
+        "notes": "Neutral control in which corresponding ARM64 and x86_64 modes have exactly equal execution and startup times. Factor multiplies x86 execution time; startup overhead is unchanged."
+      }
+    },
+    {
+      "taskId": "transform-b",
+      "taskClass": "transform",
+      "resourceMode": {
+        "id": "arm64-0.25vcpu-0.5gb",
+        "architecture": "arm64",
+        "vCpu": 0.25,
+        "memoryGb": 0.5
+      },
+      "executionSeconds": 75,
+      "startupOverheadSeconds": 2,
+      "simulatedDurationSeconds": 77,
+      "startSeconds": 10,
+      "finishSeconds": 87,
+      "billableSeconds": 77,
+      "estimatedCostUsd": 0.00021121485,
+      "profileProvenance": {
+        "kind": "synthetic-arm64-derived",
+        "source": "neutral-equal-performance-v1",
+        "sourceProfileId": "x86-0.25vcpu-0.5gb",
+        "baselineArchitecture": "x86_64",
+        "basePerformanceFactor": 1,
+        "deterministicJitterFactor": 1,
+        "effectivePerformanceFactor": 1,
+        "randomSeed": 20261010,
+        "notes": "Neutral control in which corresponding ARM64 and x86_64 modes have exactly equal execution and startup times. Factor multiplies x86 execution time; startup overhead is unchanged."
+      }
+    },
+    {
+      "taskId": "aggregate",
+      "taskClass": "aggregate",
+      "resourceMode": {
+        "id": "arm64-0.25vcpu-0.5gb",
+        "architecture": "arm64",
+        "vCpu": 0.25,
+        "memoryGb": 0.5
+      },
+      "executionSeconds": 30,
+      "startupOverheadSeconds": 2,
+      "simulatedDurationSeconds": 32,
+      "startSeconds": 132,
+      "finishSeconds": 164,
+      "billableSeconds": 60,
+      "estimatedCostUsd": 0.000164583,
+      "profileProvenance": {
+        "kind": "synthetic-arm64-derived",
+        "source": "neutral-equal-performance-v1",
+        "sourceProfileId": "x86-0.25vcpu-0.5gb",
+        "baselineArchitecture": "x86_64",
+        "basePerformanceFactor": 1,
+        "deterministicJitterFactor": 1,
+        "effectivePerformanceFactor": 1,
+        "randomSeed": 20261010,
+        "notes": "Neutral control in which corresponding ARM64 and x86_64 modes have exactly equal execution and startup times. Factor multiplies x86 execution time; startup overhead is unchanged."
+      }
+    },
+    {
+      "taskId": "publish",
+      "taskClass": "publish",
+      "resourceMode": {
+        "id": "arm64-0.25vcpu-0.5gb",
+        "architecture": "arm64",
+        "vCpu": 0.25,
+        "memoryGb": 0.5
+      },
+      "executionSeconds": 12,
+      "startupOverheadSeconds": 2,
+      "simulatedDurationSeconds": 14,
+      "startSeconds": 164,
+      "finishSeconds": 178,
+      "billableSeconds": 60,
+      "estimatedCostUsd": 0.000164583,
+      "profileProvenance": {
+        "kind": "synthetic-arm64-derived",
+        "source": "neutral-equal-performance-v1",
+        "sourceProfileId": "x86-0.25vcpu-0.5gb",
+        "baselineArchitecture": "x86_64",
+        "basePerformanceFactor": 1,
+        "deterministicJitterFactor": 1,
+        "effectivePerformanceFactor": 1,
+        "randomSeed": 20261010,
+        "notes": "Neutral control in which corresponding ARM64 and x86_64 modes have exactly equal execution and startup times. Factor multiplies x86 execution time; startup overhead is unchanged."
+      }
+    }
+  ],
+  "dependencyCriticalPathTaskIds": [
+    "ingest",
+    "transform-a",
+    "aggregate",
+    "publish"
+  ],
+  "feasible": true,
+  "schedulingDecisionOverheadMs": 0.5636179999999911,
+  "selectionIterations": 1,
+  "allowArchitectureSelection": false,
+  "fixedArchitecture": "ARM64",
+  "architectureDistribution": {
+    "x86_64": 0,
+    "arm64": 5
+  },
+  "taskSchedulingAnalysis": [
+    {
+      "taskId": "ingest",
+      "earliestPossibleStartSeconds": 0,
+      "earliestPossibleFinishSeconds": 5,
+      "fastestDownstreamPathSeconds": 43,
+      "staticSlackSeconds": 137,
+      "selectedSlackSeconds": 2,
+      "finalCriticalPath": true
+    },
+    {
+      "taskId": "transform-a",
+      "earliestPossibleStartSeconds": 5,
+      "earliestPossibleFinishSeconds": 27,
+      "fastestDownstreamPathSeconds": 38,
+      "staticSlackSeconds": 137,
+      "selectedSlackSeconds": 2,
+      "finalCriticalPath": true
+    },
+    {
+      "taskId": "transform-b",
+      "earliestPossibleStartSeconds": 5,
+      "earliestPossibleFinishSeconds": 23,
+      "fastestDownstreamPathSeconds": 34,
+      "staticSlackSeconds": 141,
+      "selectedSlackSeconds": 47,
+      "finalCriticalPath": false
+    },
+    {
+      "taskId": "aggregate",
+      "earliestPossibleStartSeconds": 27,
+      "earliestPossibleFinishSeconds": 37,
+      "fastestDownstreamPathSeconds": 16,
+      "staticSlackSeconds": 137,
+      "selectedSlackSeconds": 2,
+      "finalCriticalPath": true
+    },
+    {
+      "taskId": "publish",
+      "earliestPossibleStartSeconds": 37,
+      "earliestPossibleFinishSeconds": 43,
+      "fastestDownstreamPathSeconds": 6,
+      "staticSlackSeconds": 137,
+      "selectedSlackSeconds": 2,
+      "finalCriticalPath": true
+    }
+  ],
+  "decisionTrace": []
+}

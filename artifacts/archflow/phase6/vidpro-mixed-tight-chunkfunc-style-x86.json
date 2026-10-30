@@ -1,0 +1,129 @@
+{
+  "experimentId": "vidpro-mixed-tight-chunkfunc-style-x86",
+  "performanceDataKind": "chunkfunc-proxy",
+  "architectureRestriction": "X86_64",
+  "architecturePerformanceProfileSet": "vidpro-task-class-mixed-v1",
+  "methodId": "chunkfunc-style-x86",
+  "workloadId": "vidpro-mixed",
+  "deadlineCondition": "tight",
+  "pricingRegion": "us-east-1",
+  "pricingRetrievedAt": "2026-10-10",
+  "pricingSource": "https://aws.amazon.com/fargate/pricing/",
+  "schemaVersion": 1,
+  "schedulerId": "fixed-x86-proportional-critical-path-v1",
+  "workflowId": "vidpro-scenario-01-input-500-Mib-fargate-proxy",
+  "deadlineSeconds": 52,
+  "simulatedMakespanSeconds": 51.641999999999996,
+  "estimatedExecutionCostUsd": 0.01069692,
+  "deadlineMet": true,
+  "taskAssignments": [
+    {
+      "taskId": "validate-video",
+      "taskClass": "validate-video",
+      "resourceMode": {
+        "id": "x86-4vcpu-8gb",
+        "architecture": "x86_64",
+        "vCpu": 4,
+        "memoryGb": 8
+      },
+      "executionSeconds": 0.101,
+      "startupOverheadSeconds": 2,
+      "simulatedDurationSeconds": 2.101,
+      "startSeconds": 0,
+      "finishSeconds": 2.101,
+      "billableSeconds": 60,
+      "estimatedCostUsd": 0.00329136,
+      "profileProvenance": {
+        "kind": "chunkfunc-proxy",
+        "source": "video-processing/scenario-01-input-500-Mib/validate-video",
+        "sourceProfileId": "16384mib-4000m",
+        "sourceInputSizeBytes": 525049424,
+        "notes": "Deterministic proxy mapping from original ChunkFunc GCF-like profiles to representative Fargate tiers by nearest/identical CPU capacity, with memory differences explicitly retained in sourceProfileId. These are not Fargate measurements."
+      }
+    },
+    {
+      "taskId": "cut-video-segment-a",
+      "taskClass": "cut-video-segment",
+      "resourceMode": {
+        "id": "x86-4vcpu-8gb",
+        "architecture": "x86_64",
+        "vCpu": 4,
+        "memoryGb": 8
+      },
+      "executionSeconds": 43.095,
+      "startupOverheadSeconds": 2,
+      "simulatedDurationSeconds": 45.095,
+      "startSeconds": 2.101,
+      "finishSeconds": 47.196,
+      "billableSeconds": 60,
+      "estimatedCostUsd": 0.00329136,
+      "profileProvenance": {
+        "kind": "chunkfunc-proxy",
+        "source": "video-processing/scenario-01-input-500-Mib/cut-video-segment-a",
+        "sourceProfileId": "16384mib-4000m",
+        "sourceInputSizeBytes": 210019770,
+        "notes": "Deterministic proxy mapping from original ChunkFunc GCF-like profiles to representative Fargate tiers by nearest/identical CPU capacity, with memory differences explicitly retained in sourceProfileId. These are not Fargate measurements."
+      }
+    },
+    {
+      "taskId": "cut-video-segment-b",
+      "taskClass": "cut-video-segment",
+      "resourceMode": {
+        "id": "x86-4vcpu-8gb",
+        "architecture": "x86_64",
+        "vCpu": 4,
+        "memoryGb": 8
+      },
+      "executionSeconds": 43.095,
+      "startupOverheadSeconds": 2,
+      "simulatedDurationSeconds": 45.095,
+      "startSeconds": 2.101,
+      "finishSeconds": 47.196,
+      "billableSeconds": 60,
+      "estimatedCostUsd": 0.00329136,
+      "profileProvenance": {
+        "kind": "chunkfunc-proxy",
+        "source": "video-processing/scenario-01-input-500-Mib/cut-video-segment-b",
+        "sourceProfileId": "16384mib-4000m",
+        "sourceInputSizeBytes": 210019770,
+        "notes": "Deterministic proxy mapping from original ChunkFunc GCF-like profiles to representative Fargate tiers by nearest/identical CPU capacity, with memory differences explicitly retained in sourceProfileId. These are not Fargate measurements."
+      }
+    },
+    {
+      "taskId": "merge-videos",
+      "taskClass": "merge-videos",
+      "resourceMode": {
+        "id": "x86-1vcpu-2gb",
+        "architecture": "x86_64",
+        "vCpu": 1,
+        "memoryGb": 2
+      },
+      "executionSeconds": 2.446,
+      "startupOverheadSeconds": 2,
+      "simulatedDurationSeconds": 4.446,
+      "startSeconds": 47.196,
+      "finishSeconds": 51.641999999999996,
+      "billableSeconds": 60,
+      "estimatedCostUsd": 0.00082284,
+      "profileProvenance": {
+        "kind": "chunkfunc-proxy",
+        "source": "video-processing/scenario-01-input-500-Mib/merge-videos",
+        "sourceProfileId": "2048mib-1000m",
+        "sourceInputSizeBytes": 37873978,
+        "notes": "Deterministic proxy mapping from original ChunkFunc GCF-like profiles to representative Fargate tiers by nearest/identical CPU capacity, with memory differences explicitly retained in sourceProfileId. These are not Fargate measurements."
+      }
+    }
+  ],
+  "dependencyCriticalPathTaskIds": [
+    "validate-video",
+    "cut-video-segment-a",
+    "merge-videos"
+  ],
+  "feasible": true,
+  "schedulingDecisionOverheadMs": 11.892626,
+  "selectionIterations": 1,
+  "architectureDistribution": {
+    "x86_64": 4,
+    "arm64": 0
+  }
+}

@@ -1,0 +1,436 @@
+{
+  "experimentId": "forkjoin-neutral-tight-archflow-no-architecture-x86",
+  "performanceDataKind": "shared-workflow",
+  "architectureRestriction": "JOINT",
+  "architecturePerformanceProfileSet": "neutral-equal-performance-v1",
+  "architecturePerformanceRandomSeed": 20261010,
+  "methodId": "archflow-no-architecture-x86",
+  "workloadId": "forkjoin-neutral",
+  "deadlineCondition": "tight",
+  "pricingRegion": "us-east-1",
+  "pricingRetrievedAt": "2026-10-10",
+  "pricingSource": "https://aws.amazon.com/fargate/pricing/",
+  "schemaVersion": 1,
+  "schedulerId": "archflow-h-joint-deadline-cost-v1",
+  "workflowId": "synthetic-fork-join",
+  "deadlineSeconds": 50,
+  "simulatedMakespanSeconds": 50,
+  "estimatedExecutionCostUsd": 0.00905124,
+  "deadlineMet": true,
+  "taskAssignments": [
+    {
+      "taskId": "ingest",
+      "taskClass": "ingest",
+      "resourceMode": {
+        "id": "x86-1vcpu-2gb",
+        "architecture": "x86_64",
+        "vCpu": 1,
+        "memoryGb": 2
+      },
+      "executionSeconds": 5,
+      "startupOverheadSeconds": 2,
+      "simulatedDurationSeconds": 7,
+      "startSeconds": 0,
+      "finishSeconds": 7,
+      "billableSeconds": 60,
+      "estimatedCostUsd": 0.00082284,
+      "profileProvenance": {
+        "kind": "synthetic",
+        "source": "phase3-synthetic-v1",
+        "notes": "Deterministic synthetic duration."
+      }
+    },
+    {
+      "taskId": "transform-a",
+      "taskClass": "transform",
+      "resourceMode": {
+        "id": "x86-4vcpu-8gb",
+        "architecture": "x86_64",
+        "vCpu": 4,
+        "memoryGb": 8
+      },
+      "executionSeconds": 20,
+      "startupOverheadSeconds": 2,
+      "simulatedDurationSeconds": 22,
+      "startSeconds": 7,
+      "finishSeconds": 29,
+      "billableSeconds": 60,
+      "estimatedCostUsd": 0.00329136,
+      "profileProvenance": {
+        "kind": "synthetic",
+        "source": "phase3-synthetic-v1",
+        "notes": "Deterministic synthetic duration."
+      }
+    },
+    {
+      "taskId": "transform-b",
+      "taskClass": "transform",
+      "resourceMode": {
+        "id": "x86-2vcpu-4gb",
+        "architecture": "x86_64",
+        "vCpu": 2,
+        "memoryGb": 4
+      },
+      "executionSeconds": 22,
+      "startupOverheadSeconds": 2,
+      "simulatedDurationSeconds": 24,
+      "startSeconds": 7,
+      "finishSeconds": 31,
+      "billableSeconds": 60,
+      "estimatedCostUsd": 0.00164568,
+      "profileProvenance": {
+        "kind": "synthetic",
+        "source": "phase3-synthetic-v1",
+        "notes": "Deterministic synthetic duration."
+      }
+    },
+    {
+      "taskId": "aggregate",
+      "taskClass": "aggregate",
+      "resourceMode": {
+        "id": "x86-2vcpu-4gb",
+        "architecture": "x86_64",
+        "vCpu": 2,
+        "memoryGb": 4
+      },
+      "executionSeconds": 10,
+      "startupOverheadSeconds": 2,
+      "simulatedDurationSeconds": 12,
+      "startSeconds": 31,
+      "finishSeconds": 43,
+      "billableSeconds": 60,
+      "estimatedCostUsd": 0.00164568,
+      "profileProvenance": {
+        "kind": "synthetic",
+        "source": "phase3-synthetic-v1",
+        "notes": "Deterministic synthetic duration."
+      }
+    },
+    {
+      "taskId": "publish",
+      "taskClass": "publish",
+      "resourceMode": {
+        "id": "x86-2vcpu-4gb",
+        "architecture": "x86_64",
+        "vCpu": 2,
+        "memoryGb": 4
+      },
+      "executionSeconds": 5,
+      "startupOverheadSeconds": 2,
+      "simulatedDurationSeconds": 7,
+      "startSeconds": 43,
+      "finishSeconds": 50,
+      "billableSeconds": 60,
+      "estimatedCostUsd": 0.00164568,
+      "profileProvenance": {
+        "kind": "synthetic",
+        "source": "phase3-synthetic-v1",
+        "notes": "Deterministic synthetic duration."
+      }
+    }
+  ],
+  "dependencyCriticalPathTaskIds": [
+    "ingest",
+    "transform-b",
+    "aggregate",
+    "publish"
+  ],
+  "feasible": true,
+  "schedulingDecisionOverheadMs": 8.96563999999998,
+  "selectionIterations": 16,
+  "allowArchitectureSelection": false,
+  "fixedArchitecture": "X86_64",
+  "architectureDistribution": {
+    "x86_64": 5,
+    "arm64": 0
+  },
+  "taskSchedulingAnalysis": [
+    {
+      "taskId": "ingest",
+      "earliestPossibleStartSeconds": 0,
+      "earliestPossibleFinishSeconds": 5,
+      "fastestDownstreamPathSeconds": 43,
+      "staticSlackSeconds": 7,
+      "selectedSlackSeconds": 0,
+      "finalCriticalPath": true
+    },
+    {
+      "taskId": "transform-a",
+      "earliestPossibleStartSeconds": 5,
+      "earliestPossibleFinishSeconds": 27,
+      "fastestDownstreamPathSeconds": 38,
+      "staticSlackSeconds": 7,
+      "selectedSlackSeconds": 2,
+      "finalCriticalPath": false
+    },
+    {
+      "taskId": "transform-b",
+      "earliestPossibleStartSeconds": 5,
+      "earliestPossibleFinishSeconds": 23,
+      "fastestDownstreamPathSeconds": 34,
+      "staticSlackSeconds": 11,
+      "selectedSlackSeconds": 0,
+      "finalCriticalPath": true
+    },
+    {
+      "taskId": "aggregate",
+      "earliestPossibleStartSeconds": 27,
+      "earliestPossibleFinishSeconds": 37,
+      "fastestDownstreamPathSeconds": 16,
+      "staticSlackSeconds": 7,
+      "selectedSlackSeconds": 0,
+      "finalCriticalPath": true
+    },
+    {
+      "taskId": "publish",
+      "earliestPossibleStartSeconds": 37,
+      "earliestPossibleFinishSeconds": 43,
+      "fastestDownstreamPathSeconds": 6,
+      "staticSlackSeconds": 7,
+      "selectedSlackSeconds": 0,
+      "finalCriticalPath": true
+    }
+  ],
+  "decisionTrace": [
+    {
+      "phase": "deadline-improvement",
+      "taskId": "transform-a",
+      "fromResourceModeId": "x86-0.25vcpu-0.5gb",
+      "toResourceModeId": "x86-0.5vcpu-1gb",
+      "criticalPathBefore": [
+        "ingest",
+        "transform-a",
+        "aggregate",
+        "publish"
+      ],
+      "makespanBeforeSeconds": 178,
+      "makespanAfterSeconds": 133,
+      "costBeforeUsd": 0.0012994015000000001,
+      "costAfterUsd": 0.0013748285
+    },
+    {
+      "phase": "deadline-improvement",
+      "taskId": "aggregate",
+      "fromResourceModeId": "x86-0.25vcpu-0.5gb",
+      "toResourceModeId": "x86-0.5vcpu-1gb",
+      "criticalPathBefore": [
+        "ingest",
+        "transform-b",
+        "aggregate",
+        "publish"
+      ],
+      "makespanBeforeSeconds": 133,
+      "makespanAfterSeconds": 123,
+      "costBeforeUsd": 0.0013748285,
+      "costAfterUsd": 0.0015805385
+    },
+    {
+      "phase": "deadline-improvement",
+      "taskId": "transform-b",
+      "fromResourceModeId": "x86-0.25vcpu-0.5gb",
+      "toResourceModeId": "x86-0.5vcpu-1gb",
+      "criticalPathBefore": [
+        "ingest",
+        "transform-b",
+        "aggregate",
+        "publish"
+      ],
+      "makespanBeforeSeconds": 123,
+      "makespanAfterSeconds": 118,
+      "costBeforeUsd": 0.0015805385,
+      "costAfterUsd": 0.001727964
+    },
+    {
+      "phase": "deadline-improvement",
+      "taskId": "transform-a",
+      "fromResourceModeId": "x86-0.5vcpu-1gb",
+      "toResourceModeId": "x86-1vcpu-2gb",
+      "criticalPathBefore": [
+        "ingest",
+        "transform-a",
+        "aggregate",
+        "publish"
+      ],
+      "makespanBeforeSeconds": 118,
+      "makespanAfterSeconds": 96,
+      "costBeforeUsd": 0.001727964,
+      "costAfterUsd": 0.0020571
+    },
+    {
+      "phase": "deadline-improvement",
+      "taskId": "aggregate",
+      "fromResourceModeId": "x86-0.5vcpu-1gb",
+      "toResourceModeId": "x86-1vcpu-2gb",
+      "criticalPathBefore": [
+        "ingest",
+        "transform-b",
+        "aggregate",
+        "publish"
+      ],
+      "makespanBeforeSeconds": 96,
+      "makespanAfterSeconds": 90,
+      "costBeforeUsd": 0.0020571,
+      "costAfterUsd": 0.00246852
+    },
+    {
+      "phase": "deadline-improvement",
+      "taskId": "transform-b",
+      "fromResourceModeId": "x86-0.5vcpu-1gb",
+      "toResourceModeId": "x86-1vcpu-2gb",
+      "criticalPathBefore": [
+        "ingest",
+        "transform-b",
+        "aggregate",
+        "publish"
+      ],
+      "makespanBeforeSeconds": 90,
+      "makespanAfterSeconds": 84,
+      "costBeforeUsd": 0.00246852,
+      "costAfterUsd": 0.00287994
+    },
+    {
+      "phase": "deadline-improvement",
+      "taskId": "publish",
+      "fromResourceModeId": "x86-0.25vcpu-0.5gb",
+      "toResourceModeId": "x86-0.5vcpu-1gb",
+      "criticalPathBefore": [
+        "ingest",
+        "transform-a",
+        "aggregate",
+        "publish"
+      ],
+      "makespanBeforeSeconds": 84,
+      "makespanAfterSeconds": 81,
+      "costBeforeUsd": 0.00287994,
+      "costAfterUsd": 0.00308565
+    },
+    {
+      "phase": "deadline-improvement",
+      "taskId": "transform-a",
+      "fromResourceModeId": "x86-1vcpu-2gb",
+      "toResourceModeId": "x86-2vcpu-4gb",
+      "criticalPathBefore": [
+        "ingest",
+        "transform-a",
+        "aggregate",
+        "publish"
+      ],
+      "makespanBeforeSeconds": 81,
+      "makespanAfterSeconds": 71,
+      "costBeforeUsd": 0.00308565,
+      "costAfterUsd": 0.003908490000000001
+    },
+    {
+      "phase": "deadline-improvement",
+      "taskId": "ingest",
+      "fromResourceModeId": "x86-0.25vcpu-0.5gb",
+      "toResourceModeId": "x86-0.5vcpu-1gb",
+      "criticalPathBefore": [
+        "ingest",
+        "transform-b",
+        "aggregate",
+        "publish"
+      ],
+      "makespanBeforeSeconds": 71,
+      "makespanAfterSeconds": 69,
+      "costBeforeUsd": 0.003908490000000001,
+      "costAfterUsd": 0.0041142
+    },
+    {
+      "phase": "deadline-improvement",
+      "taskId": "aggregate",
+      "fromResourceModeId": "x86-1vcpu-2gb",
+      "toResourceModeId": "x86-2vcpu-4gb",
+      "criticalPathBefore": [
+        "ingest",
+        "transform-b",
+        "aggregate",
+        "publish"
+      ],
+      "makespanBeforeSeconds": 69,
+      "makespanAfterSeconds": 65,
+      "costBeforeUsd": 0.0041142,
+      "costAfterUsd": 0.00493704
+    },
+    {
+      "phase": "deadline-improvement",
+      "taskId": "transform-b",
+      "fromResourceModeId": "x86-1vcpu-2gb",
+      "toResourceModeId": "x86-2vcpu-4gb",
+      "criticalPathBefore": [
+        "ingest",
+        "transform-b",
+        "aggregate",
+        "publish"
+      ],
+      "makespanBeforeSeconds": 65,
+      "makespanAfterSeconds": 61,
+      "costBeforeUsd": 0.00493704,
+      "costAfterUsd": 0.00575988
+    },
+    {
+      "phase": "deadline-improvement",
+      "taskId": "publish",
+      "fromResourceModeId": "x86-0.5vcpu-1gb",
+      "toResourceModeId": "x86-1vcpu-2gb",
+      "criticalPathBefore": [
+        "ingest",
+        "transform-a",
+        "aggregate",
+        "publish"
+      ],
+      "makespanBeforeSeconds": 61,
+      "makespanAfterSeconds": 59,
+      "costBeforeUsd": 0.00575988,
+      "costAfterUsd": 0.0061713
+    },
+    {
+      "phase": "deadline-improvement",
+      "taskId": "transform-a",
+      "fromResourceModeId": "x86-2vcpu-4gb",
+      "toResourceModeId": "x86-4vcpu-8gb",
+      "criticalPathBefore": [
+        "ingest",
+        "transform-a",
+        "aggregate",
+        "publish"
+      ],
+      "makespanBeforeSeconds": 59,
+      "makespanAfterSeconds": 53,
+      "costBeforeUsd": 0.0061713,
+      "costAfterUsd": 0.007816980000000001
+    },
+    {
+      "phase": "deadline-improvement",
+      "taskId": "publish",
+      "fromResourceModeId": "x86-1vcpu-2gb",
+      "toResourceModeId": "x86-2vcpu-4gb",
+      "criticalPathBefore": [
+        "ingest",
+        "transform-b",
+        "aggregate",
+        "publish"
+      ],
+      "makespanBeforeSeconds": 53,
+      "makespanAfterSeconds": 51,
+      "costBeforeUsd": 0.007816980000000001,
+      "costAfterUsd": 0.00863982
+    },
+    {
+      "phase": "deadline-improvement",
+      "taskId": "ingest",
+      "fromResourceModeId": "x86-0.5vcpu-1gb",
+      "toResourceModeId": "x86-1vcpu-2gb",
+      "criticalPathBefore": [
+        "ingest",
+        "transform-b",
+        "aggregate",
+        "publish"
+      ],
+      "makespanBeforeSeconds": 51,
+      "makespanAfterSeconds": 50,
+      "costBeforeUsd": 0.00863982,
+      "costAfterUsd": 0.00905124
+    }
+  ]
+}
