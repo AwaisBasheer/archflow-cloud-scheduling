@@ -177,6 +177,38 @@ Evidence: [ablation CSV](results/ablation_results.csv),
 [deadline figure](results/ablation_makespan_deadline.svg), and
 [frozen experiment inputs and outputs](artifacts/archflow/phase6/).
 
+## AWS execution method
+
+The real workflow has five data-dependent nodes:
+
+```text
+                 +-> cut-a -+
+generate-source -+          +-> merge -> validate
+                 +-> cut-b -+
+```
+
+The source generates a deterministic 24-second, 1280×720 H.264 stream. The cut
+branches produce 12-second segments. Merge reconstructs the stream. Validation
+checks codec, dimensions, duration, 720 frames, byte count, and SHA-256.
+
+Each DAG node is one ECS Fargate task with downloader, worker, and uploader
+containers. Intermediates use private S3 storage. Successors start only after
+their predecessors succeed and expected outputs exist. CloudWatch markers record
+application timestamps and actual architecture. ECS records supply image-pull
+and task-lifecycle timestamps.
+
+The measured experiment uses `us-east-1`, a 420-second deadline, and concurrency
+two. Worker and transfer images are pinned to immutable multi-architecture digests:
+
+- `lscr.io/linuxserver/ffmpeg@sha256:aea59a11c54291ac456bb2d67000445e5a8994f70bc3d96cdc29f022fbbf89fb`
+- `amazon/aws-cli@sha256:ce44b800602264c12298bbf3399055a4cefdb9ed4a098abe564afe26e7071bce`
+
+The execution package implements task/time/cost limits, failure cutoffs, output
+checks, and tracked-task cleanup. It uses the AWS SDK default credential chain.
+Recorded live operations used a connected AWS control-plane session because the
+original host had no local credential session. The reusable TypeScript runner
+was not the launcher used for those recorded executions.
+
 ## License and acknowledgements
 
 The upstream root [LICENSE](LICENSE) is Apache License 2.0. The preserved upstream

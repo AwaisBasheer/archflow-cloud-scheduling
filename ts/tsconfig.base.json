@@ -18,7 +18,8 @@
     "baseUrl": ".",
     "paths": {
       "@chunk-func/core": ["packages/core/src/index.ts"],
-      "@archflow/core": ["packages/archflow-core/src/index.ts"]
+      "@archflow/core": ["packages/archflow-core/src/index.ts"],
+      "@archflow/aws": ["packages/archflow-aws/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
