@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "runDate": "2026-10-10",
+  "region": "us-east-1",
+  "accountId": "777772816473",
+  "status": "completed_partial_and_cleaned_up",
+  "scope": {
+    "completed": [
+      "real multi-architecture FFmpeg smoke profiling",
+      "one complete fixed-ARM64 five-node data-dependent DAG",
+      "one complete fixed-X86_64 five-node data-dependent DAG",
+      "paired deadline and modeled-cost comparison"
+    ],
+    "notCompleted": [
+      "all five requested scheduler variants on real AWS",
+      "real-AWS prediction-error validation",
+      "multi-seed repetitions and statistical inference"
+    ]
+  },
+  "securityIncident": {
+    "category": "temporary_ecr_authorization_password exposed in an earlier execution transcript",
+    "investigatedWithCloudTrail": true,
+    "observedPrincipal": "arn:aws:iam::777772816473:root",
+    "scope": "ECR GetAuthorizationToken only",
+    "secretPersistedInWorkspace": false,
+    "mitigation": "No ECR repository was recreated; all executions used immutable public multi-architecture image digests. The token therefore had no private repository to access."
+  },
+  "execution": {
+    "containerImagesPublished": 0,
+    "taskDefinitionRevisionsRegistered": 14,
+    "taskDefinitionRevisionsInFinalSnapshot": 10,
+    "fargateTasksSubmitted": 18,
+    "fargateTasksCompleted": 18,
+    "fargateTasksSuccessful": 18,
+    "fargateTasksFailed": 0,
+    "retries": 0,
+    "realProfileSamples": 8,
+    "realDagExecutionsCompleted": 2,
+    "realDagTasksCompleted": 10
+  },
+  "estimatedCostUsd": {
+    "fargateComputeMemoryAndPublicIpv4": 0.013471660679166667,
+    "predeclaredAncillaryReserveAt0_001PerTask": 0.018000000000000002,
+    "conservativePossibleCostExplorerApi": 0.02,
+    "conservativeTotal": 0.05147166067916667,
+    "remainingAuthorizedHeadroom": 74.94852833932083,
+    "invoiceConfirmed": false
+  },
+  "cleanupVerified": {
+    "ecsClusterInactiveAndEmpty": true,
+    "activeExperimentTaskDefinitions": 0,
+    "ecrRepositories": 0,
+    "s3BucketAbsent": true,
+    "cloudWatchLogGroupAbsent": true,
+    "securityGroupAbsent": true,
+    "experimentIamRolesAbsent": true,
+    "retainedChargeableResources": 0
+  },
+  "evidence": {
+    "controlPlaneSnapshot": "artifacts/archflow/aws/task-telemetry/aws-control-plane-export.json",
+    "controlPlaneSnapshotSha256": "0301c7432902fb8a90da568ee0f5ba85db32ab1afa031c802cbbc40ca6096084",
+    "smokeTelemetry": "artifacts/archflow/aws/profiles/ffmpeg-smoke-telemetry.csv",
+    "measuredProfile": "artifacts/archflow/aws/profiles/measured-ffmpeg-profile.json",
+    "armWorkflow": "artifacts/archflow/aws/workflows/ffmpeg-arm-only-r1.json",
+    "x86Workflow": "artifacts/archflow/aws/workflows/ffmpeg-x86-only-r1.json",
+    "comparison": "artifacts/archflow/aws/results/real-workflow-comparison.csv"
+  }
+}

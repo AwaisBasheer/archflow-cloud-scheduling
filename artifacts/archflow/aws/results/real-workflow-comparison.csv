@@ -1,0 +1,3 @@
+scheduler,workflow,architecture,cpu_units,memory_mib,deadline_seconds,makespan_seconds,deadline_met,estimated_provider_cost_usd,tasks,successful_tasks,failed_tasks,retries,application_seconds_total,critical_path_application_seconds,dependency_release_delay_critical_path_seconds
+fixed-arm64-measured-profile,ffmpeg-arm-only-r1,ARM64,1024,2048,420,357.955248,true,0.0037094789680555554,5,5,0,0,42.091,33.727,116.933271
+fixed-x86-64-measured-profile,ffmpeg-x86-only-r1,X86_64,1024,2048,420,399.019988,true,0.004808886452777778,5,5,0,0,70.032,52.09,118.736915

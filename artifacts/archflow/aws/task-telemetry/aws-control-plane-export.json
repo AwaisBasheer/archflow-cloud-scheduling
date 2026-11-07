@@ -1,0 +1,4179 @@
+{
+  "capturedAt": "2026-10-10T16:59:15.788344+00:00",
+  "cluster": "archflow-real-20261010-resume",
+  "failures": [],
+  "logGroup": "/archflow/real-20261010-resume",
+  "logStreams": [
+    {
+      "events": [],
+      "logStreamName": "ecs/downloader/d1b075ab791b46268d6dfc43ec410340"
+    },
+    {
+      "events": [],
+      "logStreamName": "ecs/downloader/6dd9fdfa30174f01871dbd7c8adbf2da"
+    },
+    {
+      "events": [],
+      "logStreamName": "ecs/uploader/cb540b0e016f44b09f2bd0052c3d2018"
+    },
+    {
+      "events": [],
+      "logStreamName": "ecs/downloader/cb540b0e016f44b09f2bd0052c3d2018"
+    },
+    {
+      "events": [],
+      "logStreamName": "ecs/downloader/ed3ab8eefc324efca0f7c15b78dc4b9e"
+    },
+    {
+      "events": [],
+      "logStreamName": "ecs/downloader/20d3c708d6314572bced49bf3c6f6700"
+    },
+    {
+      "events": [],
+      "logStreamName": "ecs/uploader/20d3c708d6314572bced49bf3c6f6700"
+    },
+    {
+      "events": [],
+      "logStreamName": "ecs/uploader/ed3ab8eefc324efca0f7c15b78dc4b9e"
+    },
+    {
+      "events": [],
+      "logStreamName": "ecs/downloader/0458a7fc1f7843d4b5b02e82d9876d94"
+    },
+    {
+      "events": [],
+      "logStreamName": "ecs/downloader/530348aac7394734a5abd613a25f2a42"
+    },
+    {
+      "events": [],
+      "logStreamName": "ecs/uploader/9c98a61c226540dc8528d92489ca1b2e"
+    },
+    {
+      "events": [],
+      "logStreamName": "ecs/uploader/d1b075ab791b46268d6dfc43ec410340"
+    },
+    {
+      "events": [],
+      "logStreamName": "ecs/downloader/7cc454f8df4b4d9887aae7a4ddea5a80"
+    },
+    {
+      "events": [],
+      "logStreamName": "ecs/uploader/7cc454f8df4b4d9887aae7a4ddea5a80"
+    },
+    {
+      "events": [],
+      "logStreamName": "ecs/uploader/0458a7fc1f7843d4b5b02e82d9876d94"
+    },
+    {
+      "events": [],
+      "logStreamName": "ecs/uploader/530348aac7394734a5abd613a25f2a42"
+    },
+    {
+      "events": [],
+      "logStreamName": "ecs/uploader/d0b2465b4e3d4013aea056fd071ee43b"
+    },
+    {
+      "events": [],
+      "logStreamName": "ecs/uploader/6dd9fdfa30174f01871dbd7c8adbf2da"
+    },
+    {
+      "events": [],
+      "logStreamName": "ecs/downloader/9c98a61c226540dc8528d92489ca1b2e"
+    },
+    {
+      "events": [],
+      "logStreamName": "ecs/downloader/d0b2465b4e3d4013aea056fd071ee43b"
+    },
+    {
+      "events": [
+        {
+          "ingestionTime": 1791649380962,
+          "message": "{\"event\":\"archflow_application_start\",\"timestamp\":\"2026-10-10T16:22:56.181Z\"}",
+          "timestamp": 1791649376183
+        },
+        {
+          "ingestionTime": 1791649380962,
+          "message": "{\"event\":\"archflow_runtime\",\"architecture\":\"x86_64\",\"ffmpegVersion\":\"ffmpeg version 7.1.1 Copyright (c) 2000-2025 the FFmpeg developers\"}",
+          "timestamp": 1791649376390
+        },
+        {
+          "ingestionTime": 1791649445914,
+          "message": "{\"event\":\"archflow_output_validated\",\"codec\":\"h264\",\"width\":1280,\"height\":720,\"frames\":360,\"durationSeconds\":12.000000,\"sizeBytes\":4524108,\"sha256\":\"2716e009fa0437d755858322883479af1b69566fe2328b583cf9c68e20da99d8\"}",
+          "timestamp": 1791649443867
+        },
+        {
+          "ingestionTime": 1791649445914,
+          "message": "{\"event\":\"archflow_application_end\",\"timestamp\":\"2026-10-10T16:24:03.870Z\"}",
+          "timestamp": 1791649443870
+        }
+      ],
+      "logStreamName": "ecs/ffmpeg/bdc7da9cdec64adab31d75015f177b0e"
+    },
+    {
+      "events": [
+        {
+          "ingestionTime": 1791649597788,
+          "message": "{\"event\":\"archflow_application_start\",\"timestamp\":\"2026-10-10T16:26:32.795Z\"}",
+          "timestamp": 1791649592799
+        },
+        {
+          "ingestionTime": 1791649597788,
+          "message": "{\"event\":\"archflow_runtime\",\"architecture\":\"aarch64\",\"ffmpegVersion\":\"ffmpeg version 7.1.1 Copyright (c) 2000-2025 the FFmpeg developers\"}",
+          "timestamp": 1791649592856
+        },
+        {
+          "ingestionTime": 1791649627751,
+          "message": "{\"event\":\"archflow_output_validated\",\"codec\":\"h264\",\"width\":1280,\"height\":720,\"frames\":360,\"durationSeconds\":12.000000,\"sizeBytes\":4514689,\"sha256\":\"778414e35199586f2c8b6a9ad637977a5c4231d2d0f88f0e5d3031bad8fca5f6\"}",
+          "timestamp": 1791649624566
+        },
+        {
+          "ingestionTime": 1791649627751,
+          "message": "{\"event\":\"archflow_application_end\",\"timestamp\":\"2026-10-10T16:27:04.567Z\"}",
+          "timestamp": 1791649624567
+        }
+      ],
+      "logStreamName": "ecs/ffmpeg/23543a3c21ae48d4829363d1f099bdc5"
+    },
+    {
+      "events": [
+        {
+          "ingestionTime": 1791649606548,
+          "message": "{\"event\":\"archflow_application_start\",\"timestamp\":\"2026-10-10T16:26:41.663Z\"}",
+          "timestamp": 1791649601663
+        },
+        {
+          "ingestionTime": 1791649606548,
+          "message": "{\"event\":\"archflow_runtime\",\"architecture\":\"x86_64\",\"ffmpegVersion\":\"ffmpeg version 7.1.1 Copyright (c) 2000-2025 the FFmpeg developers\"}",
+          "timestamp": 1791649601690
+        },
+        {
+          "ingestionTime": 1791649621528,
+          "message": "{\"event\":\"archflow_output_validated\",\"codec\":\"h264\",\"width\":1280,\"height\":720,\"frames\":360,\"durationSeconds\":12.000000,\"sizeBytes\":4524108,\"sha256\":\"2716e009fa0437d755858322883479af1b69566fe2328b583cf9c68e20da99d8\"}",
+          "timestamp": 1791649618982
+        },
+        {
+          "ingestionTime": 1791649621528,
+          "message": "{\"event\":\"archflow_application_end\",\"timestamp\":\"2026-10-10T16:26:58.984Z\"}",
+          "timestamp": 1791649618984
+        }
+      ],
+      "logStreamName": "ecs/ffmpeg/1e881ca120714cf99aa513d5682e21ec"
+    },
+    {
+      "events": [
+        {
+          "ingestionTime": 1791649734850,
+          "message": "{\"event\":\"archflow_application_start\",\"timestamp\":\"2026-10-10T16:28:49.908Z\"}",
+          "timestamp": 1791649729909
+        },
+        {
+          "ingestionTime": 1791649734850,
+          "message": "{\"event\":\"archflow_runtime\",\"architecture\":\"aarch64\",\"ffmpegVersion\":\"ffmpeg version 7.1.1 Copyright (c) 2000-2025 the FFmpeg developers\"}",
+          "timestamp": 1791649729929
+        },
+        {
+          "ingestionTime": 1791649744828,
+          "message": "{\"event\":\"archflow_output_validated\",\"codec\":\"h264\",\"width\":1280,\"height\":720,\"frames\":360,\"durationSeconds\":12.000000,\"sizeBytes\":4516372,\"sha256\":\"3b48d9783fb4d306541efd79272c29c38af79986a58bfc5425dc0a7a1b618f00\"}",
+          "timestamp": 1791649743495
+        },
+        {
+          "ingestionTime": 1791649744828,
+          "message": "{\"event\":\"archflow_application_end\",\"timestamp\":\"2026-10-10T16:29:03.496Z\"}",
+          "timestamp": 1791649743496
+        }
+      ],
+      "logStreamName": "ecs/ffmpeg/0e08be8326524bbb80b9ba58b2649195"
+    },
+    {
+      "events": [
+        {
+          "ingestionTime": 1791649739250,
+          "message": "{\"event\":\"archflow_application_start\",\"timestamp\":\"2026-10-10T16:28:54.330Z\"}",
+          "timestamp": 1791649734331
+        },
+        {
+          "ingestionTime": 1791649739250,
+          "message": "{\"event\":\"archflow_runtime\",\"architecture\":\"x86_64\",\"ffmpegVersion\":\"ffmpeg version 7.1.1 Copyright (c) 2000-2025 the FFmpeg developers\"}",
+          "timestamp": 1791649734359
+        },
+        {
+          "ingestionTime": 1791649754218,
+          "message": "{\"event\":\"archflow_output_validated\",\"codec\":\"h264\",\"width\":1280,\"height\":720,\"frames\":360,\"durationSeconds\":12.000000,\"sizeBytes\":4524108,\"sha256\":\"2716e009fa0437d755858322883479af1b69566fe2328b583cf9c68e20da99d8\"}",
+          "timestamp": 1791649750618
+        },
+        {
+          "ingestionTime": 1791649754218,
+          "message": "{\"event\":\"archflow_application_end\",\"timestamp\":\"2026-10-10T16:29:10.619Z\"}",
+          "timestamp": 1791649750620
+        }
+      ],
+      "logStreamName": "ecs/ffmpeg/34de9cae3db8464891efdbbbaf4afc6c"
+    },
+    {
+      "events": [
+        {
+          "ingestionTime": 1791649864928,
+          "message": "{\"event\":\"archflow_application_start\",\"timestamp\":\"2026-10-10T16:30:59.975Z\"}",
+          "timestamp": 1791649859976
+        },
+        {
+          "ingestionTime": 1791649864928,
+          "message": "{\"event\":\"archflow_runtime\",\"architecture\":\"aarch64\",\"ffmpegVersion\":\"ffmpeg version 7.1.1 Copyright (c) 2000-2025 the FFmpeg developers\"}",
+          "timestamp": 1791649860042
+        },
+        {
+          "ingestionTime": 1791649899911,
+          "message": "{\"event\":\"archflow_output_validated\",\"codec\":\"h264\",\"width\":1280,\"height\":720,\"frames\":360,\"durationSeconds\":12.000000,\"sizeBytes\":4514689,\"sha256\":\"778414e35199586f2c8b6a9ad637977a5c4231d2d0f88f0e5d3031bad8fca5f6\"}",
+          "timestamp": 1791649896253
+        },
+        {
+          "ingestionTime": 1791649899911,
+          "message": "{\"event\":\"archflow_application_end\",\"timestamp\":\"2026-10-10T16:31:36.254Z\"}",
+          "timestamp": 1791649896254
+        }
+      ],
+      "logStreamName": "ecs/ffmpeg/a002ce35c186462fad0a32f4a36fd719"
+    },
+    {
+      "events": [
+        {
+          "ingestionTime": 1791649878783,
+          "message": "{\"event\":\"archflow_application_start\",\"timestamp\":\"2026-10-10T16:31:13.953Z\"}",
+          "timestamp": 1791649873955
+        },
+        {
+          "ingestionTime": 1791649878783,
+          "message": "{\"event\":\"archflow_runtime\",\"architecture\":\"x86_64\",\"ffmpegVersion\":\"ffmpeg version 7.1.1 Copyright (c) 2000-2025 the FFmpeg developers\"}",
+          "timestamp": 1791649874170
+        },
+        {
+          "ingestionTime": 1791649943708,
+          "message": "{\"event\":\"archflow_output_validated\",\"codec\":\"h264\",\"width\":1280,\"height\":720,\"frames\":360,\"durationSeconds\":12.000000,\"sizeBytes\":4524108,\"sha256\":\"2716e009fa0437d755858322883479af1b69566fe2328b583cf9c68e20da99d8\"}",
+          "timestamp": 1791649939947
+        },
+        {
+          "ingestionTime": 1791649943708,
+          "message": "{\"event\":\"archflow_application_end\",\"timestamp\":\"2026-10-10T16:32:19.950Z\"}",
+          "timestamp": 1791649939955
+        }
+      ],
+      "logStreamName": "ecs/ffmpeg/6ac4636a766b47cfb2e6671bae752162"
+    },
+    {
+      "events": [
+        {
+          "ingestionTime": 1791650062624,
+          "message": "{\"event\":\"archflow_application_start\",\"timestamp\":\"2026-10-10T16:34:17.676Z\"}",
+          "timestamp": 1791650057676
+        },
+        {
+          "ingestionTime": 1791650062624,
+          "message": "{\"event\":\"archflow_runtime\",\"architecture\":\"aarch64\",\"ffmpegVersion\":\"ffmpeg version 7.1.1 Copyright (c) 2000-2025 the FFmpeg developers\"}",
+          "timestamp": 1791650057698
+        },
+        {
+          "ingestionTime": 1791650072579,
+          "message": "{\"event\":\"archflow_output_validated\",\"codec\":\"h264\",\"width\":1280,\"height\":720,\"frames\":360,\"durationSeconds\":12.000000,\"sizeBytes\":4516372,\"sha256\":\"3b48d9783fb4d306541efd79272c29c38af79986a58bfc5425dc0a7a1b618f00\"}",
+          "timestamp": 1791650071424
+        },
+        {
+          "ingestionTime": 1791650072579,
+          "message": "{\"event\":\"archflow_application_end\",\"timestamp\":\"2026-10-10T16:34:31.425Z\"}",
+          "timestamp": 1791650071425
+        }
+      ],
+      "logStreamName": "ecs/ffmpeg/c75a1e63c29142598b72081a5024a24f"
+    },
+    {
+      "events": [
+        {
+          "ingestionTime": 1791650481407,
+          "message": "{\"event\":\"archflow_application_start\",\"timestamp\":\"2026-10-10T16:41:16.423Z\"}",
+          "timestamp": 1791650476425
+        },
+        {
+          "ingestionTime": 1791650481407,
+          "message": "{\"event\":\"archflow_runtime\",\"architecture\":\"aarch64\",\"ffmpegVersion\":\"ffmpeg version 7.1.1 Copyright (c) 2000-2025 the FFmpeg developers\"}",
+          "timestamp": 1791650476449
+        },
+        {
+          "ingestionTime": 1791650496380,
+          "message": "{\"event\":\"archflow_output_validated\",\"frames\":720,\"sizeBytes\":9030869,\"sha256\":\"05460b072a6c7c53960adfdb38ed56c5d6c4b9db05e04d8fd41f489380bde66b\",\"objectKey\":\"dag/arm-only/source.mp4\"}",
+          "timestamp": 1791650495614
+        },
+        {
+          "ingestionTime": 1791650496380,
+          "message": "{\"event\":\"archflow_application_end\",\"timestamp\":\"2026-10-10T16:41:35.615Z\"}",
+          "timestamp": 1791650495615
+        }
+      ],
+      "logStreamName": "ecs/worker/ed3ab8eefc324efca0f7c15b78dc4b9e"
+    },
+    {
+      "events": [
+        {
+          "ingestionTime": 1791650584456,
+          "message": "{\"event\":\"archflow_application_start\",\"timestamp\":\"2026-10-10T16:42:59.471Z\"}",
+          "timestamp": 1791650579473
+        },
+        {
+          "ingestionTime": 1791650584456,
+          "message": "{\"event\":\"archflow_runtime\",\"architecture\":\"aarch64\",\"ffmpegVersion\":\"ffmpeg version 7.1.1 Copyright (c) 2000-2025 the FFmpeg developers\"}",
+          "timestamp": 1791650579492
+        },
+        {
+          "ingestionTime": 1791650589419,
+          "message": "{\"event\":\"archflow_output_validated\",\"frames\":360,\"sizeBytes\":4297478,\"sha256\":\"ed582f16a22cb7bc69504d31f5edb17fe347ff34a7ab173bd3d859f23263f6b4\",\"objectKey\":\"dag/arm-only/cut-b.mp4\"}",
+          "timestamp": 1791650587834
+        },
+        {
+          "ingestionTime": 1791650589419,
+          "message": "{\"event\":\"archflow_application_end\",\"timestamp\":\"2026-10-10T16:43:07.835Z\"}",
+          "timestamp": 1791650587835
+        }
+      ],
+      "logStreamName": "ecs/worker/530348aac7394734a5abd613a25f2a42"
+    },
+    {
+      "events": [
+        {
+          "ingestionTime": 1791650584495,
+          "message": "{\"event\":\"archflow_application_start\",\"timestamp\":\"2026-10-10T16:42:59.500Z\"}",
+          "timestamp": 1791650579500
+        },
+        {
+          "ingestionTime": 1791650584495,
+          "message": "{\"event\":\"archflow_runtime\",\"architecture\":\"aarch64\",\"ffmpegVersion\":\"ffmpeg version 7.1.1 Copyright (c) 2000-2025 the FFmpeg developers\"}",
+          "timestamp": 1791650579516
+        },
+        {
+          "ingestionTime": 1791650594457,
+          "message": "{\"event\":\"archflow_output_validated\",\"frames\":360,\"sizeBytes\":4272546,\"sha256\":\"b67465252074738b8a3f633a4657f921111625afa3b0021a9ed3bf1a06b8c6da\",\"objectKey\":\"dag/arm-only/cut-a.mp4\"}",
+          "timestamp": 1791650593803
+        },
+        {
+          "ingestionTime": 1791650594457,
+          "message": "{\"event\":\"archflow_application_end\",\"timestamp\":\"2026-10-10T16:43:13.803Z\"}",
+          "timestamp": 1791650593804
+        }
+      ],
+      "logStreamName": "ecs/worker/20d3c708d6314572bced49bf3c6f6700"
+    },
+    {
+      "events": [
+        {
+          "ingestionTime": 1791650705034,
+          "message": "{\"event\":\"archflow_application_start\",\"timestamp\":\"2026-10-10T16:45:00.041Z\"}",
+          "timestamp": 1791650700044
+        },
+        {
+          "ingestionTime": 1791650705034,
+          "message": "{\"event\":\"archflow_runtime\",\"architecture\":\"aarch64\",\"ffmpegVersion\":\"ffmpeg version 7.1.1 Copyright (c) 2000-2025 the FFmpeg developers\"}",
+          "timestamp": 1791650700073
+        },
+        {
+          "ingestionTime": 1791650705034,
+          "message": "{\"event\":\"archflow_output_validated\",\"frames\":720,\"durationSeconds\":24.000000,\"sizeBytes\":8569305,\"sha256\":\"1cd3c10c51f2ca6380da0cf4c861e66d014bb61278c3a2e9133dbbbdf1be733e\",\"objectKey\":\"dag/arm-only/merged.mp4\"}",
+          "timestamp": 1791650700152
+        },
+        {
+          "ingestionTime": 1791650705034,
+          "message": "{\"event\":\"archflow_application_end\",\"timestamp\":\"2026-10-10T16:45:00.153Z\"}",
+          "timestamp": 1791650700153
+        }
+      ],
+      "logStreamName": "ecs/worker/0458a7fc1f7843d4b5b02e82d9876d94"
+    },
+    {
+      "events": [
+        {
+          "ingestionTime": 1791650790539,
+          "message": "{\"event\":\"archflow_application_start\",\"timestamp\":\"2026-10-10T16:46:25.557Z\"}",
+          "timestamp": 1791650785559
+        },
+        {
+          "ingestionTime": 1791650790539,
+          "message": "{\"event\":\"archflow_runtime\",\"architecture\":\"aarch64\",\"ffmpegVersion\":\"ffmpeg version 7.1.1 Copyright (c) 2000-2025 the FFmpeg developers\"}",
+          "timestamp": 1791650785579
+        },
+        {
+          "ingestionTime": 1791650790539,
+          "message": "{\"event\":\"archflow_output_validated\",\"codec\":\"h264\",\"width\":1280,\"height\":720,\"frames\":720,\"durationSeconds\":24.000000,\"sizeBytes\":8569305,\"sha256\":\"1cd3c10c51f2ca6380da0cf4c861e66d014bb61278c3a2e9133dbbbdf1be733e\",\"objectKey\":\"dag/arm-only/merged.mp4\"}",
+          "timestamp": 1791650785676
+        },
+        {
+          "ingestionTime": 1791650790539,
+          "message": "{\"event\":\"archflow_application_end\",\"timestamp\":\"2026-10-10T16:46:25.677Z\"}",
+          "timestamp": 1791650785677
+        }
+      ],
+      "logStreamName": "ecs/worker/9c98a61c226540dc8528d92489ca1b2e"
+    },
+    {
+      "events": [
+        {
+          "ingestionTime": 1791650959805,
+          "message": "{\"event\":\"archflow_application_start\",\"timestamp\":\"2026-10-10T16:49:14.827Z\"}",
+          "timestamp": 1791650954828
+        },
+        {
+          "ingestionTime": 1791650959805,
+          "message": "{\"event\":\"archflow_runtime\",\"architecture\":\"x86_64\",\"ffmpegVersion\":\"ffmpeg version 7.1.1 Copyright (c) 2000-2025 the FFmpeg developers\"}",
+          "timestamp": 1791650954855
+        },
+        {
+          "ingestionTime": 1791650989754,
+          "message": "{\"event\":\"archflow_output_validated\",\"frames\":720,\"sizeBytes\":9051068,\"sha256\":\"d5b443dc6f72ddf36bfdccc25cddf86229c632a4940b541099e42c80f92ba86e\",\"objectKey\":\"dag/x86-only/source.mp4\"}",
+          "timestamp": 1791650988061
+        },
+        {
+          "ingestionTime": 1791650989754,
+          "message": "{\"event\":\"archflow_application_end\",\"timestamp\":\"2026-10-10T16:49:48.063Z\"}",
+          "timestamp": 1791650988063
+        }
+      ],
+      "logStreamName": "ecs/worker/6dd9fdfa30174f01871dbd7c8adbf2da"
+    },
+    {
+      "events": [
+        {
+          "ingestionTime": 1791651093957,
+          "message": "{\"event\":\"archflow_application_start\",\"timestamp\":\"2026-10-10T16:51:29.004Z\"}",
+          "timestamp": 1791651089004
+        },
+        {
+          "ingestionTime": 1791651093957,
+          "message": "{\"event\":\"archflow_runtime\",\"architecture\":\"x86_64\",\"ffmpegVersion\":\"ffmpeg version 7.1.1 Copyright (c) 2000-2025 the FFmpeg developers\"}",
+          "timestamp": 1791651089029
+        },
+        {
+          "ingestionTime": 1791651108928,
+          "message": "{\"event\":\"archflow_output_validated\",\"frames\":360,\"sizeBytes\":4287298,\"sha256\":\"cc46f629a222b69b377e0d477b00a5c1799cf5751f39472ab0aff2a452915a43\",\"objectKey\":\"dag/x86-only/cut-a.mp4\"}",
+          "timestamp": 1791651106944
+        },
+        {
+          "ingestionTime": 1791651108928,
+          "message": "{\"event\":\"archflow_application_end\",\"timestamp\":\"2026-10-10T16:51:46.946Z\"}",
+          "timestamp": 1791651106946
+        }
+      ],
+      "logStreamName": "ecs/worker/d0b2465b4e3d4013aea056fd071ee43b"
+    },
+    {
+      "events": [
+        {
+          "ingestionTime": 1791651098162,
+          "message": "{\"event\":\"archflow_application_start\",\"timestamp\":\"2026-10-10T16:51:33.197Z\"}",
+          "timestamp": 1791651093197
+        },
+        {
+          "ingestionTime": 1791651098162,
+          "message": "{\"event\":\"archflow_runtime\",\"architecture\":\"x86_64\",\"ffmpegVersion\":\"ffmpeg version 7.1.1 Copyright (c) 2000-2025 the FFmpeg developers\"}",
+          "timestamp": 1791651093220
+        },
+        {
+          "ingestionTime": 1791651113122,
+          "message": "{\"event\":\"archflow_output_validated\",\"frames\":360,\"sizeBytes\":4296740,\"sha256\":\"35610a6944feebe29a2c05c48cb0c008ab32a3fccd43fce0d9035901d047cee1\",\"objectKey\":\"dag/x86-only/cut-b.mp4\"}",
+          "timestamp": 1791651111735
+        },
+        {
+          "ingestionTime": 1791651113122,
+          "message": "{\"event\":\"archflow_application_end\",\"timestamp\":\"2026-10-10T16:51:51.736Z\"}",
+          "timestamp": 1791651111737
+        }
+      ],
+      "logStreamName": "ecs/worker/7cc454f8df4b4d9887aae7a4ddea5a80"
+    },
+    {
+      "events": [
+        {
+          "ingestionTime": 1791651216473,
+          "message": "{\"event\":\"archflow_application_start\",\"timestamp\":\"2026-10-10T16:53:31.506Z\"}",
+          "timestamp": 1791651211507
+        },
+        {
+          "ingestionTime": 1791651216473,
+          "message": "{\"event\":\"archflow_runtime\",\"architecture\":\"x86_64\",\"ffmpegVersion\":\"ffmpeg version 7.1.1 Copyright (c) 2000-2025 the FFmpeg developers\"}",
+          "timestamp": 1791651211527
+        },
+        {
+          "ingestionTime": 1791651216473,
+          "message": "{\"event\":\"archflow_output_validated\",\"frames\":720,\"durationSeconds\":24.000000,\"sizeBytes\":8583319,\"sha256\":\"d4a27835336627e57c3479bf7ed1f925080e19344713e6dac5df96f9f3ab4e5c\",\"objectKey\":\"dag/x86-only/merged.mp4\"}",
+          "timestamp": 1791651211640
+        },
+        {
+          "ingestionTime": 1791651216473,
+          "message": "{\"event\":\"archflow_application_end\",\"timestamp\":\"2026-10-10T16:53:31.640Z\"}",
+          "timestamp": 1791651211641
+        }
+      ],
+      "logStreamName": "ecs/worker/d1b075ab791b46268d6dfc43ec410340"
+    },
+    {
+      "events": [
+        {
+          "ingestionTime": 1791651295842,
+          "message": "{\"event\":\"archflow_application_start\",\"timestamp\":\"2026-10-10T16:54:50.891Z\"}",
+          "timestamp": 1791651290892
+        },
+        {
+          "ingestionTime": 1791651295842,
+          "message": "{\"event\":\"archflow_runtime\",\"architecture\":\"x86_64\",\"ffmpegVersion\":\"ffmpeg version 7.1.1 Copyright (c) 2000-2025 the FFmpeg developers\"}",
+          "timestamp": 1791651290914
+        },
+        {
+          "ingestionTime": 1791651295842,
+          "message": "{\"event\":\"archflow_output_validated\",\"codec\":\"h264\",\"width\":1280,\"height\":720,\"frames\":720,\"durationSeconds\":24.000000,\"sizeBytes\":8583319,\"sha256\":\"d4a27835336627e57c3479bf7ed1f925080e19344713e6dac5df96f9f3ab4e5c\",\"objectKey\":\"dag/x86-only/merged.mp4\"}",
+          "timestamp": 1791651291071
+        },
+        {
+          "ingestionTime": 1791651295842,
+          "message": "{\"event\":\"archflow_application_end\",\"timestamp\":\"2026-10-10T16:54:51.072Z\"}",
+          "timestamp": 1791651291073
+        }
+      ],
+      "logStreamName": "ecs/worker/cb540b0e016f44b09f2bd0052c3d2018"
+    }
+  ],
+  "region": "us-east-1",
+  "s3ObjectsBeforeSnapshot": [
+    {
+      "ChecksumAlgorithm": [
+        "CRC64NVME"
+      ],
+      "ChecksumType": "FULL_OBJECT",
+      "ETag": "\"99714d1c2109f04b3aeda22c9033f581\"",
+      "Key": "dag/arm-only/cut-a.mp4",
+      "LastModified": "2026-10-10T16:43:15+00:00",
+      "Size": 4272546,
+      "StorageClass": "STANDARD"
+    },
+    {
+      "ChecksumAlgorithm": [
+        "CRC64NVME"
+      ],
+      "ChecksumType": "FULL_OBJECT",
+      "ETag": "\"0e703407bbe4dbf626a24ebb6e4d45cd\"",
+      "Key": "dag/arm-only/cut-b.mp4",
+      "LastModified": "2026-10-10T16:43:09+00:00",
+      "Size": 4297478,
+      "StorageClass": "STANDARD"
+    },
+    {
+      "ChecksumAlgorithm": [
+        "CRC64NVME"
+      ],
+      "ChecksumType": "FULL_OBJECT",
+      "ETag": "\"c4adeb2d500063c1020498e347273b69-2\"",
+      "Key": "dag/arm-only/merged.mp4",
+      "LastModified": "2026-10-10T16:45:01+00:00",
+      "Size": 8569305,
+      "StorageClass": "STANDARD"
+    },
+    {
+      "ChecksumAlgorithm": [
+        "CRC64NVME"
+      ],
+      "ChecksumType": "FULL_OBJECT",
+      "ETag": "\"fe7addd68a901ed357d520cf877a47c3-2\"",
+      "Key": "dag/arm-only/source.mp4",
+      "LastModified": "2026-10-10T16:41:37+00:00",
+      "Size": 9030869,
+      "StorageClass": "STANDARD"
+    },
+    {
+      "ChecksumAlgorithm": [
+        "CRC64NVME"
+      ],
+      "ChecksumType": "FULL_OBJECT",
+      "ETag": "\"e43cfe8c2351773e64eb3c5527aef7ac\"",
+      "Key": "dag/x86-only/cut-a.mp4",
+      "LastModified": "2026-10-10T16:51:49+00:00",
+      "Size": 4287298,
+      "StorageClass": "STANDARD"
+    },
+    {
+      "ChecksumAlgorithm": [
+        "CRC64NVME"
+      ],
+      "ChecksumType": "FULL_OBJECT",
+      "ETag": "\"d884de38e8d617281cf94ebe7954fb67\"",
+      "Key": "dag/x86-only/cut-b.mp4",
+      "LastModified": "2026-10-10T16:51:53+00:00",
+      "Size": 4296740,
+      "StorageClass": "STANDARD"
+    },
+    {
+      "ChecksumAlgorithm": [
+        "CRC64NVME"
+      ],
+      "ChecksumType": "FULL_OBJECT",
+      "ETag": "\"8dfa7e034311cb356b9df04a1c28c4ff-2\"",
+      "Key": "dag/x86-only/merged.mp4",
+      "LastModified": "2026-10-10T16:53:33+00:00",
+      "Size": 8583319,
+      "StorageClass": "STANDARD"
+    },
+    {
+      "ChecksumAlgorithm": [
+        "CRC64NVME"
+      ],
+      "ChecksumType": "FULL_OBJECT",
+      "ETag": "\"1e4f7a21d4107e2dedb7d021b59d70ee-2\"",
+      "Key": "dag/x86-only/source.mp4",
+      "LastModified": "2026-10-10T16:49:50+00:00",
+      "Size": 9051068,
+      "StorageClass": "STANDARD"
+    }
+  ],
+  "schemaVersion": 1,
+  "taskDefinitions": [
+    {
+      "tags": [
+        {
+          "key": "Project",
+          "value": "ArchFlow-H"
+        },
+        {
+          "key": "Purpose",
+          "value": "research"
+        },
+        {
+          "key": "ManagedBy",
+          "value": "Codex"
+        },
+        {
+          "key": "Experiment",
+          "value": "real-aws-20261010-resume"
+        }
+      ],
+      "taskDefinition": {
+        "compatibilities": [
+          "EC2",
+          "FARGATE",
+          "MANAGED_INSTANCES"
+        ],
+        "containerDefinitions": [
+          {
+            "command": [
+              "echo ArchFlow command override required"
+            ],
+            "cpu": 0,
+            "entryPoint": [
+              "/bin/bash",
+              "-lc"
+            ],
+            "environment": [],
+            "essential": true,
+            "image": "lscr.io/linuxserver/ffmpeg@sha256:aea59a11c54291ac456bb2d67000445e5a8994f70bc3d96cdc29f022fbbf89fb",
+            "logConfiguration": {
+              "logDriver": "awslogs",
+              "options": {
+                "awslogs-group": "/archflow/real-20261010-resume",
+                "awslogs-region": "us-east-1",
+                "awslogs-stream-prefix": "ecs",
+                "mode": "blocking"
+              }
+            },
+            "mountPoints": [],
+            "name": "ffmpeg",
+            "portMappings": [],
+            "readonlyRootFilesystem": false,
+            "stopTimeout": 30,
+            "systemControls": [],
+            "volumesFrom": []
+          }
+        ],
+        "cpu": "256",
+        "executionRoleArn": "arn:aws:iam::777772816473:role/archflow/ArchFlowFargateExecution-20261010-resume",
+        "family": "archflow-ffmpeg-x86-025-05",
+        "memory": "512",
+        "networkMode": "awsvpc",
+        "placementConstraints": [],
+        "registeredAt": "2026-10-10T16:22:27.804000+00:00",
+        "registeredBy": "arn:aws:iam::777772816473:root",
+        "requiresAttributes": [
+          {
+            "name": "com.amazonaws.ecs.capability.logging-driver.awslogs"
+          },
+          {
+            "name": "ecs.capability.execution-role-awslogs"
+          },
+          {
+            "name": "com.amazonaws.ecs.capability.docker-remote-api.1.19"
+          },
+          {
+            "name": "com.amazonaws.ecs.capability.docker-remote-api.1.28"
+          },
+          {
+            "name": "com.amazonaws.ecs.capability.docker-remote-api.1.21"
+          },
+          {
+            "name": "ecs.capability.container-ordering"
+          },
+          {
+            "name": "com.amazonaws.ecs.capability.docker-remote-api.1.18"
+          },
+          {
+            "name": "ecs.capability.task-eni"
+          }
+        ],
+        "requiresCompatibilities": [
+          "FARGATE"
+        ],
+        "revision": 2,
+        "runtimePlatform": {
+          "cpuArchitecture": "X86_64",
+          "operatingSystemFamily": "LINUX"
+        },
+        "status": "ACTIVE",
+        "taskDefinitionArn": "arn:aws:ecs:us-east-1:777772816473:task-definition/archflow-ffmpeg-x86-025-05:2",
+        "volumes": []
+      }
+    },
+    {
+      "tags": [
+        {
+          "key": "Project",
+          "value": "ArchFlow-H"
+        },
+        {
+          "key": "Purpose",
+          "value": "research"
+        },
+        {
+          "key": "ManagedBy",
+          "value": "Codex"
+        },
+        {
+          "key": "Experiment",
+          "value": "real-aws-20261010-resume"
+        }
+      ],
+      "taskDefinition": {
+        "compatibilities": [
+          "EC2",
+          "FARGATE",
+          "MANAGED_INSTANCES"
+        ],
+        "containerDefinitions": [
+          {
+            "command": [
+              "set -euo pipefail\nstart=$(date -u +%Y-%m-%dT%H:%M:%S.%3NZ)\nprintf '{\"event\":\"archflow_application_start\",\"timestamp\":\"%s\"}\\n' \"$start\"\narch=$(uname -m)\nffver=$(ffmpeg -version | sed -n '1p' | sed 's/\"/\\\\\"/g')\nprintf '{\"event\":\"archflow_runtime\",\"architecture\":\"%s\",\"ffmpegVersion\":\"%s\"}\\n' \"$arch\" \"$ffver\"\nffmpeg -hide_banner -loglevel error -y -f lavfi -i testsrc2=size=1280x720:rate=30 -t 12 -c:v libx264 -preset medium -crf 23 -pix_fmt yuv420p /tmp/archflow-smoke.mp4\ncodec=$(ffprobe -v error -select_streams v:0 -show_entries stream=codec_name -of default=noprint_wrappers=1:nokey=1 /tmp/archflow-smoke.mp4)\nwidth=$(ffprobe -v error -select_streams v:0 -show_entries stream=width -of default=noprint_wrappers=1:nokey=1 /tmp/archflow-smoke.mp4)\nheight=$(ffprobe -v error -select_streams v:0 -show_entries stream=height -of default=noprint_wrappers=1:nokey=1 /tmp/archflow-smoke.mp4)\nframes=$(ffprobe -v error -select_streams v:0 -show_entries stream=nb_frames -of default=noprint_wrappers=1:nokey=1 /tmp/archflow-smoke.mp4)\nduration=$(ffprobe -v error -show_entries format=duration -of default=noprint_wrappers=1:nokey=1 /tmp/archflow-smoke.mp4)\nsize=$(stat -c%s /tmp/archflow-smoke.mp4)\nchecksum=$(sha256sum /tmp/archflow-smoke.mp4 | cut -d' ' -f1)\ntest \"$codec\" = h264\ntest \"$width\" = 1280\ntest \"$height\" = 720\ntest \"$frames\" = 360\ntest \"$size\" -gt 100000\nprintf '{\"event\":\"archflow_output_validated\",\"codec\":\"%s\",\"width\":%s,\"height\":%s,\"frames\":%s,\"durationSeconds\":%s,\"sizeBytes\":%s,\"sha256\":\"%s\"}\\n' \"$codec\" \"$width\" \"$height\" \"$frames\" \"$duration\" \"$size\" \"$checksum\"\nend=$(date -u +%Y-%m-%dT%H:%M:%S.%3NZ)\nprintf '{\"event\":\"archflow_application_end\",\"timestamp\":\"%s\"}\\n' \"$end\"\n"
+            ],
+            "cpu": 0,
+            "entryPoint": [
+              "/bin/bash",
+              "-lc"
+            ],
+            "environment": [],
+            "essential": true,
+            "image": "lscr.io/linuxserver/ffmpeg@sha256:aea59a11c54291ac456bb2d67000445e5a8994f70bc3d96cdc29f022fbbf89fb",
+            "logConfiguration": {
+              "logDriver": "awslogs",
+              "options": {
+                "awslogs-group": "/archflow/real-20261010-resume",
+                "awslogs-region": "us-east-1",
+                "awslogs-stream-prefix": "ecs",
+                "mode": "blocking"
+              }
+            },
+            "mountPoints": [],
+            "name": "ffmpeg",
+            "portMappings": [],
+            "readonlyRootFilesystem": false,
+            "stopTimeout": 30,
+            "systemControls": [],
+            "volumesFrom": []
+          }
+        ],
+        "cpu": "256",
+        "executionRoleArn": "arn:aws:iam::777772816473:role/archflow/ArchFlowFargateExecution-20261010-resume",
+        "family": "archflow-ffmpeg-x86-025-05",
+        "memory": "512",
+        "networkMode": "awsvpc",
+        "placementConstraints": [],
+        "registeredAt": "2026-10-10T16:26:13.866000+00:00",
+        "registeredBy": "arn:aws:iam::777772816473:root",
+        "requiresAttributes": [
+          {
+            "name": "com.amazonaws.ecs.capability.logging-driver.awslogs"
+          },
+          {
+            "name": "ecs.capability.execution-role-awslogs"
+          },
+          {
+            "name": "com.amazonaws.ecs.capability.docker-remote-api.1.19"
+          },
+          {
+            "name": "com.amazonaws.ecs.capability.docker-remote-api.1.28"
+          },
+          {
+            "name": "com.amazonaws.ecs.capability.docker-remote-api.1.21"
+          },
+          {
+            "name": "ecs.capability.container-ordering"
+          },
+          {
+            "name": "com.amazonaws.ecs.capability.docker-remote-api.1.18"
+          },
+          {
+            "name": "ecs.capability.task-eni"
+          }
+        ],
+        "requiresCompatibilities": [
+          "FARGATE"
+        ],
+        "revision": 3,
+        "runtimePlatform": {
+          "cpuArchitecture": "X86_64",
+          "operatingSystemFamily": "LINUX"
+        },
+        "status": "ACTIVE",
+        "taskDefinitionArn": "arn:aws:ecs:us-east-1:777772816473:task-definition/archflow-ffmpeg-x86-025-05:3",
+        "volumes": []
+      }
+    },
+    {
+      "tags": [
+        {
+          "key": "Project",
+          "value": "ArchFlow-H"
+        },
+        {
+          "key": "Purpose",
+          "value": "research"
+        },
+        {
+          "key": "ManagedBy",
+          "value": "Codex"
+        },
+        {
+          "key": "Experiment",
+          "value": "real-aws-20261010-resume"
+        }
+      ],
+      "taskDefinition": {
+        "compatibilities": [
+          "EC2",
+          "FARGATE",
+          "MANAGED_INSTANCES"
+        ],
+        "containerDefinitions": [
+          {
+            "command": [
+              "echo ArchFlow command override required"
+            ],
+            "cpu": 0,
+            "entryPoint": [
+              "/bin/bash",
+              "-lc"
+            ],
+            "environment": [],
+            "essential": true,
+            "image": "lscr.io/linuxserver/ffmpeg@sha256:aea59a11c54291ac456bb2d67000445e5a8994f70bc3d96cdc29f022fbbf89fb",
+            "logConfiguration": {
+              "logDriver": "awslogs",
+              "options": {
+                "awslogs-group": "/archflow/real-20261010-resume",
+                "awslogs-region": "us-east-1",
+                "awslogs-stream-prefix": "ecs",
+                "mode": "blocking"
+              }
+            },
+            "mountPoints": [],
+            "name": "ffmpeg",
+            "portMappings": [],
+            "readonlyRootFilesystem": false,
+            "stopTimeout": 30,
+            "systemControls": [],
+            "volumesFrom": []
+          }
+        ],
+        "cpu": "1024",
+        "executionRoleArn": "arn:aws:iam::777772816473:role/archflow/ArchFlowFargateExecution-20261010-resume",
+        "family": "archflow-ffmpeg-x86-1-2",
+        "memory": "2048",
+        "networkMode": "awsvpc",
+        "placementConstraints": [],
+        "registeredAt": "2026-10-10T16:22:28.467000+00:00",
+        "registeredBy": "arn:aws:iam::777772816473:root",
+        "requiresAttributes": [
+          {
+            "name": "com.amazonaws.ecs.capability.logging-driver.awslogs"
+          },
+          {
+            "name": "ecs.capability.execution-role-awslogs"
+          },
+          {
+            "name": "com.amazonaws.ecs.capability.docker-remote-api.1.19"
+          },
+          {
+            "name": "com.amazonaws.ecs.capability.docker-remote-api.1.28"
+          },
+          {
+            "name": "com.amazonaws.ecs.capability.docker-remote-api.1.21"
+          },
+          {
+            "name": "ecs.capability.container-ordering"
+          },
+          {
+            "name": "com.amazonaws.ecs.capability.docker-remote-api.1.18"
+          },
+          {
+            "name": "ecs.capability.task-eni"
+          }
+        ],
+        "requiresCompatibilities": [
+          "FARGATE"
+        ],
+        "revision": 2,
+        "runtimePlatform": {
+          "cpuArchitecture": "X86_64",
+          "operatingSystemFamily": "LINUX"
+        },
+        "status": "ACTIVE",
+        "taskDefinitionArn": "arn:aws:ecs:us-east-1:777772816473:task-definition/archflow-ffmpeg-x86-1-2:2",
+        "volumes": []
+      }
+    },
+    {
+      "tags": [
+        {
+          "key": "Project",
+          "value": "ArchFlow-H"
+        },
+        {
+          "key": "Purpose",
+          "value": "research"
+        },
+        {
+          "key": "ManagedBy",
+          "value": "Codex"
+        },
+        {
+          "key": "Experiment",
+          "value": "real-aws-20261010-resume"
+        }
+      ],
+      "taskDefinition": {
+        "compatibilities": [
+          "EC2",
+          "MANAGED_INSTANCES",
+          "FARGATE"
+        ],
+        "containerDefinitions": [
+          {
+            "command": [
+              "set -euo pipefail\nstart=$(date -u +%Y-%m-%dT%H:%M:%S.%3NZ)\nprintf '{\"event\":\"archflow_application_start\",\"timestamp\":\"%s\"}\\n' \"$start\"\narch=$(uname -m)\nffver=$(ffmpeg -version | sed -n '1p' | sed 's/\"/\\\\\"/g')\nprintf '{\"event\":\"archflow_runtime\",\"architecture\":\"%s\",\"ffmpegVersion\":\"%s\"}\\n' \"$arch\" \"$ffver\"\nffmpeg -hide_banner -loglevel error -y -f lavfi -i testsrc2=size=1280x720:rate=30 -t 12 -c:v libx264 -preset medium -crf 23 -pix_fmt yuv420p /tmp/archflow-smoke.mp4\ncodec=$(ffprobe -v error -select_streams v:0 -show_entries stream=codec_name -of default=noprint_wrappers=1:nokey=1 /tmp/archflow-smoke.mp4)\nwidth=$(ffprobe -v error -select_streams v:0 -show_entries stream=width -of default=noprint_wrappers=1:nokey=1 /tmp/archflow-smoke.mp4)\nheight=$(ffprobe -v error -select_streams v:0 -show_entries stream=height -of default=noprint_wrappers=1:nokey=1 /tmp/archflow-smoke.mp4)\nframes=$(ffprobe -v error -select_streams v:0 -show_entries stream=nb_frames -of default=noprint_wrappers=1:nokey=1 /tmp/archflow-smoke.mp4)\nduration=$(ffprobe -v error -show_entries format=duration -of default=noprint_wrappers=1:nokey=1 /tmp/archflow-smoke.mp4)\nsize=$(stat -c%s /tmp/archflow-smoke.mp4)\nchecksum=$(sha256sum /tmp/archflow-smoke.mp4 | cut -d' ' -f1)\ntest \"$codec\" = h264\ntest \"$width\" = 1280\ntest \"$height\" = 720\ntest \"$frames\" = 360\ntest \"$size\" -gt 100000\nprintf '{\"event\":\"archflow_output_validated\",\"codec\":\"%s\",\"width\":%s,\"height\":%s,\"frames\":%s,\"durationSeconds\":%s,\"sizeBytes\":%s,\"sha256\":\"%s\"}\\n' \"$codec\" \"$width\" \"$height\" \"$frames\" \"$duration\" \"$size\" \"$checksum\"\nend=$(date -u +%Y-%m-%dT%H:%M:%S.%3NZ)\nprintf '{\"event\":\"archflow_application_end\",\"timestamp\":\"%s\"}\\n' \"$end\"\n"
+            ],
+            "cpu": 0,
+            "entryPoint": [
+              "/bin/bash",
+              "-lc"
+            ],
+            "environment": [],
+            "essential": true,
+            "image": "lscr.io/linuxserver/ffmpeg@sha256:aea59a11c54291ac456bb2d67000445e5a8994f70bc3d96cdc29f022fbbf89fb",
+            "logConfiguration": {
+              "logDriver": "awslogs",
+              "options": {
+                "awslogs-group": "/archflow/real-20261010-resume",
+                "awslogs-region": "us-east-1",
+                "awslogs-stream-prefix": "ecs",
+                "mode": "blocking"
+              }
+            },
+            "mountPoints": [],
+            "name": "ffmpeg",
+            "portMappings": [],
+            "readonlyRootFilesystem": false,
+            "stopTimeout": 30,
+            "systemControls": [],
+            "volumesFrom": []
+          }
+        ],
+        "cpu": "1024",
+        "executionRoleArn": "arn:aws:iam::777772816473:role/archflow/ArchFlowFargateExecution-20261010-resume",
+        "family": "archflow-ffmpeg-x86-1-2",
+        "memory": "2048",
+        "networkMode": "awsvpc",
+        "placementConstraints": [],
+        "registeredAt": "2026-10-10T16:26:14.231000+00:00",
+        "registeredBy": "arn:aws:iam::777772816473:root",
+        "requiresAttributes": [
+          {
+            "name": "com.amazonaws.ecs.capability.logging-driver.awslogs"
+          },
+          {
+            "name": "ecs.capability.execution-role-awslogs"
+          },
+          {
+            "name": "com.amazonaws.ecs.capability.docker-remote-api.1.19"
+          },
+          {
+            "name": "com.amazonaws.ecs.capability.docker-remote-api.1.28"
+          },
+          {
+            "name": "com.amazonaws.ecs.capability.docker-remote-api.1.21"
+          },
+          {
+            "name": "ecs.capability.container-ordering"
+          },
+          {
+            "name": "com.amazonaws.ecs.capability.docker-remote-api.1.18"
+          },
+          {
+            "name": "ecs.capability.task-eni"
+          }
+        ],
+        "requiresCompatibilities": [
+          "FARGATE"
+        ],
+        "revision": 3,
+        "runtimePlatform": {
+          "cpuArchitecture": "X86_64",
+          "operatingSystemFamily": "LINUX"
+        },
+        "status": "ACTIVE",
+        "taskDefinitionArn": "arn:aws:ecs:us-east-1:777772816473:task-definition/archflow-ffmpeg-x86-1-2:3",
+        "volumes": []
+      }
+    },
+    {
+      "tags": [
+        {
+          "key": "Project",
+          "value": "ArchFlow-H"
+        },
+        {
+          "key": "Purpose",
+          "value": "research"
+        },
+        {
+          "key": "ManagedBy",
+          "value": "Codex"
+        },
+        {
+          "key": "Experiment",
+          "value": "real-aws-20261010-resume"
+        }
+      ],
+      "taskDefinition": {
+        "compatibilities": [
+          "EC2",
+          "FARGATE",
+          "MANAGED_INSTANCES"
+        ],
+        "containerDefinitions": [
+          {
+            "command": [
+              "echo ArchFlow command override required"
+            ],
+            "cpu": 0,
+            "entryPoint": [
+              "/bin/bash",
+              "-lc"
+            ],
+            "environment": [],
+            "essential": true,
+            "image": "lscr.io/linuxserver/ffmpeg@sha256:aea59a11c54291ac456bb2d67000445e5a8994f70bc3d96cdc29f022fbbf89fb",
+            "logConfiguration": {
+              "logDriver": "awslogs",
+              "options": {
+                "awslogs-group": "/archflow/real-20261010-resume",
+                "awslogs-region": "us-east-1",
+                "awslogs-stream-prefix": "ecs",
+                "mode": "blocking"
+              }
+            },
+            "mountPoints": [],
+            "name": "ffmpeg",
+            "portMappings": [],
+            "readonlyRootFilesystem": false,
+            "stopTimeout": 30,
+            "systemControls": [],
+            "volumesFrom": []
+          }
+        ],
+        "cpu": "256",
+        "executionRoleArn": "arn:aws:iam::777772816473:role/archflow/ArchFlowFargateExecution-20261010-resume",
+        "family": "archflow-ffmpeg-arm-025-05",
+        "memory": "512",
+        "networkMode": "awsvpc",
+        "placementConstraints": [],
+        "registeredAt": "2026-10-10T16:22:29.031000+00:00",
+        "registeredBy": "arn:aws:iam::777772816473:root",
+        "requiresAttributes": [
+          {
+            "name": "com.amazonaws.ecs.capability.logging-driver.awslogs"
+          },
+          {
+            "name": "ecs.capability.execution-role-awslogs"
+          },
+          {
+            "name": "com.amazonaws.ecs.capability.docker-remote-api.1.19"
+          },
+          {
+            "name": "com.amazonaws.ecs.capability.docker-remote-api.1.28"
+          },
+          {
+            "name": "com.amazonaws.ecs.capability.docker-remote-api.1.21"
+          },
+          {
+            "name": "ecs.capability.container-ordering"
+          },
+          {
+            "name": "com.amazonaws.ecs.capability.docker-remote-api.1.18"
+          },
+          {
+            "name": "ecs.capability.task-eni"
+          }
+        ],
+        "requiresCompatibilities": [
+          "FARGATE"
+        ],
+        "revision": 2,
+        "runtimePlatform": {
+          "cpuArchitecture": "ARM64",
+          "operatingSystemFamily": "LINUX"
+        },
+        "status": "ACTIVE",
+        "taskDefinitionArn": "arn:aws:ecs:us-east-1:777772816473:task-definition/archflow-ffmpeg-arm-025-05:2",
+        "volumes": []
+      }
+    },
+    {
+      "tags": [
+        {
+          "key": "Project",
+          "value": "ArchFlow-H"
+        },
+        {
+          "key": "Purpose",
+          "value": "research"
+        },
+        {
+          "key": "ManagedBy",
+          "value": "Codex"
+        },
+        {
+          "key": "Experiment",
+          "value": "real-aws-20261010-resume"
+        }
+      ],
+      "taskDefinition": {
+        "compatibilities": [
+          "EC2",
+          "FARGATE",
+          "MANAGED_INSTANCES"
+        ],
+        "containerDefinitions": [
+          {
+            "command": [
+              "set -euo pipefail\nstart=$(date -u +%Y-%m-%dT%H:%M:%S.%3NZ)\nprintf '{\"event\":\"archflow_application_start\",\"timestamp\":\"%s\"}\\n' \"$start\"\narch=$(uname -m)\nffver=$(ffmpeg -version | sed -n '1p' | sed 's/\"/\\\\\"/g')\nprintf '{\"event\":\"archflow_runtime\",\"architecture\":\"%s\",\"ffmpegVersion\":\"%s\"}\\n' \"$arch\" \"$ffver\"\nffmpeg -hide_banner -loglevel error -y -f lavfi -i testsrc2=size=1280x720:rate=30 -t 12 -c:v libx264 -preset medium -crf 23 -pix_fmt yuv420p /tmp/archflow-smoke.mp4\ncodec=$(ffprobe -v error -select_streams v:0 -show_entries stream=codec_name -of default=noprint_wrappers=1:nokey=1 /tmp/archflow-smoke.mp4)\nwidth=$(ffprobe -v error -select_streams v:0 -show_entries stream=width -of default=noprint_wrappers=1:nokey=1 /tmp/archflow-smoke.mp4)\nheight=$(ffprobe -v error -select_streams v:0 -show_entries stream=height -of default=noprint_wrappers=1:nokey=1 /tmp/archflow-smoke.mp4)\nframes=$(ffprobe -v error -select_streams v:0 -show_entries stream=nb_frames -of default=noprint_wrappers=1:nokey=1 /tmp/archflow-smoke.mp4)\nduration=$(ffprobe -v error -show_entries format=duration -of default=noprint_wrappers=1:nokey=1 /tmp/archflow-smoke.mp4)\nsize=$(stat -c%s /tmp/archflow-smoke.mp4)\nchecksum=$(sha256sum /tmp/archflow-smoke.mp4 | cut -d' ' -f1)\ntest \"$codec\" = h264\ntest \"$width\" = 1280\ntest \"$height\" = 720\ntest \"$frames\" = 360\ntest \"$size\" -gt 100000\nprintf '{\"event\":\"archflow_output_validated\",\"codec\":\"%s\",\"width\":%s,\"height\":%s,\"frames\":%s,\"durationSeconds\":%s,\"sizeBytes\":%s,\"sha256\":\"%s\"}\\n' \"$codec\" \"$width\" \"$height\" \"$frames\" \"$duration\" \"$size\" \"$checksum\"\nend=$(date -u +%Y-%m-%dT%H:%M:%S.%3NZ)\nprintf '{\"event\":\"archflow_application_end\",\"timestamp\":\"%s\"}\\n' \"$end\"\n"
+            ],
+            "cpu": 0,
+            "entryPoint": [
+              "/bin/bash",
+              "-lc"
+            ],
+            "environment": [],
+            "essential": true,
+            "image": "lscr.io/linuxserver/ffmpeg@sha256:aea59a11c54291ac456bb2d67000445e5a8994f70bc3d96cdc29f022fbbf89fb",
+            "logConfiguration": {
+              "logDriver": "awslogs",
+              "options": {
+                "awslogs-group": "/archflow/real-20261010-resume",
+                "awslogs-region": "us-east-1",
+                "awslogs-stream-prefix": "ecs",
+                "mode": "blocking"
+              }
+            },
+            "mountPoints": [],
+            "name": "ffmpeg",
+            "portMappings": [],
+            "readonlyRootFilesystem": false,
+            "stopTimeout": 30,
+            "systemControls": [],
+            "volumesFrom": []
+          }
+        ],
+        "cpu": "256",
+        "executionRoleArn": "arn:aws:iam::777772816473:role/archflow/ArchFlowFargateExecution-20261010-resume",
+        "family": "archflow-ffmpeg-arm-025-05",
+        "memory": "512",
+        "networkMode": "awsvpc",
+        "placementConstraints": [],
+        "registeredAt": "2026-10-10T16:26:14.723000+00:00",
+        "registeredBy": "arn:aws:iam::777772816473:root",
+        "requiresAttributes": [
+          {
+            "name": "com.amazonaws.ecs.capability.logging-driver.awslogs"
+          },
+          {
+            "name": "ecs.capability.execution-role-awslogs"
+          },
+          {
+            "name": "com.amazonaws.ecs.capability.docker-remote-api.1.19"
+          },
+          {
+            "name": "com.amazonaws.ecs.capability.docker-remote-api.1.28"
+          },
+          {
+            "name": "com.amazonaws.ecs.capability.docker-remote-api.1.21"
+          },
+          {
+            "name": "ecs.capability.container-ordering"
+          },
+          {
+            "name": "com.amazonaws.ecs.capability.docker-remote-api.1.18"
+          },
+          {
+            "name": "ecs.capability.task-eni"
+          }
+        ],
+        "requiresCompatibilities": [
+          "FARGATE"
+        ],
+        "revision": 3,
+        "runtimePlatform": {
+          "cpuArchitecture": "ARM64",
+          "operatingSystemFamily": "LINUX"
+        },
+        "status": "ACTIVE",
+        "taskDefinitionArn": "arn:aws:ecs:us-east-1:777772816473:task-definition/archflow-ffmpeg-arm-025-05:3",
+        "volumes": []
+      }
+    },
+    {
+      "tags": [
+        {
+          "key": "Project",
+          "value": "ArchFlow-H"
+        },
+        {
+          "key": "Purpose",
+          "value": "research"
+        },
+        {
+          "key": "ManagedBy",
+          "value": "Codex"
+        },
+        {
+          "key": "Experiment",
+          "value": "real-aws-20261010-resume"
+        }
+      ],
+      "taskDefinition": {
+        "compatibilities": [
+          "EC2",
+          "MANAGED_INSTANCES",
+          "FARGATE"
+        ],
+        "containerDefinitions": [
+          {
+            "command": [
+              "echo ArchFlow command override required"
+            ],
+            "cpu": 0,
+            "entryPoint": [
+              "/bin/bash",
+              "-lc"
+            ],
+            "environment": [],
+            "essential": true,
+            "image": "lscr.io/linuxserver/ffmpeg@sha256:aea59a11c54291ac456bb2d67000445e5a8994f70bc3d96cdc29f022fbbf89fb",
+            "logConfiguration": {
+              "logDriver": "awslogs",
+              "options": {
+                "awslogs-group": "/archflow/real-20261010-resume",
+                "awslogs-region": "us-east-1",
+                "awslogs-stream-prefix": "ecs",
+                "mode": "blocking"
+              }
+            },
+            "mountPoints": [],
+            "name": "ffmpeg",
+            "portMappings": [],
+            "readonlyRootFilesystem": false,
+            "stopTimeout": 30,
+            "systemControls": [],
+            "volumesFrom": []
+          }
+        ],
+        "cpu": "1024",
+        "executionRoleArn": "arn:aws:iam::777772816473:role/archflow/ArchFlowFargateExecution-20261010-resume",
+        "family": "archflow-ffmpeg-arm-1-2",
+        "memory": "2048",
+        "networkMode": "awsvpc",
+        "placementConstraints": [],
+        "registeredAt": "2026-10-10T16:22:29.715000+00:00",
+        "registeredBy": "arn:aws:iam::777772816473:root",
+        "requiresAttributes": [
+          {
+            "name": "com.amazonaws.ecs.capability.logging-driver.awslogs"
+          },
+          {
+            "name": "ecs.capability.execution-role-awslogs"
+          },
+          {
+            "name": "com.amazonaws.ecs.capability.docker-remote-api.1.19"
+          },
+          {
+            "name": "com.amazonaws.ecs.capability.docker-remote-api.1.28"
+          },
+          {
+            "name": "com.amazonaws.ecs.capability.docker-remote-api.1.21"
+          },
+          {
+            "name": "ecs.capability.container-ordering"
+          },
+          {
+            "name": "com.amazonaws.ecs.capability.docker-remote-api.1.18"
+          },
+          {
+            "name": "ecs.capability.task-eni"
+          }
+        ],
+        "requiresCompatibilities": [
+          "FARGATE"
+        ],
+        "revision": 2,
+        "runtimePlatform": {
+          "cpuArchitecture": "ARM64",
+          "operatingSystemFamily": "LINUX"
+        },
+        "status": "ACTIVE",
+        "taskDefinitionArn": "arn:aws:ecs:us-east-1:777772816473:task-definition/archflow-ffmpeg-arm-1-2:2",
+        "volumes": []
+      }
+    },
+    {
+      "tags": [
+        {
+          "key": "Project",
+          "value": "ArchFlow-H"
+        },
+        {
+          "key": "Purpose",
+          "value": "research"
+        },
+        {
+          "key": "ManagedBy",
+          "value": "Codex"
+        },
+        {
+          "key": "Experiment",
+          "value": "real-aws-20261010-resume"
+        }
+      ],
+      "taskDefinition": {
+        "compatibilities": [
+          "EC2",
+          "FARGATE",
+          "MANAGED_INSTANCES"
+        ],
+        "containerDefinitions": [
+          {
+            "command": [
+              "set -euo pipefail\nstart=$(date -u +%Y-%m-%dT%H:%M:%S.%3NZ)\nprintf '{\"event\":\"archflow_application_start\",\"timestamp\":\"%s\"}\\n' \"$start\"\narch=$(uname -m)\nffver=$(ffmpeg -version | sed -n '1p' | sed 's/\"/\\\\\"/g')\nprintf '{\"event\":\"archflow_runtime\",\"architecture\":\"%s\",\"ffmpegVersion\":\"%s\"}\\n' \"$arch\" \"$ffver\"\nffmpeg -hide_banner -loglevel error -y -f lavfi -i testsrc2=size=1280x720:rate=30 -t 12 -c:v libx264 -preset medium -crf 23 -pix_fmt yuv420p /tmp/archflow-smoke.mp4\ncodec=$(ffprobe -v error -select_streams v:0 -show_entries stream=codec_name -of default=noprint_wrappers=1:nokey=1 /tmp/archflow-smoke.mp4)\nwidth=$(ffprobe -v error -select_streams v:0 -show_entries stream=width -of default=noprint_wrappers=1:nokey=1 /tmp/archflow-smoke.mp4)\nheight=$(ffprobe -v error -select_streams v:0 -show_entries stream=height -of default=noprint_wrappers=1:nokey=1 /tmp/archflow-smoke.mp4)\nframes=$(ffprobe -v error -select_streams v:0 -show_entries stream=nb_frames -of default=noprint_wrappers=1:nokey=1 /tmp/archflow-smoke.mp4)\nduration=$(ffprobe -v error -show_entries format=duration -of default=noprint_wrappers=1:nokey=1 /tmp/archflow-smoke.mp4)\nsize=$(stat -c%s /tmp/archflow-smoke.mp4)\nchecksum=$(sha256sum /tmp/archflow-smoke.mp4 | cut -d' ' -f1)\ntest \"$codec\" = h264\ntest \"$width\" = 1280\ntest \"$height\" = 720\ntest \"$frames\" = 360\ntest \"$size\" -gt 100000\nprintf '{\"event\":\"archflow_output_validated\",\"codec\":\"%s\",\"width\":%s,\"height\":%s,\"frames\":%s,\"durationSeconds\":%s,\"sizeBytes\":%s,\"sha256\":\"%s\"}\\n' \"$codec\" \"$width\" \"$height\" \"$frames\" \"$duration\" \"$size\" \"$checksum\"\nend=$(date -u +%Y-%m-%dT%H:%M:%S.%3NZ)\nprintf '{\"event\":\"archflow_application_end\",\"timestamp\":\"%s\"}\\n' \"$end\"\n"
+            ],
+            "cpu": 0,
+            "entryPoint": [
+              "/bin/bash",
+              "-lc"
+            ],
+            "environment": [],
+            "essential": true,
+            "image": "lscr.io/linuxserver/ffmpeg@sha256:aea59a11c54291ac456bb2d67000445e5a8994f70bc3d96cdc29f022fbbf89fb",
+            "logConfiguration": {
+              "logDriver": "awslogs",
+              "options": {
+                "awslogs-group": "/archflow/real-20261010-resume",
+                "awslogs-region": "us-east-1",
+                "awslogs-stream-prefix": "ecs",
+                "mode": "blocking"
+              }
+            },
+            "mountPoints": [],
+            "name": "ffmpeg",
+            "portMappings": [],
+            "readonlyRootFilesystem": false,
+            "stopTimeout": 30,
+            "systemControls": [],
+            "volumesFrom": []
+          }
+        ],
+        "cpu": "1024",
+        "executionRoleArn": "arn:aws:iam::777772816473:role/archflow/ArchFlowFargateExecution-20261010-resume",
+        "family": "archflow-ffmpeg-arm-1-2",
+        "memory": "2048",
+        "networkMode": "awsvpc",
+        "placementConstraints": [],
+        "registeredAt": "2026-10-10T16:26:15.084000+00:00",
+        "registeredBy": "arn:aws:iam::777772816473:root",
+        "requiresAttributes": [
+          {
+            "name": "com.amazonaws.ecs.capability.logging-driver.awslogs"
+          },
+          {
+            "name": "ecs.capability.execution-role-awslogs"
+          },
+          {
+            "name": "com.amazonaws.ecs.capability.docker-remote-api.1.19"
+          },
+          {
+            "name": "com.amazonaws.ecs.capability.docker-remote-api.1.28"
+          },
+          {
+            "name": "com.amazonaws.ecs.capability.docker-remote-api.1.21"
+          },
+          {
+            "name": "ecs.capability.container-ordering"
+          },
+          {
+            "name": "com.amazonaws.ecs.capability.docker-remote-api.1.18"
+          },
+          {
+            "name": "ecs.capability.task-eni"
+          }
+        ],
+        "requiresCompatibilities": [
+          "FARGATE"
+        ],
+        "revision": 3,
+        "runtimePlatform": {
+          "cpuArchitecture": "ARM64",
+          "operatingSystemFamily": "LINUX"
+        },
+        "status": "ACTIVE",
+        "taskDefinitionArn": "arn:aws:ecs:us-east-1:777772816473:task-definition/archflow-ffmpeg-arm-1-2:3",
+        "volumes": []
+      }
+    },
+    {
+      "tags": [
+        {
+          "key": "Project",
+          "value": "ArchFlow-H"
+        },
+        {
+          "key": "Purpose",
+          "value": "research"
+        },
+        {
+          "key": "ManagedBy",
+          "value": "Codex"
+        },
+        {
+          "key": "Experiment",
+          "value": "real-aws-20261010-resume"
+        }
+      ],
+      "taskDefinition": {
+        "compatibilities": [
+          "EC2",
+          "MANAGED_INSTANCES",
+          "FARGATE"
+        ],
+        "containerDefinitions": [
+          {
+            "command": [
+              "true"
+            ],
+            "cpu": 0,
+            "entryPoint": [
+              "/bin/sh",
+              "-c"
+            ],
+            "environment": [],
+            "essential": false,
+            "image": "amazon/aws-cli@sha256:ce44b800602264c12298bbf3399055a4cefdb9ed4a098abe564afe26e7071bce",
+            "logConfiguration": {
+              "logDriver": "awslogs",
+              "options": {
+                "awslogs-group": "/archflow/real-20261010-resume",
+                "awslogs-region": "us-east-1",
+                "awslogs-stream-prefix": "ecs",
+                "mode": "blocking"
+              }
+            },
+            "mountPoints": [
+              {
+                "containerPath": "/data",
+                "readOnly": false,
+                "sourceVolume": "data"
+              }
+            ],
+            "name": "downloader",
+            "portMappings": [],
+            "systemControls": [],
+            "volumesFrom": []
+          },
+          {
+            "command": [
+              "echo command override required"
+            ],
+            "cpu": 0,
+            "dependsOn": [
+              {
+                "condition": "SUCCESS",
+                "containerName": "downloader"
+              }
+            ],
+            "entryPoint": [
+              "/bin/bash",
+              "-lc"
+            ],
+            "environment": [],
+            "essential": false,
+            "image": "lscr.io/linuxserver/ffmpeg@sha256:aea59a11c54291ac456bb2d67000445e5a8994f70bc3d96cdc29f022fbbf89fb",
+            "logConfiguration": {
+              "logDriver": "awslogs",
+              "options": {
+                "awslogs-group": "/archflow/real-20261010-resume",
+                "awslogs-region": "us-east-1",
+                "awslogs-stream-prefix": "ecs",
+                "mode": "blocking"
+              }
+            },
+            "mountPoints": [
+              {
+                "containerPath": "/data",
+                "readOnly": false,
+                "sourceVolume": "data"
+              }
+            ],
+            "name": "worker",
+            "portMappings": [],
+            "systemControls": [],
+            "volumesFrom": []
+          },
+          {
+            "command": [
+              "true"
+            ],
+            "cpu": 0,
+            "dependsOn": [
+              {
+                "condition": "SUCCESS",
+                "containerName": "worker"
+              }
+            ],
+            "entryPoint": [
+              "/bin/sh",
+              "-c"
+            ],
+            "environment": [],
+            "essential": true,
+            "image": "amazon/aws-cli@sha256:ce44b800602264c12298bbf3399055a4cefdb9ed4a098abe564afe26e7071bce",
+            "logConfiguration": {
+              "logDriver": "awslogs",
+              "options": {
+                "awslogs-group": "/archflow/real-20261010-resume",
+                "awslogs-region": "us-east-1",
+                "awslogs-stream-prefix": "ecs",
+                "mode": "blocking"
+              }
+            },
+            "mountPoints": [
+              {
+                "containerPath": "/data",
+                "readOnly": false,
+                "sourceVolume": "data"
+              }
+            ],
+            "name": "uploader",
+            "portMappings": [],
+            "systemControls": [],
+            "volumesFrom": []
+          }
+        ],
+        "cpu": "1024",
+        "executionRoleArn": "arn:aws:iam::777772816473:role/archflow/ArchFlowFargateExecution-20261010-resume",
+        "family": "archflow-dag-x86-1-2",
+        "memory": "2048",
+        "networkMode": "awsvpc",
+        "placementConstraints": [],
+        "registeredAt": "2026-10-10T16:40:24.494000+00:00",
+        "registeredBy": "arn:aws:iam::777772816473:root",
+        "requiresAttributes": [
+          {
+            "name": "com.amazonaws.ecs.capability.logging-driver.awslogs"
+          },
+          {
+            "name": "ecs.capability.execution-role-awslogs"
+          },
+          {
+            "name": "com.amazonaws.ecs.capability.docker-remote-api.1.19"
+          },
+          {
+            "name": "com.amazonaws.ecs.capability.docker-remote-api.1.28"
+          },
+          {
+            "name": "com.amazonaws.ecs.capability.docker-remote-api.1.21"
+          },
+          {
+            "name": "com.amazonaws.ecs.capability.task-iam-role"
+          },
+          {
+            "name": "ecs.capability.container-ordering"
+          },
+          {
+            "name": "com.amazonaws.ecs.capability.docker-remote-api.1.18"
+          },
+          {
+            "name": "ecs.capability.task-eni"
+          }
+        ],
+        "requiresCompatibilities": [
+          "FARGATE"
+        ],
+        "revision": 1,
+        "runtimePlatform": {
+          "cpuArchitecture": "X86_64",
+          "operatingSystemFamily": "LINUX"
+        },
+        "status": "ACTIVE",
+        "taskDefinitionArn": "arn:aws:ecs:us-east-1:777772816473:task-definition/archflow-dag-x86-1-2:1",
+        "taskRoleArn": "arn:aws:iam::777772816473:role/archflow/ArchFlowFargateTask-20261010-resume",
+        "volumes": [
+          {
+            "host": {},
+            "name": "data"
+          }
+        ]
+      }
+    },
+    {
+      "tags": [
+        {
+          "key": "Project",
+          "value": "ArchFlow-H"
+        },
+        {
+          "key": "Purpose",
+          "value": "research"
+        },
+        {
+          "key": "ManagedBy",
+          "value": "Codex"
+        },
+        {
+          "key": "Experiment",
+          "value": "real-aws-20261010-resume"
+        }
+      ],
+      "taskDefinition": {
+        "compatibilities": [
+          "EC2",
+          "MANAGED_INSTANCES",
+          "FARGATE"
+        ],
+        "containerDefinitions": [
+          {
+            "command": [
+              "true"
+            ],
+            "cpu": 0,
+            "entryPoint": [
+              "/bin/sh",
+              "-c"
+            ],
+            "environment": [],
+            "essential": false,
+            "image": "amazon/aws-cli@sha256:ce44b800602264c12298bbf3399055a4cefdb9ed4a098abe564afe26e7071bce",
+            "logConfiguration": {
+              "logDriver": "awslogs",
+              "options": {
+                "awslogs-group": "/archflow/real-20261010-resume",
+                "awslogs-region": "us-east-1",
+                "awslogs-stream-prefix": "ecs",
+                "mode": "blocking"
+              }
+            },
+            "mountPoints": [
+              {
+                "containerPath": "/data",
+                "readOnly": false,
+                "sourceVolume": "data"
+              }
+            ],
+            "name": "downloader",
+            "portMappings": [],
+            "systemControls": [],
+            "volumesFrom": []
+          },
+          {
+            "command": [
+              "echo command override required"
+            ],
+            "cpu": 0,
+            "dependsOn": [
+              {
+                "condition": "SUCCESS",
+                "containerName": "downloader"
+              }
+            ],
+            "entryPoint": [
+              "/bin/bash",
+              "-lc"
+            ],
+            "environment": [],
+            "essential": false,
+            "image": "lscr.io/linuxserver/ffmpeg@sha256:aea59a11c54291ac456bb2d67000445e5a8994f70bc3d96cdc29f022fbbf89fb",
+            "logConfiguration": {
+              "logDriver": "awslogs",
+              "options": {
+                "awslogs-group": "/archflow/real-20261010-resume",
+                "awslogs-region": "us-east-1",
+                "awslogs-stream-prefix": "ecs",
+                "mode": "blocking"
+              }
+            },
+            "mountPoints": [
+              {
+                "containerPath": "/data",
+                "readOnly": false,
+                "sourceVolume": "data"
+              }
+            ],
+            "name": "worker",
+            "portMappings": [],
+            "systemControls": [],
+            "volumesFrom": []
+          },
+          {
+            "command": [
+              "true"
+            ],
+            "cpu": 0,
+            "dependsOn": [
+              {
+                "condition": "SUCCESS",
+                "containerName": "worker"
+              }
+            ],
+            "entryPoint": [
+              "/bin/sh",
+              "-c"
+            ],
+            "environment": [],
+            "essential": true,
+            "image": "amazon/aws-cli@sha256:ce44b800602264c12298bbf3399055a4cefdb9ed4a098abe564afe26e7071bce",
+            "logConfiguration": {
+              "logDriver": "awslogs",
+              "options": {
+                "awslogs-group": "/archflow/real-20261010-resume",
+                "awslogs-region": "us-east-1",
+                "awslogs-stream-prefix": "ecs",
+                "mode": "blocking"
+              }
+            },
+            "mountPoints": [
+              {
+                "containerPath": "/data",
+                "readOnly": false,
+                "sourceVolume": "data"
+              }
+            ],
+            "name": "uploader",
+            "portMappings": [],
+            "systemControls": [],
+            "volumesFrom": []
+          }
+        ],
+        "cpu": "1024",
+        "executionRoleArn": "arn:aws:iam::777772816473:role/archflow/ArchFlowFargateExecution-20261010-resume",
+        "family": "archflow-dag-arm-1-2",
+        "memory": "2048",
+        "networkMode": "awsvpc",
+        "placementConstraints": [],
+        "registeredAt": "2026-10-10T16:40:24.818000+00:00",
+        "registeredBy": "arn:aws:iam::777772816473:root",
+        "requiresAttributes": [
+          {
+            "name": "com.amazonaws.ecs.capability.logging-driver.awslogs"
+          },
+          {
+            "name": "ecs.capability.execution-role-awslogs"
+          },
+          {
+            "name": "com.amazonaws.ecs.capability.docker-remote-api.1.19"
+          },
+          {
+            "name": "com.amazonaws.ecs.capability.docker-remote-api.1.28"
+          },
+          {
+            "name": "com.amazonaws.ecs.capability.docker-remote-api.1.21"
+          },
+          {
+            "name": "com.amazonaws.ecs.capability.task-iam-role"
+          },
+          {
+            "name": "ecs.capability.container-ordering"
+          },
+          {
+            "name": "com.amazonaws.ecs.capability.docker-remote-api.1.18"
+          },
+          {
+            "name": "ecs.capability.task-eni"
+          }
+        ],
+        "requiresCompatibilities": [
+          "FARGATE"
+        ],
+        "revision": 1,
+        "runtimePlatform": {
+          "cpuArchitecture": "ARM64",
+          "operatingSystemFamily": "LINUX"
+        },
+        "status": "ACTIVE",
+        "taskDefinitionArn": "arn:aws:ecs:us-east-1:777772816473:task-definition/archflow-dag-arm-1-2:1",
+        "taskRoleArn": "arn:aws:iam::777772816473:role/archflow/ArchFlowFargateTask-20261010-resume",
+        "volumes": [
+          {
+            "host": {},
+            "name": "data"
+          }
+        ]
+      }
+    }
+  ],
+  "tasks": [
+    {
+      "attachments": [
+        {
+          "details": [
+            {
+              "name": "subnetId",
+              "value": "subnet-068d1bc3d6573aa53"
+            },
+            {
+              "name": "networkInterfaceId",
+              "value": "eni-09c3f362d1aecaa68"
+            },
+            {
+              "name": "macAddress",
+              "value": "02:ff:f2:29:7d:01"
+            },
+            {
+              "name": "privateDnsName",
+              "value": "ip-172-31-7-152.ec2.internal"
+            },
+            {
+              "name": "privateIPv4Address",
+              "value": "172.31.7.152"
+            }
+          ],
+          "id": "d8f4fb8e-08b4-45ed-8d4c-891a515ee28f",
+          "status": "DELETED",
+          "type": "ElasticNetworkInterface"
+        }
+      ],
+      "attributes": [
+        {
+          "name": "ecs.cpu-architecture",
+          "value": "arm64"
+        }
+      ],
+      "availabilityZone": "us-east-1a",
+      "clusterArn": "arn:aws:ecs:us-east-1:777772816473:cluster/archflow-real-20261010-resume",
+      "connectivity": "CONNECTED",
+      "connectivityAt": "2026-10-10T16:44:36.102000+00:00",
+      "containers": [
+        {
+          "containerArn": "arn:aws:ecs:us-east-1:777772816473:container/archflow-real-20261010-resume/0458a7fc1f7843d4b5b02e82d9876d94/00556c5e-a4a9-42b7-8476-e277507aa722",
+          "cpu": "0",
+          "exitCode": 0,
+          "healthStatus": "UNKNOWN",
+          "image": "amazon/aws-cli@sha256:ce44b800602264c12298bbf3399055a4cefdb9ed4a098abe564afe26e7071bce",
+          "imageDigest": "sha256:ce44b800602264c12298bbf3399055a4cefdb9ed4a098abe564afe26e7071bce",
+          "lastStatus": "STOPPED",
+          "name": "downloader",
+          "networkBindings": [],
+          "networkInterfaces": [
+            {
+              "attachmentId": "d8f4fb8e-08b4-45ed-8d4c-891a515ee28f",
+              "privateIpv4Address": "172.31.7.152"
+            }
+          ],
+          "runtimeId": "0458a7fc1f7843d4b5b02e82d9876d94-0593658898",
+          "taskArn": "arn:aws:ecs:us-east-1:777772816473:task/archflow-real-20261010-resume/0458a7fc1f7843d4b5b02e82d9876d94"
+        },
+        {
+          "containerArn": "arn:aws:ecs:us-east-1:777772816473:container/archflow-real-20261010-resume/0458a7fc1f7843d4b5b02e82d9876d94/2c4eba14-662d-442a-8831-8c786b7753a8",
+          "cpu": "0",
+          "exitCode": 0,
+          "healthStatus": "UNKNOWN",
+          "image": "amazon/aws-cli@sha256:ce44b800602264c12298bbf3399055a4cefdb9ed4a098abe564afe26e7071bce",
+          "imageDigest": "sha256:ce44b800602264c12298bbf3399055a4cefdb9ed4a098abe564afe26e7071bce",
+          "lastStatus": "STOPPED",
+          "name": "uploader",
+          "networkBindings": [],
+          "networkInterfaces": [
+            {
+              "attachmentId": "d8f4fb8e-08b4-45ed-8d4c-891a515ee28f",
+              "privateIpv4Address": "172.31.7.152"
+            }
+          ],
+          "runtimeId": "0458a7fc1f7843d4b5b02e82d9876d94-0716006507",
+          "taskArn": "arn:aws:ecs:us-east-1:777772816473:task/archflow-real-20261010-resume/0458a7fc1f7843d4b5b02e82d9876d94"
+        },
+        {
+          "containerArn": "arn:aws:ecs:us-east-1:777772816473:container/archflow-real-20261010-resume/0458a7fc1f7843d4b5b02e82d9876d94/f1ca7e84-06e3-40d3-b67f-a19f5aaf2787",
+          "cpu": "0",
+          "exitCode": 0,
+          "healthStatus": "UNKNOWN",
+          "image": "lscr.io/linuxserver/ffmpeg@sha256:aea59a11c54291ac456bb2d67000445e5a8994f70bc3d96cdc29f022fbbf89fb",
+          "imageDigest": "sha256:aea59a11c54291ac456bb2d67000445e5a8994f70bc3d96cdc29f022fbbf89fb",
+          "lastStatus": "STOPPED",
+          "name": "worker",
+          "networkBindings": [],
+          "networkInterfaces": [
+            {
+              "attachmentId": "d8f4fb8e-08b4-45ed-8d4c-891a515ee28f",
+              "privateIpv4Address": "172.31.7.152"
+            }
+          ],
+          "runtimeId": "0458a7fc1f7843d4b5b02e82d9876d94-2513319767",
+          "taskArn": "arn:aws:ecs:us-east-1:777772816473:task/archflow-real-20261010-resume/0458a7fc1f7843d4b5b02e82d9876d94"
+        }
+      ],
+      "cpu": "1024",
+      "createdAt": "2026-10-10T16:44:33.771000+00:00",
+      "desiredStatus": "STOPPED",
+      "enableExecuteCommand": false,
+      "ephemeralStorage": {
+        "sizeInGiB": 20
+      },
+      "executionStoppedAt": "2026-10-10T16:45:01.175000+00:00",
+      "fargateEphemeralStorage": {
+        "sizeInGiB": 20
+      },
+      "group": "family:archflow-dag-arm-1-2",
+      "healthStatus": "UNKNOWN",
+      "lastStatus": "STOPPED",
+      "launchType": "FARGATE",
+      "memory": "2048",
+      "overrides": {
+        "containerOverrides": [
+          {
+            "command": [
+              "aws s3 cp /data/merged.mp4 s3://archflow-real-777772816473-us-east-1/dag/arm-only/merged.mp4 --only-show-errors"
+            ],
+            "name": "uploader"
+          },
+          {
+            "command": [
+              "set -euo pipefail\nstart=$(date -u +%Y-%m-%dT%H:%M:%S.%3NZ)\nprintf '{\"event\":\"archflow_application_start\",\"timestamp\":\"%s\"}\\n' \"$start\"\narch=$(uname -m)\nffver=$(ffmpeg -version | sed -n '1p' | sed 's/\"/\\\\\"/g')\nprintf '{\"event\":\"archflow_runtime\",\"architecture\":\"%s\",\"ffmpegVersion\":\"%s\"}\\n' \"$arch\" \"$ffver\"\nprintf \"file '/data/cut-a.mp4'\\nfile '/data/cut-b.mp4'\\n\" > /data/concat.txt\nffmpeg -hide_banner -loglevel error -y -f concat -safe 0 -i /data/concat.txt -c copy /data/merged.mp4\nframes=$(ffprobe -v error -select_streams v:0 -show_entries stream=nb_frames -of default=noprint_wrappers=1:nokey=1 /data/merged.mp4)\nduration=$(ffprobe -v error -show_entries format=duration -of default=noprint_wrappers=1:nokey=1 /data/merged.mp4)\nsize=$(stat -c%s /data/merged.mp4)\nchecksum=$(sha256sum /data/merged.mp4 | cut -d' ' -f1)\ntest \"$frames\" = 720\ntest \"$size\" -gt 100000\nprintf '{\"event\":\"archflow_output_validated\",\"frames\":%s,\"durationSeconds\":%s,\"sizeBytes\":%s,\"sha256\":\"%s\",\"objectKey\":\"dag/arm-only/merged.mp4\"}\\n' \"$frames\" \"$duration\" \"$size\" \"$checksum\"\nend=$(date -u +%Y-%m-%dT%H:%M:%S.%3NZ)\nprintf '{\"event\":\"archflow_application_end\",\"timestamp\":\"%s\"}\\n' \"$end\"\n"
+            ],
+            "name": "worker"
+          },
+          {
+            "command": [
+              "aws s3 cp s3://archflow-real-777772816473-us-east-1/dag/arm-only/cut-a.mp4 /data/cut-a.mp4 --only-show-errors && aws s3 cp s3://archflow-real-777772816473-us-east-1/dag/arm-only/cut-b.mp4 /data/cut-b.mp4 --only-show-errors"
+            ],
+            "name": "downloader"
+          }
+        ],
+        "inferenceAcceleratorOverrides": []
+      },
+      "platformFamily": "Linux",
+      "platformVersion": "1.4.0",
+      "pullStartedAt": "2026-10-10T16:44:47.017000+00:00",
+      "pullStoppedAt": "2026-10-10T16:44:55.893000+00:00",
+      "startedAt": "2026-10-10T16:45:00.333000+00:00",
+      "startedBy": "archflow-dag-arm-r1",
+      "stopCode": "EssentialContainerExited",
+      "stoppedAt": "2026-10-10T16:45:24.372000+00:00",
+      "stoppedReason": "Essential container in task exited",
+      "stoppingAt": "2026-10-10T16:45:11.215000+00:00",
+      "tags": [],
+      "taskArn": "arn:aws:ecs:us-east-1:777772816473:task/archflow-real-20261010-resume/0458a7fc1f7843d4b5b02e82d9876d94",
+      "taskDefinitionArn": "arn:aws:ecs:us-east-1:777772816473:task-definition/archflow-dag-arm-1-2:1",
+      "version": 5
+    },
+    {
+      "attachments": [
+        {
+          "details": [
+            {
+              "name": "subnetId",
+              "value": "subnet-0744121e1db2dbdba"
+            },
+            {
+              "name": "networkInterfaceId",
+              "value": "eni-09ce6226ff10183c1"
+            },
+            {
+              "name": "macAddress",
+              "value": "0a:ff:de:a9:81:d5"
+            },
+            {
+              "name": "privateDnsName",
+              "value": "ip-172-31-26-212.ec2.internal"
+            },
+            {
+              "name": "privateIPv4Address",
+              "value": "172.31.26.212"
+            }
+          ],
+          "id": "240a489b-114b-47cd-ada8-c373529eb13b",
+          "status": "DELETED",
+          "type": "ElasticNetworkInterface"
+        }
+      ],
+      "attributes": [
+        {
+          "name": "ecs.cpu-architecture",
+          "value": "arm64"
+        }
+      ],
+      "availabilityZone": "us-east-1c",
+      "clusterArn": "arn:aws:ecs:us-east-1:777772816473:cluster/archflow-real-20261010-resume",
+      "connectivity": "CONNECTED",
+      "connectivityAt": "2026-10-10T16:28:34.848000+00:00",
+      "containers": [
+        {
+          "containerArn": "arn:aws:ecs:us-east-1:777772816473:container/archflow-real-20261010-resume/0e08be8326524bbb80b9ba58b2649195/d210a179-2204-437a-94ec-f10c1aa57c5e",
+          "cpu": "0",
+          "exitCode": 0,
+          "healthStatus": "UNKNOWN",
+          "image": "lscr.io/linuxserver/ffmpeg@sha256:aea59a11c54291ac456bb2d67000445e5a8994f70bc3d96cdc29f022fbbf89fb",
+          "imageDigest": "sha256:aea59a11c54291ac456bb2d67000445e5a8994f70bc3d96cdc29f022fbbf89fb",
+          "lastStatus": "STOPPED",
+          "name": "ffmpeg",
+          "networkBindings": [],
+          "networkInterfaces": [
+            {
+              "attachmentId": "240a489b-114b-47cd-ada8-c373529eb13b",
+              "privateIpv4Address": "172.31.26.212"
+            }
+          ],
+          "runtimeId": "0e08be8326524bbb80b9ba58b2649195-0461847448",
+          "taskArn": "arn:aws:ecs:us-east-1:777772816473:task/archflow-real-20261010-resume/0e08be8326524bbb80b9ba58b2649195"
+        }
+      ],
+      "cpu": "1024",
+      "createdAt": "2026-10-10T16:28:30.816000+00:00",
+      "desiredStatus": "STOPPED",
+      "enableExecuteCommand": false,
+      "ephemeralStorage": {
+        "sizeInGiB": 20
+      },
+      "executionStoppedAt": "2026-10-10T16:29:03.499000+00:00",
+      "fargateEphemeralStorage": {
+        "sizeInGiB": 20
+      },
+      "group": "family:archflow-ffmpeg-arm-1-2",
+      "healthStatus": "UNKNOWN",
+      "lastStatus": "STOPPED",
+      "launchType": "FARGATE",
+      "memory": "2048",
+      "overrides": {
+        "containerOverrides": [
+          {
+            "name": "ffmpeg"
+          }
+        ],
+        "inferenceAcceleratorOverrides": []
+      },
+      "platformFamily": "Linux",
+      "platformVersion": "1.4.0",
+      "pullStartedAt": "2026-10-10T16:28:41.476000+00:00",
+      "pullStoppedAt": "2026-10-10T16:28:48.606000+00:00",
+      "startedAt": "2026-10-10T16:28:49.946000+00:00",
+      "startedBy": "archflow-smoke-batch2",
+      "stopCode": "EssentialContainerExited",
+      "stoppedAt": "2026-10-10T16:29:28.091000+00:00",
+      "stoppedReason": "Essential container in task exited",
+      "stoppingAt": "2026-10-10T16:29:13.549000+00:00",
+      "tags": [],
+      "taskArn": "arn:aws:ecs:us-east-1:777772816473:task/archflow-real-20261010-resume/0e08be8326524bbb80b9ba58b2649195",
+      "taskDefinitionArn": "arn:aws:ecs:us-east-1:777772816473:task-definition/archflow-ffmpeg-arm-1-2:3",
+      "version": 5
+    },
+    {
+      "attachments": [
+        {
+          "details": [
+            {
+              "name": "subnetId",
+              "value": "subnet-0af072ed685d4ad42"
+            },
+            {
+              "name": "networkInterfaceId",
+              "value": "eni-0d483d354e20810b6"
+            },
+            {
+              "name": "macAddress",
+              "value": "16:ff:da:b0:08:7f"
+            },
+            {
+              "name": "privateDnsName",
+              "value": "ip-172-31-73-188.ec2.internal"
+            },
+            {
+              "name": "privateIPv4Address",
+              "value": "172.31.73.188"
+            }
+          ],
+          "id": "312c610f-94f8-4105-8e45-3ceb2cb066b5",
+          "status": "DELETED",
+          "type": "ElasticNetworkInterface"
+        }
+      ],
+      "attributes": [
+        {
+          "name": "ecs.cpu-architecture",
+          "value": "x86_64"
+        }
+      ],
+      "availabilityZone": "us-east-1f",
+      "clusterArn": "arn:aws:ecs:us-east-1:777772816473:cluster/archflow-real-20261010-resume",
+      "connectivity": "CONNECTED",
+      "connectivityAt": "2026-10-10T16:26:20.009000+00:00",
+      "containers": [
+        {
+          "containerArn": "arn:aws:ecs:us-east-1:777772816473:container/archflow-real-20261010-resume/1e881ca120714cf99aa513d5682e21ec/07f3d8ad-2c8b-4c4a-838f-0d52767a1c07",
+          "cpu": "0",
+          "exitCode": 0,
+          "healthStatus": "UNKNOWN",
+          "image": "lscr.io/linuxserver/ffmpeg@sha256:aea59a11c54291ac456bb2d67000445e5a8994f70bc3d96cdc29f022fbbf89fb",
+          "imageDigest": "sha256:aea59a11c54291ac456bb2d67000445e5a8994f70bc3d96cdc29f022fbbf89fb",
+          "lastStatus": "STOPPED",
+          "name": "ffmpeg",
+          "networkBindings": [],
+          "networkInterfaces": [
+            {
+              "attachmentId": "312c610f-94f8-4105-8e45-3ceb2cb066b5",
+              "privateIpv4Address": "172.31.73.188"
+            }
+          ],
+          "runtimeId": "1e881ca120714cf99aa513d5682e21ec-0461847448",
+          "taskArn": "arn:aws:ecs:us-east-1:777772816473:task/archflow-real-20261010-resume/1e881ca120714cf99aa513d5682e21ec"
+        }
+      ],
+      "cpu": "1024",
+      "createdAt": "2026-10-10T16:26:17.163000+00:00",
+      "desiredStatus": "STOPPED",
+      "enableExecuteCommand": false,
+      "ephemeralStorage": {
+        "sizeInGiB": 20
+      },
+      "executionStoppedAt": "2026-10-10T16:26:59.007000+00:00",
+      "fargateEphemeralStorage": {
+        "sizeInGiB": 20
+      },
+      "group": "family:archflow-ffmpeg-x86-1-2",
+      "healthStatus": "UNKNOWN",
+      "lastStatus": "STOPPED",
+      "launchType": "FARGATE",
+      "memory": "2048",
+      "overrides": {
+        "containerOverrides": [
+          {
+            "name": "ffmpeg"
+          }
+        ],
+        "inferenceAcceleratorOverrides": []
+      },
+      "platformFamily": "Linux",
+      "platformVersion": "1.4.0",
+      "pullStartedAt": "2026-10-10T16:26:29.937000+00:00",
+      "pullStoppedAt": "2026-10-10T16:26:39.896000+00:00",
+      "startedAt": "2026-10-10T16:26:41.698000+00:00",
+      "startedBy": "archflow-smoke-batch1",
+      "stopCode": "EssentialContainerExited",
+      "stoppedAt": "2026-10-10T16:27:22.128000+00:00",
+      "stoppedReason": "Essential container in task exited",
+      "stoppingAt": "2026-10-10T16:27:09.055000+00:00",
+      "tags": [],
+      "taskArn": "arn:aws:ecs:us-east-1:777772816473:task/archflow-real-20261010-resume/1e881ca120714cf99aa513d5682e21ec",
+      "taskDefinitionArn": "arn:aws:ecs:us-east-1:777772816473:task-definition/archflow-ffmpeg-x86-1-2:3",
+      "version": 5
+    },
+    {
+      "attachments": [
+        {
+          "details": [
+            {
+              "name": "subnetId",
+              "value": "subnet-0af072ed685d4ad42"
+            },
+            {
+              "name": "networkInterfaceId",
+              "value": "eni-045b0b9e226b5c3d5"
+            },
+            {
+              "name": "macAddress",
+              "value": "16:ff:da:23:17:8f"
+            },
+            {
+              "name": "privateDnsName",
+              "value": "ip-172-31-75-92.ec2.internal"
+            },
+            {
+              "name": "privateIPv4Address",
+              "value": "172.31.75.92"
+            }
+          ],
+          "id": "689c7b5a-3137-4d93-b1fb-483a14e62b46",
+          "status": "DELETED",
+          "type": "ElasticNetworkInterface"
+        }
+      ],
+      "attributes": [
+        {
+          "name": "ecs.cpu-architecture",
+          "value": "arm64"
+        }
+      ],
+      "availabilityZone": "us-east-1f",
+      "clusterArn": "arn:aws:ecs:us-east-1:777772816473:cluster/archflow-real-20261010-resume",
+      "connectivity": "CONNECTED",
+      "connectivityAt": "2026-10-10T16:42:36.608000+00:00",
+      "containers": [
+        {
+          "containerArn": "arn:aws:ecs:us-east-1:777772816473:container/archflow-real-20261010-resume/20d3c708d6314572bced49bf3c6f6700/4b752061-4312-4e75-9210-e99f9b7bb7cf",
+          "cpu": "0",
+          "exitCode": 0,
+          "healthStatus": "UNKNOWN",
+          "image": "lscr.io/linuxserver/ffmpeg@sha256:aea59a11c54291ac456bb2d67000445e5a8994f70bc3d96cdc29f022fbbf89fb",
+          "imageDigest": "sha256:aea59a11c54291ac456bb2d67000445e5a8994f70bc3d96cdc29f022fbbf89fb",
+          "lastStatus": "STOPPED",
+          "name": "worker",
+          "networkBindings": [],
+          "networkInterfaces": [
+            {
+              "attachmentId": "689c7b5a-3137-4d93-b1fb-483a14e62b46",
+              "privateIpv4Address": "172.31.75.92"
+            }
+          ],
+          "runtimeId": "20d3c708d6314572bced49bf3c6f6700-2513319767",
+          "taskArn": "arn:aws:ecs:us-east-1:777772816473:task/archflow-real-20261010-resume/20d3c708d6314572bced49bf3c6f6700"
+        },
+        {
+          "containerArn": "arn:aws:ecs:us-east-1:777772816473:container/archflow-real-20261010-resume/20d3c708d6314572bced49bf3c6f6700/7a08ea99-e242-4d68-8b02-a44c8631e70d",
+          "cpu": "0",
+          "exitCode": 0,
+          "healthStatus": "UNKNOWN",
+          "image": "amazon/aws-cli@sha256:ce44b800602264c12298bbf3399055a4cefdb9ed4a098abe564afe26e7071bce",
+          "imageDigest": "sha256:ce44b800602264c12298bbf3399055a4cefdb9ed4a098abe564afe26e7071bce",
+          "lastStatus": "STOPPED",
+          "name": "uploader",
+          "networkBindings": [],
+          "networkInterfaces": [
+            {
+              "attachmentId": "689c7b5a-3137-4d93-b1fb-483a14e62b46",
+              "privateIpv4Address": "172.31.75.92"
+            }
+          ],
+          "runtimeId": "20d3c708d6314572bced49bf3c6f6700-0716006507",
+          "taskArn": "arn:aws:ecs:us-east-1:777772816473:task/archflow-real-20261010-resume/20d3c708d6314572bced49bf3c6f6700"
+        },
+        {
+          "containerArn": "arn:aws:ecs:us-east-1:777772816473:container/archflow-real-20261010-resume/20d3c708d6314572bced49bf3c6f6700/7da2dabb-eb2f-48c0-a75e-8c654b515c47",
+          "cpu": "0",
+          "exitCode": 0,
+          "healthStatus": "UNKNOWN",
+          "image": "amazon/aws-cli@sha256:ce44b800602264c12298bbf3399055a4cefdb9ed4a098abe564afe26e7071bce",
+          "imageDigest": "sha256:ce44b800602264c12298bbf3399055a4cefdb9ed4a098abe564afe26e7071bce",
+          "lastStatus": "STOPPED",
+          "name": "downloader",
+          "networkBindings": [],
+          "networkInterfaces": [
+            {
+              "attachmentId": "689c7b5a-3137-4d93-b1fb-483a14e62b46",
+              "privateIpv4Address": "172.31.75.92"
+            }
+          ],
+          "runtimeId": "20d3c708d6314572bced49bf3c6f6700-0593658898",
+          "taskArn": "arn:aws:ecs:us-east-1:777772816473:task/archflow-real-20261010-resume/20d3c708d6314572bced49bf3c6f6700"
+        }
+      ],
+      "cpu": "1024",
+      "createdAt": "2026-10-10T16:42:33.113000+00:00",
+      "desiredStatus": "STOPPED",
+      "enableExecuteCommand": false,
+      "ephemeralStorage": {
+        "sizeInGiB": 20
+      },
+      "executionStoppedAt": "2026-10-10T16:43:15.101000+00:00",
+      "fargateEphemeralStorage": {
+        "sizeInGiB": 20
+      },
+      "group": "family:archflow-dag-arm-1-2",
+      "healthStatus": "UNKNOWN",
+      "lastStatus": "STOPPED",
+      "launchType": "FARGATE",
+      "memory": "2048",
+      "overrides": {
+        "containerOverrides": [
+          {
+            "command": [
+              "aws s3 cp /data/cut-a.mp4 s3://archflow-real-777772816473-us-east-1/dag/arm-only/cut-a.mp4 --only-show-errors"
+            ],
+            "name": "uploader"
+          },
+          {
+            "command": [
+              "set -euo pipefail\nstart=$(date -u +%Y-%m-%dT%H:%M:%S.%3NZ)\nprintf '{\"event\":\"archflow_application_start\",\"timestamp\":\"%s\"}\\n' \"$start\"\narch=$(uname -m)\nffver=$(ffmpeg -version | sed -n '1p' | sed 's/\"/\\\\\"/g')\nprintf '{\"event\":\"archflow_runtime\",\"architecture\":\"%s\",\"ffmpegVersion\":\"%s\"}\\n' \"$arch\" \"$ffver\"\nffmpeg -hide_banner -loglevel error -y -ss 0 -i /data/source.mp4 -t 12 -c:v libx264 -preset medium -crf 23 -pix_fmt yuv420p /data/cut-a.mp4\nframes=$(ffprobe -v error -select_streams v:0 -show_entries stream=nb_frames -of default=noprint_wrappers=1:nokey=1 /data/cut-a.mp4)\nsize=$(stat -c%s /data/cut-a.mp4)\nchecksum=$(sha256sum /data/cut-a.mp4 | cut -d' ' -f1)\ntest \"$frames\" = 360\ntest \"$size\" -gt 100000\nprintf '{\"event\":\"archflow_output_validated\",\"frames\":%s,\"sizeBytes\":%s,\"sha256\":\"%s\",\"objectKey\":\"dag/arm-only/cut-a.mp4\"}\\n' \"$frames\" \"$size\" \"$checksum\"\nend=$(date -u +%Y-%m-%dT%H:%M:%S.%3NZ)\nprintf '{\"event\":\"archflow_application_end\",\"timestamp\":\"%s\"}\\n' \"$end\"\n"
+            ],
+            "name": "worker"
+          },
+          {
+            "command": [
+              "aws s3 cp s3://archflow-real-777772816473-us-east-1/dag/arm-only/source.mp4 /data/source.mp4 --only-show-errors"
+            ],
+            "name": "downloader"
+          }
+        ],
+        "inferenceAcceleratorOverrides": []
+      },
+      "platformFamily": "Linux",
+      "platformVersion": "1.4.0",
+      "pullStartedAt": "2026-10-10T16:42:47.469000+00:00",
+      "pullStoppedAt": "2026-10-10T16:42:56.076000+00:00",
+      "startedAt": "2026-10-10T16:43:13.989000+00:00",
+      "startedBy": "archflow-dag-arm-r1",
+      "stopCode": "EssentialContainerExited",
+      "stoppedAt": "2026-10-10T16:43:39.391000+00:00",
+      "stoppedReason": "Essential container in task exited",
+      "stoppingAt": "2026-10-10T16:43:25.141000+00:00",
+      "tags": [],
+      "taskArn": "arn:aws:ecs:us-east-1:777772816473:task/archflow-real-20261010-resume/20d3c708d6314572bced49bf3c6f6700",
+      "taskDefinitionArn": "arn:aws:ecs:us-east-1:777772816473:task-definition/archflow-dag-arm-1-2:1",
+      "version": 6
+    },
+    {
+      "attachments": [
+        {
+          "details": [
+            {
+              "name": "subnetId",
+              "value": "subnet-0af072ed685d4ad42"
+            },
+            {
+              "name": "networkInterfaceId",
+              "value": "eni-0ab6a5656a3a827ef"
+            },
+            {
+              "name": "macAddress",
+              "value": "16:ff:dc:2a:ce:21"
+            },
+            {
+              "name": "privateDnsName",
+              "value": "ip-172-31-72-117.ec2.internal"
+            },
+            {
+              "name": "privateIPv4Address",
+              "value": "172.31.72.117"
+            }
+          ],
+          "id": "fc37c233-7138-46f1-845c-e658bdf9367a",
+          "status": "DELETED",
+          "type": "ElasticNetworkInterface"
+        }
+      ],
+      "attributes": [
+        {
+          "name": "ecs.cpu-architecture",
+          "value": "arm64"
+        }
+      ],
+      "availabilityZone": "us-east-1f",
+      "clusterArn": "arn:aws:ecs:us-east-1:777772816473:cluster/archflow-real-20261010-resume",
+      "connectivity": "CONNECTED",
+      "connectivityAt": "2026-10-10T16:26:18.479000+00:00",
+      "containers": [
+        {
+          "containerArn": "arn:aws:ecs:us-east-1:777772816473:container/archflow-real-20261010-resume/23543a3c21ae48d4829363d1f099bdc5/4ee500ac-8b4c-4b10-9cea-f705ecdc4599",
+          "cpu": "0",
+          "exitCode": 0,
+          "healthStatus": "UNKNOWN",
+          "image": "lscr.io/linuxserver/ffmpeg@sha256:aea59a11c54291ac456bb2d67000445e5a8994f70bc3d96cdc29f022fbbf89fb",
+          "imageDigest": "sha256:aea59a11c54291ac456bb2d67000445e5a8994f70bc3d96cdc29f022fbbf89fb",
+          "lastStatus": "STOPPED",
+          "name": "ffmpeg",
+          "networkBindings": [],
+          "networkInterfaces": [
+            {
+              "attachmentId": "fc37c233-7138-46f1-845c-e658bdf9367a",
+              "privateIpv4Address": "172.31.72.117"
+            }
+          ],
+          "runtimeId": "23543a3c21ae48d4829363d1f099bdc5-0461847448",
+          "taskArn": "arn:aws:ecs:us-east-1:777772816473:task/archflow-real-20261010-resume/23543a3c21ae48d4829363d1f099bdc5"
+        }
+      ],
+      "cpu": "256",
+      "createdAt": "2026-10-10T16:26:16.137000+00:00",
+      "desiredStatus": "STOPPED",
+      "enableExecuteCommand": false,
+      "ephemeralStorage": {
+        "sizeInGiB": 20
+      },
+      "executionStoppedAt": "2026-10-10T16:27:04.569000+00:00",
+      "fargateEphemeralStorage": {
+        "sizeInGiB": 20
+      },
+      "group": "family:archflow-ffmpeg-arm-025-05",
+      "healthStatus": "UNKNOWN",
+      "lastStatus": "STOPPED",
+      "launchType": "FARGATE",
+      "memory": "512",
+      "overrides": {
+        "containerOverrides": [
+          {
+            "name": "ffmpeg"
+          }
+        ],
+        "inferenceAcceleratorOverrides": []
+      },
+      "platformFamily": "Linux",
+      "platformVersion": "1.4.0",
+      "pullStartedAt": "2026-10-10T16:26:26.565000+00:00",
+      "pullStoppedAt": "2026-10-10T16:26:32.465000+00:00",
+      "startedAt": "2026-10-10T16:26:32.829000+00:00",
+      "startedBy": "archflow-smoke-batch1",
+      "stopCode": "EssentialContainerExited",
+      "stoppedAt": "2026-10-10T16:27:27.539000+00:00",
+      "stoppedReason": "Essential container in task exited",
+      "stoppingAt": "2026-10-10T16:27:14.600000+00:00",
+      "tags": [],
+      "taskArn": "arn:aws:ecs:us-east-1:777772816473:task/archflow-real-20261010-resume/23543a3c21ae48d4829363d1f099bdc5",
+      "taskDefinitionArn": "arn:aws:ecs:us-east-1:777772816473:task-definition/archflow-ffmpeg-arm-025-05:3",
+      "version": 5
+    },
+    {
+      "attachments": [
+        {
+          "details": [
+            {
+              "name": "subnetId",
+              "value": "subnet-0cfe144f77dfb7221"
+            },
+            {
+              "name": "networkInterfaceId",
+              "value": "eni-0c4c69c7a30dd0e4b"
+            },
+            {
+              "name": "macAddress",
+              "value": "12:ff:da:14:97:a1"
+            },
+            {
+              "name": "privateDnsName",
+              "value": "ip-172-31-84-219.ec2.internal"
+            },
+            {
+              "name": "privateIPv4Address",
+              "value": "172.31.84.219"
+            }
+          ],
+          "id": "42f63aad-d0a6-43ef-87a8-c40afccc7675",
+          "status": "DELETED",
+          "type": "ElasticNetworkInterface"
+        }
+      ],
+      "attributes": [
+        {
+          "name": "ecs.cpu-architecture",
+          "value": "x86_64"
+        }
+      ],
+      "availabilityZone": "us-east-1b",
+      "clusterArn": "arn:aws:ecs:us-east-1:777772816473:cluster/archflow-real-20261010-resume",
+      "connectivity": "CONNECTED",
+      "connectivityAt": "2026-10-10T16:28:36.883000+00:00",
+      "containers": [
+        {
+          "containerArn": "arn:aws:ecs:us-east-1:777772816473:container/archflow-real-20261010-resume/34de9cae3db8464891efdbbbaf4afc6c/e061eb21-ae87-483e-81ff-5c01e85061ec",
+          "cpu": "0",
+          "exitCode": 0,
+          "healthStatus": "UNKNOWN",
+          "image": "lscr.io/linuxserver/ffmpeg@sha256:aea59a11c54291ac456bb2d67000445e5a8994f70bc3d96cdc29f022fbbf89fb",
+          "imageDigest": "sha256:aea59a11c54291ac456bb2d67000445e5a8994f70bc3d96cdc29f022fbbf89fb",
+          "lastStatus": "STOPPED",
+          "name": "ffmpeg",
+          "networkBindings": [],
+          "networkInterfaces": [
+            {
+              "attachmentId": "42f63aad-d0a6-43ef-87a8-c40afccc7675",
+              "privateIpv4Address": "172.31.84.219"
+            }
+          ],
+          "runtimeId": "34de9cae3db8464891efdbbbaf4afc6c-0461847448",
+          "taskArn": "arn:aws:ecs:us-east-1:777772816473:task/archflow-real-20261010-resume/34de9cae3db8464891efdbbbaf4afc6c"
+        }
+      ],
+      "cpu": "1024",
+      "createdAt": "2026-10-10T16:28:32.002000+00:00",
+      "desiredStatus": "STOPPED",
+      "enableExecuteCommand": false,
+      "ephemeralStorage": {
+        "sizeInGiB": 20
+      },
+      "executionStoppedAt": "2026-10-10T16:29:10.622000+00:00",
+      "fargateEphemeralStorage": {
+        "sizeInGiB": 20
+      },
+      "group": "family:archflow-ffmpeg-x86-1-2",
+      "healthStatus": "UNKNOWN",
+      "lastStatus": "STOPPED",
+      "launchType": "FARGATE",
+      "memory": "2048",
+      "overrides": {
+        "containerOverrides": [
+          {
+            "name": "ffmpeg"
+          }
+        ],
+        "inferenceAcceleratorOverrides": []
+      },
+      "platformFamily": "Linux",
+      "platformVersion": "1.4.0",
+      "pullStartedAt": "2026-10-10T16:28:42.786000+00:00",
+      "pullStoppedAt": "2026-10-10T16:28:52.415000+00:00",
+      "startedAt": "2026-10-10T16:28:54.369000+00:00",
+      "startedBy": "archflow-smoke-batch2",
+      "stopCode": "EssentialContainerExited",
+      "stoppedAt": "2026-10-10T16:29:34.518000+00:00",
+      "stoppedReason": "Essential container in task exited",
+      "stoppingAt": "2026-10-10T16:29:20.659000+00:00",
+      "tags": [],
+      "taskArn": "arn:aws:ecs:us-east-1:777772816473:task/archflow-real-20261010-resume/34de9cae3db8464891efdbbbaf4afc6c",
+      "taskDefinitionArn": "arn:aws:ecs:us-east-1:777772816473:task-definition/archflow-ffmpeg-x86-1-2:3",
+      "version": 5
+    },
+    {
+      "attachments": [
+        {
+          "details": [
+            {
+              "name": "subnetId",
+              "value": "subnet-0cfe144f77dfb7221"
+            },
+            {
+              "name": "networkInterfaceId",
+              "value": "eni-0ec74c62622018bb8"
+            },
+            {
+              "name": "macAddress",
+              "value": "12:ff:d7:2e:4e:15"
+            },
+            {
+              "name": "privateDnsName",
+              "value": "ip-172-31-81-214.ec2.internal"
+            },
+            {
+              "name": "privateIPv4Address",
+              "value": "172.31.81.214"
+            }
+          ],
+          "id": "9e86cb76-4793-4618-bdd8-f47bb343f4f0",
+          "status": "DELETED",
+          "type": "ElasticNetworkInterface"
+        }
+      ],
+      "attributes": [
+        {
+          "name": "ecs.cpu-architecture",
+          "value": "arm64"
+        }
+      ],
+      "availabilityZone": "us-east-1b",
+      "clusterArn": "arn:aws:ecs:us-east-1:777772816473:cluster/archflow-real-20261010-resume",
+      "connectivity": "CONNECTED",
+      "connectivityAt": "2026-10-10T16:42:36.190000+00:00",
+      "containers": [
+        {
+          "containerArn": "arn:aws:ecs:us-east-1:777772816473:container/archflow-real-20261010-resume/530348aac7394734a5abd613a25f2a42/01e7400e-b947-446e-afb0-57b6ec711a87",
+          "cpu": "0",
+          "exitCode": 0,
+          "healthStatus": "UNKNOWN",
+          "image": "lscr.io/linuxserver/ffmpeg@sha256:aea59a11c54291ac456bb2d67000445e5a8994f70bc3d96cdc29f022fbbf89fb",
+          "imageDigest": "sha256:aea59a11c54291ac456bb2d67000445e5a8994f70bc3d96cdc29f022fbbf89fb",
+          "lastStatus": "STOPPED",
+          "name": "worker",
+          "networkBindings": [],
+          "networkInterfaces": [
+            {
+              "attachmentId": "9e86cb76-4793-4618-bdd8-f47bb343f4f0",
+              "privateIpv4Address": "172.31.81.214"
+            }
+          ],
+          "runtimeId": "530348aac7394734a5abd613a25f2a42-2513319767",
+          "taskArn": "arn:aws:ecs:us-east-1:777772816473:task/archflow-real-20261010-resume/530348aac7394734a5abd613a25f2a42"
+        },
+        {
+          "containerArn": "arn:aws:ecs:us-east-1:777772816473:container/archflow-real-20261010-resume/530348aac7394734a5abd613a25f2a42/afbf5168-43d7-4075-9d3f-7db57556d68d",
+          "cpu": "0",
+          "exitCode": 0,
+          "healthStatus": "UNKNOWN",
+          "image": "amazon/aws-cli@sha256:ce44b800602264c12298bbf3399055a4cefdb9ed4a098abe564afe26e7071bce",
+          "imageDigest": "sha256:ce44b800602264c12298bbf3399055a4cefdb9ed4a098abe564afe26e7071bce",
+          "lastStatus": "STOPPED",
+          "name": "downloader",
+          "networkBindings": [],
+          "networkInterfaces": [
+            {
+              "attachmentId": "9e86cb76-4793-4618-bdd8-f47bb343f4f0",
+              "privateIpv4Address": "172.31.81.214"
+            }
+          ],
+          "runtimeId": "530348aac7394734a5abd613a25f2a42-0593658898",
+          "taskArn": "arn:aws:ecs:us-east-1:777772816473:task/archflow-real-20261010-resume/530348aac7394734a5abd613a25f2a42"
+        },
+        {
+          "containerArn": "arn:aws:ecs:us-east-1:777772816473:container/archflow-real-20261010-resume/530348aac7394734a5abd613a25f2a42/c781f212-806c-4db0-ae90-7013ef91b4ab",
+          "cpu": "0",
+          "exitCode": 0,
+          "healthStatus": "UNKNOWN",
+          "image": "amazon/aws-cli@sha256:ce44b800602264c12298bbf3399055a4cefdb9ed4a098abe564afe26e7071bce",
+          "imageDigest": "sha256:ce44b800602264c12298bbf3399055a4cefdb9ed4a098abe564afe26e7071bce",
+          "lastStatus": "STOPPED",
+          "name": "uploader",
+          "networkBindings": [],
+          "networkInterfaces": [
+            {
+              "attachmentId": "9e86cb76-4793-4618-bdd8-f47bb343f4f0",
+              "privateIpv4Address": "172.31.81.214"
+            }
+          ],
+          "runtimeId": "530348aac7394734a5abd613a25f2a42-0716006507",
+          "taskArn": "arn:aws:ecs:us-east-1:777772816473:task/archflow-real-20261010-resume/530348aac7394734a5abd613a25f2a42"
+        }
+      ],
+      "cpu": "1024",
+      "createdAt": "2026-10-10T16:42:33.933000+00:00",
+      "desiredStatus": "STOPPED",
+      "enableExecuteCommand": false,
+      "ephemeralStorage": {
+        "sizeInGiB": 20
+      },
+      "executionStoppedAt": "2026-10-10T16:43:08.706000+00:00",
+      "fargateEphemeralStorage": {
+        "sizeInGiB": 20
+      },
+      "group": "family:archflow-dag-arm-1-2",
+      "healthStatus": "UNKNOWN",
+      "lastStatus": "STOPPED",
+      "launchType": "FARGATE",
+      "memory": "2048",
+      "overrides": {
+        "containerOverrides": [
+          {
+            "command": [
+              "aws s3 cp /data/cut-b.mp4 s3://archflow-real-777772816473-us-east-1/dag/arm-only/cut-b.mp4 --only-show-errors"
+            ],
+            "name": "uploader"
+          },
+          {
+            "command": [
+              "set -euo pipefail\nstart=$(date -u +%Y-%m-%dT%H:%M:%S.%3NZ)\nprintf '{\"event\":\"archflow_application_start\",\"timestamp\":\"%s\"}\\n' \"$start\"\narch=$(uname -m)\nffver=$(ffmpeg -version | sed -n '1p' | sed 's/\"/\\\\\"/g')\nprintf '{\"event\":\"archflow_runtime\",\"architecture\":\"%s\",\"ffmpegVersion\":\"%s\"}\\n' \"$arch\" \"$ffver\"\nffmpeg -hide_banner -loglevel error -y -ss 12 -i /data/source.mp4 -t 12 -c:v libx264 -preset medium -crf 23 -pix_fmt yuv420p /data/cut-b.mp4\nframes=$(ffprobe -v error -select_streams v:0 -show_entries stream=nb_frames -of default=noprint_wrappers=1:nokey=1 /data/cut-b.mp4)\nsize=$(stat -c%s /data/cut-b.mp4)\nchecksum=$(sha256sum /data/cut-b.mp4 | cut -d' ' -f1)\ntest \"$frames\" = 360\ntest \"$size\" -gt 100000\nprintf '{\"event\":\"archflow_output_validated\",\"frames\":%s,\"sizeBytes\":%s,\"sha256\":\"%s\",\"objectKey\":\"dag/arm-only/cut-b.mp4\"}\\n' \"$frames\" \"$size\" \"$checksum\"\nend=$(date -u +%Y-%m-%dT%H:%M:%S.%3NZ)\nprintf '{\"event\":\"archflow_application_end\",\"timestamp\":\"%s\"}\\n' \"$end\"\n"
+            ],
+            "name": "worker"
+          },
+          {
+            "command": [
+              "aws s3 cp s3://archflow-real-777772816473-us-east-1/dag/arm-only/source.mp4 /data/source.mp4 --only-show-errors"
+            ],
+            "name": "downloader"
+          }
+        ],
+        "inferenceAcceleratorOverrides": []
+      },
+      "platformFamily": "Linux",
+      "platformVersion": "1.4.0",
+      "pullStartedAt": "2026-10-10T16:42:47.909000+00:00",
+      "pullStoppedAt": "2026-10-10T16:42:56.631000+00:00",
+      "startedAt": "2026-10-10T16:43:08.004000+00:00",
+      "startedBy": "archflow-dag-arm-r1",
+      "stopCode": "EssentialContainerExited",
+      "stoppedAt": "2026-10-10T16:43:33.059000+00:00",
+      "stoppedReason": "Essential container in task exited",
+      "stoppingAt": "2026-10-10T16:43:18.747000+00:00",
+      "tags": [],
+      "taskArn": "arn:aws:ecs:us-east-1:777772816473:task/archflow-real-20261010-resume/530348aac7394734a5abd613a25f2a42",
+      "taskDefinitionArn": "arn:aws:ecs:us-east-1:777772816473:task-definition/archflow-dag-arm-1-2:1",
+      "version": 6
+    },
+    {
+      "attachments": [
+        {
+          "details": [
+            {
+              "name": "subnetId",
+              "value": "subnet-0cfe144f77dfb7221"
+            },
+            {
+              "name": "networkInterfaceId",
+              "value": "eni-0b7b594df88eb7394"
+            },
+            {
+              "name": "macAddress",
+              "value": "12:ff:de:e3:a0:97"
+            },
+            {
+              "name": "privateDnsName",
+              "value": "ip-172-31-93-248.ec2.internal"
+            },
+            {
+              "name": "privateIPv4Address",
+              "value": "172.31.93.248"
+            }
+          ],
+          "id": "59d9fb58-3b56-4017-8a4a-cd712d6beab0",
+          "status": "DELETED",
+          "type": "ElasticNetworkInterface"
+        }
+      ],
+      "attributes": [
+        {
+          "name": "ecs.cpu-architecture",
+          "value": "x86_64"
+        }
+      ],
+      "availabilityZone": "us-east-1b",
+      "clusterArn": "arn:aws:ecs:us-east-1:777772816473:cluster/archflow-real-20261010-resume",
+      "connectivity": "CONNECTED",
+      "connectivityAt": "2026-10-10T16:30:44.351000+00:00",
+      "containers": [
+        {
+          "containerArn": "arn:aws:ecs:us-east-1:777772816473:container/archflow-real-20261010-resume/6ac4636a766b47cfb2e6671bae752162/dc691e94-6b0a-4612-ad6d-b1dcf4e20676",
+          "cpu": "0",
+          "exitCode": 0,
+          "healthStatus": "UNKNOWN",
+          "image": "lscr.io/linuxserver/ffmpeg@sha256:aea59a11c54291ac456bb2d67000445e5a8994f70bc3d96cdc29f022fbbf89fb",
+          "imageDigest": "sha256:aea59a11c54291ac456bb2d67000445e5a8994f70bc3d96cdc29f022fbbf89fb",
+          "lastStatus": "STOPPED",
+          "name": "ffmpeg",
+          "networkBindings": [],
+          "networkInterfaces": [
+            {
+              "attachmentId": "59d9fb58-3b56-4017-8a4a-cd712d6beab0",
+              "privateIpv4Address": "172.31.93.248"
+            }
+          ],
+          "runtimeId": "6ac4636a766b47cfb2e6671bae752162-0461847448",
+          "taskArn": "arn:aws:ecs:us-east-1:777772816473:task/archflow-real-20261010-resume/6ac4636a766b47cfb2e6671bae752162"
+        }
+      ],
+      "cpu": "256",
+      "createdAt": "2026-10-10T16:30:40.261000+00:00",
+      "desiredStatus": "STOPPED",
+      "enableExecuteCommand": false,
+      "ephemeralStorage": {
+        "sizeInGiB": 20
+      },
+      "executionStoppedAt": "2026-10-10T16:32:19.962000+00:00",
+      "fargateEphemeralStorage": {
+        "sizeInGiB": 20
+      },
+      "group": "family:archflow-ffmpeg-x86-025-05",
+      "healthStatus": "UNKNOWN",
+      "lastStatus": "STOPPED",
+      "launchType": "FARGATE",
+      "memory": "512",
+      "overrides": {
+        "containerOverrides": [
+          {
+            "name": "ffmpeg"
+          }
+        ],
+        "inferenceAcceleratorOverrides": []
+      },
+      "platformFamily": "Linux",
+      "platformVersion": "1.4.0",
+      "pullStartedAt": "2026-10-10T16:30:51.129000+00:00",
+      "pullStoppedAt": "2026-10-10T16:31:13.910000+00:00",
+      "startedAt": "2026-10-10T16:31:13.933000+00:00",
+      "startedBy": "archflow-smoke-batch3",
+      "stopCode": "EssentialContainerExited",
+      "stoppedAt": "2026-10-10T16:32:44.357000+00:00",
+      "stoppedReason": "Essential container in task exited",
+      "stoppingAt": "2026-10-10T16:32:30.024000+00:00",
+      "tags": [],
+      "taskArn": "arn:aws:ecs:us-east-1:777772816473:task/archflow-real-20261010-resume/6ac4636a766b47cfb2e6671bae752162",
+      "taskDefinitionArn": "arn:aws:ecs:us-east-1:777772816473:task-definition/archflow-ffmpeg-x86-025-05:3",
+      "version": 5
+    },
+    {
+      "attachments": [
+        {
+          "details": [
+            {
+              "name": "subnetId",
+              "value": "subnet-0af072ed685d4ad42"
+            },
+            {
+              "name": "networkInterfaceId",
+              "value": "eni-0c3186b451df41166"
+            },
+            {
+              "name": "macAddress",
+              "value": "16:ff:d2:08:57:f3"
+            },
+            {
+              "name": "privateDnsName",
+              "value": "ip-172-31-77-112.ec2.internal"
+            },
+            {
+              "name": "privateIPv4Address",
+              "value": "172.31.77.112"
+            }
+          ],
+          "id": "f4b4712e-3006-43b5-9b82-c2da1a8d26d1",
+          "status": "DELETED",
+          "type": "ElasticNetworkInterface"
+        }
+      ],
+      "attributes": [
+        {
+          "name": "ecs.cpu-architecture",
+          "value": "x86_64"
+        }
+      ],
+      "availabilityZone": "us-east-1f",
+      "clusterArn": "arn:aws:ecs:us-east-1:777772816473:cluster/archflow-real-20261010-resume",
+      "connectivity": "CONNECTED",
+      "connectivityAt": "2026-10-10T16:48:41.607000+00:00",
+      "containers": [
+        {
+          "containerArn": "arn:aws:ecs:us-east-1:777772816473:container/archflow-real-20261010-resume/6dd9fdfa30174f01871dbd7c8adbf2da/4b31c415-51fa-47a0-9280-d81d6491176e",
+          "cpu": "0",
+          "exitCode": 0,
+          "healthStatus": "UNKNOWN",
+          "image": "amazon/aws-cli@sha256:ce44b800602264c12298bbf3399055a4cefdb9ed4a098abe564afe26e7071bce",
+          "imageDigest": "sha256:ce44b800602264c12298bbf3399055a4cefdb9ed4a098abe564afe26e7071bce",
+          "lastStatus": "STOPPED",
+          "name": "downloader",
+          "networkBindings": [],
+          "networkInterfaces": [
+            {
+              "attachmentId": "f4b4712e-3006-43b5-9b82-c2da1a8d26d1",
+              "privateIpv4Address": "172.31.77.112"
+            }
+          ],
+          "runtimeId": "6dd9fdfa30174f01871dbd7c8adbf2da-0593658898",
+          "taskArn": "arn:aws:ecs:us-east-1:777772816473:task/archflow-real-20261010-resume/6dd9fdfa30174f01871dbd7c8adbf2da"
+        },
+        {
+          "containerArn": "arn:aws:ecs:us-east-1:777772816473:container/archflow-real-20261010-resume/6dd9fdfa30174f01871dbd7c8adbf2da/a247ce49-bf35-4bc3-a4e9-4b5a42410026",
+          "cpu": "0",
+          "exitCode": 0,
+          "healthStatus": "UNKNOWN",
+          "image": "lscr.io/linuxserver/ffmpeg@sha256:aea59a11c54291ac456bb2d67000445e5a8994f70bc3d96cdc29f022fbbf89fb",
+          "imageDigest": "sha256:aea59a11c54291ac456bb2d67000445e5a8994f70bc3d96cdc29f022fbbf89fb",
+          "lastStatus": "STOPPED",
+          "name": "worker",
+          "networkBindings": [],
+          "networkInterfaces": [
+            {
+              "attachmentId": "f4b4712e-3006-43b5-9b82-c2da1a8d26d1",
+              "privateIpv4Address": "172.31.77.112"
+            }
+          ],
+          "runtimeId": "6dd9fdfa30174f01871dbd7c8adbf2da-2513319767",
+          "taskArn": "arn:aws:ecs:us-east-1:777772816473:task/archflow-real-20261010-resume/6dd9fdfa30174f01871dbd7c8adbf2da"
+        },
+        {
+          "containerArn": "arn:aws:ecs:us-east-1:777772816473:container/archflow-real-20261010-resume/6dd9fdfa30174f01871dbd7c8adbf2da/b917a79b-1db5-407f-837d-854d5fcde9e4",
+          "cpu": "0",
+          "exitCode": 0,
+          "healthStatus": "UNKNOWN",
+          "image": "amazon/aws-cli@sha256:ce44b800602264c12298bbf3399055a4cefdb9ed4a098abe564afe26e7071bce",
+          "imageDigest": "sha256:ce44b800602264c12298bbf3399055a4cefdb9ed4a098abe564afe26e7071bce",
+          "lastStatus": "STOPPED",
+          "name": "uploader",
+          "networkBindings": [],
+          "networkInterfaces": [
+            {
+              "attachmentId": "f4b4712e-3006-43b5-9b82-c2da1a8d26d1",
+              "privateIpv4Address": "172.31.77.112"
+            }
+          ],
+          "runtimeId": "6dd9fdfa30174f01871dbd7c8adbf2da-0716006507",
+          "taskArn": "arn:aws:ecs:us-east-1:777772816473:task/archflow-real-20261010-resume/6dd9fdfa30174f01871dbd7c8adbf2da"
+        }
+      ],
+      "cpu": "1024",
+      "createdAt": "2026-10-10T16:48:38.588000+00:00",
+      "desiredStatus": "STOPPED",
+      "enableExecuteCommand": false,
+      "ephemeralStorage": {
+        "sizeInGiB": 20
+      },
+      "executionStoppedAt": "2026-10-10T16:49:49.511000+00:00",
+      "fargateEphemeralStorage": {
+        "sizeInGiB": 20
+      },
+      "group": "family:archflow-dag-x86-1-2",
+      "healthStatus": "UNKNOWN",
+      "lastStatus": "STOPPED",
+      "launchType": "FARGATE",
+      "memory": "2048",
+      "overrides": {
+        "containerOverrides": [
+          {
+            "command": [
+              "aws s3 cp /data/source.mp4 s3://archflow-real-777772816473-us-east-1/dag/x86-only/source.mp4 --only-show-errors"
+            ],
+            "name": "uploader"
+          },
+          {
+            "command": [
+              "set -euo pipefail\nstart=$(date -u +%Y-%m-%dT%H:%M:%S.%3NZ)\nprintf '{\"event\":\"archflow_application_start\",\"timestamp\":\"%s\"}\\n' \"$start\"\narch=$(uname -m)\nffver=$(ffmpeg -version | sed -n '1p' | sed 's/\"/\\\\\"/g')\nprintf '{\"event\":\"archflow_runtime\",\"architecture\":\"%s\",\"ffmpegVersion\":\"%s\"}\\n' \"$arch\" \"$ffver\"\nffmpeg -hide_banner -loglevel error -y -f lavfi -i testsrc2=size=1280x720:rate=30 -t 24 -c:v libx264 -preset medium -crf 23 -pix_fmt yuv420p /data/source.mp4\nframes=$(ffprobe -v error -select_streams v:0 -show_entries stream=nb_frames -of default=noprint_wrappers=1:nokey=1 /data/source.mp4)\nsize=$(stat -c%s /data/source.mp4)\nchecksum=$(sha256sum /data/source.mp4 | cut -d' ' -f1)\ntest \"$frames\" = 720\ntest \"$size\" -gt 100000\nprintf '{\"event\":\"archflow_output_validated\",\"frames\":%s,\"sizeBytes\":%s,\"sha256\":\"%s\",\"objectKey\":\"dag/x86-only/source.mp4\"}\\n' \"$frames\" \"$size\" \"$checksum\"\nend=$(date -u +%Y-%m-%dT%H:%M:%S.%3NZ)\nprintf '{\"event\":\"archflow_application_end\",\"timestamp\":\"%s\"}\\n' \"$end\"\n"
+            ],
+            "name": "worker"
+          },
+          {
+            "command": [
+              "true"
+            ],
+            "name": "downloader"
+          }
+        ],
+        "inferenceAcceleratorOverrides": []
+      },
+      "platformFamily": "Linux",
+      "platformVersion": "1.4.0",
+      "pullStartedAt": "2026-10-10T16:48:59.627000+00:00",
+      "pullStoppedAt": "2026-10-10T16:49:13.441000+00:00",
+      "startedAt": "2026-10-10T16:49:48.307000+00:00",
+      "startedBy": "archflow-dag-x86-r1",
+      "stopCode": "EssentialContainerExited",
+      "stoppedAt": "2026-10-10T16:50:13.118000+00:00",
+      "stoppedReason": "Essential container in task exited",
+      "stoppingAt": "2026-10-10T16:49:59.559000+00:00",
+      "tags": [],
+      "taskArn": "arn:aws:ecs:us-east-1:777772816473:task/archflow-real-20261010-resume/6dd9fdfa30174f01871dbd7c8adbf2da",
+      "taskDefinitionArn": "arn:aws:ecs:us-east-1:777772816473:task-definition/archflow-dag-x86-1-2:1",
+      "version": 7
+    },
+    {
+      "attachments": [
+        {
+          "details": [
+            {
+              "name": "subnetId",
+              "value": "subnet-0af072ed685d4ad42"
+            },
+            {
+              "name": "networkInterfaceId",
+              "value": "eni-00b61c7584974a8ee"
+            },
+            {
+              "name": "macAddress",
+              "value": "16:ff:d0:25:66:2b"
+            },
+            {
+              "name": "privateDnsName",
+              "value": "ip-172-31-77-110.ec2.internal"
+            },
+            {
+              "name": "privateIPv4Address",
+              "value": "172.31.77.110"
+            }
+          ],
+          "id": "475b5fe3-9559-4693-8237-382f2e1c882b",
+          "status": "DELETED",
+          "type": "ElasticNetworkInterface"
+        }
+      ],
+      "attributes": [
+        {
+          "name": "ecs.cpu-architecture",
+          "value": "x86_64"
+        }
+      ],
+      "availabilityZone": "us-east-1f",
+      "clusterArn": "arn:aws:ecs:us-east-1:777772816473:cluster/archflow-real-20261010-resume",
+      "connectivity": "CONNECTED",
+      "connectivityAt": "2026-10-10T16:51:08.801000+00:00",
+      "containers": [
+        {
+          "containerArn": "arn:aws:ecs:us-east-1:777772816473:container/archflow-real-20261010-resume/7cc454f8df4b4d9887aae7a4ddea5a80/047b0b5b-ec2f-495b-b2b8-cc23dbb4c238",
+          "cpu": "0",
+          "exitCode": 0,
+          "healthStatus": "UNKNOWN",
+          "image": "amazon/aws-cli@sha256:ce44b800602264c12298bbf3399055a4cefdb9ed4a098abe564afe26e7071bce",
+          "imageDigest": "sha256:ce44b800602264c12298bbf3399055a4cefdb9ed4a098abe564afe26e7071bce",
+          "lastStatus": "STOPPED",
+          "name": "uploader",
+          "networkBindings": [],
+          "networkInterfaces": [
+            {
+              "attachmentId": "475b5fe3-9559-4693-8237-382f2e1c882b",
+              "privateIpv4Address": "172.31.77.110"
+            }
+          ],
+          "runtimeId": "7cc454f8df4b4d9887aae7a4ddea5a80-0716006507",
+          "taskArn": "arn:aws:ecs:us-east-1:777772816473:task/archflow-real-20261010-resume/7cc454f8df4b4d9887aae7a4ddea5a80"
+        },
+        {
+          "containerArn": "arn:aws:ecs:us-east-1:777772816473:container/archflow-real-20261010-resume/7cc454f8df4b4d9887aae7a4ddea5a80/49a1f6b9-cb67-4a53-a7b0-4a660b81233f",
+          "cpu": "0",
+          "exitCode": 0,
+          "healthStatus": "UNKNOWN",
+          "image": "lscr.io/linuxserver/ffmpeg@sha256:aea59a11c54291ac456bb2d67000445e5a8994f70bc3d96cdc29f022fbbf89fb",
+          "imageDigest": "sha256:aea59a11c54291ac456bb2d67000445e5a8994f70bc3d96cdc29f022fbbf89fb",
+          "lastStatus": "STOPPED",
+          "name": "worker",
+          "networkBindings": [],
+          "networkInterfaces": [
+            {
+              "attachmentId": "475b5fe3-9559-4693-8237-382f2e1c882b",
+              "privateIpv4Address": "172.31.77.110"
+            }
+          ],
+          "runtimeId": "7cc454f8df4b4d9887aae7a4ddea5a80-2513319767",
+          "taskArn": "arn:aws:ecs:us-east-1:777772816473:task/archflow-real-20261010-resume/7cc454f8df4b4d9887aae7a4ddea5a80"
+        },
+        {
+          "containerArn": "arn:aws:ecs:us-east-1:777772816473:container/archflow-real-20261010-resume/7cc454f8df4b4d9887aae7a4ddea5a80/aae8d5c2-74be-4b45-b463-d5b951fbfa98",
+          "cpu": "0",
+          "exitCode": 0,
+          "healthStatus": "UNKNOWN",
+          "image": "amazon/aws-cli@sha256:ce44b800602264c12298bbf3399055a4cefdb9ed4a098abe564afe26e7071bce",
+          "imageDigest": "sha256:ce44b800602264c12298bbf3399055a4cefdb9ed4a098abe564afe26e7071bce",
+          "lastStatus": "STOPPED",
+          "name": "downloader",
+          "networkBindings": [],
+          "networkInterfaces": [
+            {
+              "attachmentId": "475b5fe3-9559-4693-8237-382f2e1c882b",
+              "privateIpv4Address": "172.31.77.110"
+            }
+          ],
+          "runtimeId": "7cc454f8df4b4d9887aae7a4ddea5a80-0593658898",
+          "taskArn": "arn:aws:ecs:us-east-1:777772816473:task/archflow-real-20261010-resume/7cc454f8df4b4d9887aae7a4ddea5a80"
+        }
+      ],
+      "cpu": "1024",
+      "createdAt": "2026-10-10T16:51:02.088000+00:00",
+      "desiredStatus": "STOPPED",
+      "enableExecuteCommand": false,
+      "ephemeralStorage": {
+        "sizeInGiB": 20
+      },
+      "executionStoppedAt": "2026-10-10T16:51:53.110000+00:00",
+      "fargateEphemeralStorage": {
+        "sizeInGiB": 20
+      },
+      "group": "family:archflow-dag-x86-1-2",
+      "healthStatus": "UNKNOWN",
+      "lastStatus": "STOPPED",
+      "launchType": "FARGATE",
+      "memory": "2048",
+      "overrides": {
+        "containerOverrides": [
+          {
+            "command": [
+              "aws s3 cp /data/cut-b.mp4 s3://archflow-real-777772816473-us-east-1/dag/x86-only/cut-b.mp4 --only-show-errors"
+            ],
+            "name": "uploader"
+          },
+          {
+            "command": [
+              "set -euo pipefail\nstart=$(date -u +%Y-%m-%dT%H:%M:%S.%3NZ)\nprintf '{\"event\":\"archflow_application_start\",\"timestamp\":\"%s\"}\\n' \"$start\"\narch=$(uname -m)\nffver=$(ffmpeg -version | sed -n '1p' | sed 's/\"/\\\\\"/g')\nprintf '{\"event\":\"archflow_runtime\",\"architecture\":\"%s\",\"ffmpegVersion\":\"%s\"}\\n' \"$arch\" \"$ffver\"\nffmpeg -hide_banner -loglevel error -y -ss 12 -i /data/source.mp4 -t 12 -c:v libx264 -preset medium -crf 23 -pix_fmt yuv420p /data/cut-b.mp4\nframes=$(ffprobe -v error -select_streams v:0 -show_entries stream=nb_frames -of default=noprint_wrappers=1:nokey=1 /data/cut-b.mp4)\nsize=$(stat -c%s /data/cut-b.mp4)\nchecksum=$(sha256sum /data/cut-b.mp4 | cut -d' ' -f1)\ntest \"$frames\" = 360\ntest \"$size\" -gt 100000\nprintf '{\"event\":\"archflow_output_validated\",\"frames\":%s,\"sizeBytes\":%s,\"sha256\":\"%s\",\"objectKey\":\"dag/x86-only/cut-b.mp4\"}\\n' \"$frames\" \"$size\" \"$checksum\"\nend=$(date -u +%Y-%m-%dT%H:%M:%S.%3NZ)\nprintf '{\"event\":\"archflow_application_end\",\"timestamp\":\"%s\"}\\n' \"$end\"\n"
+            ],
+            "name": "worker"
+          },
+          {
+            "command": [
+              "aws s3 cp s3://archflow-real-777772816473-us-east-1/dag/x86-only/source.mp4 /data/source.mp4 --only-show-errors"
+            ],
+            "name": "downloader"
+          }
+        ],
+        "inferenceAcceleratorOverrides": []
+      },
+      "platformFamily": "Linux",
+      "platformVersion": "1.4.0",
+      "pullStartedAt": "2026-10-10T16:51:16.492000+00:00",
+      "pullStoppedAt": "2026-10-10T16:51:30.219000+00:00",
+      "startedAt": "2026-10-10T16:51:51.986000+00:00",
+      "startedBy": "archflow-dag-x86-r1",
+      "stopCode": "EssentialContainerExited",
+      "stoppedAt": "2026-10-10T16:52:15.968000+00:00",
+      "stoppedReason": "Essential container in task exited",
+      "stoppingAt": "2026-10-10T16:52:03.160000+00:00",
+      "tags": [],
+      "taskArn": "arn:aws:ecs:us-east-1:777772816473:task/archflow-real-20261010-resume/7cc454f8df4b4d9887aae7a4ddea5a80",
+      "taskDefinitionArn": "arn:aws:ecs:us-east-1:777772816473:task-definition/archflow-dag-x86-1-2:1",
+      "version": 6
+    },
+    {
+      "attachments": [
+        {
+          "details": [
+            {
+              "name": "subnetId",
+              "value": "subnet-0cfe144f77dfb7221"
+            },
+            {
+              "name": "networkInterfaceId",
+              "value": "eni-04b7261c0cf90e9b6"
+            },
+            {
+              "name": "macAddress",
+              "value": "12:ff:d7:ae:0a:45"
+            },
+            {
+              "name": "privateDnsName",
+              "value": "ip-172-31-83-56.ec2.internal"
+            },
+            {
+              "name": "privateIPv4Address",
+              "value": "172.31.83.56"
+            }
+          ],
+          "id": "323a333f-5568-4642-9892-315ddc6ac0da",
+          "status": "DELETED",
+          "type": "ElasticNetworkInterface"
+        }
+      ],
+      "attributes": [
+        {
+          "name": "ecs.cpu-architecture",
+          "value": "arm64"
+        }
+      ],
+      "availabilityZone": "us-east-1b",
+      "clusterArn": "arn:aws:ecs:us-east-1:777772816473:cluster/archflow-real-20261010-resume",
+      "connectivity": "CONNECTED",
+      "connectivityAt": "2026-10-10T16:46:01.125000+00:00",
+      "containers": [
+        {
+          "containerArn": "arn:aws:ecs:us-east-1:777772816473:container/archflow-real-20261010-resume/9c98a61c226540dc8528d92489ca1b2e/4b33d282-13d0-4dd9-9b2a-59092e673971",
+          "cpu": "0",
+          "exitCode": 0,
+          "healthStatus": "UNKNOWN",
+          "image": "amazon/aws-cli@sha256:ce44b800602264c12298bbf3399055a4cefdb9ed4a098abe564afe26e7071bce",
+          "imageDigest": "sha256:ce44b800602264c12298bbf3399055a4cefdb9ed4a098abe564afe26e7071bce",
+          "lastStatus": "STOPPED",
+          "name": "uploader",
+          "networkBindings": [],
+          "networkInterfaces": [
+            {
+              "attachmentId": "323a333f-5568-4642-9892-315ddc6ac0da",
+              "privateIpv4Address": "172.31.83.56"
+            }
+          ],
+          "runtimeId": "9c98a61c226540dc8528d92489ca1b2e-0716006507",
+          "taskArn": "arn:aws:ecs:us-east-1:777772816473:task/archflow-real-20261010-resume/9c98a61c226540dc8528d92489ca1b2e"
+        },
+        {
+          "containerArn": "arn:aws:ecs:us-east-1:777772816473:container/archflow-real-20261010-resume/9c98a61c226540dc8528d92489ca1b2e/b72ef0f0-757b-42f8-b838-f18578079abe",
+          "cpu": "0",
+          "exitCode": 0,
+          "healthStatus": "UNKNOWN",
+          "image": "lscr.io/linuxserver/ffmpeg@sha256:aea59a11c54291ac456bb2d67000445e5a8994f70bc3d96cdc29f022fbbf89fb",
+          "imageDigest": "sha256:aea59a11c54291ac456bb2d67000445e5a8994f70bc3d96cdc29f022fbbf89fb",
+          "lastStatus": "STOPPED",
+          "name": "worker",
+          "networkBindings": [],
+          "networkInterfaces": [
+            {
+              "attachmentId": "323a333f-5568-4642-9892-315ddc6ac0da",
+              "privateIpv4Address": "172.31.83.56"
+            }
+          ],
+          "runtimeId": "9c98a61c226540dc8528d92489ca1b2e-2513319767",
+          "taskArn": "arn:aws:ecs:us-east-1:777772816473:task/archflow-real-20261010-resume/9c98a61c226540dc8528d92489ca1b2e"
+        },
+        {
+          "containerArn": "arn:aws:ecs:us-east-1:777772816473:container/archflow-real-20261010-resume/9c98a61c226540dc8528d92489ca1b2e/fcff7335-d033-4e0a-b612-865c8f01e1c1",
+          "cpu": "0",
+          "exitCode": 0,
+          "healthStatus": "UNKNOWN",
+          "image": "amazon/aws-cli@sha256:ce44b800602264c12298bbf3399055a4cefdb9ed4a098abe564afe26e7071bce",
+          "imageDigest": "sha256:ce44b800602264c12298bbf3399055a4cefdb9ed4a098abe564afe26e7071bce",
+          "lastStatus": "STOPPED",
+          "name": "downloader",
+          "networkBindings": [],
+          "networkInterfaces": [
+            {
+              "attachmentId": "323a333f-5568-4642-9892-315ddc6ac0da",
+              "privateIpv4Address": "172.31.83.56"
+            }
+          ],
+          "runtimeId": "9c98a61c226540dc8528d92489ca1b2e-0593658898",
+          "taskArn": "arn:aws:ecs:us-east-1:777772816473:task/archflow-real-20261010-resume/9c98a61c226540dc8528d92489ca1b2e"
+        }
+      ],
+      "cpu": "1024",
+      "createdAt": "2026-10-10T16:45:57.669000+00:00",
+      "desiredStatus": "STOPPED",
+      "enableExecuteCommand": false,
+      "ephemeralStorage": {
+        "sizeInGiB": 20
+      },
+      "executionStoppedAt": "2026-10-10T16:46:25.840000+00:00",
+      "fargateEphemeralStorage": {
+        "sizeInGiB": 20
+      },
+      "group": "family:archflow-dag-arm-1-2",
+      "healthStatus": "UNKNOWN",
+      "lastStatus": "STOPPED",
+      "launchType": "FARGATE",
+      "memory": "2048",
+      "overrides": {
+        "containerOverrides": [
+          {
+            "command": [
+              "true"
+            ],
+            "name": "uploader"
+          },
+          {
+            "command": [
+              "set -euo pipefail\nstart=$(date -u +%Y-%m-%dT%H:%M:%S.%3NZ)\nprintf '{\"event\":\"archflow_application_start\",\"timestamp\":\"%s\"}\\n' \"$start\"\narch=$(uname -m)\nffver=$(ffmpeg -version | sed -n '1p' | sed 's/\"/\\\\\"/g')\nprintf '{\"event\":\"archflow_runtime\",\"architecture\":\"%s\",\"ffmpegVersion\":\"%s\"}\\n' \"$arch\" \"$ffver\"\ncodec=$(ffprobe -v error -select_streams v:0 -show_entries stream=codec_name -of default=noprint_wrappers=1:nokey=1 /data/merged.mp4)\nwidth=$(ffprobe -v error -select_streams v:0 -show_entries stream=width -of default=noprint_wrappers=1:nokey=1 /data/merged.mp4)\nheight=$(ffprobe -v error -select_streams v:0 -show_entries stream=height -of default=noprint_wrappers=1:nokey=1 /data/merged.mp4)\nframes=$(ffprobe -v error -select_streams v:0 -show_entries stream=nb_frames -of default=noprint_wrappers=1:nokey=1 /data/merged.mp4)\nduration=$(ffprobe -v error -show_entries format=duration -of default=noprint_wrappers=1:nokey=1 /data/merged.mp4)\nsize=$(stat -c%s /data/merged.mp4)\nchecksum=$(sha256sum /data/merged.mp4 | cut -d' ' -f1)\ntest \"$codec\" = h264\ntest \"$width\" = 1280\ntest \"$height\" = 720\ntest \"$frames\" = 720\ntest \"$size\" -gt 100000\nprintf '{\"event\":\"archflow_output_validated\",\"codec\":\"%s\",\"width\":%s,\"height\":%s,\"frames\":%s,\"durationSeconds\":%s,\"sizeBytes\":%s,\"sha256\":\"%s\",\"objectKey\":\"dag/arm-only/merged.mp4\"}\\n' \"$codec\" \"$width\" \"$height\" \"$frames\" \"$duration\" \"$size\" \"$checksum\"\nend=$(date -u +%Y-%m-%dT%H:%M:%S.%3NZ)\nprintf '{\"event\":\"archflow_application_end\",\"timestamp\":\"%s\"}\\n' \"$end\"\n"
+            ],
+            "name": "worker"
+          },
+          {
+            "command": [
+              "aws s3 cp s3://archflow-real-777772816473-us-east-1/dag/arm-only/merged.mp4 /data/merged.mp4 --only-show-errors"
+            ],
+            "name": "downloader"
+          }
+        ],
+        "inferenceAcceleratorOverrides": []
+      },
+      "platformFamily": "Linux",
+      "platformVersion": "1.4.0",
+      "pullStartedAt": "2026-10-10T16:46:08.587000+00:00",
+      "pullStoppedAt": "2026-10-10T16:46:22.967000+00:00",
+      "startedAt": "2026-10-10T16:46:25.878000+00:00",
+      "startedBy": "archflow-dag-arm-r1",
+      "stopCode": "EssentialContainerExited",
+      "stoppedAt": "2026-10-10T16:46:49.811000+00:00",
+      "stoppedReason": "Essential container in task exited",
+      "stoppingAt": "2026-10-10T16:46:35.921000+00:00",
+      "tags": [],
+      "taskArn": "arn:aws:ecs:us-east-1:777772816473:task/archflow-real-20261010-resume/9c98a61c226540dc8528d92489ca1b2e",
+      "taskDefinitionArn": "arn:aws:ecs:us-east-1:777772816473:task-definition/archflow-dag-arm-1-2:1",
+      "version": 5
+    },
+    {
+      "attachments": [
+        {
+          "details": [
+            {
+              "name": "subnetId",
+              "value": "subnet-055d946fa7ea27883"
+            },
+            {
+              "name": "networkInterfaceId",
+              "value": "eni-0cb8b59e8dd21a293"
+            },
+            {
+              "name": "macAddress",
+              "value": "0e:ff:ee:49:00:33"
+            },
+            {
+              "name": "privateDnsName",
+              "value": "ip-172-31-33-28.ec2.internal"
+            },
+            {
+              "name": "privateIPv4Address",
+              "value": "172.31.33.28"
+            }
+          ],
+          "id": "c1867d1c-a853-440c-9a01-c7483c144ead",
+          "status": "DELETED",
+          "type": "ElasticNetworkInterface"
+        }
+      ],
+      "attributes": [
+        {
+          "name": "ecs.cpu-architecture",
+          "value": "arm64"
+        }
+      ],
+      "availabilityZone": "us-east-1d",
+      "clusterArn": "arn:aws:ecs:us-east-1:777772816473:cluster/archflow-real-20261010-resume",
+      "connectivity": "CONNECTED",
+      "connectivityAt": "2026-10-10T16:30:41.774000+00:00",
+      "containers": [
+        {
+          "containerArn": "arn:aws:ecs:us-east-1:777772816473:container/archflow-real-20261010-resume/a002ce35c186462fad0a32f4a36fd719/78d49203-2785-4aba-b487-a1a4b1d9b023",
+          "cpu": "0",
+          "exitCode": 0,
+          "healthStatus": "UNKNOWN",
+          "image": "lscr.io/linuxserver/ffmpeg@sha256:aea59a11c54291ac456bb2d67000445e5a8994f70bc3d96cdc29f022fbbf89fb",
+          "imageDigest": "sha256:aea59a11c54291ac456bb2d67000445e5a8994f70bc3d96cdc29f022fbbf89fb",
+          "lastStatus": "STOPPED",
+          "name": "ffmpeg",
+          "networkBindings": [],
+          "networkInterfaces": [
+            {
+              "attachmentId": "c1867d1c-a853-440c-9a01-c7483c144ead",
+              "privateIpv4Address": "172.31.33.28"
+            }
+          ],
+          "runtimeId": "a002ce35c186462fad0a32f4a36fd719-0461847448",
+          "taskArn": "arn:aws:ecs:us-east-1:777772816473:task/archflow-real-20261010-resume/a002ce35c186462fad0a32f4a36fd719"
+        }
+      ],
+      "cpu": "256",
+      "createdAt": "2026-10-10T16:30:39.370000+00:00",
+      "desiredStatus": "STOPPED",
+      "enableExecuteCommand": false,
+      "ephemeralStorage": {
+        "sizeInGiB": 20
+      },
+      "executionStoppedAt": "2026-10-10T16:31:36.257000+00:00",
+      "fargateEphemeralStorage": {
+        "sizeInGiB": 20
+      },
+      "group": "family:archflow-ffmpeg-arm-025-05",
+      "healthStatus": "UNKNOWN",
+      "lastStatus": "STOPPED",
+      "launchType": "FARGATE",
+      "memory": "512",
+      "overrides": {
+        "containerOverrides": [
+          {
+            "name": "ffmpeg"
+          }
+        ],
+        "inferenceAcceleratorOverrides": []
+      },
+      "platformFamily": "Linux",
+      "platformVersion": "1.4.0",
+      "pullStartedAt": "2026-10-10T16:30:53.798000+00:00",
+      "pullStoppedAt": "2026-10-10T16:31:00.047000+00:00",
+      "startedAt": "2026-10-10T16:31:00.011000+00:00",
+      "startedBy": "archflow-smoke-batch3",
+      "stopCode": "EssentialContainerExited",
+      "stoppedAt": "2026-10-10T16:32:00.555000+00:00",
+      "stoppedReason": "Essential container in task exited",
+      "stoppingAt": "2026-10-10T16:31:46.293000+00:00",
+      "tags": [],
+      "taskArn": "arn:aws:ecs:us-east-1:777772816473:task/archflow-real-20261010-resume/a002ce35c186462fad0a32f4a36fd719",
+      "taskDefinitionArn": "arn:aws:ecs:us-east-1:777772816473:task-definition/archflow-ffmpeg-arm-025-05:3",
+      "version": 5
+    },
+    {
+      "attachments": [
+        {
+          "details": [
+            {
+              "name": "subnetId",
+              "value": "subnet-0af072ed685d4ad42"
+            },
+            {
+              "name": "networkInterfaceId",
+              "value": "eni-0fc4de4db5bdcbfe1"
+            },
+            {
+              "name": "macAddress",
+              "value": "16:ff:ef:fb:a0:0f"
+            },
+            {
+              "name": "privateDnsName",
+              "value": "ip-172-31-78-112.ec2.internal"
+            },
+            {
+              "name": "privateIPv4Address",
+              "value": "172.31.78.112"
+            }
+          ],
+          "id": "4a2d42a3-f5b0-44a8-aecc-943823b9575f",
+          "status": "DELETED",
+          "type": "ElasticNetworkInterface"
+        }
+      ],
+      "attributes": [
+        {
+          "name": "ecs.cpu-architecture",
+          "value": "x86_64"
+        }
+      ],
+      "availabilityZone": "us-east-1f",
+      "clusterArn": "arn:aws:ecs:us-east-1:777772816473:cluster/archflow-real-20261010-resume",
+      "connectivity": "CONNECTED",
+      "connectivityAt": "2026-10-10T16:22:35.278000+00:00",
+      "containers": [
+        {
+          "containerArn": "arn:aws:ecs:us-east-1:777772816473:container/archflow-real-20261010-resume/bdc7da9cdec64adab31d75015f177b0e/1eeec2a1-8c7b-4566-9b1d-92f69b1adfd8",
+          "cpu": "0",
+          "exitCode": 0,
+          "healthStatus": "UNKNOWN",
+          "image": "lscr.io/linuxserver/ffmpeg@sha256:aea59a11c54291ac456bb2d67000445e5a8994f70bc3d96cdc29f022fbbf89fb",
+          "imageDigest": "sha256:aea59a11c54291ac456bb2d67000445e5a8994f70bc3d96cdc29f022fbbf89fb",
+          "lastStatus": "STOPPED",
+          "name": "ffmpeg",
+          "networkBindings": [],
+          "networkInterfaces": [
+            {
+              "attachmentId": "4a2d42a3-f5b0-44a8-aecc-943823b9575f",
+              "privateIpv4Address": "172.31.78.112"
+            }
+          ],
+          "runtimeId": "bdc7da9cdec64adab31d75015f177b0e-0461847448",
+          "taskArn": "arn:aws:ecs:us-east-1:777772816473:task/archflow-real-20261010-resume/bdc7da9cdec64adab31d75015f177b0e"
+        }
+      ],
+      "cpu": "256",
+      "createdAt": "2026-10-10T16:22:31.131000+00:00",
+      "desiredStatus": "STOPPED",
+      "enableExecuteCommand": false,
+      "ephemeralStorage": {
+        "sizeInGiB": 20
+      },
+      "executionStoppedAt": "2026-10-10T16:24:03.888000+00:00",
+      "fargateEphemeralStorage": {
+        "sizeInGiB": 20
+      },
+      "group": "family:archflow-ffmpeg-x86-025-05",
+      "healthStatus": "UNKNOWN",
+      "lastStatus": "STOPPED",
+      "launchType": "FARGATE",
+      "memory": "512",
+      "overrides": {
+        "containerOverrides": [
+          {
+            "command": [
+              "set -euo pipefail\nstart=$(date -u +%Y-%m-%dT%H:%M:%S.%3NZ)\nprintf '{\"event\":\"archflow_application_start\",\"timestamp\":\"%s\"}\\n' \"$start\"\narch=$(uname -m)\nffver=$(ffmpeg -version | sed -n '1p' | sed 's/\"/\\\\\"/g')\nprintf '{\"event\":\"archflow_runtime\",\"architecture\":\"%s\",\"ffmpegVersion\":\"%s\"}\\n' \"$arch\" \"$ffver\"\nffmpeg -hide_banner -loglevel error -y -f lavfi -i testsrc2=size=1280x720:rate=30 -t 12 -c:v libx264 -preset medium -crf 23 -pix_fmt yuv420p /tmp/archflow-smoke.mp4\ncodec=$(ffprobe -v error -select_streams v:0 -show_entries stream=codec_name -of default=noprint_wrappers=1:nokey=1 /tmp/archflow-smoke.mp4)\nwidth=$(ffprobe -v error -select_streams v:0 -show_entries stream=width -of default=noprint_wrappers=1:nokey=1 /tmp/archflow-smoke.mp4)\nheight=$(ffprobe -v error -select_streams v:0 -show_entries stream=height -of default=noprint_wrappers=1:nokey=1 /tmp/archflow-smoke.mp4)\nframes=$(ffprobe -v error -select_streams v:0 -show_entries stream=nb_frames -of default=noprint_wrappers=1:nokey=1 /tmp/archflow-smoke.mp4)\nduration=$(ffprobe -v error -show_entries format=duration -of default=noprint_wrappers=1:nokey=1 /tmp/archflow-smoke.mp4)\nsize=$(stat -c%s /tmp/archflow-smoke.mp4)\nchecksum=$(sha256sum /tmp/archflow-smoke.mp4 | cut -d' ' -f1)\ntest \"$codec\" = h264\ntest \"$width\" = 1280\ntest \"$height\" = 720\ntest \"$frames\" = 360\ntest \"$size\" -gt 100000\nprintf '{\"event\":\"archflow_output_validated\",\"codec\":\"%s\",\"width\":%s,\"height\":%s,\"frames\":%s,\"durationSeconds\":%s,\"sizeBytes\":%s,\"sha256\":\"%s\"}\\n' \"$codec\" \"$width\" \"$height\" \"$frames\" \"$duration\" \"$size\" \"$checksum\"\nend=$(date -u +%Y-%m-%dT%H:%M:%S.%3NZ)\nprintf '{\"event\":\"archflow_application_end\",\"timestamp\":\"%s\"}\\n' \"$end\"\n"
+            ],
+            "name": "ffmpeg"
+          }
+        ],
+        "inferenceAcceleratorOverrides": []
+      },
+      "platformFamily": "Linux",
+      "platformVersion": "1.4.0",
+      "pullStartedAt": "2026-10-10T16:22:43.943000+00:00",
+      "pullStoppedAt": "2026-10-10T16:22:55.408000+00:00",
+      "startedAt": "2026-10-10T16:22:56.169000+00:00",
+      "startedBy": "archflow-smoke-canary",
+      "stopCode": "EssentialContainerExited",
+      "stoppedAt": "2026-10-10T16:24:27.796000+00:00",
+      "stoppedReason": "Essential container in task exited",
+      "stoppingAt": "2026-10-10T16:24:13.967000+00:00",
+      "tags": [],
+      "taskArn": "arn:aws:ecs:us-east-1:777772816473:task/archflow-real-20261010-resume/bdc7da9cdec64adab31d75015f177b0e",
+      "taskDefinitionArn": "arn:aws:ecs:us-east-1:777772816473:task-definition/archflow-ffmpeg-x86-025-05:2",
+      "version": 5
+    },
+    {
+      "attachments": [
+        {
+          "details": [
+            {
+              "name": "subnetId",
+              "value": "subnet-0744121e1db2dbdba"
+            },
+            {
+              "name": "networkInterfaceId",
+              "value": "eni-0c1d9f4daa9499769"
+            },
+            {
+              "name": "macAddress",
+              "value": "0a:ff:fe:06:11:6f"
+            },
+            {
+              "name": "privateDnsName",
+              "value": "ip-172-31-24-136.ec2.internal"
+            },
+            {
+              "name": "privateIPv4Address",
+              "value": "172.31.24.136"
+            }
+          ],
+          "id": "ee90a622-f7ac-4d65-b09c-a4c0cf7afabe",
+          "status": "DELETED",
+          "type": "ElasticNetworkInterface"
+        }
+      ],
+      "attributes": [
+        {
+          "name": "ecs.cpu-architecture",
+          "value": "arm64"
+        }
+      ],
+      "availabilityZone": "us-east-1c",
+      "clusterArn": "arn:aws:ecs:us-east-1:777772816473:cluster/archflow-real-20261010-resume",
+      "connectivity": "CONNECTED",
+      "connectivityAt": "2026-10-10T16:34:03.361000+00:00",
+      "containers": [
+        {
+          "containerArn": "arn:aws:ecs:us-east-1:777772816473:container/archflow-real-20261010-resume/c75a1e63c29142598b72081a5024a24f/40ac0dd6-8649-4821-84c2-505226cb020e",
+          "cpu": "0",
+          "exitCode": 0,
+          "healthStatus": "UNKNOWN",
+          "image": "lscr.io/linuxserver/ffmpeg@sha256:aea59a11c54291ac456bb2d67000445e5a8994f70bc3d96cdc29f022fbbf89fb",
+          "imageDigest": "sha256:aea59a11c54291ac456bb2d67000445e5a8994f70bc3d96cdc29f022fbbf89fb",
+          "lastStatus": "STOPPED",
+          "name": "ffmpeg",
+          "networkBindings": [],
+          "networkInterfaces": [
+            {
+              "attachmentId": "ee90a622-f7ac-4d65-b09c-a4c0cf7afabe",
+              "privateIpv4Address": "172.31.24.136"
+            }
+          ],
+          "runtimeId": "c75a1e63c29142598b72081a5024a24f-0461847448",
+          "taskArn": "arn:aws:ecs:us-east-1:777772816473:task/archflow-real-20261010-resume/c75a1e63c29142598b72081a5024a24f"
+        }
+      ],
+      "cpu": "1024",
+      "createdAt": "2026-10-10T16:33:58.800000+00:00",
+      "desiredStatus": "STOPPED",
+      "enableExecuteCommand": false,
+      "ephemeralStorage": {
+        "sizeInGiB": 20
+      },
+      "executionStoppedAt": "2026-10-10T16:34:31.428000+00:00",
+      "fargateEphemeralStorage": {
+        "sizeInGiB": 20
+      },
+      "group": "family:archflow-ffmpeg-arm-1-2",
+      "healthStatus": "UNKNOWN",
+      "lastStatus": "STOPPED",
+      "launchType": "FARGATE",
+      "memory": "2048",
+      "overrides": {
+        "containerOverrides": [
+          {
+            "name": "ffmpeg"
+          }
+        ],
+        "inferenceAcceleratorOverrides": []
+      },
+      "platformFamily": "Linux",
+      "platformVersion": "1.4.0",
+      "pullStartedAt": "2026-10-10T16:34:10.107000+00:00",
+      "pullStoppedAt": "2026-10-10T16:34:16.190000+00:00",
+      "startedAt": "2026-10-10T16:34:17.712000+00:00",
+      "startedBy": "archflow-smoke-batch4",
+      "stopCode": "EssentialContainerExited",
+      "stoppedAt": "2026-10-10T16:34:55.727000+00:00",
+      "stoppedReason": "Essential container in task exited",
+      "stoppingAt": "2026-10-10T16:34:41.465000+00:00",
+      "tags": [],
+      "taskArn": "arn:aws:ecs:us-east-1:777772816473:task/archflow-real-20261010-resume/c75a1e63c29142598b72081a5024a24f",
+      "taskDefinitionArn": "arn:aws:ecs:us-east-1:777772816473:task-definition/archflow-ffmpeg-arm-1-2:3",
+      "version": 5
+    },
+    {
+      "attachments": [
+        {
+          "details": [
+            {
+              "name": "subnetId",
+              "value": "subnet-055d946fa7ea27883"
+            },
+            {
+              "name": "networkInterfaceId",
+              "value": "eni-035c9090a20ff73ad"
+            },
+            {
+              "name": "macAddress",
+              "value": "0e:ff:e2:78:59:27"
+            },
+            {
+              "name": "privateDnsName",
+              "value": "ip-172-31-32-75.ec2.internal"
+            },
+            {
+              "name": "privateIPv4Address",
+              "value": "172.31.32.75"
+            }
+          ],
+          "id": "a2b3a2d2-2722-4341-a5b2-1423121ab0ab",
+          "status": "DELETED",
+          "type": "ElasticNetworkInterface"
+        }
+      ],
+      "attributes": [
+        {
+          "name": "ecs.cpu-architecture",
+          "value": "x86_64"
+        }
+      ],
+      "availabilityZone": "us-east-1d",
+      "clusterArn": "arn:aws:ecs:us-east-1:777772816473:cluster/archflow-real-20261010-resume",
+      "connectivity": "CONNECTED",
+      "connectivityAt": "2026-10-10T16:54:25.552000+00:00",
+      "containers": [
+        {
+          "containerArn": "arn:aws:ecs:us-east-1:777772816473:container/archflow-real-20261010-resume/cb540b0e016f44b09f2bd0052c3d2018/874a4894-189a-45b3-9aa9-f847156fac92",
+          "cpu": "0",
+          "exitCode": 0,
+          "healthStatus": "UNKNOWN",
+          "image": "amazon/aws-cli@sha256:ce44b800602264c12298bbf3399055a4cefdb9ed4a098abe564afe26e7071bce",
+          "imageDigest": "sha256:ce44b800602264c12298bbf3399055a4cefdb9ed4a098abe564afe26e7071bce",
+          "lastStatus": "STOPPED",
+          "name": "uploader",
+          "networkBindings": [],
+          "networkInterfaces": [
+            {
+              "attachmentId": "a2b3a2d2-2722-4341-a5b2-1423121ab0ab",
+              "privateIpv4Address": "172.31.32.75"
+            }
+          ],
+          "runtimeId": "cb540b0e016f44b09f2bd0052c3d2018-0716006507",
+          "taskArn": "arn:aws:ecs:us-east-1:777772816473:task/archflow-real-20261010-resume/cb540b0e016f44b09f2bd0052c3d2018"
+        },
+        {
+          "containerArn": "arn:aws:ecs:us-east-1:777772816473:container/archflow-real-20261010-resume/cb540b0e016f44b09f2bd0052c3d2018/89418f0c-8d02-466e-a1ed-da59bee8067e",
+          "cpu": "0",
+          "exitCode": 0,
+          "healthStatus": "UNKNOWN",
+          "image": "lscr.io/linuxserver/ffmpeg@sha256:aea59a11c54291ac456bb2d67000445e5a8994f70bc3d96cdc29f022fbbf89fb",
+          "imageDigest": "sha256:aea59a11c54291ac456bb2d67000445e5a8994f70bc3d96cdc29f022fbbf89fb",
+          "lastStatus": "STOPPED",
+          "name": "worker",
+          "networkBindings": [],
+          "networkInterfaces": [
+            {
+              "attachmentId": "a2b3a2d2-2722-4341-a5b2-1423121ab0ab",
+              "privateIpv4Address": "172.31.32.75"
+            }
+          ],
+          "runtimeId": "cb540b0e016f44b09f2bd0052c3d2018-2513319767",
+          "taskArn": "arn:aws:ecs:us-east-1:777772816473:task/archflow-real-20261010-resume/cb540b0e016f44b09f2bd0052c3d2018"
+        },
+        {
+          "containerArn": "arn:aws:ecs:us-east-1:777772816473:container/archflow-real-20261010-resume/cb540b0e016f44b09f2bd0052c3d2018/fb3d4295-d8b4-47a9-a0ac-774cda3a5710",
+          "cpu": "0",
+          "exitCode": 0,
+          "healthStatus": "UNKNOWN",
+          "image": "amazon/aws-cli@sha256:ce44b800602264c12298bbf3399055a4cefdb9ed4a098abe564afe26e7071bce",
+          "imageDigest": "sha256:ce44b800602264c12298bbf3399055a4cefdb9ed4a098abe564afe26e7071bce",
+          "lastStatus": "STOPPED",
+          "name": "downloader",
+          "networkBindings": [],
+          "networkInterfaces": [
+            {
+              "attachmentId": "a2b3a2d2-2722-4341-a5b2-1423121ab0ab",
+              "privateIpv4Address": "172.31.32.75"
+            }
+          ],
+          "runtimeId": "cb540b0e016f44b09f2bd0052c3d2018-0593658898",
+          "taskArn": "arn:aws:ecs:us-east-1:777772816473:task/archflow-real-20261010-resume/cb540b0e016f44b09f2bd0052c3d2018"
+        }
+      ],
+      "cpu": "1024",
+      "createdAt": "2026-10-10T16:54:21.789000+00:00",
+      "desiredStatus": "STOPPED",
+      "enableExecuteCommand": false,
+      "ephemeralStorage": {
+        "sizeInGiB": 20
+      },
+      "executionStoppedAt": "2026-10-10T16:54:51.266000+00:00",
+      "fargateEphemeralStorage": {
+        "sizeInGiB": 20
+      },
+      "group": "family:archflow-dag-x86-1-2",
+      "healthStatus": "UNKNOWN",
+      "lastStatus": "STOPPED",
+      "launchType": "FARGATE",
+      "memory": "2048",
+      "overrides": {
+        "containerOverrides": [
+          {
+            "command": [
+              "true"
+            ],
+            "name": "uploader"
+          },
+          {
+            "command": [
+              "set -euo pipefail\nstart=$(date -u +%Y-%m-%dT%H:%M:%S.%3NZ)\nprintf '{\"event\":\"archflow_application_start\",\"timestamp\":\"%s\"}\\n' \"$start\"\narch=$(uname -m)\nffver=$(ffmpeg -version | sed -n '1p' | sed 's/\"/\\\\\"/g')\nprintf '{\"event\":\"archflow_runtime\",\"architecture\":\"%s\",\"ffmpegVersion\":\"%s\"}\\n' \"$arch\" \"$ffver\"\ncodec=$(ffprobe -v error -select_streams v:0 -show_entries stream=codec_name -of default=noprint_wrappers=1:nokey=1 /data/merged.mp4)\nwidth=$(ffprobe -v error -select_streams v:0 -show_entries stream=width -of default=noprint_wrappers=1:nokey=1 /data/merged.mp4)\nheight=$(ffprobe -v error -select_streams v:0 -show_entries stream=height -of default=noprint_wrappers=1:nokey=1 /data/merged.mp4)\nframes=$(ffprobe -v error -select_streams v:0 -show_entries stream=nb_frames -of default=noprint_wrappers=1:nokey=1 /data/merged.mp4)\nduration=$(ffprobe -v error -show_entries format=duration -of default=noprint_wrappers=1:nokey=1 /data/merged.mp4)\nsize=$(stat -c%s /data/merged.mp4)\nchecksum=$(sha256sum /data/merged.mp4 | cut -d' ' -f1)\ntest \"$codec\" = h264\ntest \"$width\" = 1280\ntest \"$height\" = 720\ntest \"$frames\" = 720\ntest \"$size\" -gt 100000\nprintf '{\"event\":\"archflow_output_validated\",\"codec\":\"%s\",\"width\":%s,\"height\":%s,\"frames\":%s,\"durationSeconds\":%s,\"sizeBytes\":%s,\"sha256\":\"%s\",\"objectKey\":\"dag/x86-only/merged.mp4\"}\\n' \"$codec\" \"$width\" \"$height\" \"$frames\" \"$duration\" \"$size\" \"$checksum\"\nend=$(date -u +%Y-%m-%dT%H:%M:%S.%3NZ)\nprintf '{\"event\":\"archflow_application_end\",\"timestamp\":\"%s\"}\\n' \"$end\"\n"
+            ],
+            "name": "worker"
+          },
+          {
+            "command": [
+              "aws s3 cp s3://archflow-real-777772816473-us-east-1/dag/x86-only/merged.mp4 /data/merged.mp4 --only-show-errors"
+            ],
+            "name": "downloader"
+          }
+        ],
+        "inferenceAcceleratorOverrides": []
+      },
+      "platformFamily": "Linux",
+      "platformVersion": "1.4.0",
+      "pullStartedAt": "2026-10-10T16:54:34.182000+00:00",
+      "pullStoppedAt": "2026-10-10T16:54:47.201000+00:00",
+      "startedAt": "2026-10-10T16:54:51.305000+00:00",
+      "startedBy": "archflow-dag-x86-r1",
+      "stopCode": "EssentialContainerExited",
+      "stoppedAt": "2026-10-10T16:55:16.408000+00:00",
+      "stoppedReason": "Essential container in task exited",
+      "stoppingAt": "2026-10-10T16:55:01.336000+00:00",
+      "tags": [],
+      "taskArn": "arn:aws:ecs:us-east-1:777772816473:task/archflow-real-20261010-resume/cb540b0e016f44b09f2bd0052c3d2018",
+      "taskDefinitionArn": "arn:aws:ecs:us-east-1:777772816473:task-definition/archflow-dag-x86-1-2:1",
+      "version": 5
+    },
+    {
+      "attachments": [
+        {
+          "details": [
+            {
+              "name": "subnetId",
+              "value": "subnet-055d946fa7ea27883"
+            },
+            {
+              "name": "networkInterfaceId",
+              "value": "eni-06581ef5b199b6b68"
+            },
+            {
+              "name": "macAddress",
+              "value": "0e:ff:e2:ac:a9:63"
+            },
+            {
+              "name": "privateDnsName",
+              "value": "ip-172-31-45-136.ec2.internal"
+            },
+            {
+              "name": "privateIPv4Address",
+              "value": "172.31.45.136"
+            }
+          ],
+          "id": "435e4018-b7c4-492f-9262-22dfd060daf5",
+          "status": "DELETED",
+          "type": "ElasticNetworkInterface"
+        }
+      ],
+      "attributes": [
+        {
+          "name": "ecs.cpu-architecture",
+          "value": "x86_64"
+        }
+      ],
+      "availabilityZone": "us-east-1d",
+      "clusterArn": "arn:aws:ecs:us-east-1:777772816473:cluster/archflow-real-20261010-resume",
+      "connectivity": "CONNECTED",
+      "connectivityAt": "2026-10-10T16:51:05.186000+00:00",
+      "containers": [
+        {
+          "containerArn": "arn:aws:ecs:us-east-1:777772816473:container/archflow-real-20261010-resume/d0b2465b4e3d4013aea056fd071ee43b/640c7e0c-621e-49ce-b5dc-9abf160c7c58",
+          "cpu": "0",
+          "exitCode": 0,
+          "healthStatus": "UNKNOWN",
+          "image": "amazon/aws-cli@sha256:ce44b800602264c12298bbf3399055a4cefdb9ed4a098abe564afe26e7071bce",
+          "imageDigest": "sha256:ce44b800602264c12298bbf3399055a4cefdb9ed4a098abe564afe26e7071bce",
+          "lastStatus": "STOPPED",
+          "name": "downloader",
+          "networkBindings": [],
+          "networkInterfaces": [
+            {
+              "attachmentId": "435e4018-b7c4-492f-9262-22dfd060daf5",
+              "privateIpv4Address": "172.31.45.136"
+            }
+          ],
+          "runtimeId": "d0b2465b4e3d4013aea056fd071ee43b-0593658898",
+          "taskArn": "arn:aws:ecs:us-east-1:777772816473:task/archflow-real-20261010-resume/d0b2465b4e3d4013aea056fd071ee43b"
+        },
+        {
+          "containerArn": "arn:aws:ecs:us-east-1:777772816473:container/archflow-real-20261010-resume/d0b2465b4e3d4013aea056fd071ee43b/80f7e64e-d3d4-4548-8cb0-f5dc1ec4a8f2",
+          "cpu": "0",
+          "exitCode": 0,
+          "healthStatus": "UNKNOWN",
+          "image": "amazon/aws-cli@sha256:ce44b800602264c12298bbf3399055a4cefdb9ed4a098abe564afe26e7071bce",
+          "imageDigest": "sha256:ce44b800602264c12298bbf3399055a4cefdb9ed4a098abe564afe26e7071bce",
+          "lastStatus": "STOPPED",
+          "name": "uploader",
+          "networkBindings": [],
+          "networkInterfaces": [
+            {
+              "attachmentId": "435e4018-b7c4-492f-9262-22dfd060daf5",
+              "privateIpv4Address": "172.31.45.136"
+            }
+          ],
+          "runtimeId": "d0b2465b4e3d4013aea056fd071ee43b-0716006507",
+          "taskArn": "arn:aws:ecs:us-east-1:777772816473:task/archflow-real-20261010-resume/d0b2465b4e3d4013aea056fd071ee43b"
+        },
+        {
+          "containerArn": "arn:aws:ecs:us-east-1:777772816473:container/archflow-real-20261010-resume/d0b2465b4e3d4013aea056fd071ee43b/92e53f41-2d03-42c0-8f62-28e6b624c1c9",
+          "cpu": "0",
+          "exitCode": 0,
+          "healthStatus": "UNKNOWN",
+          "image": "lscr.io/linuxserver/ffmpeg@sha256:aea59a11c54291ac456bb2d67000445e5a8994f70bc3d96cdc29f022fbbf89fb",
+          "imageDigest": "sha256:aea59a11c54291ac456bb2d67000445e5a8994f70bc3d96cdc29f022fbbf89fb",
+          "lastStatus": "STOPPED",
+          "name": "worker",
+          "networkBindings": [],
+          "networkInterfaces": [
+            {
+              "attachmentId": "435e4018-b7c4-492f-9262-22dfd060daf5",
+              "privateIpv4Address": "172.31.45.136"
+            }
+          ],
+          "runtimeId": "d0b2465b4e3d4013aea056fd071ee43b-2513319767",
+          "taskArn": "arn:aws:ecs:us-east-1:777772816473:task/archflow-real-20261010-resume/d0b2465b4e3d4013aea056fd071ee43b"
+        }
+      ],
+      "cpu": "1024",
+      "createdAt": "2026-10-10T16:51:01.185000+00:00",
+      "desiredStatus": "STOPPED",
+      "enableExecuteCommand": false,
+      "ephemeralStorage": {
+        "sizeInGiB": 20
+      },
+      "executionStoppedAt": "2026-10-10T16:51:48.328000+00:00",
+      "fargateEphemeralStorage": {
+        "sizeInGiB": 20
+      },
+      "group": "family:archflow-dag-x86-1-2",
+      "healthStatus": "UNKNOWN",
+      "lastStatus": "STOPPED",
+      "launchType": "FARGATE",
+      "memory": "2048",
+      "overrides": {
+        "containerOverrides": [
+          {
+            "command": [
+              "aws s3 cp /data/cut-a.mp4 s3://archflow-real-777772816473-us-east-1/dag/x86-only/cut-a.mp4 --only-show-errors"
+            ],
+            "name": "uploader"
+          },
+          {
+            "command": [
+              "set -euo pipefail\nstart=$(date -u +%Y-%m-%dT%H:%M:%S.%3NZ)\nprintf '{\"event\":\"archflow_application_start\",\"timestamp\":\"%s\"}\\n' \"$start\"\narch=$(uname -m)\nffver=$(ffmpeg -version | sed -n '1p' | sed 's/\"/\\\\\"/g')\nprintf '{\"event\":\"archflow_runtime\",\"architecture\":\"%s\",\"ffmpegVersion\":\"%s\"}\\n' \"$arch\" \"$ffver\"\nffmpeg -hide_banner -loglevel error -y -ss 0 -i /data/source.mp4 -t 12 -c:v libx264 -preset medium -crf 23 -pix_fmt yuv420p /data/cut-a.mp4\nframes=$(ffprobe -v error -select_streams v:0 -show_entries stream=nb_frames -of default=noprint_wrappers=1:nokey=1 /data/cut-a.mp4)\nsize=$(stat -c%s /data/cut-a.mp4)\nchecksum=$(sha256sum /data/cut-a.mp4 | cut -d' ' -f1)\ntest \"$frames\" = 360\ntest \"$size\" -gt 100000\nprintf '{\"event\":\"archflow_output_validated\",\"frames\":%s,\"sizeBytes\":%s,\"sha256\":\"%s\",\"objectKey\":\"dag/x86-only/cut-a.mp4\"}\\n' \"$frames\" \"$size\" \"$checksum\"\nend=$(date -u +%Y-%m-%dT%H:%M:%S.%3NZ)\nprintf '{\"event\":\"archflow_application_end\",\"timestamp\":\"%s\"}\\n' \"$end\"\n"
+            ],
+            "name": "worker"
+          },
+          {
+            "command": [
+              "aws s3 cp s3://archflow-real-777772816473-us-east-1/dag/x86-only/source.mp4 /data/source.mp4 --only-show-errors"
+            ],
+            "name": "downloader"
+          }
+        ],
+        "inferenceAcceleratorOverrides": []
+      },
+      "platformFamily": "Linux",
+      "platformVersion": "1.4.0",
+      "pullStartedAt": "2026-10-10T16:51:11.625000+00:00",
+      "pullStoppedAt": "2026-10-10T16:51:25.187000+00:00",
+      "startedAt": "2026-10-10T16:51:47.183000+00:00",
+      "startedBy": "archflow-dag-x86-r1",
+      "stopCode": "EssentialContainerExited",
+      "stoppedAt": "2026-10-10T16:52:11.720000+00:00",
+      "stoppedReason": "Essential container in task exited",
+      "stoppingAt": "2026-10-10T16:51:58.376000+00:00",
+      "tags": [],
+      "taskArn": "arn:aws:ecs:us-east-1:777772816473:task/archflow-real-20261010-resume/d0b2465b4e3d4013aea056fd071ee43b",
+      "taskDefinitionArn": "arn:aws:ecs:us-east-1:777772816473:task-definition/archflow-dag-x86-1-2:1",
+      "version": 7
+    },
+    {
+      "attachments": [
+        {
+          "details": [
+            {
+              "name": "subnetId",
+              "value": "subnet-0cfe144f77dfb7221"
+            },
+            {
+              "name": "networkInterfaceId",
+              "value": "eni-060311facf66996b2"
+            },
+            {
+              "name": "macAddress",
+              "value": "12:ff:f2:4c:27:71"
+            },
+            {
+              "name": "privateDnsName",
+              "value": "ip-172-31-85-184.ec2.internal"
+            },
+            {
+              "name": "privateIPv4Address",
+              "value": "172.31.85.184"
+            }
+          ],
+          "id": "bd86f041-2a75-4c2d-a256-fdf2bcbea1f8",
+          "status": "DELETED",
+          "type": "ElasticNetworkInterface"
+        }
+      ],
+      "attributes": [
+        {
+          "name": "ecs.cpu-architecture",
+          "value": "x86_64"
+        }
+      ],
+      "availabilityZone": "us-east-1b",
+      "clusterArn": "arn:aws:ecs:us-east-1:777772816473:cluster/archflow-real-20261010-resume",
+      "connectivity": "CONNECTED",
+      "connectivityAt": "2026-10-10T16:53:07.195000+00:00",
+      "containers": [
+        {
+          "containerArn": "arn:aws:ecs:us-east-1:777772816473:container/archflow-real-20261010-resume/d1b075ab791b46268d6dfc43ec410340/0410fd21-d5bd-4f81-af2f-bc47a644a6b8",
+          "cpu": "0",
+          "exitCode": 0,
+          "healthStatus": "UNKNOWN",
+          "image": "amazon/aws-cli@sha256:ce44b800602264c12298bbf3399055a4cefdb9ed4a098abe564afe26e7071bce",
+          "imageDigest": "sha256:ce44b800602264c12298bbf3399055a4cefdb9ed4a098abe564afe26e7071bce",
+          "lastStatus": "STOPPED",
+          "name": "uploader",
+          "networkBindings": [],
+          "networkInterfaces": [
+            {
+              "attachmentId": "bd86f041-2a75-4c2d-a256-fdf2bcbea1f8",
+              "privateIpv4Address": "172.31.85.184"
+            }
+          ],
+          "runtimeId": "d1b075ab791b46268d6dfc43ec410340-0716006507",
+          "taskArn": "arn:aws:ecs:us-east-1:777772816473:task/archflow-real-20261010-resume/d1b075ab791b46268d6dfc43ec410340"
+        },
+        {
+          "containerArn": "arn:aws:ecs:us-east-1:777772816473:container/archflow-real-20261010-resume/d1b075ab791b46268d6dfc43ec410340/1fe7f7b4-95f8-48dc-94ce-637a04470c57",
+          "cpu": "0",
+          "exitCode": 0,
+          "healthStatus": "UNKNOWN",
+          "image": "amazon/aws-cli@sha256:ce44b800602264c12298bbf3399055a4cefdb9ed4a098abe564afe26e7071bce",
+          "imageDigest": "sha256:ce44b800602264c12298bbf3399055a4cefdb9ed4a098abe564afe26e7071bce",
+          "lastStatus": "STOPPED",
+          "name": "downloader",
+          "networkBindings": [],
+          "networkInterfaces": [
+            {
+              "attachmentId": "bd86f041-2a75-4c2d-a256-fdf2bcbea1f8",
+              "privateIpv4Address": "172.31.85.184"
+            }
+          ],
+          "runtimeId": "d1b075ab791b46268d6dfc43ec410340-0593658898",
+          "taskArn": "arn:aws:ecs:us-east-1:777772816473:task/archflow-real-20261010-resume/d1b075ab791b46268d6dfc43ec410340"
+        },
+        {
+          "containerArn": "arn:aws:ecs:us-east-1:777772816473:container/archflow-real-20261010-resume/d1b075ab791b46268d6dfc43ec410340/6725f001-4314-45f4-8cd2-a46beb833d93",
+          "cpu": "0",
+          "exitCode": 0,
+          "healthStatus": "UNKNOWN",
+          "image": "lscr.io/linuxserver/ffmpeg@sha256:aea59a11c54291ac456bb2d67000445e5a8994f70bc3d96cdc29f022fbbf89fb",
+          "imageDigest": "sha256:aea59a11c54291ac456bb2d67000445e5a8994f70bc3d96cdc29f022fbbf89fb",
+          "lastStatus": "STOPPED",
+          "name": "worker",
+          "networkBindings": [],
+          "networkInterfaces": [
+            {
+              "attachmentId": "bd86f041-2a75-4c2d-a256-fdf2bcbea1f8",
+              "privateIpv4Address": "172.31.85.184"
+            }
+          ],
+          "runtimeId": "d1b075ab791b46268d6dfc43ec410340-2513319767",
+          "taskArn": "arn:aws:ecs:us-east-1:777772816473:task/archflow-real-20261010-resume/d1b075ab791b46268d6dfc43ec410340"
+        }
+      ],
+      "cpu": "1024",
+      "createdAt": "2026-10-10T16:53:03.235000+00:00",
+      "desiredStatus": "STOPPED",
+      "enableExecuteCommand": false,
+      "ephemeralStorage": {
+        "sizeInGiB": 20
+      },
+      "executionStoppedAt": "2026-10-10T16:53:32.924000+00:00",
+      "fargateEphemeralStorage": {
+        "sizeInGiB": 20
+      },
+      "group": "family:archflow-dag-x86-1-2",
+      "healthStatus": "UNKNOWN",
+      "lastStatus": "STOPPED",
+      "launchType": "FARGATE",
+      "memory": "2048",
+      "overrides": {
+        "containerOverrides": [
+          {
+            "command": [
+              "aws s3 cp /data/merged.mp4 s3://archflow-real-777772816473-us-east-1/dag/x86-only/merged.mp4 --only-show-errors"
+            ],
+            "name": "uploader"
+          },
+          {
+            "command": [
+              "set -euo pipefail\nstart=$(date -u +%Y-%m-%dT%H:%M:%S.%3NZ)\nprintf '{\"event\":\"archflow_application_start\",\"timestamp\":\"%s\"}\\n' \"$start\"\narch=$(uname -m)\nffver=$(ffmpeg -version | sed -n '1p' | sed 's/\"/\\\\\"/g')\nprintf '{\"event\":\"archflow_runtime\",\"architecture\":\"%s\",\"ffmpegVersion\":\"%s\"}\\n' \"$arch\" \"$ffver\"\nprintf \"file '/data/cut-a.mp4'\\nfile '/data/cut-b.mp4'\\n\" > /data/concat.txt\nffmpeg -hide_banner -loglevel error -y -f concat -safe 0 -i /data/concat.txt -c copy /data/merged.mp4\nframes=$(ffprobe -v error -select_streams v:0 -show_entries stream=nb_frames -of default=noprint_wrappers=1:nokey=1 /data/merged.mp4)\nduration=$(ffprobe -v error -show_entries format=duration -of default=noprint_wrappers=1:nokey=1 /data/merged.mp4)\nsize=$(stat -c%s /data/merged.mp4)\nchecksum=$(sha256sum /data/merged.mp4 | cut -d' ' -f1)\ntest \"$frames\" = 720\ntest \"$size\" -gt 100000\nprintf '{\"event\":\"archflow_output_validated\",\"frames\":%s,\"durationSeconds\":%s,\"sizeBytes\":%s,\"sha256\":\"%s\",\"objectKey\":\"dag/x86-only/merged.mp4\"}\\n' \"$frames\" \"$duration\" \"$size\" \"$checksum\"\nend=$(date -u +%Y-%m-%dT%H:%M:%S.%3NZ)\nprintf '{\"event\":\"archflow_application_end\",\"timestamp\":\"%s\"}\\n' \"$end\"\n"
+            ],
+            "name": "worker"
+          },
+          {
+            "command": [
+              "aws s3 cp s3://archflow-real-777772816473-us-east-1/dag/x86-only/cut-a.mp4 /data/cut-a.mp4 --only-show-errors && aws s3 cp s3://archflow-real-777772816473-us-east-1/dag/x86-only/cut-b.mp4 /data/cut-b.mp4 --only-show-errors"
+            ],
+            "name": "downloader"
+          }
+        ],
+        "inferenceAcceleratorOverrides": []
+      },
+      "platformFamily": "Linux",
+      "platformVersion": "1.4.0",
+      "pullStartedAt": "2026-10-10T16:53:15.182000+00:00",
+      "pullStoppedAt": "2026-10-10T16:53:27.148000+00:00",
+      "startedAt": "2026-10-10T16:53:31.849000+00:00",
+      "startedBy": "archflow-dag-x86-r1",
+      "stopCode": "EssentialContainerExited",
+      "stoppedAt": "2026-10-10T16:53:56.251000+00:00",
+      "stoppedReason": "Essential container in task exited",
+      "stoppingAt": "2026-10-10T16:53:42.964000+00:00",
+      "tags": [],
+      "taskArn": "arn:aws:ecs:us-east-1:777772816473:task/archflow-real-20261010-resume/d1b075ab791b46268d6dfc43ec410340",
+      "taskDefinitionArn": "arn:aws:ecs:us-east-1:777772816473:task-definition/archflow-dag-x86-1-2:1",
+      "version": 6
+    },
+    {
+      "attachments": [
+        {
+          "details": [
+            {
+              "name": "subnetId",
+              "value": "subnet-0cfe144f77dfb7221"
+            },
+            {
+              "name": "networkInterfaceId",
+              "value": "eni-0460a27cedceb7a6e"
+            },
+            {
+              "name": "macAddress",
+              "value": "12:ff:c0:34:8a:c7"
+            },
+            {
+              "name": "privateDnsName",
+              "value": "ip-172-31-81-205.ec2.internal"
+            },
+            {
+              "name": "privateIPv4Address",
+              "value": "172.31.81.205"
+            }
+          ],
+          "id": "b0672122-be3e-442d-99a6-613e0984c0b2",
+          "status": "DELETED",
+          "type": "ElasticNetworkInterface"
+        }
+      ],
+      "attributes": [
+        {
+          "name": "ecs.cpu-architecture",
+          "value": "arm64"
+        }
+      ],
+      "availabilityZone": "us-east-1b",
+      "clusterArn": "arn:aws:ecs:us-east-1:777772816473:cluster/archflow-real-20261010-resume",
+      "connectivity": "CONNECTED",
+      "connectivityAt": "2026-10-10T16:40:56.447000+00:00",
+      "containers": [
+        {
+          "containerArn": "arn:aws:ecs:us-east-1:777772816473:container/archflow-real-20261010-resume/ed3ab8eefc324efca0f7c15b78dc4b9e/106264ea-fd0d-42cd-b3e4-940e87fe0291",
+          "cpu": "0",
+          "exitCode": 0,
+          "healthStatus": "UNKNOWN",
+          "image": "lscr.io/linuxserver/ffmpeg@sha256:aea59a11c54291ac456bb2d67000445e5a8994f70bc3d96cdc29f022fbbf89fb",
+          "imageDigest": "sha256:aea59a11c54291ac456bb2d67000445e5a8994f70bc3d96cdc29f022fbbf89fb",
+          "lastStatus": "STOPPED",
+          "name": "worker",
+          "networkBindings": [],
+          "networkInterfaces": [
+            {
+              "attachmentId": "b0672122-be3e-442d-99a6-613e0984c0b2",
+              "privateIpv4Address": "172.31.81.205"
+            }
+          ],
+          "runtimeId": "ed3ab8eefc324efca0f7c15b78dc4b9e-2513319767",
+          "taskArn": "arn:aws:ecs:us-east-1:777772816473:task/archflow-real-20261010-resume/ed3ab8eefc324efca0f7c15b78dc4b9e"
+        },
+        {
+          "containerArn": "arn:aws:ecs:us-east-1:777772816473:container/archflow-real-20261010-resume/ed3ab8eefc324efca0f7c15b78dc4b9e/49c42a7b-7363-4863-a414-ecc3559e23e5",
+          "cpu": "0",
+          "exitCode": 0,
+          "healthStatus": "UNKNOWN",
+          "image": "amazon/aws-cli@sha256:ce44b800602264c12298bbf3399055a4cefdb9ed4a098abe564afe26e7071bce",
+          "imageDigest": "sha256:ce44b800602264c12298bbf3399055a4cefdb9ed4a098abe564afe26e7071bce",
+          "lastStatus": "STOPPED",
+          "name": "uploader",
+          "networkBindings": [],
+          "networkInterfaces": [
+            {
+              "attachmentId": "b0672122-be3e-442d-99a6-613e0984c0b2",
+              "privateIpv4Address": "172.31.81.205"
+            }
+          ],
+          "runtimeId": "ed3ab8eefc324efca0f7c15b78dc4b9e-0716006507",
+          "taskArn": "arn:aws:ecs:us-east-1:777772816473:task/archflow-real-20261010-resume/ed3ab8eefc324efca0f7c15b78dc4b9e"
+        },
+        {
+          "containerArn": "arn:aws:ecs:us-east-1:777772816473:container/archflow-real-20261010-resume/ed3ab8eefc324efca0f7c15b78dc4b9e/cad31bc0-cb5f-4738-a0e6-9b35fa501a4b",
+          "cpu": "0",
+          "exitCode": 0,
+          "healthStatus": "UNKNOWN",
+          "image": "amazon/aws-cli@sha256:ce44b800602264c12298bbf3399055a4cefdb9ed4a098abe564afe26e7071bce",
+          "imageDigest": "sha256:ce44b800602264c12298bbf3399055a4cefdb9ed4a098abe564afe26e7071bce",
+          "lastStatus": "STOPPED",
+          "name": "downloader",
+          "networkBindings": [],
+          "networkInterfaces": [
+            {
+              "attachmentId": "b0672122-be3e-442d-99a6-613e0984c0b2",
+              "privateIpv4Address": "172.31.81.205"
+            }
+          ],
+          "runtimeId": "ed3ab8eefc324efca0f7c15b78dc4b9e-0593658898",
+          "taskArn": "arn:aws:ecs:us-east-1:777772816473:task/archflow-real-20261010-resume/ed3ab8eefc324efca0f7c15b78dc4b9e"
+        }
+      ],
+      "cpu": "1024",
+      "createdAt": "2026-10-10T16:40:52.973000+00:00",
+      "desiredStatus": "STOPPED",
+      "enableExecuteCommand": false,
+      "ephemeralStorage": {
+        "sizeInGiB": 20
+      },
+      "executionStoppedAt": "2026-10-10T16:41:36.916000+00:00",
+      "fargateEphemeralStorage": {
+        "sizeInGiB": 20
+      },
+      "group": "family:archflow-dag-arm-1-2",
+      "healthStatus": "UNKNOWN",
+      "lastStatus": "STOPPED",
+      "launchType": "FARGATE",
+      "memory": "2048",
+      "overrides": {
+        "containerOverrides": [
+          {
+            "command": [
+              "aws s3 cp /data/source.mp4 s3://archflow-real-777772816473-us-east-1/dag/arm-only/source.mp4 --only-show-errors"
+            ],
+            "name": "uploader"
+          },
+          {
+            "command": [
+              "set -euo pipefail\nstart=$(date -u +%Y-%m-%dT%H:%M:%S.%3NZ)\nprintf '{\"event\":\"archflow_application_start\",\"timestamp\":\"%s\"}\\n' \"$start\"\narch=$(uname -m)\nffver=$(ffmpeg -version | sed -n '1p' | sed 's/\"/\\\\\"/g')\nprintf '{\"event\":\"archflow_runtime\",\"architecture\":\"%s\",\"ffmpegVersion\":\"%s\"}\\n' \"$arch\" \"$ffver\"\nffmpeg -hide_banner -loglevel error -y -f lavfi -i testsrc2=size=1280x720:rate=30 -t 24 -c:v libx264 -preset medium -crf 23 -pix_fmt yuv420p /data/source.mp4\nframes=$(ffprobe -v error -select_streams v:0 -show_entries stream=nb_frames -of default=noprint_wrappers=1:nokey=1 /data/source.mp4)\nsize=$(stat -c%s /data/source.mp4)\nchecksum=$(sha256sum /data/source.mp4 | cut -d' ' -f1)\ntest \"$frames\" = 720\ntest \"$size\" -gt 100000\nprintf '{\"event\":\"archflow_output_validated\",\"frames\":%s,\"sizeBytes\":%s,\"sha256\":\"%s\",\"objectKey\":\"dag/arm-only/source.mp4\"}\\n' \"$frames\" \"$size\" \"$checksum\"\nend=$(date -u +%Y-%m-%dT%H:%M:%S.%3NZ)\nprintf '{\"event\":\"archflow_application_end\",\"timestamp\":\"%s\"}\\n' \"$end\"\n"
+            ],
+            "name": "worker"
+          },
+          {
+            "command": [
+              "true"
+            ],
+            "name": "downloader"
+          }
+        ],
+        "inferenceAcceleratorOverrides": []
+      },
+      "platformFamily": "Linux",
+      "platformVersion": "1.4.0",
+      "pullStartedAt": "2026-10-10T16:41:04.272000+00:00",
+      "pullStoppedAt": "2026-10-10T16:41:14.649000+00:00",
+      "startedAt": "2026-10-10T16:41:35.828000+00:00",
+      "startedBy": "archflow-dag-arm-r1",
+      "stopCode": "EssentialContainerExited",
+      "stoppedAt": "2026-10-10T16:42:00.290000+00:00",
+      "stoppedReason": "Essential container in task exited",
+      "stoppingAt": "2026-10-10T16:41:46.959000+00:00",
+      "tags": [],
+      "taskArn": "arn:aws:ecs:us-east-1:777772816473:task/archflow-real-20261010-resume/ed3ab8eefc324efca0f7c15b78dc4b9e",
+      "taskDefinitionArn": "arn:aws:ecs:us-east-1:777772816473:task-definition/archflow-dag-arm-1-2:1",
+      "version": 7
+    }
+  ]
+}

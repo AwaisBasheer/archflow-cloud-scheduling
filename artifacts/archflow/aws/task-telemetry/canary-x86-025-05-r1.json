@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "runId": "canary-x86-025-05-r1",
+  "taskArn": "arn:aws:ecs:us-east-1:777772816473:task/archflow-real-20261010-resume/bdc7da9cdec64adab31d75015f177b0e",
+  "taskDefinitionArn": "arn:aws:ecs:us-east-1:777772816473:task-definition/archflow-ffmpeg-x86-025-05:2",
+  "cloudTrailRunTaskEventId": "47e5b9f6-fd01-4ed1-9289-2f759fc1e7dd",
+  "status": "STOPPED",
+  "stopCode": "EssentialContainerExited",
+  "stoppedReason": "Essential container in task exited",
+  "exitCode": 0,
+  "requestedArchitecture": "X86_64",
+  "actualArchitecture": "x86_64",
+  "cpuUnits": 256,
+  "memoryMiB": 512,
+  "ffmpegVersion": "ffmpeg version 7.1.1 Copyright (c) 2000-2025 the FFmpeg developers",
+  "image": "lscr.io/linuxserver/ffmpeg@sha256:aea59a11c54291ac456bb2d67000445e5a8994f70bc3d96cdc29f022fbbf89fb",
+  "outputValidation": {
+    "event": "archflow_output_validated",
+    "codec": "h264",
+    "width": 1280,
+    "height": 720,
+    "frames": 360,
+    "durationSeconds": 12,
+    "sizeBytes": 4524108,
+    "sha256": "2716e009fa0437d755858322883479af1b69566fe2328b583cf9c68e20da99d8"
+  },
+  "timestamps": {
+    "submittedAt": "2026-10-10T16:22:31+00:00",
+    "createdAt": "2026-10-10T16:22:31.131000+00:00",
+    "pullStartedAt": "2026-10-10T16:22:43.943000+00:00",
+    "pullStoppedAt": "2026-10-10T16:22:55.408000+00:00",
+    "startedAt": "2026-10-10T16:22:56.169000+00:00",
+    "executionStoppedAt": "2026-10-10T16:24:03.888000+00:00",
+    "stoppedAt": "2026-10-10T16:24:27.796000+00:00",
+    "applicationStartedAt": "2026-10-10T16:22:56.181Z",
+    "applicationEndedAt": "2026-10-10T16:24:03.870Z"
+  },
+  "durations": {
+    "applicationSeconds": 67.689,
+    "imagePullSeconds": 11.465,
+    "initializationSeconds": 25.038,
+    "providerMeteredSeconds": 103.853,
+    "fullLifecycleSeconds": 116.796,
+    "billableSeconds": 104
+  },
+  "estimatedCostUsd": {
+    "compute": 0.00029235555555555555,
+    "memory": 0.00006420555555555557,
+    "publicIpv4": 0.0001622166666666667,
+    "total": 0.0005187777777777778,
+    "basis": "public-price-list-calculation"
+  },
+  "successful": true,
+  "logStreamName": "ecs/ffmpeg/bdc7da9cdec64adab31d75015f177b0e"
+}

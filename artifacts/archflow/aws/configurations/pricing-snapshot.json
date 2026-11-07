@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "retrievedDate": "2026-10-10",
+  "region": "us-east-1",
+  "location": "US East (N. Virginia)",
+  "currency": "USD",
+  "basis": "AWS Price List API public on-demand rates",
+  "rates": {
+    "x86VCpuHour": 0.04048,
+    "x86MemoryGbHour": 0.004445,
+    "armVCpuHour": 0.03238,
+    "armMemoryGbHour": 0.00356,
+    "publicIpv4Hour": 0.005,
+    "additionalEphemeralStorageGbHour": 0.000111
+  },
+  "linuxMinimumBillableSeconds": 60
+}

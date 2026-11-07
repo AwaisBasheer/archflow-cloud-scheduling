@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "experimentId": "real-aws-20261010-resume-smoke",
+  "region": "us-east-1",
+  "workload": {
+    "name": "ffmpeg-testsrc2-h264",
+    "ffmpegVersion": "7.1.1",
+    "input": "testsrc2=size=1280x720:rate=30",
+    "durationSeconds": 12,
+    "codec": "libx264",
+    "preset": "medium",
+    "crf": 23,
+    "frames": 360
+  },
+  "image": {
+    "reference": "lscr.io/linuxserver/ffmpeg@sha256:aea59a11c54291ac456bb2d67000445e5a8994f70bc3d96cdc29f022fbbf89fb",
+    "amd64ManifestDigest": "sha256:e67aaccb6806b3358db8ebb0d3165714131f737eba914171e05acd7f9a751a91",
+    "arm64ManifestDigest": "sha256:91a7e811c56841ebc966276621ebdc4475229a44b5e1046e6343c1f80b15591a"
+  },
+  "profiles": [
+    {
+      "architecture": "ARM64",
+      "cpuUnits": 256,
+      "memoryMiB": 512,
+      "samples": 2,
+      "successful": 2,
+      "applicationSeconds": {"mean": 34.0255, "median": 34.0255, "sampleStdDev": 3.186930262807773, "min": 31.772, "max": 36.279},
+      "imagePullSeconds": {"mean": 6.0745, "median": 6.0745, "sampleStdDev": 0.2467802666341046, "min": 5.9, "max": 6.249},
+      "fullLifecycleSeconds": {"mean": 77.4141655, "median": 77.4141655, "sampleStdDev": 7.165040181764824, "min": 72.347717, "max": 82.480614},
+      "estimatedCostUsd": {"mean": 0.0002830752298611111, "median": 0.0002830752298611111, "sampleStdDev": 0.000021589243803924213, "min": 0.0002678093291666666, "max": 0.00029834113055555555}
+    },
+    {
+      "architecture": "ARM64",
+      "cpuUnits": 1024,
+      "memoryMiB": 2048,
+      "samples": 2,
+      "successful": 2,
+      "applicationSeconds": {"mean": 13.6685, "median": 13.6685, "sampleStdDev": 0.11384419177103512, "min": 13.588, "max": 13.749},
+      "imagePullSeconds": {"mean": 6.6065, "median": 6.6065, "sampleStdDev": 0.740340799902315, "min": 6.083, "max": 7.13},
+      "fullLifecycleSeconds": {"mean": 58.3697695, "median": 58.3697695, "sampleStdDev": 0.24952313383832372, "min": 58.19333, "max": 58.546209},
+      "estimatedCostUsd": {"mean": 0.0007394024576388888, "median": 0.0007394024576388888, "sampleStdDev": 3.465599081087037e-7, "min": 0.0007391574027777778, "max": 0.0007396475124999999}
+    },
+    {
+      "architecture": "X86_64",
+      "cpuUnits": 256,
+      "memoryMiB": 512,
+      "samples": 2,
+      "successful": 2,
+      "applicationSeconds": {"mean": 66.843, "median": 66.843, "sampleStdDev": 1.1964246737676336, "min": 65.997, "max": 67.689},
+      "imagePullSeconds": {"mean": 17.123, "median": 17.123, "sampleStdDev": 8.00162033590697, "min": 11.465, "max": 22.781},
+      "fullLifecycleSeconds": {"mean": 120.7868715, "median": 120.7868715, "sampleStdDev": 5.643944600988253, "min": 116.796, "max": 124.777743},
+      "estimatedCostUsd": {"mean": 0.0005414630159722223, "median": 0.0005414630159722223, "sampleStdDev": 0.00003208177152024743, "min": 0.0005187777777777778, "max": 0.0005641482541666667}
+    },
+    {
+      "architecture": "X86_64",
+      "cpuUnits": 1024,
+      "memoryMiB": 2048,
+      "samples": 2,
+      "successful": 2,
+      "applicationSeconds": {"mean": 16.805, "median": 16.805, "sampleStdDev": 0.729734198184517, "min": 16.289, "max": 17.321},
+      "imagePullSeconds": {"mean": 9.794, "median": 9.794, "sampleStdDev": 0.23334523779156074, "min": 9.629, "max": 9.959},
+      "fullLifecycleSeconds": {"mean": 64.7089865, "median": 64.7089865, "sampleStdDev": 1.61373010464591, "min": 63.567907, "max": 65.850066},
+      "estimatedCostUsd": {"mean": 0.0009127069256944446, "median": 0.0009127069256944446, "sampleStdDev": 0.0000022412918120082022, "min": 0.0009111220930555557, "max": 0.0009142917583333334}
+    }
+  ],
+  "comparisons": {
+    "256cpu-512mib": {"armSpeedupVsX86": 1.964497215323801, "armApplicationTimeReductionPercent": 49.09639004832218, "armEstimatedCostReductionPercent": 47.72030193921256},
+    "1024cpu-2048mib": {"armSpeedupVsX86": 1.229469217543988, "armApplicationTimeReductionPercent": 18.664088069027073, "armEstimatedCostReductionPercent": 18.987964611279235}
+  },
+  "totals": {"tasks": 8, "successful": 8, "failed": 0, "estimatedCostUsd": 0.004953295258333334}
+}
