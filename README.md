@@ -209,6 +209,30 @@ Recorded live operations used a connected AWS control-plane session because the
 original host had no local credential session. The reusable TypeScript runner
 was not the launcher used for those recorded executions.
 
+## Measured profiles
+
+The initial smoke matrix has eight successful tasks: two architectures, two
+resource sizes, and two repetitions per cell.
+
+| Architecture | vCPU / GiB | Samples | Mean application time | Mean lifecycle |
+|---|---|---:|---:|---:|
+| ARM64 | 0.25 / 0.5 | 2 | 34.0255 s | 77.414166 s |
+| x86_64 | 0.25 / 0.5 | 2 | 66.8430 s | 120.786872 s |
+| ARM64 | 1 / 2 | 2 | 13.6685 s | 58.369770 s |
+| x86_64 | 1 / 2 | 2 | 16.8050 s | 64.708987 s |
+
+The final training matrix adds ten low-mode task-class observations. The earlier
+1-vCPU/2-GiB workflows supply the second tier. Source, merge, and validation have
+one low-mode observation per architecture; cuts have two. These small samples
+are recorded with observation IDs and summary statistics.
+
+The five scheduling plans were frozen before holdout execution. The subsequent
+35 successful holdout tasks were not used to refit the training profiles.
+
+Evidence: [training matrix](artifacts/archflow/aws/profiles/measured-ffmpeg-task-matrix.json),
+[observations](artifacts/archflow/aws/profiles/ffmpeg-task-profile-observations.csv),
+and [frozen plans](artifacts/archflow/aws/final/plans/).
+
 ## License and acknowledgements
 
 The upstream root [LICENSE](LICENSE) is Apache License 2.0. The preserved upstream

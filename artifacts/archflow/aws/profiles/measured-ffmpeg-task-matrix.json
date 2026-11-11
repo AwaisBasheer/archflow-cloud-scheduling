@@ -1,0 +1,1113 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-10T17:32:29.186Z",
+  "datasetRole": "training",
+  "observations": [
+    {
+      "observationId": "1a56e80d474046e9b40c0f6118990e65",
+      "datasetRole": "training",
+      "source": "real-aws-20261010-final-low-mode",
+      "taskArn": "arn:aws:ecs:us-east-1:777772816473:task/archflow-real-20261010-final/1a56e80d474046e9b40c0f6118990e65",
+      "taskClass": "cut",
+      "branch": "a",
+      "architecture": "x86_64",
+      "actualArchitecture": "x86_64",
+      "resourceModeId": "x86-0.25vcpu-0.5gb",
+      "cpuUnits": 256,
+      "memoryMiB": 512,
+      "applicationSeconds": 70.513,
+      "imagePullSeconds": 15.66,
+      "fullLifecycleSeconds": 131.866,
+      "startupAndTransferSeconds": 61.35300000000001,
+      "providerMeteredSeconds": 120.644,
+      "billableSeconds": 121,
+      "estimatedProviderCostUsd": 0.0005979923611111112,
+      "outputBytes": 4287298,
+      "outputSha256": "cc46f629a222b69b377e0d477b00a5c1799cf5751f39472ab0aff2a452915a43",
+      "successful": true
+    },
+    {
+      "observationId": "2a46718a7c0642548c4cf21185af30bc",
+      "datasetRole": "training",
+      "source": "real-aws-20261010-final-low-mode",
+      "taskArn": "arn:aws:ecs:us-east-1:777772816473:task/archflow-real-20261010-final/2a46718a7c0642548c4cf21185af30bc",
+      "taskClass": "generate-source",
+      "branch": null,
+      "architecture": "arm64",
+      "actualArchitecture": "aarch64",
+      "resourceModeId": "arm64-0.25vcpu-0.5gb",
+      "cpuUnits": 256,
+      "memoryMiB": 512,
+      "applicationSeconds": 70.064,
+      "imagePullSeconds": 10.247,
+      "fullLifecycleSeconds": 118.711,
+      "startupAndTransferSeconds": 48.647000000000006,
+      "providerMeteredSeconds": 106.816,
+      "billableSeconds": 107,
+      "estimatedProviderCostUsd": 0.00045838333333333335,
+      "outputBytes": 9030869,
+      "outputSha256": "05460b072a6c7c53960adfdb38ed56c5d6c4b9db05e04d8fd41f489380bde66b",
+      "successful": true
+    },
+    {
+      "observationId": "341a904a18c84552bf0554dcf1dea907",
+      "datasetRole": "training",
+      "source": "real-aws-20261010-final-low-mode",
+      "taskArn": "arn:aws:ecs:us-east-1:777772816473:task/archflow-real-20261010-final/341a904a18c84552bf0554dcf1dea907",
+      "taskClass": "merge",
+      "branch": null,
+      "architecture": "arm64",
+      "actualArchitecture": "aarch64",
+      "resourceModeId": "arm64-0.25vcpu-0.5gb",
+      "cpuUnits": 256,
+      "memoryMiB": 512,
+      "applicationSeconds": 0.347,
+      "imagePullSeconds": 10.597,
+      "fullLifecycleSeconds": 55.639,
+      "startupAndTransferSeconds": 55.292,
+      "providerMeteredSeconds": 42.611,
+      "billableSeconds": 60,
+      "estimatedProviderCostUsd": 0.00024185972222222224,
+      "outputBytes": 8571506,
+      "outputSha256": "f550d9b79d0547ac82e8c1030619b7dfb693336cbf88bf24d91ec9e93775043d",
+      "successful": true
+    },
+    {
+      "observationId": "4b945a6c47b744d8b20b1f77398a5855",
+      "datasetRole": "training",
+      "source": "real-aws-20261010-final-low-mode",
+      "taskArn": "arn:aws:ecs:us-east-1:777772816473:task/archflow-real-20261010-final/4b945a6c47b744d8b20b1f77398a5855",
+      "taskClass": "cut",
+      "branch": "a",
+      "architecture": "arm64",
+      "actualArchitecture": "aarch64",
+      "resourceModeId": "arm64-0.25vcpu-0.5gb",
+      "cpuUnits": 256,
+      "memoryMiB": 512,
+      "applicationSeconds": 38.809,
+      "imagePullSeconds": 10.864,
+      "fullLifecycleSeconds": 91.308,
+      "startupAndTransferSeconds": 52.49900000000001,
+      "providerMeteredSeconds": 79.134,
+      "billableSeconds": 80,
+      "estimatedProviderCostUsd": 0.00034626111111111114,
+      "outputBytes": 4274747,
+      "outputSha256": "4660b0c518346cd987fa6036666e8d4d26eb97ec9b6e3039f479e402a14769b5",
+      "successful": true
+    },
+    {
+      "observationId": "5223c007f24848b1a3fef76df0802b0c",
+      "datasetRole": "training",
+      "source": "real-aws-20261010-final-low-mode",
+      "taskArn": "arn:aws:ecs:us-east-1:777772816473:task/archflow-real-20261010-final/5223c007f24848b1a3fef76df0802b0c",
+      "taskClass": "validate",
+      "branch": null,
+      "architecture": "x86_64",
+      "actualArchitecture": "x86_64",
+      "resourceModeId": "x86-0.25vcpu-0.5gb",
+      "cpuUnits": 256,
+      "memoryMiB": 512,
+      "applicationSeconds": 0.939,
+      "imagePullSeconds": 15.774,
+      "fullLifecycleSeconds": 55.448,
+      "startupAndTransferSeconds": 54.509,
+      "providerMeteredSeconds": 45.026,
+      "billableSeconds": 60,
+      "estimatedProviderCostUsd": 0.0002827194444444444,
+      "outputBytes": 8583319,
+      "outputSha256": "d4a27835336627e57c3479bf7ed1f925080e19344713e6dac5df96f9f3ab4e5c",
+      "successful": true
+    },
+    {
+      "observationId": "52ffe23c851248d0a86e8e45407af245",
+      "datasetRole": "training",
+      "source": "real-aws-20261010-final-low-mode",
+      "taskArn": "arn:aws:ecs:us-east-1:777772816473:task/archflow-real-20261010-final/52ffe23c851248d0a86e8e45407af245",
+      "taskClass": "generate-source",
+      "branch": null,
+      "architecture": "x86_64",
+      "actualArchitecture": "x86_64",
+      "resourceModeId": "x86-0.25vcpu-0.5gb",
+      "cpuUnits": 256,
+      "memoryMiB": 512,
+      "applicationSeconds": 80.51,
+      "imagePullSeconds": 8.783,
+      "fullLifecycleSeconds": 140.096,
+      "startupAndTransferSeconds": 59.586,
+      "providerMeteredSeconds": 129.549,
+      "billableSeconds": 130,
+      "estimatedProviderCostUsd": 0.0006402791666666667,
+      "outputBytes": 9051068,
+      "outputSha256": "d5b443dc6f72ddf36bfdccc25cddf86229c632a4940b541099e42c80f92ba86e",
+      "successful": true
+    },
+    {
+      "observationId": "7b1f1031127346ad8a7d7bdfb2b2f6dd",
+      "datasetRole": "training",
+      "source": "real-aws-20261010-final-low-mode",
+      "taskArn": "arn:aws:ecs:us-east-1:777772816473:task/archflow-real-20261010-final/7b1f1031127346ad8a7d7bdfb2b2f6dd",
+      "taskClass": "cut",
+      "branch": "b",
+      "architecture": "x86_64",
+      "actualArchitecture": "x86_64",
+      "resourceModeId": "x86-0.25vcpu-0.5gb",
+      "cpuUnits": 256,
+      "memoryMiB": 512,
+      "applicationSeconds": 63.104,
+      "imagePullSeconds": 11.911,
+      "fullLifecycleSeconds": 118.564,
+      "startupAndTransferSeconds": 55.459999999999994,
+      "providerMeteredSeconds": 107.547,
+      "billableSeconds": 108,
+      "estimatedProviderCostUsd": 0.0005349472222222222,
+      "outputBytes": 4296740,
+      "outputSha256": "35610a6944feebe29a2c05c48cb0c008ab32a3fccd43fce0d9035901d047cee1",
+      "successful": true
+    },
+    {
+      "observationId": "afe0870fde8343adbe5ca14b38a666a9",
+      "datasetRole": "training",
+      "source": "real-aws-20261010-final-low-mode",
+      "taskArn": "arn:aws:ecs:us-east-1:777772816473:task/archflow-real-20261010-final/afe0870fde8343adbe5ca14b38a666a9",
+      "taskClass": "cut",
+      "branch": "b",
+      "architecture": "arm64",
+      "actualArchitecture": "aarch64",
+      "resourceModeId": "arm64-0.25vcpu-0.5gb",
+      "cpuUnits": 256,
+      "memoryMiB": 512,
+      "applicationSeconds": 39.312,
+      "imagePullSeconds": 10.825,
+      "fullLifecycleSeconds": 90.824,
+      "startupAndTransferSeconds": 51.512,
+      "providerMeteredSeconds": 79.316,
+      "billableSeconds": 80,
+      "estimatedProviderCostUsd": 0.0003455888888888889,
+      "outputBytes": 4297478,
+      "outputSha256": "ed582f16a22cb7bc69504d31f5edb17fe347ff34a7ab173bd3d859f23263f6b4",
+      "successful": true
+    },
+    {
+      "observationId": "c348b8cea84146da99d6d0e2f47c47b6",
+      "datasetRole": "training",
+      "source": "real-aws-20261010-final-low-mode",
+      "taskArn": "arn:aws:ecs:us-east-1:777772816473:task/archflow-real-20261010-final/c348b8cea84146da99d6d0e2f47c47b6",
+      "taskClass": "validate",
+      "branch": null,
+      "architecture": "arm64",
+      "actualArchitecture": "aarch64",
+      "resourceModeId": "arm64-0.25vcpu-0.5gb",
+      "cpuUnits": 256,
+      "memoryMiB": 512,
+      "applicationSeconds": 0.406,
+      "imagePullSeconds": 10.23,
+      "fullLifecycleSeconds": 50.063,
+      "startupAndTransferSeconds": 49.657000000000004,
+      "providerMeteredSeconds": 38.286,
+      "billableSeconds": 60,
+      "estimatedProviderCostUsd": 0.0002341152777777778,
+      "outputBytes": 8571506,
+      "outputSha256": "f550d9b79d0547ac82e8c1030619b7dfb693336cbf88bf24d91ec9e93775043d",
+      "successful": true
+    },
+    {
+      "observationId": "c912683d6e6149188eaa6571fcd21f69",
+      "datasetRole": "training",
+      "source": "real-aws-20261010-final-low-mode",
+      "taskArn": "arn:aws:ecs:us-east-1:777772816473:task/archflow-real-20261010-final/c912683d6e6149188eaa6571fcd21f69",
+      "taskClass": "merge",
+      "branch": null,
+      "architecture": "x86_64",
+      "actualArchitecture": "x86_64",
+      "resourceModeId": "x86-0.25vcpu-0.5gb",
+      "cpuUnits": 256,
+      "memoryMiB": 512,
+      "applicationSeconds": 0.599,
+      "imagePullSeconds": 17.239,
+      "fullLifecycleSeconds": 63.828,
+      "startupAndTransferSeconds": 63.229000000000006,
+      "providerMeteredSeconds": 53.135,
+      "billableSeconds": 60,
+      "estimatedProviderCostUsd": 0.00029435833333333336,
+      "outputBytes": 8583319,
+      "outputSha256": "d4a27835336627e57c3479bf7ed1f925080e19344713e6dac5df96f9f3ab4e5c",
+      "successful": true
+    },
+    {
+      "observationId": "ed3ab8eefc324efca0f7c15b78dc4b9e",
+      "datasetRole": "training",
+      "source": "ffmpeg-arm-only-r1",
+      "taskArn": "arn:aws:ecs:us-east-1:777772816473:task/archflow-real-20261010-resume/ed3ab8eefc324efca0f7c15b78dc4b9e",
+      "taskClass": "generate-source",
+      "branch": null,
+      "architecture": "arm64",
+      "actualArchitecture": "aarch64",
+      "resourceModeId": "arm64-1vcpu-2gb",
+      "cpuUnits": 1024,
+      "memoryMiB": 2048,
+      "applicationSeconds": 19.192,
+      "imagePullSeconds": 10.377,
+      "fullLifecycleSeconds": 68.434248,
+      "startupAndTransferSeconds": 49.242248,
+      "providerMeteredSeconds": 60,
+      "billableSeconds": 60,
+      "estimatedProviderCostUsd": 0.0007533808999999999,
+      "outputBytes": 9030869,
+      "outputSha256": "05460b072a6c7c53960adfdb38ed56c5d6c4b9db05e04d8fd41f489380bde66b",
+      "successful": true
+    },
+    {
+      "observationId": "20d3c708d6314572bced49bf3c6f6700",
+      "datasetRole": "training",
+      "source": "ffmpeg-arm-only-r1",
+      "taskArn": "arn:aws:ecs:us-east-1:777772816473:task/archflow-real-20261010-resume/20d3c708d6314572bced49bf3c6f6700",
+      "taskClass": "cut",
+      "branch": "a",
+      "architecture": "arm64",
+      "actualArchitecture": "aarch64",
+      "resourceModeId": "arm64-1vcpu-2gb",
+      "cpuUnits": 1024,
+      "memoryMiB": 2048,
+      "applicationSeconds": 14.303,
+      "imagePullSeconds": 8.607,
+      "fullLifecycleSeconds": 67.518069,
+      "startupAndTransferSeconds": 53.215069,
+      "providerMeteredSeconds": 60,
+      "billableSeconds": 60,
+      "estimatedProviderCostUsd": 0.0007521084291666666,
+      "outputBytes": 4272546,
+      "outputSha256": "b67465252074738b8a3f633a4657f921111625afa3b0021a9ed3bf1a06b8c6da",
+      "successful": true
+    },
+    {
+      "observationId": "530348aac7394734a5abd613a25f2a42",
+      "datasetRole": "training",
+      "source": "ffmpeg-arm-only-r1",
+      "taskArn": "arn:aws:ecs:us-east-1:777772816473:task/archflow-real-20261010-resume/530348aac7394734a5abd613a25f2a42",
+      "taskClass": "cut",
+      "branch": "b",
+      "architecture": "arm64",
+      "actualArchitecture": "aarch64",
+      "resourceModeId": "arm64-1vcpu-2gb",
+      "cpuUnits": 1024,
+      "memoryMiB": 2048,
+      "applicationSeconds": 8.364,
+      "imagePullSeconds": 8.722,
+      "fullLifecycleSeconds": 59.80288,
+      "startupAndTransferSeconds": 51.43888,
+      "providerMeteredSeconds": 60,
+      "billableSeconds": 60,
+      "estimatedProviderCostUsd": 0.0007413928888888888,
+      "outputBytes": 4297478,
+      "outputSha256": "ed582f16a22cb7bc69504d31f5edb17fe347ff34a7ab173bd3d859f23263f6b4",
+      "successful": true
+    },
+    {
+      "observationId": "0458a7fc1f7843d4b5b02e82d9876d94",
+      "datasetRole": "training",
+      "source": "ffmpeg-arm-only-r1",
+      "taskArn": "arn:aws:ecs:us-east-1:777772816473:task/archflow-real-20261010-resume/0458a7fc1f7843d4b5b02e82d9876d94",
+      "taskClass": "merge",
+      "branch": null,
+      "architecture": "arm64",
+      "actualArchitecture": "aarch64",
+      "resourceModeId": "arm64-1vcpu-2gb",
+      "cpuUnits": 1024,
+      "memoryMiB": 2048,
+      "applicationSeconds": 0.112,
+      "imagePullSeconds": 8.876,
+      "fullLifecycleSeconds": 51.843215,
+      "startupAndTransferSeconds": 51.731215,
+      "providerMeteredSeconds": 60,
+      "billableSeconds": 60,
+      "estimatedProviderCostUsd": 0.000730337798611111,
+      "outputBytes": 8569305,
+      "outputSha256": "1cd3c10c51f2ca6380da0cf4c861e66d014bb61278c3a2e9133dbbbdf1be733e",
+      "successful": true
+    },
+    {
+      "observationId": "9c98a61c226540dc8528d92489ca1b2e",
+      "datasetRole": "training",
+      "source": "ffmpeg-arm-only-r1",
+      "taskArn": "arn:aws:ecs:us-east-1:777772816473:task/archflow-real-20261010-resume/9c98a61c226540dc8528d92489ca1b2e",
+      "taskClass": "validate",
+      "branch": null,
+      "architecture": "arm64",
+      "actualArchitecture": "aarch64",
+      "resourceModeId": "arm64-1vcpu-2gb",
+      "cpuUnits": 1024,
+      "memoryMiB": 2048,
+      "applicationSeconds": 0.12,
+      "imagePullSeconds": 14.38,
+      "fullLifecycleSeconds": 53.226445,
+      "startupAndTransferSeconds": 53.106445,
+      "providerMeteredSeconds": 60,
+      "billableSeconds": 60,
+      "estimatedProviderCostUsd": 0.0007322589513888888,
+      "outputBytes": 8569305,
+      "outputSha256": "1cd3c10c51f2ca6380da0cf4c861e66d014bb61278c3a2e9133dbbbdf1be733e",
+      "successful": true
+    },
+    {
+      "observationId": "6dd9fdfa30174f01871dbd7c8adbf2da",
+      "datasetRole": "training",
+      "source": "ffmpeg-x86-only-r1",
+      "taskArn": "arn:aws:ecs:us-east-1:777772816473:task/archflow-real-20261010-resume/6dd9fdfa30174f01871dbd7c8adbf2da",
+      "taskClass": "generate-source",
+      "branch": null,
+      "architecture": "x86_64",
+      "actualArchitecture": "x86_64",
+      "resourceModeId": "x86-1vcpu-2gb",
+      "cpuUnits": 1024,
+      "memoryMiB": 2048,
+      "applicationSeconds": 33.236,
+      "imagePullSeconds": 13.814,
+      "fullLifecycleSeconds": 95.729988,
+      "startupAndTransferSeconds": 62.49398800000001,
+      "providerMeteredSeconds": 74,
+      "billableSeconds": 74,
+      "estimatedProviderCostUsd": 0.0011477860944444445,
+      "outputBytes": 9051068,
+      "outputSha256": "d5b443dc6f72ddf36bfdccc25cddf86229c632a4940b541099e42c80f92ba86e",
+      "successful": true
+    },
+    {
+      "observationId": "d0b2465b4e3d4013aea056fd071ee43b",
+      "datasetRole": "training",
+      "source": "ffmpeg-x86-only-r1",
+      "taskArn": "arn:aws:ecs:us-east-1:777772816473:task/archflow-real-20261010-resume/d0b2465b4e3d4013aea056fd071ee43b",
+      "taskClass": "cut",
+      "branch": "a",
+      "architecture": "x86_64",
+      "actualArchitecture": "x86_64",
+      "resourceModeId": "x86-1vcpu-2gb",
+      "cpuUnits": 1024,
+      "memoryMiB": 2048,
+      "applicationSeconds": 17.942,
+      "imagePullSeconds": 13.562,
+      "fullLifecycleSeconds": 71.805173,
+      "startupAndTransferSeconds": 53.863172999999996,
+      "providerMeteredSeconds": 61,
+      "billableSeconds": 61,
+      "estimatedProviderCostUsd": 0.0009362766291666666,
+      "outputBytes": 4287298,
+      "outputSha256": "cc46f629a222b69b377e0d477b00a5c1799cf5751f39472ab0aff2a452915a43",
+      "successful": true
+    },
+    {
+      "observationId": "7cc454f8df4b4d9887aae7a4ddea5a80",
+      "datasetRole": "training",
+      "source": "ffmpeg-x86-only-r1",
+      "taskArn": "arn:aws:ecs:us-east-1:777772816473:task/archflow-real-20261010-resume/7cc454f8df4b4d9887aae7a4ddea5a80",
+      "taskClass": "cut",
+      "branch": "b",
+      "architecture": "x86_64",
+      "actualArchitecture": "x86_64",
+      "resourceModeId": "x86-1vcpu-2gb",
+      "cpuUnits": 1024,
+      "memoryMiB": 2048,
+      "applicationSeconds": 18.539,
+      "imagePullSeconds": 13.727,
+      "fullLifecycleSeconds": 74.640522,
+      "startupAndTransferSeconds": 56.101522,
+      "providerMeteredSeconds": 60,
+      "billableSeconds": 60,
+      "estimatedProviderCostUsd": 0.000926500725,
+      "outputBytes": 4296740,
+      "outputSha256": "35610a6944feebe29a2c05c48cb0c008ab32a3fccd43fce0d9035901d047cee1",
+      "successful": true
+    },
+    {
+      "observationId": "d1b075ab791b46268d6dfc43ec410340",
+      "datasetRole": "training",
+      "source": "ffmpeg-x86-only-r1",
+      "taskArn": "arn:aws:ecs:us-east-1:777772816473:task/archflow-real-20261010-resume/d1b075ab791b46268d6dfc43ec410340",
+      "taskClass": "merge",
+      "branch": null,
+      "architecture": "x86_64",
+      "actualArchitecture": "x86_64",
+      "resourceModeId": "x86-1vcpu-2gb",
+      "cpuUnits": 1024,
+      "memoryMiB": 2048,
+      "applicationSeconds": 0.134,
+      "imagePullSeconds": 11.966,
+      "fullLifecycleSeconds": 54.291113,
+      "startupAndTransferSeconds": 54.157113,
+      "providerMeteredSeconds": 60,
+      "billableSeconds": 60,
+      "estimatedProviderCostUsd": 0.0008982376569444446,
+      "outputBytes": 8583319,
+      "outputSha256": "d4a27835336627e57c3479bf7ed1f925080e19344713e6dac5df96f9f3ab4e5c",
+      "successful": true
+    },
+    {
+      "observationId": "cb540b0e016f44b09f2bd0052c3d2018",
+      "datasetRole": "training",
+      "source": "ffmpeg-x86-only-r1",
+      "taskArn": "arn:aws:ecs:us-east-1:777772816473:task/archflow-real-20261010-resume/cb540b0e016f44b09f2bd0052c3d2018",
+      "taskClass": "validate",
+      "branch": null,
+      "architecture": "x86_64",
+      "actualArchitecture": "x86_64",
+      "resourceModeId": "x86-1vcpu-2gb",
+      "cpuUnits": 1024,
+      "memoryMiB": 2048,
+      "applicationSeconds": 0.181,
+      "imagePullSeconds": 13.019,
+      "fullLifecycleSeconds": 55.62145,
+      "startupAndTransferSeconds": 55.440450000000006,
+      "providerMeteredSeconds": 60,
+      "billableSeconds": 60,
+      "estimatedProviderCostUsd": 0.0009000853472222223,
+      "outputBytes": 8583319,
+      "outputSha256": "d4a27835336627e57c3479bf7ed1f925080e19344713e6dac5df96f9f3ab4e5c",
+      "successful": true
+    }
+  ],
+  "cells": [
+    {
+      "taskClass": "generate-source",
+      "resourceModeId": "x86-0.25vcpu-0.5gb",
+      "architecture": "x86_64",
+      "observationIds": [
+        "52ffe23c851248d0a86e8e45407af245"
+      ],
+      "applicationSeconds": {
+        "count": 1,
+        "mean": 80.51,
+        "median": 80.51,
+        "sampleStdDev": null,
+        "min": 80.51,
+        "max": 80.51
+      },
+      "startupAndTransferSeconds": {
+        "count": 1,
+        "mean": 59.586,
+        "median": 59.586,
+        "sampleStdDev": null,
+        "min": 59.586,
+        "max": 59.586
+      },
+      "fullLifecycleSeconds": {
+        "count": 1,
+        "mean": 140.096,
+        "median": 140.096,
+        "sampleStdDev": null,
+        "min": 140.096,
+        "max": 140.096
+      },
+      "estimatedProviderCostUsd": {
+        "count": 1,
+        "mean": 0.0006402791666666667,
+        "median": 0.0006402791666666667,
+        "sampleStdDev": null,
+        "min": 0.0006402791666666667,
+        "max": 0.0006402791666666667
+      }
+    },
+    {
+      "taskClass": "generate-source",
+      "resourceModeId": "x86-1vcpu-2gb",
+      "architecture": "x86_64",
+      "observationIds": [
+        "6dd9fdfa30174f01871dbd7c8adbf2da"
+      ],
+      "applicationSeconds": {
+        "count": 1,
+        "mean": 33.236,
+        "median": 33.236,
+        "sampleStdDev": null,
+        "min": 33.236,
+        "max": 33.236
+      },
+      "startupAndTransferSeconds": {
+        "count": 1,
+        "mean": 62.49398800000001,
+        "median": 62.49398800000001,
+        "sampleStdDev": null,
+        "min": 62.49398800000001,
+        "max": 62.49398800000001
+      },
+      "fullLifecycleSeconds": {
+        "count": 1,
+        "mean": 95.729988,
+        "median": 95.729988,
+        "sampleStdDev": null,
+        "min": 95.729988,
+        "max": 95.729988
+      },
+      "estimatedProviderCostUsd": {
+        "count": 1,
+        "mean": 0.0011477860944444445,
+        "median": 0.0011477860944444445,
+        "sampleStdDev": null,
+        "min": 0.0011477860944444445,
+        "max": 0.0011477860944444445
+      }
+    },
+    {
+      "taskClass": "generate-source",
+      "resourceModeId": "arm64-0.25vcpu-0.5gb",
+      "architecture": "arm64",
+      "observationIds": [
+        "2a46718a7c0642548c4cf21185af30bc"
+      ],
+      "applicationSeconds": {
+        "count": 1,
+        "mean": 70.064,
+        "median": 70.064,
+        "sampleStdDev": null,
+        "min": 70.064,
+        "max": 70.064
+      },
+      "startupAndTransferSeconds": {
+        "count": 1,
+        "mean": 48.647000000000006,
+        "median": 48.647000000000006,
+        "sampleStdDev": null,
+        "min": 48.647000000000006,
+        "max": 48.647000000000006
+      },
+      "fullLifecycleSeconds": {
+        "count": 1,
+        "mean": 118.711,
+        "median": 118.711,
+        "sampleStdDev": null,
+        "min": 118.711,
+        "max": 118.711
+      },
+      "estimatedProviderCostUsd": {
+        "count": 1,
+        "mean": 0.00045838333333333335,
+        "median": 0.00045838333333333335,
+        "sampleStdDev": null,
+        "min": 0.00045838333333333335,
+        "max": 0.00045838333333333335
+      }
+    },
+    {
+      "taskClass": "generate-source",
+      "resourceModeId": "arm64-1vcpu-2gb",
+      "architecture": "arm64",
+      "observationIds": [
+        "ed3ab8eefc324efca0f7c15b78dc4b9e"
+      ],
+      "applicationSeconds": {
+        "count": 1,
+        "mean": 19.192,
+        "median": 19.192,
+        "sampleStdDev": null,
+        "min": 19.192,
+        "max": 19.192
+      },
+      "startupAndTransferSeconds": {
+        "count": 1,
+        "mean": 49.242248,
+        "median": 49.242248,
+        "sampleStdDev": null,
+        "min": 49.242248,
+        "max": 49.242248
+      },
+      "fullLifecycleSeconds": {
+        "count": 1,
+        "mean": 68.434248,
+        "median": 68.434248,
+        "sampleStdDev": null,
+        "min": 68.434248,
+        "max": 68.434248
+      },
+      "estimatedProviderCostUsd": {
+        "count": 1,
+        "mean": 0.0007533808999999999,
+        "median": 0.0007533808999999999,
+        "sampleStdDev": null,
+        "min": 0.0007533808999999999,
+        "max": 0.0007533808999999999
+      }
+    },
+    {
+      "taskClass": "cut",
+      "resourceModeId": "x86-0.25vcpu-0.5gb",
+      "architecture": "x86_64",
+      "observationIds": [
+        "1a56e80d474046e9b40c0f6118990e65",
+        "7b1f1031127346ad8a7d7bdfb2b2f6dd"
+      ],
+      "applicationSeconds": {
+        "count": 2,
+        "mean": 66.80850000000001,
+        "median": 66.80850000000001,
+        "sampleStdDev": 5.238954141811135,
+        "min": 63.104,
+        "max": 70.513
+      },
+      "startupAndTransferSeconds": {
+        "count": 2,
+        "mean": 58.4065,
+        "median": 58.4065,
+        "sampleStdDev": 4.166980261532335,
+        "min": 55.459999999999994,
+        "max": 61.35300000000001
+      },
+      "fullLifecycleSeconds": {
+        "count": 2,
+        "mean": 125.215,
+        "median": 125.215,
+        "sampleStdDev": 9.405934403343469,
+        "min": 118.564,
+        "max": 131.866
+      },
+      "estimatedProviderCostUsd": {
+        "count": 2,
+        "mean": 0.0005664697916666667,
+        "median": 0.0005664697916666667,
+        "sampleStdDev": 0.0000445796452291811,
+        "min": 0.0005349472222222222,
+        "max": 0.0005979923611111112
+      }
+    },
+    {
+      "taskClass": "cut",
+      "resourceModeId": "x86-1vcpu-2gb",
+      "architecture": "x86_64",
+      "observationIds": [
+        "d0b2465b4e3d4013aea056fd071ee43b",
+        "7cc454f8df4b4d9887aae7a4ddea5a80"
+      ],
+      "applicationSeconds": {
+        "count": 2,
+        "mean": 18.2405,
+        "median": 18.2405,
+        "sampleStdDev": 0.4221427483683698,
+        "min": 17.942,
+        "max": 18.539
+      },
+      "startupAndTransferSeconds": {
+        "count": 2,
+        "mean": 54.9823475,
+        "median": 54.9823475,
+        "sampleStdDev": 1.582751756562132,
+        "min": 53.863172999999996,
+        "max": 56.101522
+      },
+      "fullLifecycleSeconds": {
+        "count": 2,
+        "mean": 73.2228475,
+        "median": 73.2228475,
+        "sampleStdDev": 2.004894504930502,
+        "min": 71.805173,
+        "max": 74.640522
+      },
+      "estimatedProviderCostUsd": {
+        "count": 2,
+        "mean": 0.0009313886770833333,
+        "median": 0.0009313886770833333,
+        "sampleStdDev": 0.000006912608128479716,
+        "min": 0.000926500725,
+        "max": 0.0009362766291666666
+      }
+    },
+    {
+      "taskClass": "cut",
+      "resourceModeId": "arm64-0.25vcpu-0.5gb",
+      "architecture": "arm64",
+      "observationIds": [
+        "4b945a6c47b744d8b20b1f77398a5855",
+        "afe0870fde8343adbe5ca14b38a666a9"
+      ],
+      "applicationSeconds": {
+        "count": 2,
+        "mean": 39.0605,
+        "median": 39.0605,
+        "sampleStdDev": 0.35567471093683345,
+        "min": 38.809,
+        "max": 39.312
+      },
+      "startupAndTransferSeconds": {
+        "count": 2,
+        "mean": 52.005500000000005,
+        "median": 52.005500000000005,
+        "sampleStdDev": 0.6979143930311288,
+        "min": 51.512,
+        "max": 52.49900000000001
+      },
+      "fullLifecycleSeconds": {
+        "count": 2,
+        "mean": 91.066,
+        "median": 91.066,
+        "sampleStdDev": 0.3422396820942953,
+        "min": 90.824,
+        "max": 91.308
+      },
+      "estimatedProviderCostUsd": {
+        "count": 2,
+        "mean": 0.000345925,
+        "median": 0.000345925,
+        "sampleStdDev": 4.753328917976373e-7,
+        "min": 0.0003455888888888889,
+        "max": 0.00034626111111111114
+      }
+    },
+    {
+      "taskClass": "cut",
+      "resourceModeId": "arm64-1vcpu-2gb",
+      "architecture": "arm64",
+      "observationIds": [
+        "20d3c708d6314572bced49bf3c6f6700",
+        "530348aac7394734a5abd613a25f2a42"
+      ],
+      "applicationSeconds": {
+        "count": 2,
+        "mean": 11.3335,
+        "median": 11.3335,
+        "sampleStdDev": 4.199507173466905,
+        "min": 8.364,
+        "max": 14.303
+      },
+      "startupAndTransferSeconds": {
+        "count": 2,
+        "mean": 52.3269745,
+        "median": 52.3269745,
+        "sampleStdDev": 1.2559552865689543,
+        "min": 51.43888,
+        "max": 53.215069
+      },
+      "fullLifecycleSeconds": {
+        "count": 2,
+        "mean": 63.6604745,
+        "median": 63.6604745,
+        "sampleStdDev": 5.4554624600358546,
+        "min": 59.80288,
+        "max": 67.518069
+      },
+      "estimatedProviderCostUsd": {
+        "count": 2,
+        "mean": 0.0007467506590277777,
+        "median": 0.0007467506590277777,
+        "sampleStdDev": 0.0000075770311944942775,
+        "min": 0.0007413928888888888,
+        "max": 0.0007521084291666666
+      }
+    },
+    {
+      "taskClass": "merge",
+      "resourceModeId": "x86-0.25vcpu-0.5gb",
+      "architecture": "x86_64",
+      "observationIds": [
+        "c912683d6e6149188eaa6571fcd21f69"
+      ],
+      "applicationSeconds": {
+        "count": 1,
+        "mean": 0.599,
+        "median": 0.599,
+        "sampleStdDev": null,
+        "min": 0.599,
+        "max": 0.599
+      },
+      "startupAndTransferSeconds": {
+        "count": 1,
+        "mean": 63.229000000000006,
+        "median": 63.229000000000006,
+        "sampleStdDev": null,
+        "min": 63.229000000000006,
+        "max": 63.229000000000006
+      },
+      "fullLifecycleSeconds": {
+        "count": 1,
+        "mean": 63.828,
+        "median": 63.828,
+        "sampleStdDev": null,
+        "min": 63.828,
+        "max": 63.828
+      },
+      "estimatedProviderCostUsd": {
+        "count": 1,
+        "mean": 0.00029435833333333336,
+        "median": 0.00029435833333333336,
+        "sampleStdDev": null,
+        "min": 0.00029435833333333336,
+        "max": 0.00029435833333333336
+      }
+    },
+    {
+      "taskClass": "merge",
+      "resourceModeId": "x86-1vcpu-2gb",
+      "architecture": "x86_64",
+      "observationIds": [
+        "d1b075ab791b46268d6dfc43ec410340"
+      ],
+      "applicationSeconds": {
+        "count": 1,
+        "mean": 0.134,
+        "median": 0.134,
+        "sampleStdDev": null,
+        "min": 0.134,
+        "max": 0.134
+      },
+      "startupAndTransferSeconds": {
+        "count": 1,
+        "mean": 54.157113,
+        "median": 54.157113,
+        "sampleStdDev": null,
+        "min": 54.157113,
+        "max": 54.157113
+      },
+      "fullLifecycleSeconds": {
+        "count": 1,
+        "mean": 54.291113,
+        "median": 54.291113,
+        "sampleStdDev": null,
+        "min": 54.291113,
+        "max": 54.291113
+      },
+      "estimatedProviderCostUsd": {
+        "count": 1,
+        "mean": 0.0008982376569444446,
+        "median": 0.0008982376569444446,
+        "sampleStdDev": null,
+        "min": 0.0008982376569444446,
+        "max": 0.0008982376569444446
+      }
+    },
+    {
+      "taskClass": "merge",
+      "resourceModeId": "arm64-0.25vcpu-0.5gb",
+      "architecture": "arm64",
+      "observationIds": [
+        "341a904a18c84552bf0554dcf1dea907"
+      ],
+      "applicationSeconds": {
+        "count": 1,
+        "mean": 0.347,
+        "median": 0.347,
+        "sampleStdDev": null,
+        "min": 0.347,
+        "max": 0.347
+      },
+      "startupAndTransferSeconds": {
+        "count": 1,
+        "mean": 55.292,
+        "median": 55.292,
+        "sampleStdDev": null,
+        "min": 55.292,
+        "max": 55.292
+      },
+      "fullLifecycleSeconds": {
+        "count": 1,
+        "mean": 55.639,
+        "median": 55.639,
+        "sampleStdDev": null,
+        "min": 55.639,
+        "max": 55.639
+      },
+      "estimatedProviderCostUsd": {
+        "count": 1,
+        "mean": 0.00024185972222222224,
+        "median": 0.00024185972222222224,
+        "sampleStdDev": null,
+        "min": 0.00024185972222222224,
+        "max": 0.00024185972222222224
+      }
+    },
+    {
+      "taskClass": "merge",
+      "resourceModeId": "arm64-1vcpu-2gb",
+      "architecture": "arm64",
+      "observationIds": [
+        "0458a7fc1f7843d4b5b02e82d9876d94"
+      ],
+      "applicationSeconds": {
+        "count": 1,
+        "mean": 0.112,
+        "median": 0.112,
+        "sampleStdDev": null,
+        "min": 0.112,
+        "max": 0.112
+      },
+      "startupAndTransferSeconds": {
+        "count": 1,
+        "mean": 51.731215,
+        "median": 51.731215,
+        "sampleStdDev": null,
+        "min": 51.731215,
+        "max": 51.731215
+      },
+      "fullLifecycleSeconds": {
+        "count": 1,
+        "mean": 51.843215,
+        "median": 51.843215,
+        "sampleStdDev": null,
+        "min": 51.843215,
+        "max": 51.843215
+      },
+      "estimatedProviderCostUsd": {
+        "count": 1,
+        "mean": 0.000730337798611111,
+        "median": 0.000730337798611111,
+        "sampleStdDev": null,
+        "min": 0.000730337798611111,
+        "max": 0.000730337798611111
+      }
+    },
+    {
+      "taskClass": "validate",
+      "resourceModeId": "x86-0.25vcpu-0.5gb",
+      "architecture": "x86_64",
+      "observationIds": [
+        "5223c007f24848b1a3fef76df0802b0c"
+      ],
+      "applicationSeconds": {
+        "count": 1,
+        "mean": 0.939,
+        "median": 0.939,
+        "sampleStdDev": null,
+        "min": 0.939,
+        "max": 0.939
+      },
+      "startupAndTransferSeconds": {
+        "count": 1,
+        "mean": 54.509,
+        "median": 54.509,
+        "sampleStdDev": null,
+        "min": 54.509,
+        "max": 54.509
+      },
+      "fullLifecycleSeconds": {
+        "count": 1,
+        "mean": 55.448,
+        "median": 55.448,
+        "sampleStdDev": null,
+        "min": 55.448,
+        "max": 55.448
+      },
+      "estimatedProviderCostUsd": {
+        "count": 1,
+        "mean": 0.0002827194444444444,
+        "median": 0.0002827194444444444,
+        "sampleStdDev": null,
+        "min": 0.0002827194444444444,
+        "max": 0.0002827194444444444
+      }
+    },
+    {
+      "taskClass": "validate",
+      "resourceModeId": "x86-1vcpu-2gb",
+      "architecture": "x86_64",
+      "observationIds": [
+        "cb540b0e016f44b09f2bd0052c3d2018"
+      ],
+      "applicationSeconds": {
+        "count": 1,
+        "mean": 0.181,
+        "median": 0.181,
+        "sampleStdDev": null,
+        "min": 0.181,
+        "max": 0.181
+      },
+      "startupAndTransferSeconds": {
+        "count": 1,
+        "mean": 55.440450000000006,
+        "median": 55.440450000000006,
+        "sampleStdDev": null,
+        "min": 55.440450000000006,
+        "max": 55.440450000000006
+      },
+      "fullLifecycleSeconds": {
+        "count": 1,
+        "mean": 55.62145,
+        "median": 55.62145,
+        "sampleStdDev": null,
+        "min": 55.62145,
+        "max": 55.62145
+      },
+      "estimatedProviderCostUsd": {
+        "count": 1,
+        "mean": 0.0009000853472222223,
+        "median": 0.0009000853472222223,
+        "sampleStdDev": null,
+        "min": 0.0009000853472222223,
+        "max": 0.0009000853472222223
+      }
+    },
+    {
+      "taskClass": "validate",
+      "resourceModeId": "arm64-0.25vcpu-0.5gb",
+      "architecture": "arm64",
+      "observationIds": [
+        "c348b8cea84146da99d6d0e2f47c47b6"
+      ],
+      "applicationSeconds": {
+        "count": 1,
+        "mean": 0.406,
+        "median": 0.406,
+        "sampleStdDev": null,
+        "min": 0.406,
+        "max": 0.406
+      },
+      "startupAndTransferSeconds": {
+        "count": 1,
+        "mean": 49.657000000000004,
+        "median": 49.657000000000004,
+        "sampleStdDev": null,
+        "min": 49.657000000000004,
+        "max": 49.657000000000004
+      },
+      "fullLifecycleSeconds": {
+        "count": 1,
+        "mean": 50.063,
+        "median": 50.063,
+        "sampleStdDev": null,
+        "min": 50.063,
+        "max": 50.063
+      },
+      "estimatedProviderCostUsd": {
+        "count": 1,
+        "mean": 0.0002341152777777778,
+        "median": 0.0002341152777777778,
+        "sampleStdDev": null,
+        "min": 0.0002341152777777778,
+        "max": 0.0002341152777777778
+      }
+    },
+    {
+      "taskClass": "validate",
+      "resourceModeId": "arm64-1vcpu-2gb",
+      "architecture": "arm64",
+      "observationIds": [
+        "9c98a61c226540dc8528d92489ca1b2e"
+      ],
+      "applicationSeconds": {
+        "count": 1,
+        "mean": 0.12,
+        "median": 0.12,
+        "sampleStdDev": null,
+        "min": 0.12,
+        "max": 0.12
+      },
+      "startupAndTransferSeconds": {
+        "count": 1,
+        "mean": 53.106445,
+        "median": 53.106445,
+        "sampleStdDev": null,
+        "min": 53.106445,
+        "max": 53.106445
+      },
+      "fullLifecycleSeconds": {
+        "count": 1,
+        "mean": 53.226445,
+        "median": 53.226445,
+        "sampleStdDev": null,
+        "min": 53.226445,
+        "max": 53.226445
+      },
+      "estimatedProviderCostUsd": {
+        "count": 1,
+        "mean": 0.0007322589513888888,
+        "median": 0.0007322589513888888,
+        "sampleStdDev": null,
+        "min": 0.0007322589513888888,
+        "max": 0.0007322589513888888
+      }
+    }
+  ]
+}

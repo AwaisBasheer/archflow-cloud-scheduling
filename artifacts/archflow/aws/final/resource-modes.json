@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "modes": [
+    {
+      "id": "x86-0.25vcpu-0.5gb",
+      "architecture": "x86_64",
+      "vCpu": 0.25,
+      "memoryGb": 0.5
+    },
+    {
+      "id": "x86-1vcpu-2gb",
+      "architecture": "x86_64",
+      "vCpu": 1,
+      "memoryGb": 2
+    },
+    {
+      "id": "arm64-0.25vcpu-0.5gb",
+      "architecture": "arm64",
+      "vCpu": 0.25,
+      "memoryGb": 0.5
+    },
+    {
+      "id": "arm64-1vcpu-2gb",
+      "architecture": "arm64",
+      "vCpu": 1,
+      "memoryGb": 2
+    }
+  ]
+}

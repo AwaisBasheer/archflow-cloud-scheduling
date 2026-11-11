@@ -1,0 +1,1137 @@
+{
+  "bucketConfiguration": {
+    "encryption": {
+      "ServerSideEncryptionConfiguration": {
+        "Rules": [
+          {
+            "ApplyServerSideEncryptionByDefault": {
+              "SSEAlgorithm": "AES256"
+            },
+            "BlockedEncryptionTypes": {
+              "EncryptionType": [
+                "SSE-C"
+              ]
+            },
+            "BucketKeyEnabled": false
+          }
+        ]
+      }
+    },
+    "publicAccessBlock": {
+      "PublicAccessBlockConfiguration": {
+        "BlockPublicAcls": true,
+        "BlockPublicPolicy": true,
+        "IgnorePublicAcls": true,
+        "RestrictPublicBuckets": true
+      }
+    },
+    "versioning": {}
+  },
+  "capturedAt": "2026-10-10T18:33:20.890160+00:00",
+  "cluster": {
+    "clusters": [
+      {
+        "activeServicesCount": 0,
+        "attachments": [],
+        "capacityProviders": [],
+        "clusterArn": "arn:aws:ecs:us-east-1:777772816473:cluster/archflow-real-20261010-final",
+        "clusterName": "archflow-real-20261010-final",
+        "defaultCapacityProviderStrategy": [],
+        "pendingTasksCount": 0,
+        "registeredContainerInstancesCount": 0,
+        "runningTasksCount": 0,
+        "settings": [
+          {
+            "name": "containerInsights",
+            "value": "disabled"
+          }
+        ],
+        "statistics": [
+          {
+            "name": "runningEC2TasksCount",
+            "value": "0"
+          },
+          {
+            "name": "runningFargateTasksCount",
+            "value": "0"
+          },
+          {
+            "name": "pendingEC2TasksCount",
+            "value": "0"
+          },
+          {
+            "name": "pendingFargateTasksCount",
+            "value": "0"
+          },
+          {
+            "name": "runningExternalTasksCount",
+            "value": "0"
+          },
+          {
+            "name": "pendingExternalTasksCount",
+            "value": "0"
+          },
+          {
+            "name": "runningManagedInstancesTasksCount",
+            "value": "0"
+          },
+          {
+            "name": "pendingManagedInstancesTasksCount",
+            "value": "0"
+          },
+          {
+            "name": "activeEC2ServiceCount",
+            "value": "0"
+          },
+          {
+            "name": "activeFargateServiceCount",
+            "value": "0"
+          },
+          {
+            "name": "drainingEC2ServiceCount",
+            "value": "0"
+          },
+          {
+            "name": "drainingFargateServiceCount",
+            "value": "0"
+          },
+          {
+            "name": "activeExternalServiceCount",
+            "value": "0"
+          },
+          {
+            "name": "drainingExternalServiceCount",
+            "value": "0"
+          },
+          {
+            "name": "activeManagedInstancesServiceCount",
+            "value": "0"
+          },
+          {
+            "name": "drainingManagedInstancesServiceCount",
+            "value": "0"
+          }
+        ],
+        "status": "ACTIVE",
+        "tags": [
+          {
+            "key": "Project",
+            "value": "ArchFlow-H"
+          },
+          {
+            "key": "Purpose",
+            "value": "research"
+          },
+          {
+            "key": "ManagedBy",
+            "value": "Codex"
+          },
+          {
+            "key": "Experiment",
+            "value": "real-aws-20261010-final"
+          }
+        ]
+      }
+    ],
+    "failures": []
+  },
+  "ecrRepositories": [],
+  "iamRoles": [
+    {
+      "inlinePolicies": [
+        {
+          "PolicyDocument": {
+            "Statement": [
+              {
+                "Action": [
+                  "logs:CreateLogStream",
+                  "logs:PutLogEvents"
+                ],
+                "Effect": "Allow",
+                "Resource": "arn:aws:logs:us-east-1:777772816473:log-group:/archflow/real-20261010-final:*",
+                "Sid": "ExperimentLogs"
+              }
+            ],
+            "Version": "2012-10-17"
+          },
+          "PolicyName": "ArchFlowExperimentLogs",
+          "RoleName": "ArchFlowFargateExecution-20261010-final"
+        }
+      ],
+      "role": {
+        "Role": {
+          "Arn": "arn:aws:iam::777772816473:role/archflow/ArchFlowFargateExecution-20261010-final",
+          "AssumeRolePolicyDocument": {
+            "Statement": [
+              {
+                "Action": "sts:AssumeRole",
+                "Condition": {
+                  "ArnLike": {
+                    "aws:SourceArn": "arn:aws:ecs:us-east-1:777772816473:*"
+                  },
+                  "StringEquals": {
+                    "aws:SourceAccount": "777772816473"
+                  }
+                },
+                "Effect": "Allow",
+                "Principal": {
+                  "Service": "ecs-tasks.amazonaws.com"
+                }
+              }
+            ],
+            "Version": "2012-10-17"
+          },
+          "CreateDate": "2026-10-10T17:15:11+00:00",
+          "Description": "ArchFlow-H ECS execution role for scoped CloudWatch logs",
+          "MaxSessionDuration": 3600,
+          "Path": "/archflow/",
+          "RoleId": "AROA3KFW7LBMT7GYERYGW",
+          "RoleLastUsed": {
+            "LastUsedDate": "2026-10-10T18:25:48+00:00",
+            "Region": "us-east-1"
+          },
+          "RoleName": "ArchFlowFargateExecution-20261010-final",
+          "Tags": [
+            {
+              "Key": "Project",
+              "Value": "ArchFlow-H"
+            },
+            {
+              "Key": "Experiment",
+              "Value": "real-aws-20261010-final"
+            },
+            {
+              "Key": "ManagedBy",
+              "Value": "Codex"
+            },
+            {
+              "Key": "Purpose",
+              "Value": "research"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "inlinePolicies": [
+        {
+          "PolicyDocument": {
+            "Statement": [
+              {
+                "Action": [
+                  "s3:GetObject",
+                  "s3:PutObject"
+                ],
+                "Effect": "Allow",
+                "Resource": "arn:aws:s3:::archflow-real-777772816473-us-east-1-final/dag/*",
+                "Sid": "DagObjects"
+              }
+            ],
+            "Version": "2012-10-17"
+          },
+          "PolicyName": "ArchFlowDagObjects",
+          "RoleName": "ArchFlowFargateTask-20261010-final"
+        }
+      ],
+      "role": {
+        "Role": {
+          "Arn": "arn:aws:iam::777772816473:role/archflow/ArchFlowFargateTask-20261010-final",
+          "AssumeRolePolicyDocument": {
+            "Statement": [
+              {
+                "Action": "sts:AssumeRole",
+                "Condition": {
+                  "ArnLike": {
+                    "aws:SourceArn": "arn:aws:ecs:us-east-1:777772816473:*"
+                  },
+                  "StringEquals": {
+                    "aws:SourceAccount": "777772816473"
+                  }
+                },
+                "Effect": "Allow",
+                "Principal": {
+                  "Service": "ecs-tasks.amazonaws.com"
+                }
+              }
+            ],
+            "Version": "2012-10-17"
+          },
+          "CreateDate": "2026-10-10T17:15:12+00:00",
+          "Description": "ArchFlow-H ECS task role for experiment S3 objects",
+          "MaxSessionDuration": 3600,
+          "Path": "/archflow/",
+          "RoleId": "AROA3KFW7LBMXLXIXVWAH",
+          "RoleLastUsed": {
+            "LastUsedDate": "2026-10-10T18:25:46+00:00",
+            "Region": "us-east-1"
+          },
+          "RoleName": "ArchFlowFargateTask-20261010-final",
+          "Tags": [
+            {
+              "Key": "Project",
+              "Value": "ArchFlow-H"
+            },
+            {
+              "Key": "Experiment",
+              "Value": "real-aws-20261010-final"
+            },
+            {
+              "Key": "ManagedBy",
+              "Value": "Codex"
+            },
+            {
+              "Key": "Purpose",
+              "Value": "research"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "identity": {
+    "Account": "777772816473",
+    "Arn": "arn:aws:iam::777772816473:root",
+    "UserId": "777772816473"
+  },
+  "logGroups": {
+    "logGroups": [
+      {
+        "arn": "arn:aws:logs:us-east-1:777772816473:log-group:/archflow/real-20261010-final:*",
+        "bearerTokenAuthenticationEnabled": false,
+        "creationTime": 1791652478771,
+        "deletionProtectionEnabled": false,
+        "logGroupArn": "arn:aws:logs:us-east-1:777772816473:log-group:/archflow/real-20261010-final",
+        "logGroupClass": "STANDARD",
+        "logGroupName": "/archflow/real-20261010-final",
+        "metricFilterCount": 0,
+        "retentionInDays": 7,
+        "storedBytes": 0
+      }
+    ]
+  },
+  "pendingTasks": [],
+  "runningTasks": [],
+  "schemaVersion": "1.0.0",
+  "securityGroup": {
+    "SecurityGroups": [
+      {
+        "Description": "ArchFlow-H Fargate tasks: no ingress, default egress",
+        "GroupId": "sg-0557956bd15eeea65",
+        "GroupName": "archflow-real-egress-only-20261010-final",
+        "IpPermissions": [],
+        "IpPermissionsEgress": [
+          {
+            "IpProtocol": "-1",
+            "IpRanges": [
+              {
+                "CidrIp": "0.0.0.0/0"
+              }
+            ],
+            "Ipv6Ranges": [],
+            "PrefixListIds": [],
+            "UserIdGroupPairs": []
+          }
+        ],
+        "OwnerId": "777772816473",
+        "SecurityGroupArn": "arn:aws:ec2:us-east-1:777772816473:security-group/sg-0557956bd15eeea65",
+        "Tags": [
+          {
+            "Key": "ManagedBy",
+            "Value": "Codex"
+          },
+          {
+            "Key": "Purpose",
+            "Value": "research"
+          },
+          {
+            "Key": "Project",
+            "Value": "ArchFlow-H"
+          },
+          {
+            "Key": "Experiment",
+            "Value": "real-aws-20261010-final"
+          }
+        ],
+        "VpcId": "vpc-06d415724f9f1c68b"
+      }
+    ]
+  },
+  "taskDefinitions": [
+    {
+      "tags": [
+        {
+          "key": "Project",
+          "value": "ArchFlow-H"
+        },
+        {
+          "key": "Purpose",
+          "value": "research"
+        },
+        {
+          "key": "ManagedBy",
+          "value": "Codex"
+        },
+        {
+          "key": "Experiment",
+          "value": "real-aws-20261010-final"
+        }
+      ],
+      "taskDefinition": {
+        "compatibilities": [
+          "EC2",
+          "MANAGED_INSTANCES",
+          "FARGATE"
+        ],
+        "containerDefinitions": [
+          {
+            "command": [
+              "true"
+            ],
+            "cpu": 0,
+            "entryPoint": [
+              "/bin/sh",
+              "-c"
+            ],
+            "environment": [],
+            "essential": false,
+            "image": "amazon/aws-cli@sha256:ce44b800602264c12298bbf3399055a4cefdb9ed4a098abe564afe26e7071bce",
+            "logConfiguration": {
+              "logDriver": "awslogs",
+              "options": {
+                "awslogs-group": "/archflow/real-20261010-final",
+                "awslogs-region": "us-east-1",
+                "awslogs-stream-prefix": "ecs",
+                "mode": "blocking"
+              }
+            },
+            "mountPoints": [
+              {
+                "containerPath": "/data",
+                "readOnly": false,
+                "sourceVolume": "data"
+              }
+            ],
+            "name": "downloader",
+            "portMappings": [],
+            "systemControls": [],
+            "volumesFrom": []
+          },
+          {
+            "command": [
+              "echo command override required"
+            ],
+            "cpu": 0,
+            "dependsOn": [
+              {
+                "condition": "SUCCESS",
+                "containerName": "downloader"
+              }
+            ],
+            "entryPoint": [
+              "/bin/bash",
+              "-lc"
+            ],
+            "environment": [],
+            "essential": false,
+            "image": "lscr.io/linuxserver/ffmpeg@sha256:aea59a11c54291ac456bb2d67000445e5a8994f70bc3d96cdc29f022fbbf89fb",
+            "logConfiguration": {
+              "logDriver": "awslogs",
+              "options": {
+                "awslogs-group": "/archflow/real-20261010-final",
+                "awslogs-region": "us-east-1",
+                "awslogs-stream-prefix": "ecs",
+                "mode": "blocking"
+              }
+            },
+            "mountPoints": [
+              {
+                "containerPath": "/data",
+                "readOnly": false,
+                "sourceVolume": "data"
+              }
+            ],
+            "name": "worker",
+            "portMappings": [],
+            "systemControls": [],
+            "volumesFrom": []
+          },
+          {
+            "command": [
+              "true"
+            ],
+            "cpu": 0,
+            "dependsOn": [
+              {
+                "condition": "SUCCESS",
+                "containerName": "worker"
+              }
+            ],
+            "entryPoint": [
+              "/bin/sh",
+              "-c"
+            ],
+            "environment": [],
+            "essential": true,
+            "image": "amazon/aws-cli@sha256:ce44b800602264c12298bbf3399055a4cefdb9ed4a098abe564afe26e7071bce",
+            "logConfiguration": {
+              "logDriver": "awslogs",
+              "options": {
+                "awslogs-group": "/archflow/real-20261010-final",
+                "awslogs-region": "us-east-1",
+                "awslogs-stream-prefix": "ecs",
+                "mode": "blocking"
+              }
+            },
+            "mountPoints": [
+              {
+                "containerPath": "/data",
+                "readOnly": false,
+                "sourceVolume": "data"
+              }
+            ],
+            "name": "uploader",
+            "portMappings": [],
+            "systemControls": [],
+            "volumesFrom": []
+          }
+        ],
+        "cpu": "256",
+        "executionRoleArn": "arn:aws:iam::777772816473:role/archflow/ArchFlowFargateExecution-20261010-final",
+        "family": "archflow-final-x86-025-05",
+        "memory": "512",
+        "networkMode": "awsvpc",
+        "placementConstraints": [],
+        "registeredAt": "2026-10-10T17:15:13.125000+00:00",
+        "registeredBy": "arn:aws:iam::777772816473:root",
+        "requiresAttributes": [
+          {
+            "name": "com.amazonaws.ecs.capability.logging-driver.awslogs"
+          },
+          {
+            "name": "ecs.capability.execution-role-awslogs"
+          },
+          {
+            "name": "com.amazonaws.ecs.capability.docker-remote-api.1.19"
+          },
+          {
+            "name": "com.amazonaws.ecs.capability.docker-remote-api.1.28"
+          },
+          {
+            "name": "com.amazonaws.ecs.capability.docker-remote-api.1.21"
+          },
+          {
+            "name": "com.amazonaws.ecs.capability.task-iam-role"
+          },
+          {
+            "name": "ecs.capability.container-ordering"
+          },
+          {
+            "name": "com.amazonaws.ecs.capability.docker-remote-api.1.18"
+          },
+          {
+            "name": "ecs.capability.task-eni"
+          }
+        ],
+        "requiresCompatibilities": [
+          "FARGATE"
+        ],
+        "revision": 1,
+        "runtimePlatform": {
+          "cpuArchitecture": "X86_64",
+          "operatingSystemFamily": "LINUX"
+        },
+        "status": "ACTIVE",
+        "taskDefinitionArn": "arn:aws:ecs:us-east-1:777772816473:task-definition/archflow-final-x86-025-05:1",
+        "taskRoleArn": "arn:aws:iam::777772816473:role/archflow/ArchFlowFargateTask-20261010-final",
+        "volumes": [
+          {
+            "host": {},
+            "name": "data"
+          }
+        ]
+      }
+    },
+    {
+      "tags": [
+        {
+          "key": "Project",
+          "value": "ArchFlow-H"
+        },
+        {
+          "key": "Purpose",
+          "value": "research"
+        },
+        {
+          "key": "ManagedBy",
+          "value": "Codex"
+        },
+        {
+          "key": "Experiment",
+          "value": "real-aws-20261010-final"
+        }
+      ],
+      "taskDefinition": {
+        "compatibilities": [
+          "EC2",
+          "MANAGED_INSTANCES",
+          "FARGATE"
+        ],
+        "containerDefinitions": [
+          {
+            "command": [
+              "true"
+            ],
+            "cpu": 0,
+            "entryPoint": [
+              "/bin/sh",
+              "-c"
+            ],
+            "environment": [],
+            "essential": false,
+            "image": "amazon/aws-cli@sha256:ce44b800602264c12298bbf3399055a4cefdb9ed4a098abe564afe26e7071bce",
+            "logConfiguration": {
+              "logDriver": "awslogs",
+              "options": {
+                "awslogs-group": "/archflow/real-20261010-final",
+                "awslogs-region": "us-east-1",
+                "awslogs-stream-prefix": "ecs",
+                "mode": "blocking"
+              }
+            },
+            "mountPoints": [
+              {
+                "containerPath": "/data",
+                "readOnly": false,
+                "sourceVolume": "data"
+              }
+            ],
+            "name": "downloader",
+            "portMappings": [],
+            "systemControls": [],
+            "volumesFrom": []
+          },
+          {
+            "command": [
+              "echo command override required"
+            ],
+            "cpu": 0,
+            "dependsOn": [
+              {
+                "condition": "SUCCESS",
+                "containerName": "downloader"
+              }
+            ],
+            "entryPoint": [
+              "/bin/bash",
+              "-lc"
+            ],
+            "environment": [],
+            "essential": false,
+            "image": "lscr.io/linuxserver/ffmpeg@sha256:aea59a11c54291ac456bb2d67000445e5a8994f70bc3d96cdc29f022fbbf89fb",
+            "logConfiguration": {
+              "logDriver": "awslogs",
+              "options": {
+                "awslogs-group": "/archflow/real-20261010-final",
+                "awslogs-region": "us-east-1",
+                "awslogs-stream-prefix": "ecs",
+                "mode": "blocking"
+              }
+            },
+            "mountPoints": [
+              {
+                "containerPath": "/data",
+                "readOnly": false,
+                "sourceVolume": "data"
+              }
+            ],
+            "name": "worker",
+            "portMappings": [],
+            "systemControls": [],
+            "volumesFrom": []
+          },
+          {
+            "command": [
+              "true"
+            ],
+            "cpu": 0,
+            "dependsOn": [
+              {
+                "condition": "SUCCESS",
+                "containerName": "worker"
+              }
+            ],
+            "entryPoint": [
+              "/bin/sh",
+              "-c"
+            ],
+            "environment": [],
+            "essential": true,
+            "image": "amazon/aws-cli@sha256:ce44b800602264c12298bbf3399055a4cefdb9ed4a098abe564afe26e7071bce",
+            "logConfiguration": {
+              "logDriver": "awslogs",
+              "options": {
+                "awslogs-group": "/archflow/real-20261010-final",
+                "awslogs-region": "us-east-1",
+                "awslogs-stream-prefix": "ecs",
+                "mode": "blocking"
+              }
+            },
+            "mountPoints": [
+              {
+                "containerPath": "/data",
+                "readOnly": false,
+                "sourceVolume": "data"
+              }
+            ],
+            "name": "uploader",
+            "portMappings": [],
+            "systemControls": [],
+            "volumesFrom": []
+          }
+        ],
+        "cpu": "1024",
+        "executionRoleArn": "arn:aws:iam::777772816473:role/archflow/ArchFlowFargateExecution-20261010-final",
+        "family": "archflow-final-x86-1-2",
+        "memory": "2048",
+        "networkMode": "awsvpc",
+        "placementConstraints": [],
+        "registeredAt": "2026-10-10T17:15:13.485000+00:00",
+        "registeredBy": "arn:aws:iam::777772816473:root",
+        "requiresAttributes": [
+          {
+            "name": "com.amazonaws.ecs.capability.logging-driver.awslogs"
+          },
+          {
+            "name": "ecs.capability.execution-role-awslogs"
+          },
+          {
+            "name": "com.amazonaws.ecs.capability.docker-remote-api.1.19"
+          },
+          {
+            "name": "com.amazonaws.ecs.capability.docker-remote-api.1.28"
+          },
+          {
+            "name": "com.amazonaws.ecs.capability.docker-remote-api.1.21"
+          },
+          {
+            "name": "com.amazonaws.ecs.capability.task-iam-role"
+          },
+          {
+            "name": "ecs.capability.container-ordering"
+          },
+          {
+            "name": "com.amazonaws.ecs.capability.docker-remote-api.1.18"
+          },
+          {
+            "name": "ecs.capability.task-eni"
+          }
+        ],
+        "requiresCompatibilities": [
+          "FARGATE"
+        ],
+        "revision": 1,
+        "runtimePlatform": {
+          "cpuArchitecture": "X86_64",
+          "operatingSystemFamily": "LINUX"
+        },
+        "status": "ACTIVE",
+        "taskDefinitionArn": "arn:aws:ecs:us-east-1:777772816473:task-definition/archflow-final-x86-1-2:1",
+        "taskRoleArn": "arn:aws:iam::777772816473:role/archflow/ArchFlowFargateTask-20261010-final",
+        "volumes": [
+          {
+            "host": {},
+            "name": "data"
+          }
+        ]
+      }
+    },
+    {
+      "tags": [
+        {
+          "key": "Project",
+          "value": "ArchFlow-H"
+        },
+        {
+          "key": "Purpose",
+          "value": "research"
+        },
+        {
+          "key": "ManagedBy",
+          "value": "Codex"
+        },
+        {
+          "key": "Experiment",
+          "value": "real-aws-20261010-final"
+        }
+      ],
+      "taskDefinition": {
+        "compatibilities": [
+          "EC2",
+          "MANAGED_INSTANCES",
+          "FARGATE"
+        ],
+        "containerDefinitions": [
+          {
+            "command": [
+              "true"
+            ],
+            "cpu": 0,
+            "entryPoint": [
+              "/bin/sh",
+              "-c"
+            ],
+            "environment": [],
+            "essential": false,
+            "image": "amazon/aws-cli@sha256:ce44b800602264c12298bbf3399055a4cefdb9ed4a098abe564afe26e7071bce",
+            "logConfiguration": {
+              "logDriver": "awslogs",
+              "options": {
+                "awslogs-group": "/archflow/real-20261010-final",
+                "awslogs-region": "us-east-1",
+                "awslogs-stream-prefix": "ecs",
+                "mode": "blocking"
+              }
+            },
+            "mountPoints": [
+              {
+                "containerPath": "/data",
+                "readOnly": false,
+                "sourceVolume": "data"
+              }
+            ],
+            "name": "downloader",
+            "portMappings": [],
+            "systemControls": [],
+            "volumesFrom": []
+          },
+          {
+            "command": [
+              "echo command override required"
+            ],
+            "cpu": 0,
+            "dependsOn": [
+              {
+                "condition": "SUCCESS",
+                "containerName": "downloader"
+              }
+            ],
+            "entryPoint": [
+              "/bin/bash",
+              "-lc"
+            ],
+            "environment": [],
+            "essential": false,
+            "image": "lscr.io/linuxserver/ffmpeg@sha256:aea59a11c54291ac456bb2d67000445e5a8994f70bc3d96cdc29f022fbbf89fb",
+            "logConfiguration": {
+              "logDriver": "awslogs",
+              "options": {
+                "awslogs-group": "/archflow/real-20261010-final",
+                "awslogs-region": "us-east-1",
+                "awslogs-stream-prefix": "ecs",
+                "mode": "blocking"
+              }
+            },
+            "mountPoints": [
+              {
+                "containerPath": "/data",
+                "readOnly": false,
+                "sourceVolume": "data"
+              }
+            ],
+            "name": "worker",
+            "portMappings": [],
+            "systemControls": [],
+            "volumesFrom": []
+          },
+          {
+            "command": [
+              "true"
+            ],
+            "cpu": 0,
+            "dependsOn": [
+              {
+                "condition": "SUCCESS",
+                "containerName": "worker"
+              }
+            ],
+            "entryPoint": [
+              "/bin/sh",
+              "-c"
+            ],
+            "environment": [],
+            "essential": true,
+            "image": "amazon/aws-cli@sha256:ce44b800602264c12298bbf3399055a4cefdb9ed4a098abe564afe26e7071bce",
+            "logConfiguration": {
+              "logDriver": "awslogs",
+              "options": {
+                "awslogs-group": "/archflow/real-20261010-final",
+                "awslogs-region": "us-east-1",
+                "awslogs-stream-prefix": "ecs",
+                "mode": "blocking"
+              }
+            },
+            "mountPoints": [
+              {
+                "containerPath": "/data",
+                "readOnly": false,
+                "sourceVolume": "data"
+              }
+            ],
+            "name": "uploader",
+            "portMappings": [],
+            "systemControls": [],
+            "volumesFrom": []
+          }
+        ],
+        "cpu": "256",
+        "executionRoleArn": "arn:aws:iam::777772816473:role/archflow/ArchFlowFargateExecution-20261010-final",
+        "family": "archflow-final-arm-025-05",
+        "memory": "512",
+        "networkMode": "awsvpc",
+        "placementConstraints": [],
+        "registeredAt": "2026-10-10T17:15:13.805000+00:00",
+        "registeredBy": "arn:aws:iam::777772816473:root",
+        "requiresAttributes": [
+          {
+            "name": "com.amazonaws.ecs.capability.logging-driver.awslogs"
+          },
+          {
+            "name": "ecs.capability.execution-role-awslogs"
+          },
+          {
+            "name": "com.amazonaws.ecs.capability.docker-remote-api.1.19"
+          },
+          {
+            "name": "com.amazonaws.ecs.capability.docker-remote-api.1.28"
+          },
+          {
+            "name": "com.amazonaws.ecs.capability.docker-remote-api.1.21"
+          },
+          {
+            "name": "com.amazonaws.ecs.capability.task-iam-role"
+          },
+          {
+            "name": "ecs.capability.container-ordering"
+          },
+          {
+            "name": "com.amazonaws.ecs.capability.docker-remote-api.1.18"
+          },
+          {
+            "name": "ecs.capability.task-eni"
+          }
+        ],
+        "requiresCompatibilities": [
+          "FARGATE"
+        ],
+        "revision": 1,
+        "runtimePlatform": {
+          "cpuArchitecture": "ARM64",
+          "operatingSystemFamily": "LINUX"
+        },
+        "status": "ACTIVE",
+        "taskDefinitionArn": "arn:aws:ecs:us-east-1:777772816473:task-definition/archflow-final-arm-025-05:1",
+        "taskRoleArn": "arn:aws:iam::777772816473:role/archflow/ArchFlowFargateTask-20261010-final",
+        "volumes": [
+          {
+            "host": {},
+            "name": "data"
+          }
+        ]
+      }
+    },
+    {
+      "tags": [
+        {
+          "key": "Project",
+          "value": "ArchFlow-H"
+        },
+        {
+          "key": "Purpose",
+          "value": "research"
+        },
+        {
+          "key": "ManagedBy",
+          "value": "Codex"
+        },
+        {
+          "key": "Experiment",
+          "value": "real-aws-20261010-final"
+        }
+      ],
+      "taskDefinition": {
+        "compatibilities": [
+          "EC2",
+          "MANAGED_INSTANCES",
+          "FARGATE"
+        ],
+        "containerDefinitions": [
+          {
+            "command": [
+              "true"
+            ],
+            "cpu": 0,
+            "entryPoint": [
+              "/bin/sh",
+              "-c"
+            ],
+            "environment": [],
+            "essential": false,
+            "image": "amazon/aws-cli@sha256:ce44b800602264c12298bbf3399055a4cefdb9ed4a098abe564afe26e7071bce",
+            "logConfiguration": {
+              "logDriver": "awslogs",
+              "options": {
+                "awslogs-group": "/archflow/real-20261010-final",
+                "awslogs-region": "us-east-1",
+                "awslogs-stream-prefix": "ecs",
+                "mode": "blocking"
+              }
+            },
+            "mountPoints": [
+              {
+                "containerPath": "/data",
+                "readOnly": false,
+                "sourceVolume": "data"
+              }
+            ],
+            "name": "downloader",
+            "portMappings": [],
+            "systemControls": [],
+            "volumesFrom": []
+          },
+          {
+            "command": [
+              "echo command override required"
+            ],
+            "cpu": 0,
+            "dependsOn": [
+              {
+                "condition": "SUCCESS",
+                "containerName": "downloader"
+              }
+            ],
+            "entryPoint": [
+              "/bin/bash",
+              "-lc"
+            ],
+            "environment": [],
+            "essential": false,
+            "image": "lscr.io/linuxserver/ffmpeg@sha256:aea59a11c54291ac456bb2d67000445e5a8994f70bc3d96cdc29f022fbbf89fb",
+            "logConfiguration": {
+              "logDriver": "awslogs",
+              "options": {
+                "awslogs-group": "/archflow/real-20261010-final",
+                "awslogs-region": "us-east-1",
+                "awslogs-stream-prefix": "ecs",
+                "mode": "blocking"
+              }
+            },
+            "mountPoints": [
+              {
+                "containerPath": "/data",
+                "readOnly": false,
+                "sourceVolume": "data"
+              }
+            ],
+            "name": "worker",
+            "portMappings": [],
+            "systemControls": [],
+            "volumesFrom": []
+          },
+          {
+            "command": [
+              "true"
+            ],
+            "cpu": 0,
+            "dependsOn": [
+              {
+                "condition": "SUCCESS",
+                "containerName": "worker"
+              }
+            ],
+            "entryPoint": [
+              "/bin/sh",
+              "-c"
+            ],
+            "environment": [],
+            "essential": true,
+            "image": "amazon/aws-cli@sha256:ce44b800602264c12298bbf3399055a4cefdb9ed4a098abe564afe26e7071bce",
+            "logConfiguration": {
+              "logDriver": "awslogs",
+              "options": {
+                "awslogs-group": "/archflow/real-20261010-final",
+                "awslogs-region": "us-east-1",
+                "awslogs-stream-prefix": "ecs",
+                "mode": "blocking"
+              }
+            },
+            "mountPoints": [
+              {
+                "containerPath": "/data",
+                "readOnly": false,
+                "sourceVolume": "data"
+              }
+            ],
+            "name": "uploader",
+            "portMappings": [],
+            "systemControls": [],
+            "volumesFrom": []
+          }
+        ],
+        "cpu": "1024",
+        "executionRoleArn": "arn:aws:iam::777772816473:role/archflow/ArchFlowFargateExecution-20261010-final",
+        "family": "archflow-final-arm-1-2",
+        "memory": "2048",
+        "networkMode": "awsvpc",
+        "placementConstraints": [],
+        "registeredAt": "2026-10-10T17:15:14.233000+00:00",
+        "registeredBy": "arn:aws:iam::777772816473:root",
+        "requiresAttributes": [
+          {
+            "name": "com.amazonaws.ecs.capability.logging-driver.awslogs"
+          },
+          {
+            "name": "ecs.capability.execution-role-awslogs"
+          },
+          {
+            "name": "com.amazonaws.ecs.capability.docker-remote-api.1.19"
+          },
+          {
+            "name": "com.amazonaws.ecs.capability.docker-remote-api.1.28"
+          },
+          {
+            "name": "com.amazonaws.ecs.capability.docker-remote-api.1.21"
+          },
+          {
+            "name": "com.amazonaws.ecs.capability.task-iam-role"
+          },
+          {
+            "name": "ecs.capability.container-ordering"
+          },
+          {
+            "name": "com.amazonaws.ecs.capability.docker-remote-api.1.18"
+          },
+          {
+            "name": "ecs.capability.task-eni"
+          }
+        ],
+        "requiresCompatibilities": [
+          "FARGATE"
+        ],
+        "revision": 1,
+        "runtimePlatform": {
+          "cpuArchitecture": "ARM64",
+          "operatingSystemFamily": "LINUX"
+        },
+        "status": "ACTIVE",
+        "taskDefinitionArn": "arn:aws:ecs:us-east-1:777772816473:task-definition/archflow-final-arm-1-2:1",
+        "taskRoleArn": "arn:aws:iam::777772816473:role/archflow/ArchFlowFargateTask-20261010-final",
+        "volumes": [
+          {
+            "host": {},
+            "name": "data"
+          }
+        ]
+      }
+    }
+  ]
+}

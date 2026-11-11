@@ -1,0 +1,271 @@
+{
+  "schemaVersion": 1,
+  "id": "real-ffmpeg-five-node",
+  "deadlineSeconds": 420,
+  "tasks": [
+    {
+      "id": "generate-source",
+      "taskClass": "generate-source",
+      "predecessorIds": [],
+      "successorIds": [
+        "cut-a",
+        "cut-b"
+      ],
+      "workloadSize": 1,
+      "profiles": [
+        {
+          "resourceModeId": "x86-0.25vcpu-0.5gb",
+          "executionSeconds": 80.51,
+          "startupOverheadSeconds": 59.586,
+          "provenance": {
+            "kind": "measured-aws-fargate",
+            "source": "artifacts/archflow/aws/profiles/measured-ffmpeg-task-matrix.json",
+            "notes": "Arithmetic mean of independent training observations: 52ffe23c851248d0a86e8e45407af245."
+          }
+        },
+        {
+          "resourceModeId": "x86-1vcpu-2gb",
+          "executionSeconds": 33.236,
+          "startupOverheadSeconds": 62.49398800000001,
+          "provenance": {
+            "kind": "measured-aws-fargate",
+            "source": "artifacts/archflow/aws/profiles/measured-ffmpeg-task-matrix.json",
+            "notes": "Arithmetic mean of independent training observations: 6dd9fdfa30174f01871dbd7c8adbf2da."
+          }
+        },
+        {
+          "resourceModeId": "arm64-0.25vcpu-0.5gb",
+          "executionSeconds": 70.064,
+          "startupOverheadSeconds": 48.647000000000006,
+          "provenance": {
+            "kind": "measured-aws-fargate",
+            "source": "artifacts/archflow/aws/profiles/measured-ffmpeg-task-matrix.json",
+            "notes": "Arithmetic mean of independent training observations: 2a46718a7c0642548c4cf21185af30bc."
+          }
+        },
+        {
+          "resourceModeId": "arm64-1vcpu-2gb",
+          "executionSeconds": 19.192,
+          "startupOverheadSeconds": 49.242248,
+          "provenance": {
+            "kind": "measured-aws-fargate",
+            "source": "artifacts/archflow/aws/profiles/measured-ffmpeg-task-matrix.json",
+            "notes": "Arithmetic mean of independent training observations: ed3ab8eefc324efca0f7c15b78dc4b9e."
+          }
+        }
+      ]
+    },
+    {
+      "id": "cut-a",
+      "taskClass": "cut",
+      "predecessorIds": [
+        "generate-source"
+      ],
+      "successorIds": [
+        "merge"
+      ],
+      "workloadSize": 1,
+      "profiles": [
+        {
+          "resourceModeId": "x86-0.25vcpu-0.5gb",
+          "executionSeconds": 66.80850000000001,
+          "startupOverheadSeconds": 58.4065,
+          "provenance": {
+            "kind": "measured-aws-fargate",
+            "source": "artifacts/archflow/aws/profiles/measured-ffmpeg-task-matrix.json",
+            "notes": "Arithmetic mean of independent training observations: 1a56e80d474046e9b40c0f6118990e65, 7b1f1031127346ad8a7d7bdfb2b2f6dd."
+          }
+        },
+        {
+          "resourceModeId": "x86-1vcpu-2gb",
+          "executionSeconds": 18.2405,
+          "startupOverheadSeconds": 54.9823475,
+          "provenance": {
+            "kind": "measured-aws-fargate",
+            "source": "artifacts/archflow/aws/profiles/measured-ffmpeg-task-matrix.json",
+            "notes": "Arithmetic mean of independent training observations: d0b2465b4e3d4013aea056fd071ee43b, 7cc454f8df4b4d9887aae7a4ddea5a80."
+          }
+        },
+        {
+          "resourceModeId": "arm64-0.25vcpu-0.5gb",
+          "executionSeconds": 39.0605,
+          "startupOverheadSeconds": 52.005500000000005,
+          "provenance": {
+            "kind": "measured-aws-fargate",
+            "source": "artifacts/archflow/aws/profiles/measured-ffmpeg-task-matrix.json",
+            "notes": "Arithmetic mean of independent training observations: 4b945a6c47b744d8b20b1f77398a5855, afe0870fde8343adbe5ca14b38a666a9."
+          }
+        },
+        {
+          "resourceModeId": "arm64-1vcpu-2gb",
+          "executionSeconds": 11.3335,
+          "startupOverheadSeconds": 52.3269745,
+          "provenance": {
+            "kind": "measured-aws-fargate",
+            "source": "artifacts/archflow/aws/profiles/measured-ffmpeg-task-matrix.json",
+            "notes": "Arithmetic mean of independent training observations: 20d3c708d6314572bced49bf3c6f6700, 530348aac7394734a5abd613a25f2a42."
+          }
+        }
+      ]
+    },
+    {
+      "id": "cut-b",
+      "taskClass": "cut",
+      "predecessorIds": [
+        "generate-source"
+      ],
+      "successorIds": [
+        "merge"
+      ],
+      "workloadSize": 1,
+      "profiles": [
+        {
+          "resourceModeId": "x86-0.25vcpu-0.5gb",
+          "executionSeconds": 66.80850000000001,
+          "startupOverheadSeconds": 58.4065,
+          "provenance": {
+            "kind": "measured-aws-fargate",
+            "source": "artifacts/archflow/aws/profiles/measured-ffmpeg-task-matrix.json",
+            "notes": "Arithmetic mean of independent training observations: 1a56e80d474046e9b40c0f6118990e65, 7b1f1031127346ad8a7d7bdfb2b2f6dd."
+          }
+        },
+        {
+          "resourceModeId": "x86-1vcpu-2gb",
+          "executionSeconds": 18.2405,
+          "startupOverheadSeconds": 54.9823475,
+          "provenance": {
+            "kind": "measured-aws-fargate",
+            "source": "artifacts/archflow/aws/profiles/measured-ffmpeg-task-matrix.json",
+            "notes": "Arithmetic mean of independent training observations: d0b2465b4e3d4013aea056fd071ee43b, 7cc454f8df4b4d9887aae7a4ddea5a80."
+          }
+        },
+        {
+          "resourceModeId": "arm64-0.25vcpu-0.5gb",
+          "executionSeconds": 39.0605,
+          "startupOverheadSeconds": 52.005500000000005,
+          "provenance": {
+            "kind": "measured-aws-fargate",
+            "source": "artifacts/archflow/aws/profiles/measured-ffmpeg-task-matrix.json",
+            "notes": "Arithmetic mean of independent training observations: 4b945a6c47b744d8b20b1f77398a5855, afe0870fde8343adbe5ca14b38a666a9."
+          }
+        },
+        {
+          "resourceModeId": "arm64-1vcpu-2gb",
+          "executionSeconds": 11.3335,
+          "startupOverheadSeconds": 52.3269745,
+          "provenance": {
+            "kind": "measured-aws-fargate",
+            "source": "artifacts/archflow/aws/profiles/measured-ffmpeg-task-matrix.json",
+            "notes": "Arithmetic mean of independent training observations: 20d3c708d6314572bced49bf3c6f6700, 530348aac7394734a5abd613a25f2a42."
+          }
+        }
+      ]
+    },
+    {
+      "id": "merge",
+      "taskClass": "merge",
+      "predecessorIds": [
+        "cut-a",
+        "cut-b"
+      ],
+      "successorIds": [
+        "validate"
+      ],
+      "workloadSize": 1,
+      "profiles": [
+        {
+          "resourceModeId": "x86-0.25vcpu-0.5gb",
+          "executionSeconds": 0.599,
+          "startupOverheadSeconds": 63.229000000000006,
+          "provenance": {
+            "kind": "measured-aws-fargate",
+            "source": "artifacts/archflow/aws/profiles/measured-ffmpeg-task-matrix.json",
+            "notes": "Arithmetic mean of independent training observations: c912683d6e6149188eaa6571fcd21f69."
+          }
+        },
+        {
+          "resourceModeId": "x86-1vcpu-2gb",
+          "executionSeconds": 0.134,
+          "startupOverheadSeconds": 54.157113,
+          "provenance": {
+            "kind": "measured-aws-fargate",
+            "source": "artifacts/archflow/aws/profiles/measured-ffmpeg-task-matrix.json",
+            "notes": "Arithmetic mean of independent training observations: d1b075ab791b46268d6dfc43ec410340."
+          }
+        },
+        {
+          "resourceModeId": "arm64-0.25vcpu-0.5gb",
+          "executionSeconds": 0.347,
+          "startupOverheadSeconds": 55.292,
+          "provenance": {
+            "kind": "measured-aws-fargate",
+            "source": "artifacts/archflow/aws/profiles/measured-ffmpeg-task-matrix.json",
+            "notes": "Arithmetic mean of independent training observations: 341a904a18c84552bf0554dcf1dea907."
+          }
+        },
+        {
+          "resourceModeId": "arm64-1vcpu-2gb",
+          "executionSeconds": 0.112,
+          "startupOverheadSeconds": 51.731215,
+          "provenance": {
+            "kind": "measured-aws-fargate",
+            "source": "artifacts/archflow/aws/profiles/measured-ffmpeg-task-matrix.json",
+            "notes": "Arithmetic mean of independent training observations: 0458a7fc1f7843d4b5b02e82d9876d94."
+          }
+        }
+      ]
+    },
+    {
+      "id": "validate",
+      "taskClass": "validate",
+      "predecessorIds": [
+        "merge"
+      ],
+      "successorIds": [],
+      "workloadSize": 1,
+      "profiles": [
+        {
+          "resourceModeId": "x86-0.25vcpu-0.5gb",
+          "executionSeconds": 0.939,
+          "startupOverheadSeconds": 54.509,
+          "provenance": {
+            "kind": "measured-aws-fargate",
+            "source": "artifacts/archflow/aws/profiles/measured-ffmpeg-task-matrix.json",
+            "notes": "Arithmetic mean of independent training observations: 5223c007f24848b1a3fef76df0802b0c."
+          }
+        },
+        {
+          "resourceModeId": "x86-1vcpu-2gb",
+          "executionSeconds": 0.181,
+          "startupOverheadSeconds": 55.440450000000006,
+          "provenance": {
+            "kind": "measured-aws-fargate",
+            "source": "artifacts/archflow/aws/profiles/measured-ffmpeg-task-matrix.json",
+            "notes": "Arithmetic mean of independent training observations: cb540b0e016f44b09f2bd0052c3d2018."
+          }
+        },
+        {
+          "resourceModeId": "arm64-0.25vcpu-0.5gb",
+          "executionSeconds": 0.406,
+          "startupOverheadSeconds": 49.657000000000004,
+          "provenance": {
+            "kind": "measured-aws-fargate",
+            "source": "artifacts/archflow/aws/profiles/measured-ffmpeg-task-matrix.json",
+            "notes": "Arithmetic mean of independent training observations: c348b8cea84146da99d6d0e2f47c47b6."
+          }
+        },
+        {
+          "resourceModeId": "arm64-1vcpu-2gb",
+          "executionSeconds": 0.12,
+          "startupOverheadSeconds": 53.106445,
+          "provenance": {
+            "kind": "measured-aws-fargate",
+            "source": "artifacts/archflow/aws/profiles/measured-ffmpeg-task-matrix.json",
+            "notes": "Arithmetic mean of independent training observations: 9c98a61c226540dc8528d92489ca1b2e."
+          }
+        }
+      ]
+    }
+  ],
+  "provenance": "Measured AWS Fargate training observations; no synthetic factors."
+}
