@@ -1,0 +1,8 @@
+runId,method,repetition,taskCount,architectures,armTaskCount,x86TaskCount,armPercent,x86Percent,distinctConfigurations,deadlineSeconds,predictedMakespanSeconds,predictedComputeMemoryCostUsd,observedWallMakespanSeconds,observedWallDeadlineMet,dependencyNormalizedMakespanSeconds,dependencyNormalizedDeadlineMet,estimatedProviderCostUsd,schedulingDecisionOverheadMs,successful
+final-archflow-fixed-arm-r1,archflow-fixed-arm,1,5,ARM64,5,0,100,0,1,420,315.479,0.0011603101500000002,852.954,false,413.025,true,0.001944320833,0.34449299999999994,true
+final-archflow-fixed-arm-r2,archflow-fixed-arm,2,5,ARM64,5,0,100,0,1,420,315.479,0.0011603101500000002,693.671,false,316.756,true,0.001603618056,0.34449299999999994,true
+final-archflow-fixed-x86-r1,archflow-fixed-x86,1,5,X86_64,0,5,0,100,1,420,384.587,0.0017725345,933.584,false,460.012,false,0.002590375694,1.465135999999994,true
+final-archflow-full-r1,archflow-full,1,5,ARM64,5,0,100,0,1,420,315.479,0.0011603101500000002,511.094,false,334.747,true,0.001718109722,0.9477560000000054,true
+final-archflow-full-r2,archflow-full,2,5,ARM64,5,0,100,0,1,420,315.479,0.0011603101500000002,629.994,false,318.491,true,0.001635643056,0.9477560000000054,true
+final-chunkfunc-arm-r1,chunkfunc-arm,1,5,ARM64,5,0,100,0,1,420,315.479,0.0011603101500000002,969.218,false,363.163,true,0.001838195833,0.3003190000000018,true
+final-chunkfunc-x86-r1,chunkfunc-x86,1,5,X86_64,0,5,0,100,1,420,384.587,0.0017725345,828.688,false,431.352,false,0.002554436806,8.816245000000002,true

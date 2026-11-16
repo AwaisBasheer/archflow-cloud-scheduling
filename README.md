@@ -233,6 +233,157 @@ Evidence: [training matrix](artifacts/archflow/aws/profiles/measured-ffmpeg-task
 [observations](artifacts/archflow/aws/profiles/ffmpeg-task-profile-observations.csv),
 and [frozen plans](artifacts/archflow/aws/final/plans/).
 
+## Real AWS results
+
+The final matrix has one complete run per method. Full ArchFlow-H and fixed-ARM
+ArchFlow each have a second matched run: seven workflows and 35 successful
+intended tasks in total.
+
+| Method | Runs | Assignment | Mean modeled cost (USD) | Mean observed wall makespan | 420-s compliance |
+|---|---:|---|---:|---:|---:|
+| ChunkFunc-style x86 | 1 | All x86, 0.25/0.5 | 0.002554437 | 828.688 s | 0% |
+| ChunkFunc-style ARM | 1 | All ARM, 0.25/0.5 | 0.001838196 | 969.218 s | 0% |
+| ArchFlow fixed x86 | 1 | All x86, 0.25/0.5 | 0.002590376 | 933.584 s | 0% |
+| ArchFlow fixed ARM | 2 | All ARM, 0.25/0.5 | 0.001773969 | 773.313 s | 0% |
+| Full ArchFlow-H | 2 | All ARM, 0.25/0.5 | 0.001676876 | 570.544 s | 0% |
+
+**Joint architecture selection demonstrated no incremental real-AWS benefit in
+this workload.** Full ArchFlow selected the same all-ARM assignment as fixed-ARM
+ArchFlow. The apparent saving changed from +11.634454% to −1.997047% between
+matched repetitions. Differences between identical assignments are execution
+variability.
+
+Every observed workflow missed the deadline. Thus, no deadline-constrained
+real-cost-saving claim is supported. All 35 intended tasks and 105 containers
+completed successfully. Three extra attempts failed before application startup
+during public-registry pulls; unchanged retries succeeded. Their records and
+separate cost estimates are retained.
+
+Across 35 holdout tasks, lifecycle MAE is **9.681600 s** and lifecycle MAPE is
+**8.791423%**. Application-marker MAE is 5.528257 s and MAPE is 12.679313%.
+Dependency-normalized workflow MAE is 41.568143 s.
+
+### Timing and billing interpretation
+
+Observed wall makespan runs from the first source task's creation to validation
+stop. It includes startup, image pulls, transfers, and actual remote dependency
+release gaps. This is the primary deadline measure.
+
+The dependency-normalized diagnostic sums measured task lifecycles along the DAG
+with immediate successor release and parallel cuts. Its mean is 326.619 s for
+full ArchFlow and 364.891 s for fixed ARM. These values are diagnostic estimates,
+not observed end-to-end executions.
+
+Real compute/memory billing uses `ceil(max(60, stoppedAt - pullStartedAt))`.
+Public-IPv4 cost uses the recorded task lifecycle. Workflow costs include
+successful intended tasks; failed pull attempts are accounted for separately.
+Total modeled provider usage across all recorded experiments is `$0.032080554429`;
+the conservative total with ancillary reserves is `$0.118080554429`.
+
+The earlier fixed 1-vCPU/2-GiB pair completed within 420 seconds: ARM at 357.955248 s
+and `$0.003709478968`, x86 at 399.019988 s and `$0.004808886453`. That pair is
+training/calibration evidence and is excluded from the final holdout comparison.
+
+Final cleanup records show an inactive/empty cluster and no active experiment
+task definitions, bucket, log group, security group, scoped IAM roles, or ECR
+repositories. The repository retains exported evidence; infrastructure must be
+provisioned again for new live experiments.
+
+## Reproduce and verify
+
+From the repository root, install the locked dependencies and verify the code:
+
+```sh
+cd ts
+npm ci
+npx nx run-many -t build,lint -p archflow-core,archflow-sim,archflow-aws --parallel=1
+npx nx run-many -t test -p core,chunk-func-sim,results-converter,archflow-core,archflow-sim,archflow-aws --runInBand --parallel=1
+cd ..
+```
+
+The test inventory has 67 tests across 12 suites: 19 original core tests,
+42 ArchFlow core tests, and six AWS execution tests. The simulator/converter CLI
+targets currently accept having no dedicated tests.
+
+Regenerate the baseline and controlled simulations locally:
+
+```sh
+./scripts/reproduce_chunkfunc.sh
+./scripts/run_phase3_x86_baseline.sh
+./scripts/run_phase4_arm_baseline.sh
+./scripts/run_phase5_archflow_h.sh
+./scripts/run_phase6_ablations.sh
+```
+
+The baseline wrapper also requires Bash, `bc`, `sed`, and Git. Workflow times,
+costs, assignments, and feasibility are deterministic. Measured scheduler process
+time varies between runs. Generated logs, scenario copies, metadata, and Markdown
+reports are ignored; raw results, manifests, CSVs, and figures are versioned.
+
+Verify the preserved real-cloud evidence without AWS credentials:
+
+```sh
+node scripts/verify_real_aws_artifacts.mjs
+node scripts/verify_final_real_aws_artifacts.mjs
+```
+
+Regenerate the final CSVs and figures with
+`node scripts/analyze_real_aws_final.mjs`. This updates the analysis generation
+timestamp. Preserve the frozen plans when analyzing historical holdouts.
+`scripts/generate_real_aws_plans.mjs` generates a new training matrix and plans;
+its new timestamps must not be presented as pre-existing historical plans.
+
+New AWS executions require provisioned task definitions, network/storage/log
+resources, fresh AWS credentials, and a complete execution plan for
+`node ts/dist/packages/archflow-aws/main.js <execution-plan.json>`. The archived
+scheduler plans record resource decisions and do not contain a complete live
+execution configuration.
+
+## Evidence and repository structure
+
+| Path | Content |
+|---|---|
+| `ts/packages/archflow-core/` | Model, simulator, billing, adapters, and schedulers |
+| `ts/packages/archflow-sim/` | Manifest-driven experiment runner |
+| `ts/packages/archflow-aws/` | ECS task runner, DAG execution, and cost limits |
+| `ts/scenarios/archflow/` | Frozen modes, rates, assumptions, and experiment plans |
+| `artifacts/reproduction/` | Original ChunkFunc replay evidence |
+| `artifacts/archflow/phase3/`–`phase6/` | Simulation outputs and effective profiles |
+| `artifacts/archflow/aws/` | Measured profiles, task records, plans, and results |
+| `results/` | Baseline/ablation tables and figures |
+| `scripts/` | Reproduction, analysis, and evidence verification |
+| `go/`, `py/`, `testbed/`, `jupyter/` | Inherited profiling system, workloads, and notebooks |
+
+The final [workflow table](artifacts/archflow/aws/final/results/workflow-results.csv),
+[task observations](artifacts/archflow/aws/final/results/task-observations.csv),
+[prediction errors](artifacts/archflow/aws/final/results/prediction-errors.csv),
+[matched ablations](artifacts/archflow/aws/final/results/architecture-ablation.csv),
+[failed attempts](artifacts/archflow/aws/final/results/failed-attempts.csv), and
+[six figures](artifacts/archflow/aws/final/results/figures/) derive from the raw
+snapshot and frozen plans.
+
+| Evidence snapshot | SHA-256 |
+|---|---|
+| `artifacts/archflow/aws/task-telemetry/aws-control-plane-export.json` | `0301c7432902fb8a90da568ee0f5ba85db32ab1afa031c802cbbc40ca6096084` |
+| `artifacts/archflow/aws/final/raw/final-evaluation-all.json` | `f36637c628fbcc47f3ddcac6f9da8fdc2aa41008e068b84c2a06452de9777142` |
+| `artifacts/archflow/aws/final/raw/final-infrastructure-manifest.json` | `395203ceb53de17ab89aed6779a02e79117772a389ff023cc1e17b837169bff7` |
+
+Original component deployment instructions remain in [docs/](docs/), including
+the [Knative profiler guide](docs/profiler.md) and
+[workflow simulator guide](docs/workflow-optimizer.md).
+
+## Limitations
+
+- The positive architecture-selection case uses proxy/synthetic profiles.
+- The measured experiment uses one FFmpeg DAG, one deadline, and two resource tiers.
+- Training cells have few observations. Only two methods have matched repeats.
+- Remote dependency-release latency materially affects the observed wall results.
+- Identical selected architectures prevent attribution of real differences to
+  architecture selection. No significance or general ARM superiority is claimed.
+- The greedy scheduler does not establish global optimality or infeasibility.
+- Costs use captured public rates rather than reconciled AWS invoices.
+- No real Montage or other scientific workflow was evaluated.
+
 ## License and acknowledgements
 
 The upstream root [LICENSE](LICENSE) is Apache License 2.0. The preserved upstream
